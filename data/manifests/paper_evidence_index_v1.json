@@ -1,0 +1,562 @@
+{
+  "artifacts": {
+    "data/manifests/causal_direct_hybrid_parity_v1.json": {
+      "bytes": 8233,
+      "sha256": "bf53bf425cdb8e19255a9a128e94db82c3ae44a7ac9d87f15a224420fd4ea293"
+    },
+    "data/manifests/causal_first_run_efficacy_cohort_c_confirmation_v1.json": {
+      "bytes": 4433,
+      "sha256": "109650430e9464f3300bf807be41045e1c74190747c44c8e1d7a9fbd0d1620ee"
+    },
+    "data/manifests/causal_fixed_baseline_train_pilot_decision_v1.json": {
+      "bytes": 3297,
+      "sha256": "fdb8306ef0e545210baecdc7d72a86c15b97c1b3378698cba2c6df782cfbd40b"
+    },
+    "data/manifests/causal_fixed_baseline_train_pilot_plan_v1.json": {
+      "bytes": 4944,
+      "sha256": "f8bd86ae04bf78b6a511de41684634706082c5df299ff10cb5ad6ea63dad4cfe"
+    },
+    "data/manifests/causal_fixed_baseline_train_pilot_v1.json": {
+      "bytes": 496439,
+      "sha256": "10e6d0f5539e7af9f1b0502d8e5768dd031b84bd6437ceb8a85526b71ee80d28"
+    },
+    "data/manifests/causal_noop_parity_v1.json": {
+      "bytes": 8044,
+      "sha256": "e99667ec4a84357d261854fdc17c21f37de3d20036799c095a7fa0501814d71d"
+    },
+    "data/manifests/causal_risk_grouped_oof_v1.json": {
+      "bytes": 69124,
+      "sha256": "b89d03e4a6a6a6c2a6d83d0a8c861fbb0a7581de7e817e6ade8df42e75b7da8e"
+    },
+    "data/manifests/evaluation_protocols/instance_assignments.csv": {
+      "bytes": 12452,
+      "sha256": "5af50bd3da90809f1c5ee321c42c016a496b272a943608275b807a4a9a343941"
+    },
+    "data/manifests/evaluation_protocols/protocol_summary.json": {
+      "bytes": 5850,
+      "sha256": "e944d37cece3bb354430c4322bb94d7159ee633136bec90f72e559713efdc38e"
+    },
+    "data/manifests/initial_audit.json": {
+      "bytes": 22000,
+      "sha256": "7a880b6f891d5e56fac833d48fe2c42cc6fda0116e41401988e7c6d9049abb06"
+    },
+    "data/manifests/paper_statistics_cohort_c_development_v1.json": {
+      "bytes": 16837,
+      "sha256": "0e04ff76655e4b9c65d651f940b9b00ee59084e0bc360ed0e64665eb118cf56b"
+    },
+    "data/manifests/paper_statistics_fixed_baseline_train_pilot_v1.json": {
+      "bytes": 32150,
+      "sha256": "c1fa8fc0d1814c3dff10d7dc876e4ea55a22c3119066745090a5a8b1a1c18a56"
+    },
+    "data/manifests/ranking_imitation_v1.json": {
+      "bytes": 20067,
+      "sha256": "c56b07c44c83bf732fbbf29b161cb42556dfa4a34d1006e601d2746019a666a8"
+    },
+    "data/manifests/ranking_imitation_xgb_group_cv_v1.json": {
+      "bytes": 295464,
+      "sha256": "0f2914acd9e9f38335020c19abbb9bbe78d8d741c20c09daa113c7f933e23976"
+    },
+    "data/manifests/ranking_imitation_xgb_v1.json": {
+      "bytes": 112594,
+      "sha256": "9aab8589f12641aaa8ea4a1da51b169e143ec208f203ad63cea5e30e28e4134b"
+    },
+    "data/manifests/root_observational_v1.json": {
+      "bytes": 381334,
+      "sha256": "fa64c1307b3f0e63ab102d52b1d4e4d969b692304d2be72f09bad381ef1b1d47"
+    },
+    "docs/CAUSAL_HARNESS.md": {
+      "bytes": 9005,
+      "sha256": "564b298b7a814289157bfb7c4818037660a823c6a9070d231661be7f73e6e3ac"
+    },
+    "docs/CAUSAL_RISK_DIAGNOSTIC.md": {
+      "bytes": 6460,
+      "sha256": "0731a4e7d2ef801948e9e06d0cc36fca742d365dd4d8d2bbdf6bdc26e0bb2cf7"
+    },
+    "docs/DUPLICATE_CUT_ID_AUDIT.md": {
+      "bytes": 3367,
+      "sha256": "6c95ca6a6d898bc6e0840975ffbf24336720e7083a0889f6817f7103332cc030"
+    },
+    "docs/EVALUATION_PROTOCOLS.md": {
+      "bytes": 1885,
+      "sha256": "276c561dd1bb02aa6f43600dfca97e5274f5bb18894efe993393bf45b3dd79e2"
+    },
+    "docs/IMITATION_BASELINE.md": {
+      "bytes": 5791,
+      "sha256": "235d29f63906608e6f39f879281d5c205e5b1ff1263a9cb97d4b8d66faedf4e2"
+    },
+    "docs/IMITATION_ONLINE_AUDIT.md": {
+      "bytes": 4314,
+      "sha256": "4f426360555f94ae124ef8b6bb1cd60ece57cc0e804dd12d8a1f69f3b1966da8"
+    },
+    "docs/INITIAL_AUDIT.md": {
+      "bytes": 4168,
+      "sha256": "1e1cd990535576a944e5d04740715a1a2b6529486a2946e77b893184d0f7e7ef"
+    },
+    "docs/PAPER_PROTOCOL.md": {
+      "bytes": 7285,
+      "sha256": "5fe2003e9f62f54ec88d092cc4d6a35a18acc2c74a75f4c00877a0d6ada673a8"
+    },
+    "docs/PROJECT_STATUS.md": {
+      "bytes": 5784,
+      "sha256": "190ddd635c109592868c90821e3ff739531e03f26559759d5f0ab5c05f01e598"
+    },
+    "docs/RANKING_IMITATION_DATA.md": {
+      "bytes": 4950,
+      "sha256": "5a165e6a6b7e70d50ca11e1867f6aa3a11023dcbd3ac0d409ad552a412424e93"
+    },
+    "docs/REPRODUCIBILITY.md": {
+      "bytes": 3559,
+      "sha256": "5001ba4a0acb16207c7782cab5f45f522c03fc4936b97df9ddefe78a064470c4"
+    },
+    "docs/ROOT_OBSERVATIONAL_DATA.md": {
+      "bytes": 3460,
+      "sha256": "8921f6b1fce0b59638e45d191f1621ff60d190f1d5bc09f46430550ceb6480aa"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_0_adaptive-score.json": {
+      "bytes": 380801,
+      "sha256": "467ec4441c50b7e39ef28484ef338f7eebf6a947f41c5db2044a4fdb6c373c41"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_0_efficacy-rank.json": {
+      "bytes": 386529,
+      "sha256": "d0c24159d0835a954d7f20767f480eb3f063539616cb522b0b8d0a44a6c56ce9"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_0_native.json": {
+      "bytes": 1241,
+      "sha256": "79f44a7d61812119e04eba8938781f1c2994b2733b3f62e0b34e642019ffd4f7"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_0_random-rank.json": {
+      "bytes": 388338,
+      "sha256": "88907aa2d114fa6747ae583618ea37e4ff4ea876aa4fae2564384d7faf27a1f1"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_1_adaptive-score.json": {
+      "bytes": 380888,
+      "sha256": "fee540784c4a4b5e1a385071d8051b62ca1fd73327aa2cc646d1bca2af93083d"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_1_efficacy-rank.json": {
+      "bytes": 386590,
+      "sha256": "e3ccb88df3f3aa4cda5c858d1070845badd0601b51a71f2c326ef035d24437c9"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_1_native.json": {
+      "bytes": 1258,
+      "sha256": "dffe0a26e39c7961dfe30a7786930fb05c85dba78239e091e7dacb0f425c3143"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_1_random-rank.json": {
+      "bytes": 388181,
+      "sha256": "b83a8777be529bb3f33ffa3b542035ca0ea0ae23477afc86108c1579b26ce641"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_2_adaptive-score.json": {
+      "bytes": 382780,
+      "sha256": "419911ecc42fddc5f9a3b9fc936e9bc95de117b4f27ef169d251f8ce2b43889d"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_2_efficacy-rank.json": {
+      "bytes": 388501,
+      "sha256": "166e1b8a7c724f70a38e28b5a1fe86db753b0a6239b1834d43a30a5c62646b2f"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_2_native.json": {
+      "bytes": 1248,
+      "sha256": "f0ad8f7df803ae87b696fc0e66be4348f5195d6be59ca9c7050f1304ea16461a"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_2_random-rank.json": {
+      "bytes": 390531,
+      "sha256": "39260d7388640be3169bfd94e6e542c5c5072befab3ba084f3e8814a70ccaf2e"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_0_adaptive-score.json": {
+      "bytes": 95283,
+      "sha256": "5b7a1e20edee473c693ac4f92a25899cbebf4b09084ccb4f1f23cd1fee16229f"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_0_efficacy-rank.json": {
+      "bytes": 95686,
+      "sha256": "7b0def607e7393fb15cdb6b87a8eb3abee528ab95ab451d7d20e120656478e65"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_0_native.json": {
+      "bytes": 1238,
+      "sha256": "b8bb5eb670e2d18b69b25dec85447149054261f87d629f27c351d3493d91a1e5"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_0_random-rank.json": {
+      "bytes": 95861,
+      "sha256": "5719976e3b635bc51eb8ea06a48aa59c2dbd9b762f664e3983cfa7b2f17c4505"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_1_adaptive-score.json": {
+      "bytes": 77405,
+      "sha256": "854ff29d44389043cabfedaa6fe42d5641104d6fc8cacd83a3e51578d9c2cddb"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_1_efficacy-rank.json": {
+      "bytes": 76790,
+      "sha256": "c3425fe9b6042a4717e55c3f4c2ac387a16f50a82979a0fe16249a0639502e6f"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_1_native.json": {
+      "bytes": 1237,
+      "sha256": "e4a592a096c3b2f883976838033153fc60b5c457a90ff24f81da7be4e8827c88"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_1_random-rank.json": {
+      "bytes": 77337,
+      "sha256": "f0b094c45f224043f10a92911f0707b9399ad2cea707dcc98228ea9307265588"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_2_adaptive-score.json": {
+      "bytes": 71520,
+      "sha256": "1276a8c598688594702b48a1f4367a0e9c47d8005770e6d9c2f1c5e6a965033b"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_2_efficacy-rank.json": {
+      "bytes": 72291,
+      "sha256": "301ae0cd7f6f424b0c9a72f99b658121e16a9a075503ce8eb5442c16bda00139"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_2_native.json": {
+      "bytes": 1237,
+      "sha256": "e87bdef8af0b8a0303a0eae5a41fd83ac847963132aaaf9db6e2bd9a19ae8994"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_2_random-rank.json": {
+      "bytes": 72764,
+      "sha256": "684807edc99d8070845949be699c86369512323b23a3e865bbef509c6e1d68f4"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_0_adaptive-score.json": {
+      "bytes": 19588,
+      "sha256": "5fad8727a9cb722b4bbdea8c4bdf88bd3e914a73592f8795440975f211c0be27"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_0_efficacy-rank.json": {
+      "bytes": 18937,
+      "sha256": "d56dcb6736f56756763720a8389633a4eb3874324736c963c82c591d1690a6ea"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_0_native.json": {
+      "bytes": 1226,
+      "sha256": "d2520485e17ee65b2e23bf7361bea554be32a5f80ab4cfe66aa626bf6f67d7dc"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_0_random-rank.json": {
+      "bytes": 19003,
+      "sha256": "6396a7ed4ee4de93dd6ac01190c99c2a3c8f2afcf8a1cf804a0e4a095bdd35e8"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_1_adaptive-score.json": {
+      "bytes": 18129,
+      "sha256": "a97869c415379dacb1b478993e08f41aabfdf0da8387fc5eb63ac36734db75f2"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_1_efficacy-rank.json": {
+      "bytes": 18718,
+      "sha256": "5da295df57eef847f084f17fe8f0b3160fc864d26eab9f9d414bb7fc364f5abb"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_1_native.json": {
+      "bytes": 1227,
+      "sha256": "31b1e80de746656c65e9a348b1fb02247eb993de0629f2d91bab132f64b7b9f2"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_1_random-rank.json": {
+      "bytes": 18859,
+      "sha256": "d0eecc7547c374a61245a1f5434831c3905fba94aeb948065e03ad724fe7d918"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_2_adaptive-score.json": {
+      "bytes": 39159,
+      "sha256": "d296a6d797751bac38b56209d2aac130155fea928dc9d1e10f5a03901dcf9779"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_2_efficacy-rank.json": {
+      "bytes": 38372,
+      "sha256": "69f0a3f6738723f49223930347144e4534f4e6946c053a5908d87c4341950b42"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_2_native.json": {
+      "bytes": 1227,
+      "sha256": "327d03075ed2e510fa1d305a9c12cc4bc548ec938d46c09649ed5ad2282f4311"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/neos8/seed_2_random-rank.json": {
+      "bytes": 38724,
+      "sha256": "51948274ec77a20dd4ec907bf7823a2f51061cca3eb2b293f5527fcc23134ed0"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_0_adaptive-score.json": {
+      "bytes": 685875,
+      "sha256": "690b14fd670d6b4bbb3ba473394029676a41a739ff4f5f12c1ed60b14e973cc6"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_0_efficacy-rank.json": {
+      "bytes": 694890,
+      "sha256": "20c960c0b1197f2b2a844dd159052705c559e8dba3a450ac820647bf01213090"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_0_native.json": {
+      "bytes": 1241,
+      "sha256": "edf410de6e883d0179c69f35741d90e383c5ff9bac501dbfa5031e0bc54302e8"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_0_random-rank.json": {
+      "bytes": 696183,
+      "sha256": "e7aa5d737e1473697202e07cba613098d08c4ad8e9efb571052499275b83ec22"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_1_adaptive-score.json": {
+      "bytes": 700646,
+      "sha256": "efbf7bcb7358330c44794241dab941630fe6fbb4578e0778c0aeec65ac4cded6"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_1_efficacy-rank.json": {
+      "bytes": 709097,
+      "sha256": "065658481ec90b7e78eabefa528bec4ec16018c0425bea2ebe20841a286fc617"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_1_native.json": {
+      "bytes": 1264,
+      "sha256": "94f383f1db60e89b20a6d624506df8e5b9e2a817cf9afeb781fa009e8e73c963"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_1_random-rank.json": {
+      "bytes": 710077,
+      "sha256": "8e10fb7ca0b553f064af090c213c9c648581225b248dd1d7e1cf2572e7b3428c"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_2_adaptive-score.json": {
+      "bytes": 589027,
+      "sha256": "c5260bd4a5164fc2e6951fdd5ff2fcfc9175792e7c9f0a1ab7544bf0545f4a1d"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_2_efficacy-rank.json": {
+      "bytes": 597084,
+      "sha256": "b96d16ec37e53911ee20ed77da7379d4afb4a38eac85ff69c9fa4e3909117a31"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_2_native.json": {
+      "bytes": 1273,
+      "sha256": "86b75b1b76e24ff4e13e823b63ab7a114d201437274b8ffa5eef161785b0ce3e"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_2_random-rank.json": {
+      "bytes": 597617,
+      "sha256": "1ccef2028555d29a57e92986f1ff084f656fbfcfd96530565d7f9a5e01e634c6"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_0_adaptive-score.json": {
+      "bytes": 44369,
+      "sha256": "622ff49f1471bd35f6ed2f7cc368967497d066d0bde21874003f70d93b75dc7d"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_0_efficacy-rank.json": {
+      "bytes": 45219,
+      "sha256": "b00affe1a74dbcd3ded6b6ccbf39b593c489561dbc050088877dccdc2f8e5a66"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_0_native.json": {
+      "bytes": 1249,
+      "sha256": "a5795c647bbb20d031836c1a26852984007390d332233bf81552ff83e2b05091"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_0_random-rank.json": {
+      "bytes": 45601,
+      "sha256": "61b02d96822fb336e7fec945e93db41546cdc4fc3538530d1b31e8aa9e0e1b33"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_1_adaptive-score.json": {
+      "bytes": 40247,
+      "sha256": "55cb633246ba29d3486f82888b0b9500beb9c36372ce073ee90999df721e72f5"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_1_efficacy-rank.json": {
+      "bytes": 41383,
+      "sha256": "8473bf6d71b11efd215eaccf2f7dce0bf03441d99170f4ab97413d6bd577ee31"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_1_native.json": {
+      "bytes": 1268,
+      "sha256": "4d8376b7505b8b42055d40409ddca7df187334f96a724e57b171debace73de3c"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_1_random-rank.json": {
+      "bytes": 41475,
+      "sha256": "dd3c20511dc1c812e39c09d0ca9934885ee72d43b3d2054bb4abd1ac3d4e0ef3"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_2_adaptive-score.json": {
+      "bytes": 36043,
+      "sha256": "d65d2dd8d86e0249bcf06fca22911369be4afff7cc874037112be5ddcaa90d7d"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_2_efficacy-rank.json": {
+      "bytes": 36816,
+      "sha256": "bdab9b6c3f9147d4e718cd4ee71ac7704023efdd7bbd0d61650bf6a4810ff29f"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_2_native.json": {
+      "bytes": 1250,
+      "sha256": "f1e51cf8f31df745a00b9b6a03f7f8fe1f03855058f250314eb2413354a5bcc5"
+    },
+    "experiments/fixed_baseline_train_pilot_v1/swath1/seed_2_random-rank.json": {
+      "bytes": 37272,
+      "sha256": "92f60c03f42b484aab1cea7b15c142dbae9c067836bdb9b3fd66065a87089b2f"
+    },
+    "pyproject.toml": {
+      "bytes": 1436,
+      "sha256": "1c78212cc0a49e9f43ef4805589110cc622e7404c7ff755b428add1c8040de35"
+    },
+    "src/scip_cut_trace_v2/artifact_index.py": {
+      "bytes": 8273,
+      "sha256": "711173ac3569bde2b424fa664927ec95ea3c6571460affc51afa49aa1b8d5213"
+    },
+    "src/scip_cut_trace_v2/causal_harness.py": {
+      "bytes": 72223,
+      "sha256": "9d974ab0ccdce61037f1a8a975366e079119f49a41eed6894116afc8e120e9e6"
+    },
+    "src/scip_cut_trace_v2/cut_selection_baselines.py": {
+      "bytes": 8574,
+      "sha256": "d68c1d1f05f8a66863a8b8a7ed28c24a95ddb70960912a8cee424cc5eba010fe"
+    },
+    "src/scip_cut_trace_v2/fixed_baseline_pilot.py": {
+      "bytes": 6322,
+      "sha256": "e888094a07b0c124c572396415d4eb2e3b77bc6e1ecd013d1c04fd0a90d030c3"
+    },
+    "src/scip_cut_trace_v2/native_hybrid.py": {
+      "bytes": 2030,
+      "sha256": "2dfb02c35b39fd7935949c498f554c0628ccb4b88794359489b5a969c3a2e9cb"
+    },
+    "src/scip_cut_trace_v2/paper_statistics.py": {
+      "bytes": 13756,
+      "sha256": "e802a95a2c92d96b353b8e27c5da9a2688f5a21e7e37720e0ff081a906aa246a"
+    },
+    "tests/test_artifact_index.py": {
+      "bytes": 1827,
+      "sha256": "48e47ed04c068c22a772953ddb94bdd4fb09819fafc6df9b237a31e8ed152c6b"
+    },
+    "tests/test_causal_harness.py": {
+      "bytes": 10482,
+      "sha256": "733140071584f743ec7753a2e95ff0120ca804dafe9545d8722343e55a42680d"
+    },
+    "tests/test_cut_selection_baselines.py": {
+      "bytes": 4758,
+      "sha256": "d9c3038ccf5a77ff90a3d30354d0fc603c07bf2806861e56c03da1a9958ab96b"
+    },
+    "tests/test_fixed_baseline_pilot.py": {
+      "bytes": 2806,
+      "sha256": "e5697d60f4b18d4b712dd8d85a7ae72b6461b0bc1e3bbc712e0ac4ab020f4407"
+    },
+    "tests/test_paper_statistics.py": {
+      "bytes": 3675,
+      "sha256": "6c09e74aa14196cd948ab84f3dc7c5e837601be554e28234e587bc047652a7b6"
+    }
+  },
+  "claims": [
+    {
+      "claim_id": "trace-integrity-audit",
+      "evidence": [
+        "data/manifests/initial_audit.json",
+        "docs/DUPLICATE_CUT_ID_AUDIT.md",
+        "docs/INITIAL_AUDIT.md"
+      ],
+      "statement": "The supplied traces, duplicate logical cuts, and source cut-ID collisions were audited before modeling."
+    },
+    {
+      "claim_id": "group-aware-evaluation",
+      "evidence": [
+        "data/manifests/evaluation_protocols/instance_assignments.csv",
+        "data/manifests/evaluation_protocols/protocol_summary.json",
+        "docs/EVALUATION_PROTOCOLS.md"
+      ],
+      "statement": "Official MIPLIB Group-disjoint evaluation is separated from seen-family interpolation."
+    },
+    {
+      "claim_id": "leakage-safe-observational-view",
+      "evidence": [
+        "data/manifests/ranking_imitation_v1.json",
+        "data/manifests/root_observational_v1.json",
+        "docs/RANKING_IMITATION_DATA.md",
+        "docs/ROOT_OBSERVATIONAL_DATA.md"
+      ],
+      "statement": "The root observational and ranking matrices exclude post-outcome fields and use instance-balanced queries."
+    },
+    {
+      "claim_id": "imitation-not-online-authorized",
+      "evidence": [
+        "data/manifests/ranking_imitation_xgb_group_cv_v1.json",
+        "data/manifests/ranking_imitation_xgb_v1.json",
+        "docs/IMITATION_BASELINE.md",
+        "docs/IMITATION_ONLINE_AUDIT.md"
+      ],
+      "statement": "The XGBoost imitation model fails its external gate and is not an online treatment policy."
+    },
+    {
+      "claim_id": "causal-instrumentation-parity",
+      "evidence": [
+        "data/manifests/causal_direct_hybrid_parity_v1.json",
+        "data/manifests/causal_noop_parity_v1.json",
+        "docs/CAUSAL_HARNESS.md",
+        "src/scip_cut_trace_v2/causal_harness.py",
+        "src/scip_cut_trace_v2/native_hybrid.py",
+        "tests/test_causal_harness.py"
+      ],
+      "statement": "Exercised no-op and direct native-hybrid callbacks pass the structural parity gate."
+    },
+    {
+      "claim_id": "learned-policy-negative-result",
+      "evidence": [
+        "data/manifests/causal_first_run_efficacy_cohort_c_confirmation_v1.json",
+        "data/manifests/causal_risk_grouped_oof_v1.json",
+        "data/manifests/paper_statistics_cohort_c_development_v1.json",
+        "docs/CAUSAL_RISK_DIAGNOSTIC.md"
+      ],
+      "statement": "The action library, grouped risk model, and independent cohort C do not establish a safe generalized policy."
+    },
+    {
+      "claim_id": "fixed-baseline-pilot-rejection",
+      "evidence": [
+        "data/manifests/causal_fixed_baseline_train_pilot_decision_v1.json",
+        "data/manifests/causal_fixed_baseline_train_pilot_plan_v1.json",
+        "data/manifests/causal_fixed_baseline_train_pilot_v1.json",
+        "data/manifests/paper_statistics_fixed_baseline_train_pilot_v1.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_0_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_0_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_0_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_0_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_1_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_1_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_1_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_1_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_2_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_2_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_2_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/exp-1-500-5-5/seed_2_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_0_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_0_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_0_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_0_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_1_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_1_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_1_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_1_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_2_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_2_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_2_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos-1171448/seed_2_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_0_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_0_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_0_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_0_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_1_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_1_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_1_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_1_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_2_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_2_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_2_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/neos8/seed_2_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_0_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_0_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_0_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_0_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_1_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_1_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_1_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_1_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_2_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_2_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_2_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/piperout-27/seed_2_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_0_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_0_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_0_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_0_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_1_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_1_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_1_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_1_random-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_2_adaptive-score.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_2_efficacy-rank.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_2_native.json",
+        "experiments/fixed_baseline_train_pilot_v1/swath1/seed_2_random-rank.json",
+        "src/scip_cut_trace_v2/cut_selection_baselines.py",
+        "src/scip_cut_trace_v2/fixed_baseline_pilot.py",
+        "src/scip_cut_trace_v2/paper_statistics.py",
+        "tests/test_cut_selection_baselines.py",
+        "tests/test_fixed_baseline_pilot.py",
+        "tests/test_paper_statistics.py"
+      ],
+      "statement": "Random, efficacy, and Adaptive-score fixed baselines all fail the pre-registered train-pilot advancement gate."
+    },
+    {
+      "claim_id": "consolidated-stop-decision",
+      "evidence": [
+        "docs/PAPER_PROTOCOL.md",
+        "docs/PROJECT_STATUS.md",
+        "docs/REPRODUCIBILITY.md",
+        "pyproject.toml",
+        "src/scip_cut_trace_v2/artifact_index.py",
+        "tests/test_artifact_index.py"
+      ],
+      "statement": "Native SCIP remains the only authorized online policy under the frozen stopping rules."
+    }
+  ],
+  "created_at_utc": "2026-07-17T03:35:31.392991+00:00",
+  "project_root_name": "SCIP_cut_trace_v2",
+  "schema_version": 1,
+  "summary": {
+    "artifacts": 100,
+    "bytes": 12494622,
+    "claims": 8
+  }
+}

@@ -1,0 +1,872 @@
+{
+  "canonical_headers": {
+    "applied_cuts.csv": [
+      "run_number",
+      "node_number",
+      "node_depth",
+      "sep_round_node",
+      "sep_round_run",
+      "sep_round_global",
+      "lp_round_node",
+      "lp_round_run",
+      "lp_round_global",
+      "cut_id",
+      "cut_name",
+      "origin_type",
+      "nnz",
+      "rhs",
+      "lhs",
+      "constant",
+      "coeff_norm_l2",
+      "coeff_norm_l1",
+      "coeff_max_abs",
+      "coeff_min_abs",
+      "coeff_mean_abs",
+      "coeff_std_abs",
+      "coeff_sparsity_ratio",
+      "efficacy",
+      "obj_parallelism",
+      "cutoff_distance",
+      "n_int_cols",
+      "is_local",
+      "is_modifiable",
+      "is_removable",
+      "is_integral",
+      "in_global_cutpool",
+      "lp_position"
+    ],
+    "candidate_cuts.csv": [
+      "run_number",
+      "node_number",
+      "node_depth",
+      "sep_round_node",
+      "sep_round_run",
+      "sep_round_global",
+      "lp_round_node",
+      "lp_round_run",
+      "lp_round_global",
+      "root",
+      "cut_id",
+      "cut_name",
+      "origin_type",
+      "is_forced",
+      "is_selected",
+      "is_applied",
+      "original_index",
+      "rank",
+      "score",
+      "nnz",
+      "rhs",
+      "lhs",
+      "constant",
+      "coeff_norm_l2",
+      "coeff_norm_l1",
+      "coeff_max_abs",
+      "coeff_min_abs",
+      "coeff_mean_abs",
+      "coeff_std_abs",
+      "coeff_sparsity_ratio",
+      "efficacy",
+      "obj_parallelism",
+      "cutoff_distance",
+      "n_int_cols",
+      "is_local",
+      "is_modifiable",
+      "is_removable",
+      "is_integral",
+      "in_global_cutpool",
+      "lp_position"
+    ],
+    "lp_states.csv": [
+      "run_number",
+      "node_number",
+      "node_depth",
+      "sep_round_node",
+      "sep_round_run",
+      "sep_round_global",
+      "lp_round_node",
+      "lp_round_run",
+      "lp_round_global",
+      "n_lp_rows",
+      "n_lp_cols",
+      "lp_status",
+      "lp_obj_val",
+      "lp_iterations",
+      "lp_iterations_total",
+      "lp_iterations_node",
+      "lp_tierations_strongbranch",
+      "dual_bound",
+      "primal_bound",
+      "gap",
+      "n_processed_nodes_global",
+      "n_processed_nodes_run",
+      "n_open_nodes",
+      "n_cuts_generated_global",
+      "n_cuts_generated_run",
+      "n_cuts_generated_node",
+      "n_cuts_applied",
+      "solving_time"
+    ],
+    "sep_round_transitions.csv": [
+      "run_number",
+      "node_number",
+      "node_depth",
+      "sep_round_node",
+      "sep_round_run",
+      "sep_round_global",
+      "pre_lp_round_global",
+      "post_lp_round_global",
+      "pre_lp_status",
+      "post_lp_status",
+      "n_lp_rows_pre",
+      "n_lp_rows_post",
+      "delta_n_lp_rows",
+      "n_lp_cols_pre",
+      "n_lp_cols_post",
+      "delta_n_lp_cols",
+      "lp_obj_val_pre",
+      "lp_obj_val_post",
+      "delta_lp_obj_val",
+      "lp_obj_improvement_ratio",
+      "lp_iterations_total_pre",
+      "lp_iterations_total_post",
+      "delta_lp_iterations_total",
+      "lp_iterations_node_pre",
+      "lp_iterations_node_post",
+      "delta_lp_iterations_node",
+      "dual_bound_pre",
+      "dual_bound_post",
+      "delta_dual_bound",
+      "primal_bound_pre",
+      "primal_bound_post",
+      "delta_primal_bound",
+      "gap_pre",
+      "gap_post",
+      "delta_gap",
+      "relative_gap_improvement",
+      "n_cuts_applied_pre",
+      "n_cuts_applied_post",
+      "delta_n_cuts_applied",
+      "n_candidate_cuts",
+      "n_applied_cuts_round",
+      "n_cuts_generated_node_pre",
+      "n_cuts_generated_node_post",
+      "delta_n_cuts_generated_node",
+      "n_open_nodes_pre",
+      "n_open_nodes_post",
+      "delta_n_open_nodes",
+      "n_lp_solves_in_round"
+    ]
+  },
+  "cutselector_call_mismatches": [],
+  "cutselector_parse_failures": [],
+  "generated_at_unix": 1784178526.6456199,
+  "header_mismatches": [],
+  "instances_by_split": {
+    "test": 35,
+    "train": 163,
+    "val": 35
+  },
+  "missing_outputs": [],
+  "name_heuristic_cross_split_candidates": [
+    {
+      "family_key": "app",
+      "splits": {
+        "train": [
+          "app1-2.mps.gz"
+        ],
+        "val": [
+          "app1-1.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "bnatt",
+      "splits": {
+        "train": [
+          "bnatt500.mps.gz"
+        ],
+        "val": [
+          "bnatt400.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "cryptanalysiskbnobj",
+      "splits": {
+        "test": [
+          "cryptanalysiskb128n5obj14.mps.gz"
+        ],
+        "train": [
+          "cryptanalysiskb128n5obj16.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "csched",
+      "splits": {
+        "test": [
+          "csched007.mps.gz"
+        ],
+        "train": [
+          "csched008.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "dano",
+      "splits": {
+        "test": [
+          "dano3_5.mps.gz"
+        ],
+        "train": [
+          "dano3_3.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "ex",
+      "splits": {
+        "train": [
+          "ex10.mps.gz"
+        ],
+        "val": [
+          "ex9.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "gmu",
+      "splits": {
+        "train": [
+          "gmu-35-50.mps.gz"
+        ],
+        "val": [
+          "gmu-35-40.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "map",
+      "splits": {
+        "test": [
+          "map16715-04.mps.gz"
+        ],
+        "train": [
+          "map10.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "pg",
+      "splits": {
+        "train": [
+          "pg5_34.mps.gz"
+        ],
+        "val": [
+          "pg.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "physiciansched",
+      "splits": {
+        "test": [
+          "physiciansched3-3.mps.gz"
+        ],
+        "train": [
+          "physiciansched6-2.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "radiationm",
+      "splits": {
+        "train": [
+          "radiationm40-10-02.mps.gz"
+        ],
+        "val": [
+          "radiationm18-12-05.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "rail",
+      "splits": {
+        "train": [
+          "rail507.mps.gz"
+        ],
+        "val": [
+          "rail01.mps.gz",
+          "rail02.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "rmatr-p",
+      "splits": {
+        "test": [
+          "rmatr200-p5.mps.gz"
+        ],
+        "train": [
+          "rmatr100-p10.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "roialphan",
+      "splits": {
+        "train": [
+          "roi2alpha3n4.mps.gz"
+        ],
+        "val": [
+          "roi5alpha10n8.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "seymour",
+      "splits": {
+        "test": [
+          "seymour1.mps.gz"
+        ],
+        "train": [
+          "seymour.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "sing",
+      "splits": {
+        "test": [
+          "sing44.mps.gz"
+        ],
+        "train": [
+          "sing326.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "spar",
+      "splits": {
+        "test": [
+          "sp98ar.mps.gz"
+        ],
+        "train": [
+          "sp97ar.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "supportcase",
+      "splits": {
+        "test": [
+          "supportcase10.mps.gz"
+        ],
+        "train": [
+          "supportcase12.mps.gz",
+          "supportcase18.mps.gz",
+          "supportcase19.mps.gz",
+          "supportcase26.mps.gz",
+          "supportcase40.mps.gz",
+          "supportcase42.mps.gz",
+          "supportcase6.mps.gz"
+        ],
+        "val": [
+          "supportcase33.mps.gz",
+          "supportcase7.mps.gz"
+        ]
+      }
+    },
+    {
+      "family_key": "uccase",
+      "splits": {
+        "test": [
+          "uccase9.mps.gz"
+        ],
+        "train": [
+          "uccase12.mps.gz"
+        ]
+      }
+    }
+  ],
+  "official_group_analysis": {
+    "cross_split_groups": [
+      {
+        "group": "app",
+        "splits": {
+          "train": [
+            "app1-2.mps.gz"
+          ],
+          "val": [
+            "app1-1.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "blp",
+        "splits": {
+          "train": [
+            "blp-ic98.mps.gz"
+          ],
+          "val": [
+            "blp-ar98.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "bnatt",
+        "splits": {
+          "train": [
+            "bnatt500.mps.gz"
+          ],
+          "val": [
+            "bnatt400.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "cryptanalysis",
+        "splits": {
+          "test": [
+            "cryptanalysiskb128n5obj14.mps.gz"
+          ],
+          "train": [
+            "cryptanalysiskb128n5obj16.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "csched",
+        "splits": {
+          "test": [
+            "csched007.mps.gz"
+          ],
+          "train": [
+            "csched008.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "dano",
+        "splits": {
+          "test": [
+            "dano3_5.mps.gz"
+          ],
+          "train": [
+            "dano3_3.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "gmu",
+        "splits": {
+          "train": [
+            "gmu-35-50.mps.gz"
+          ],
+          "val": [
+            "gmu-35-40.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "map",
+        "splits": {
+          "test": [
+            "map16715-04.mps.gz"
+          ],
+          "train": [
+            "map10.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "physiciansched",
+        "splits": {
+          "test": [
+            "physiciansched3-3.mps.gz"
+          ],
+          "train": [
+            "physiciansched6-2.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "radiation",
+        "splits": {
+          "train": [
+            "radiationm40-10-02.mps.gz"
+          ],
+          "val": [
+            "radiationm18-12-05.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "rmatr",
+        "splits": {
+          "test": [
+            "rmatr200-p5.mps.gz"
+          ],
+          "train": [
+            "rmatr100-p10.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "rococo",
+        "splits": {
+          "test": [
+            "rococoC10-001000.mps.gz"
+          ],
+          "train": [
+            "rococoB10-011000.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "sing",
+        "splits": {
+          "test": [
+            "sing44.mps.gz"
+          ],
+          "train": [
+            "sing326.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "sp9",
+        "splits": {
+          "test": [
+            "sp98ar.mps.gz"
+          ],
+          "train": [
+            "sp97ar.mps.gz"
+          ]
+        }
+      },
+      {
+        "group": "uccase",
+        "splits": {
+          "test": [
+            "uccase9.mps.gz"
+          ],
+          "train": [
+            "uccase12.mps.gz"
+          ]
+        }
+      }
+    ],
+    "evaluation_strata": {
+      "test": {
+        "officially_ungrouped": [
+          "academictimetablesmall.mps.gz",
+          "irp.mps.gz",
+          "mad.mps.gz",
+          "mzzv42z.mps.gz",
+          "nw04.mps.gz",
+          "seymour1.mps.gz",
+          "supportcase10.mps.gz",
+          "uct-subprob.mps.gz"
+        ],
+        "seen_family": [
+          {
+            "group": "cryptanalysis",
+            "instance_name": "cryptanalysiskb128n5obj14.mps.gz"
+          },
+          {
+            "group": "csched",
+            "instance_name": "csched007.mps.gz"
+          },
+          {
+            "group": "dano",
+            "instance_name": "dano3_5.mps.gz"
+          },
+          {
+            "group": "map",
+            "instance_name": "map16715-04.mps.gz"
+          },
+          {
+            "group": "physiciansched",
+            "instance_name": "physiciansched3-3.mps.gz"
+          },
+          {
+            "group": "rmatr",
+            "instance_name": "rmatr200-p5.mps.gz"
+          },
+          {
+            "group": "rococo",
+            "instance_name": "rococoC10-001000.mps.gz"
+          },
+          {
+            "group": "sing",
+            "instance_name": "sing44.mps.gz"
+          },
+          {
+            "group": "sp9",
+            "instance_name": "sp98ar.mps.gz"
+          },
+          {
+            "group": "uccase",
+            "instance_name": "uccase9.mps.gz"
+          }
+        ],
+        "unseen_family": [
+          {
+            "group": "graphs",
+            "instance_name": "graph20-20-1rand.mps.gz"
+          },
+          {
+            "group": "nxy-z",
+            "instance_name": "n5-3.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-88",
+            "instance_name": "neos-1445765.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-31",
+            "instance_name": "neos-3083819-nubu.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-71",
+            "instance_name": "neos-3402294-bobin.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-37",
+            "instance_name": "neos-4738912-atrato.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-104",
+            "instance_name": "neos-5114902-kasavu.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-23",
+            "instance_name": "neos-860300.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-61",
+            "instance_name": "neos-873061.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-34",
+            "instance_name": "neos-933966.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-48",
+            "instance_name": "neos-957323.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-76",
+            "instance_name": "ns1644855.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-12",
+            "instance_name": "ns1760995.mps.gz"
+          },
+          {
+            "group": "pr_product",
+            "instance_name": "p200x1188c.mps.gz"
+          },
+          {
+            "group": "square",
+            "instance_name": "square41.mps.gz"
+          },
+          {
+            "group": "square",
+            "instance_name": "square47.mps.gz"
+          },
+          {
+            "group": "timtab",
+            "instance_name": "timtab1.mps.gz"
+          }
+        ]
+      },
+      "val": {
+        "officially_ungrouped": [
+          "CMS750_4.mps.gz",
+          "ex9.mps.gz",
+          "irish-electricity.mps.gz",
+          "pg.mps.gz",
+          "roi5alpha10n8.mps.gz",
+          "supportcase33.mps.gz",
+          "supportcase7.mps.gz",
+          "wachplan.mps.gz"
+        ],
+        "seen_family": [
+          {
+            "group": "app",
+            "instance_name": "app1-1.mps.gz"
+          },
+          {
+            "group": "blp",
+            "instance_name": "blp-ar98.mps.gz"
+          },
+          {
+            "group": "bnatt",
+            "instance_name": "bnatt400.mps.gz"
+          },
+          {
+            "group": "gmu",
+            "instance_name": "gmu-35-40.mps.gz"
+          },
+          {
+            "group": "radiation",
+            "instance_name": "radiationm18-12-05.mps.gz"
+          }
+        ],
+        "unseen_family": [
+          {
+            "group": "c1s1",
+            "instance_name": "b1c1s1.mps.gz"
+          },
+          {
+            "group": "beasley",
+            "instance_name": "beasleyC3.mps.gz"
+          },
+          {
+            "group": "drayage",
+            "instance_name": "drayage-100-23.mps.gz"
+          },
+          {
+            "group": "drayage",
+            "instance_name": "drayage-25-23.mps.gz"
+          },
+          {
+            "group": "enlight",
+            "instance_name": "enlight_hard.mps.gz"
+          },
+          {
+            "group": "maxfeassub",
+            "instance_name": "glass-sc.mps.gz"
+          },
+          {
+            "group": "graphdraw",
+            "instance_name": "graphdraw-domain.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-102",
+            "instance_name": "neos-1456979.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-56",
+            "instance_name": "neos-3216931-puriri.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-105",
+            "instance_name": "neos-3381206-awhea.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-64",
+            "instance_name": "neos-3988577-wolgan.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-40",
+            "instance_name": "neos-4338804-snowy.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-106",
+            "instance_name": "neos-4763324-toguru.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-87",
+            "instance_name": "neos-827175.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-72",
+            "instance_name": "neos-950242.mps.gz"
+          },
+          {
+            "group": "neos-pseudoapplication-66",
+            "instance_name": "neos17.mps.gz"
+          },
+          {
+            "group": "rail0",
+            "instance_name": "rail01.mps.gz"
+          },
+          {
+            "group": "rail0",
+            "instance_name": "rail02.mps.gz"
+          },
+          {
+            "group": "rocI",
+            "instance_name": "rocI-4-11.mps.gz"
+          },
+          {
+            "group": "rocI",
+            "instance_name": "rocII-5-11.mps.gz"
+          },
+          {
+            "group": "independentset",
+            "instance_name": "sorrell3.mps.gz"
+          },
+          {
+            "group": "sp_product",
+            "instance_name": "sp150x300d.mps.gz"
+          }
+        ]
+      }
+    },
+    "instances_with_official_group": 170,
+    "instances_without_official_group": 63,
+    "metadata_path": "${PROJECT_ROOT}/data/manifests/miplib2017_benchmark_metadata_2026-07-16.csv",
+    "metadata_sha256": "e89aadd67e07476875355963ed508a620a25ba6815ddc3d94a992a632e432441",
+    "unknown_instances": {}
+  },
+  "run_count_mismatches": [],
+  "solver_status_by_split": {
+    "test:optimal": 13,
+    "test:timelimit": 22,
+    "train:infeasible": 2,
+    "train:optimal": 41,
+    "train:timelimit": 120,
+    "val:optimal": 17,
+    "val:timelimit": 18
+  },
+  "source": "${TRACE_SOURCE_ROOT}",
+  "source_code_sha256": {
+    "main.py": "91abfbfb6a43e0b1e751145040690940a38b23cbc11e2f40c7fd22a5d195d67a",
+    "run_benchmark.py": "0211cbf1909f184d50a78aefe05edab57e1e35a8636a96a3307bb92c76c31354",
+    "scip_cut_logger/callbacks.py": "08a801f8b2775444663685bdb593e22e72fcdae459711ac6917577cb360e21e3",
+    "scip_cut_logger/row_features.py": "3b063a126a58c74d4d83dc6b14a1c6049a5d35a475daab64c5e16f3be602ca0c",
+    "scip_cut_logger/solver.py": "667d8875a781f69ae8670e8761bdfdcf3d65d9675d517f8f95ea650dcc019053",
+    "scip_cut_logger/state_tracker.py": "c18a58d4076f5a18594d2b3ab374811c50ad184c6d5ad742ff4c1f0885388840"
+  },
+  "totals": {
+    "applied_event_rows": 29059288,
+    "candidate_rows": 53233883,
+    "hybrid_calls": 533056,
+    "hybrid_filtered": 48089510,
+    "hybrid_forced": 1402,
+    "hybrid_root_calls": 9103,
+    "hybrid_selected": 5144373,
+    "logger_calls": 533056,
+    "logger_filtered": 0,
+    "logger_forced": 0,
+    "logger_root_calls": 9103,
+    "logger_selected": 0,
+    "lp_state_rows": 3776395,
+    "multi_run_instances": 67,
+    "root_transition_rows": 9088,
+    "runs_with_root_transition": 321,
+    "runs_with_transitions": 325,
+    "scip_runs": 362,
+    "transition_rows": 533000
+  },
+  "validation": {
+    "checks": {
+      "all_required_outputs_present": true,
+      "csv_headers_are_consistent": true,
+      "cutselector_stats_parse": true,
+      "instance_count_is_233": true,
+      "logger_and_hybrid_calls_match": true,
+      "observed_runs_match_scip": true
+    },
+    "metrics": {
+      "optimal_instance_fraction": 0.30472103004291845,
+      "transition_coverage": 0.9998949453715932
+    },
+    "verdict": "observational_data_usable_after_cleaning_not_causal_training_data"
+  }
+}

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or its derived data, please cite this artifact."
+title: "SCIP Root Cut Selection Audit"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Lin
+    given-names: Wenru
+    affiliation: "School of Computer and Big Data, Minjiang University; School of Artificial Intelligence and Data Science, University of Science and Technology of China"
+  - family-names: Yang
+    given-names: Zhouwang
+    affiliation: "School of Mathematical Sciences, University of Science and Technology of China"
+    email: yangzw@ustc.edu.cn
+repository-code: "https://github.com/linwenru/scip-root-cut-selection-artifact"
+url: "https://github.com/linwenru/scip-root-cut-selection-artifact"
+license: Apache-2.0
+abstract: >-
+  Audited tracing, leakage-controlled ranking data, and process-isolated
+  complete-solve experiments for root cut selection in SCIP 10.0.2.
+keywords:
+  - mixed-integer linear programming
+  - cutting planes
+  - SCIP
+  - machine learning
+  - reproducibility

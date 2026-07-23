@@ -1,0 +1,2492 @@
+{
+  "baselines": {
+    "action_prior_other_instances": {
+      "average_precision": 0.0316791333842518,
+      "full_unsafe_recall": {
+        "abstained_rows": 188,
+        "safe_abstention_rate": 1.0,
+        "threshold": 0.03125,
+        "unsafe_recall": 1.0
+      },
+      "prevalence": 0.047872340425531915,
+      "roc_auc": 0.00558659217877095,
+      "top_risk_fraction": {
+        "top_10_percent": {
+          "abstained_rows": 105,
+          "safe_abstention_rate": 0.5865921787709497,
+          "threshold": 0.06557377049180328,
+          "unsafe_recall": 0.0
+        },
+        "top_20_percent": {
+          "abstained_rows": 105,
+          "safe_abstention_rate": 0.5865921787709497,
+          "threshold": 0.06557377049180328,
+          "unsafe_recall": 0.0
+        },
+        "top_5_percent": {
+          "abstained_rows": 105,
+          "safe_abstention_rate": 0.5865921787709497,
+          "threshold": 0.06557377049180328,
+          "unsafe_recall": 0.0
+        }
+      }
+    },
+    "candidate_count": {
+      "average_precision": 0.08193935693935694,
+      "full_unsafe_recall": {
+        "abstained_rows": 126,
+        "safe_abstention_rate": 0.6536312849162011,
+        "threshold": 77.0,
+        "unsafe_recall": 1.0
+      },
+      "prevalence": 0.047872340425531915,
+      "roc_auc": 0.659217877094972,
+      "top_risk_fraction": {
+        "top_10_percent": {
+          "abstained_rows": 21,
+          "safe_abstention_rate": 0.11173184357541899,
+          "threshold": 1684.0,
+          "unsafe_recall": 0.1111111111111111
+        },
+        "top_20_percent": {
+          "abstained_rows": 39,
+          "safe_abstention_rate": 0.2122905027932961,
+          "threshold": 769.0,
+          "unsafe_recall": 0.1111111111111111
+        },
+        "top_5_percent": {
+          "abstained_rows": 12,
+          "safe_abstention_rate": 0.0670391061452514,
+          "threshold": 2752.0,
+          "unsafe_recall": 0.0
+        }
+      }
+    },
+    "constant_prevalence": {
+      "average_precision": 0.047872340425531915,
+      "full_unsafe_recall": {
+        "abstained_rows": 188,
+        "safe_abstention_rate": 1.0,
+        "threshold": 0.047872340425531915,
+        "unsafe_recall": 1.0
+      },
+      "prevalence": 0.047872340425531915,
+      "roc_auc": 0.5,
+      "top_risk_fraction": {
+        "top_10_percent": {
+          "abstained_rows": 188,
+          "safe_abstention_rate": 1.0,
+          "threshold": 0.047872340425531915,
+          "unsafe_recall": 1.0
+        },
+        "top_20_percent": {
+          "abstained_rows": 188,
+          "safe_abstention_rate": 1.0,
+          "threshold": 0.047872340425531915,
+          "unsafe_recall": 1.0
+        },
+        "top_5_percent": {
+          "abstained_rows": 188,
+          "safe_abstention_rate": 1.0,
+          "threshold": 0.047872340425531915,
+          "unsafe_recall": 1.0
+        }
+      }
+    },
+    "native_selected_count": {
+      "average_precision": 0.1531678198344865,
+      "full_unsafe_recall": {
+        "abstained_rows": 117,
+        "safe_abstention_rate": 0.6033519553072626,
+        "threshold": 12.0,
+        "unsafe_recall": 1.0
+      },
+      "prevalence": 0.047872340425531915,
+      "roc_auc": 0.7998137802607076,
+      "top_risk_fraction": {
+        "top_10_percent": {
+          "abstained_rows": 24,
+          "safe_abstention_rate": 0.1340782122905028,
+          "threshold": 273.0,
+          "unsafe_recall": 0.0
+        },
+        "top_20_percent": {
+          "abstained_rows": 39,
+          "safe_abstention_rate": 0.1787709497206704,
+          "threshold": 173.0,
+          "unsafe_recall": 0.7777777777777778
+        },
+        "top_5_percent": {
+          "abstained_rows": 12,
+          "safe_abstention_rate": 0.0670391061452514,
+          "threshold": 567.0,
+          "unsafe_recall": 0.0
+        }
+      }
+    }
+  },
+  "created_at_utc": "2026-07-16T13:20:54.079729+00:00",
+  "data": {
+    "instances": 22,
+    "rows": 188,
+    "rows_by_action": {
+      "boundary-swap": 64,
+      "boundary-swap-2": 62,
+      "efficacy-promote": 62
+    },
+    "safe_rows": 179,
+    "unsafe_by_action": {
+      "boundary-swap": 3,
+      "boundary-swap-2": 3,
+      "efficacy-promote": 3
+    },
+    "unsafe_instance_names": [
+      "cbs-cta",
+      "fhnw-binpack4-4",
+      "neos-1171448",
+      "neos-3004026-krka"
+    ],
+    "unsafe_instances": 4,
+    "unsafe_rows": 9
+  },
+  "dataset": "${PROJECT_ROOT}/data/processed/causal_first_run_train_v1.jsonl.gz",
+  "dataset_sha256": "e809f0fab7a8bdd0a1378b3a72f65206657086b90892e36806bfc38b25e1fc0a",
+  "diagnostic_gate": {
+    "checks": {
+      "average_precision_at_least_twice_prevalence": false,
+      "average_precision_exceeds_all_structural_baselines": false,
+      "full_recall_abstains_at_most_20_percent_safe": false,
+      "full_recall_cost_beats_all_structural_baselines": false,
+      "roc_auc_at_least_0_75": false,
+      "top_20_percent_recalls_all_unsafe": false
+    },
+    "consequence": "current active contexts do not support a useful generalized risk gate",
+    "passed": false
+  },
+  "evaluation_contract": {
+    "positive_label": "eligible treatment was unsafe relative to a completed native arm",
+    "split": "leave one complete instance out; all seeds and actions stay together",
+    "thresholds": "diagnostic only; no deployment threshold is selected",
+    "unit": "eligible pre-intervention context-action row"
+  },
+  "feature_contract": {
+    "excluded": [
+      "instance identity",
+      "seed",
+      "solve time",
+      "native final outcome",
+      "treatment outcome",
+      "post-action metrics"
+    ],
+    "feature_count": 67,
+    "features": [
+      "solver_lp_rows",
+      "solver_lp_cols",
+      "solver_lp_iterations_total",
+      "solver_lp_iterations_node",
+      "solver_lp_count",
+      "solver_separation_rounds_node",
+      "solver_gap",
+      "solver_processed_nodes",
+      "solver_total_nodes",
+      "solver_cuts_applied",
+      "solver_candidate_cuts",
+      "solver_forced_cuts",
+      "solver_native_selected_cuts",
+      "solver_selected_fraction",
+      "solver_candidates_per_lp_row",
+      "solver_lp_rows_per_col",
+      "solver_lp_iterations_per_row",
+      "selected_efficacy_mean",
+      "selected_efficacy_max",
+      "selected_obj_parallelism_mean",
+      "selected_obj_parallelism_max",
+      "selected_nnz_mean",
+      "selected_nnz_max",
+      "selected_efficacy_min",
+      "selected_integral_fraction",
+      "selected_global_pool_fraction",
+      "unselected_efficacy_mean",
+      "unselected_efficacy_max",
+      "unselected_obj_parallelism_mean",
+      "unselected_obj_parallelism_max",
+      "unselected_nnz_mean",
+      "unselected_nnz_max",
+      "unselected_efficacy_min",
+      "unselected_integral_fraction",
+      "unselected_global_pool_fraction",
+      "removed_efficacy",
+      "added_efficacy",
+      "delta_added_minus_removed_efficacy",
+      "removed_obj_parallelism",
+      "added_obj_parallelism",
+      "delta_added_minus_removed_obj_parallelism",
+      "removed_cutoff_distance",
+      "added_cutoff_distance",
+      "delta_added_minus_removed_cutoff_distance",
+      "removed_nnz",
+      "added_nnz",
+      "delta_added_minus_removed_nnz",
+      "removed_n_int_cols",
+      "added_n_int_cols",
+      "delta_added_minus_removed_n_int_cols",
+      "removed_coeff_norm_l2",
+      "added_coeff_norm_l2",
+      "delta_added_minus_removed_coeff_norm_l2",
+      "removed_coeff_max_abs",
+      "added_coeff_max_abs",
+      "delta_added_minus_removed_coeff_max_abs",
+      "removed_coeff_std_abs",
+      "added_coeff_std_abs",
+      "delta_added_minus_removed_coeff_std_abs",
+      "delta_added_minus_removed_is_integral",
+      "delta_added_minus_removed_is_local",
+      "delta_added_minus_removed_in_global_cutpool",
+      "removed_rank_fraction",
+      "added_rank_fraction",
+      "action_boundary-swap",
+      "action_boundary-swap-2",
+      "action_efficacy-promote"
+    ],
+    "missing_values": "represented as NaN and handled natively by XGBoost"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "held_out_instance": "air05",
+      "test_rows": 6,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 182,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 1,
+      "held_out_instance": "cbs-cta",
+      "test_rows": 9,
+      "test_unsafe": 1,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 8
+    },
+    {
+      "fold": 2,
+      "held_out_instance": "cod105",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 3,
+      "held_out_instance": "dano3_3",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 4,
+      "held_out_instance": "eil33-2",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 5,
+      "held_out_instance": "exp-1-500-5-5",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 6,
+      "held_out_instance": "fhnw-binpack4-4",
+      "test_rows": 9,
+      "test_unsafe": 1,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 8
+    },
+    {
+      "fold": 7,
+      "held_out_instance": "hypothyroid-k1",
+      "test_rows": 6,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 182,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 8,
+      "held_out_instance": "istanbul-no-cutoff",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 9,
+      "held_out_instance": "mc11",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 10,
+      "held_out_instance": "neos-1171448",
+      "test_rows": 9,
+      "test_unsafe": 1,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 8
+    },
+    {
+      "fold": 11,
+      "held_out_instance": "neos-1582420",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 12,
+      "held_out_instance": "neos-3004026-krka",
+      "test_rows": 6,
+      "test_unsafe": 6,
+      "training_instances": 21,
+      "training_rows": 182,
+      "training_unsafe": 3
+    },
+    {
+      "fold": 13,
+      "held_out_instance": "neos-911970",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 14,
+      "held_out_instance": "neos8",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 15,
+      "held_out_instance": "neos859080",
+      "test_rows": 8,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 180,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 16,
+      "held_out_instance": "nu25-pr12",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 17,
+      "held_out_instance": "nursesched-sprint02",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 18,
+      "held_out_instance": "piperout-08",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 19,
+      "held_out_instance": "piperout-27",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 20,
+      "held_out_instance": "roll3000",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    },
+    {
+      "fold": 21,
+      "held_out_instance": "swath1",
+      "test_rows": 9,
+      "test_unsafe": 0,
+      "training_instances": 21,
+      "training_rows": 179,
+      "training_unsafe": 9
+    }
+  ],
+  "model": {
+    "algorithm": "XGBoost binary classifier",
+    "boost_rounds": 120,
+    "out_of_fold_metrics": {
+      "average_precision": 0.04350708444443499,
+      "full_unsafe_recall": {
+        "abstained_rows": 185,
+        "safe_abstention_rate": 0.9832402234636871,
+        "threshold": 0.01622903160750866,
+        "unsafe_recall": 1.0
+      },
+      "prevalence": 0.047872340425531915,
+      "roc_auc": 0.27901924270639356,
+      "top_risk_fraction": {
+        "top_10_percent": {
+          "abstained_rows": 20,
+          "safe_abstention_rate": 0.10614525139664804,
+          "threshold": 0.2916530966758728,
+          "unsafe_recall": 0.1111111111111111
+        },
+        "top_20_percent": {
+          "abstained_rows": 38,
+          "safe_abstention_rate": 0.20670391061452514,
+          "threshold": 0.1433439999818802,
+          "unsafe_recall": 0.1111111111111111
+        },
+        "top_5_percent": {
+          "abstained_rows": 13,
+          "safe_abstention_rate": 0.07262569832402235,
+          "threshold": 0.4158727824687958,
+          "unsafe_recall": 0.0
+        }
+      }
+    },
+    "parameters": {
+      "alpha": 1.0,
+      "colsample_bytree": 0.8,
+      "eta": 0.05,
+      "eval_metric": "aucpr",
+      "lambda": 8.0,
+      "max_depth": 2,
+      "min_child_weight": 2.0,
+      "nthread": 1,
+      "objective": "binary:logistic",
+      "seed": 20260716,
+      "subsample": 1.0,
+      "tree_method": "hist"
+    },
+    "top_feature_gain": [
+      {
+        "feature": "unselected_obj_parallelism_mean",
+        "gain_fraction": 0.3204909688486096,
+        "total_gain": 28809.545867919922
+      },
+      {
+        "feature": "solver_lp_rows",
+        "gain_fraction": 0.17750669814499334,
+        "total_gain": 15956.41643333435
+      },
+      {
+        "feature": "selected_obj_parallelism_mean",
+        "gain_fraction": 0.09327300732750901,
+        "total_gain": 8384.48893737793
+      },
+      {
+        "feature": "unselected_nnz_max",
+        "gain_fraction": 0.07095582700441454,
+        "total_gain": 6378.354934692383
+      },
+      {
+        "feature": "added_cutoff_distance",
+        "gain_fraction": 0.05063870207816687,
+        "total_gain": 4552.009735107422
+      },
+      {
+        "feature": "solver_candidates_per_lp_row",
+        "gain_fraction": 0.0355904343503675,
+        "total_gain": 3199.292181491852
+      },
+      {
+        "feature": "selected_integral_fraction",
+        "gain_fraction": 0.030635504528516697,
+        "total_gain": 2753.8840675354004
+      },
+      {
+        "feature": "solver_native_selected_cuts",
+        "gain_fraction": 0.028261704423702502,
+        "total_gain": 2540.498638153076
+      },
+      {
+        "feature": "solver_lp_iterations_total",
+        "gain_fraction": 0.026446194971314146,
+        "total_gain": 2377.29902279377
+      },
+      {
+        "feature": "selected_nnz_mean",
+        "gain_fraction": 0.02510022005631111,
+        "total_gain": 2256.306764602661
+      },
+      {
+        "feature": "delta_added_minus_removed_coeff_std_abs",
+        "gain_fraction": 0.01736226020328633,
+        "total_gain": 1560.7267608642578
+      },
+      {
+        "feature": "selected_obj_parallelism_max",
+        "gain_fraction": 0.013915327264563427,
+        "total_gain": 1250.8753695487976
+      },
+      {
+        "feature": "added_coeff_max_abs",
+        "gain_fraction": 0.01270785221387443,
+        "total_gain": 1142.3331289291382
+      },
+      {
+        "feature": "delta_added_minus_removed_cutoff_distance",
+        "gain_fraction": 0.010994618426317191,
+        "total_gain": 988.3272686004639
+      },
+      {
+        "feature": "added_coeff_std_abs",
+        "gain_fraction": 0.0108180908686936,
+        "total_gain": 972.4588689804077
+      },
+      {
+        "feature": "selected_efficacy_mean",
+        "gain_fraction": 0.00830352922160197,
+        "total_gain": 746.4201154708862
+      },
+      {
+        "feature": "delta_added_minus_removed_nnz",
+        "gain_fraction": 0.007171294453334243,
+        "total_gain": 644.6413676738739
+      },
+      {
+        "feature": "solver_lp_rows_per_col",
+        "gain_fraction": 0.007129660818033087,
+        "total_gain": 640.8988406062126
+      },
+      {
+        "feature": "delta_added_minus_removed_obj_parallelism",
+        "gain_fraction": 0.006804336048373338,
+        "total_gain": 611.6547751426697
+      },
+      {
+        "feature": "solver_lp_iterations_per_row",
+        "gain_fraction": 0.006456248302054138,
+        "total_gain": 580.3645021915436
+      }
+    ]
+  },
+  "out_of_fold_predictions": [
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 17,
+      "instance_id": "neos8",
+      "model_risk": 0.045873433351516724,
+      "native_selected_count": 1,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 17,
+      "instance_id": "neos8",
+      "model_risk": 0.029204798862338066,
+      "native_selected_count": 1,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 17,
+      "instance_id": "neos8",
+      "model_risk": 0.04677971079945564,
+      "native_selected_count": 1,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 17,
+      "instance_id": "neos8",
+      "model_risk": 0.03176988661289215,
+      "native_selected_count": 2,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 17,
+      "instance_id": "neos8",
+      "model_risk": 0.027220971882343292,
+      "native_selected_count": 2,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 17,
+      "instance_id": "neos8",
+      "model_risk": 0.03332028537988663,
+      "native_selected_count": 2,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 39,
+      "instance_id": "neos8",
+      "model_risk": 0.022174734622240067,
+      "native_selected_count": 6,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 39,
+      "instance_id": "neos8",
+      "model_risk": 0.022174734622240067,
+      "native_selected_count": 6,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 39,
+      "instance_id": "neos8",
+      "model_risk": 0.022174734622240067,
+      "native_selected_count": 6,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 403,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.03620295599102974,
+      "native_selected_count": 134,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 403,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.03620295599102974,
+      "native_selected_count": 134,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 403,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.040035031735897064,
+      "native_selected_count": 134,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 403,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.03620295599102974,
+      "native_selected_count": 134,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 403,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.03620295599102974,
+      "native_selected_count": 134,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 403,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.040035031735897064,
+      "native_selected_count": 134,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 405,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.03620295599102974,
+      "native_selected_count": 135,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 405,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.03620295599102974,
+      "native_selected_count": 135,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 405,
+      "instance_id": "exp-1-500-5-5",
+      "model_risk": 0.040035031735897064,
+      "native_selected_count": 135,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 97,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.028587818145751953,
+      "native_selected_count": 21,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 97,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.018092451617121696,
+      "native_selected_count": 21,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.04918032786885246,
+      "candidate_count": 97,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.01622903160750866,
+      "native_selected_count": 21,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 77,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.01622903160750866,
+      "native_selected_count": 12,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 77,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.01622903160750866,
+      "native_selected_count": 12,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.04918032786885246,
+      "candidate_count": 77,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.01622903160750866,
+      "native_selected_count": 12,
+      "seed": 1,
+      "unsafe": true
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 72,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.023000888526439667,
+      "native_selected_count": 9,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 72,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.023000888526439667,
+      "native_selected_count": 9,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.04918032786885246,
+      "candidate_count": 72,
+      "instance_id": "neos-1171448",
+      "model_risk": 0.023000888526439667,
+      "native_selected_count": 9,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 769,
+      "instance_id": "piperout-27",
+      "model_risk": 0.018962400034070015,
+      "native_selected_count": 141,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 769,
+      "instance_id": "piperout-27",
+      "model_risk": 0.018962400034070015,
+      "native_selected_count": 141,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 769,
+      "instance_id": "piperout-27",
+      "model_risk": 0.029506130144000053,
+      "native_selected_count": 141,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 787,
+      "instance_id": "piperout-27",
+      "model_risk": 0.015595304779708385,
+      "native_selected_count": 132,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 787,
+      "instance_id": "piperout-27",
+      "model_risk": 0.015595304779708385,
+      "native_selected_count": 132,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 787,
+      "instance_id": "piperout-27",
+      "model_risk": 0.029506130144000053,
+      "native_selected_count": 132,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 661,
+      "instance_id": "piperout-27",
+      "model_risk": 0.015595304779708385,
+      "native_selected_count": 128,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 661,
+      "instance_id": "piperout-27",
+      "model_risk": 0.018962400034070015,
+      "native_selected_count": 128,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 661,
+      "instance_id": "piperout-27",
+      "model_risk": 0.017227085307240486,
+      "native_selected_count": 128,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 45,
+      "instance_id": "swath1",
+      "model_risk": 0.02590211294591427,
+      "native_selected_count": 12,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 45,
+      "instance_id": "swath1",
+      "model_risk": 0.03430470451712608,
+      "native_selected_count": 12,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 45,
+      "instance_id": "swath1",
+      "model_risk": 0.04136979579925537,
+      "native_selected_count": 12,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 41,
+      "instance_id": "swath1",
+      "model_risk": 0.03382543846964836,
+      "native_selected_count": 15,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 41,
+      "instance_id": "swath1",
+      "model_risk": 0.03382543846964836,
+      "native_selected_count": 15,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 41,
+      "instance_id": "swath1",
+      "model_risk": 0.06101348251104355,
+      "native_selected_count": 15,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 36,
+      "instance_id": "swath1",
+      "model_risk": 0.02590211294591427,
+      "native_selected_count": 11,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 36,
+      "instance_id": "swath1",
+      "model_risk": 0.028807036578655243,
+      "native_selected_count": 11,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 36,
+      "instance_id": "swath1",
+      "model_risk": 0.04136979579925537,
+      "native_selected_count": 11,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 7,
+      "instance_id": "neos859080",
+      "model_risk": 0.05580096319317818,
+      "native_selected_count": 2,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 7,
+      "instance_id": "neos859080",
+      "model_risk": 0.05183204635977745,
+      "native_selected_count": 2,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06451612903225806,
+      "candidate_count": 7,
+      "instance_id": "neos859080",
+      "model_risk": 0.05580096319317818,
+      "native_selected_count": 2,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 7,
+      "instance_id": "neos859080",
+      "model_risk": 0.07511653751134872,
+      "native_selected_count": 1,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 7,
+      "instance_id": "neos859080",
+      "model_risk": 0.07511653751134872,
+      "native_selected_count": 1,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 7,
+      "instance_id": "neos859080",
+      "model_risk": 0.07511653751134872,
+      "native_selected_count": 1,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 7,
+      "instance_id": "neos859080",
+      "model_risk": 0.07511653751134872,
+      "native_selected_count": 1,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06451612903225806,
+      "candidate_count": 7,
+      "instance_id": "neos859080",
+      "model_risk": 0.07496786117553711,
+      "native_selected_count": 1,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 134,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.021457336843013763,
+      "native_selected_count": 23,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 134,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.034347835928201675,
+      "native_selected_count": 23,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 134,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.023703210055828094,
+      "native_selected_count": 23,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 141,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.03785678744316101,
+      "native_selected_count": 26,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 141,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.03785678744316101,
+      "native_selected_count": 26,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 141,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.03789068013429642,
+      "native_selected_count": 26,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 133,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.03785678744316101,
+      "native_selected_count": 24,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 133,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.03785678744316101,
+      "native_selected_count": 24,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 133,
+      "instance_id": "nu25-pr12",
+      "model_risk": 0.023703210055828094,
+      "native_selected_count": 24,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.0625,
+      "candidate_count": 2752,
+      "instance_id": "hypothyroid-k1",
+      "model_risk": 0.03563582897186279,
+      "native_selected_count": 9,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06451612903225806,
+      "candidate_count": 2752,
+      "instance_id": "hypothyroid-k1",
+      "model_risk": 0.03563582897186279,
+      "native_selected_count": 9,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06451612903225806,
+      "candidate_count": 2752,
+      "instance_id": "hypothyroid-k1",
+      "model_risk": 0.027257239446043968,
+      "native_selected_count": 9,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.0625,
+      "candidate_count": 2752,
+      "instance_id": "hypothyroid-k1",
+      "model_risk": 0.03563582897186279,
+      "native_selected_count": 9,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06451612903225806,
+      "candidate_count": 2752,
+      "instance_id": "hypothyroid-k1",
+      "model_risk": 0.03563582897186279,
+      "native_selected_count": 9,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06451612903225806,
+      "candidate_count": 2752,
+      "instance_id": "hypothyroid-k1",
+      "model_risk": 0.027257239446043968,
+      "native_selected_count": 9,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 3957,
+      "instance_id": "piperout-08",
+      "model_risk": 0.05664956197142601,
+      "native_selected_count": 870,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 3957,
+      "instance_id": "piperout-08",
+      "model_risk": 0.05664956197142601,
+      "native_selected_count": 870,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 3957,
+      "instance_id": "piperout-08",
+      "model_risk": 0.06283406168222427,
+      "native_selected_count": 870,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 4051,
+      "instance_id": "piperout-08",
+      "model_risk": 0.047331761568784714,
+      "native_selected_count": 888,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 4051,
+      "instance_id": "piperout-08",
+      "model_risk": 0.11296604573726654,
+      "native_selected_count": 888,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 4051,
+      "instance_id": "piperout-08",
+      "model_risk": 0.07750773429870605,
+      "native_selected_count": 888,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 775,
+      "instance_id": "piperout-08",
+      "model_risk": 0.0755070149898529,
+      "native_selected_count": 114,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 775,
+      "instance_id": "piperout-08",
+      "model_risk": 0.028543522581458092,
+      "native_selected_count": 114,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 775,
+      "instance_id": "piperout-08",
+      "model_risk": 0.03245887532830238,
+      "native_selected_count": 114,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.047619047619047616,
+      "candidate_count": 188,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.03364989534020424,
+      "native_selected_count": 69,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 188,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.03364989534020424,
+      "native_selected_count": 69,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 188,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.0991673395037651,
+      "native_selected_count": 69,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.047619047619047616,
+      "candidate_count": 603,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.1305464506149292,
+      "native_selected_count": 180,
+      "seed": 1,
+      "unsafe": true
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 603,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.2685321271419525,
+      "native_selected_count": 180,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 603,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.10889407247304916,
+      "native_selected_count": 180,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.047619047619047616,
+      "candidate_count": 630,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.2758127748966217,
+      "native_selected_count": 181,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 630,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.2758127748966217,
+      "native_selected_count": 181,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 630,
+      "instance_id": "cbs-cta",
+      "model_risk": 0.1152787059545517,
+      "native_selected_count": 181,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 598,
+      "instance_id": "mc11",
+      "model_risk": 0.021470215171575546,
+      "native_selected_count": 273,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 598,
+      "instance_id": "mc11",
+      "model_risk": 0.021470215171575546,
+      "native_selected_count": 273,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 598,
+      "instance_id": "mc11",
+      "model_risk": 0.024308742955327034,
+      "native_selected_count": 273,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 599,
+      "instance_id": "mc11",
+      "model_risk": 0.021470215171575546,
+      "native_selected_count": 273,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 599,
+      "instance_id": "mc11",
+      "model_risk": 0.021470215171575546,
+      "native_selected_count": 273,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 599,
+      "instance_id": "mc11",
+      "model_risk": 0.024308742955327034,
+      "native_selected_count": 273,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 599,
+      "instance_id": "mc11",
+      "model_risk": 0.021470215171575546,
+      "native_selected_count": 273,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 599,
+      "instance_id": "mc11",
+      "model_risk": 0.021470215171575546,
+      "native_selected_count": 273,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 599,
+      "instance_id": "mc11",
+      "model_risk": 0.024308742955327034,
+      "native_selected_count": 273,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.27720174193382263,
+      "native_selected_count": 8,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.28180035948753357,
+      "native_selected_count": 8,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.27720174193382263,
+      "native_selected_count": 8,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.27720174193382263,
+      "native_selected_count": 8,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.28180035948753357,
+      "native_selected_count": 8,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.27720174193382263,
+      "native_selected_count": 8,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.09221109002828598,
+      "native_selected_count": 7,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.09221109002828598,
+      "native_selected_count": 7,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 13,
+      "instance_id": "neos-1582420",
+      "model_risk": 0.24383103847503662,
+      "native_selected_count": 7,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 197,
+      "instance_id": "neos-911970",
+      "model_risk": 0.03913091495633125,
+      "native_selected_count": 35,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 197,
+      "instance_id": "neos-911970",
+      "model_risk": 0.04455691948533058,
+      "native_selected_count": 35,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 197,
+      "instance_id": "neos-911970",
+      "model_risk": 0.016288582235574722,
+      "native_selected_count": 35,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 167,
+      "instance_id": "neos-911970",
+      "model_risk": 0.028401998803019524,
+      "native_selected_count": 33,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 167,
+      "instance_id": "neos-911970",
+      "model_risk": 0.019492868334054947,
+      "native_selected_count": 33,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 167,
+      "instance_id": "neos-911970",
+      "model_risk": 0.016288582235574722,
+      "native_selected_count": 33,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 177,
+      "instance_id": "neos-911970",
+      "model_risk": 0.016231918707489967,
+      "native_selected_count": 33,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 177,
+      "instance_id": "neos-911970",
+      "model_risk": 0.02660229243338108,
+      "native_selected_count": 33,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 177,
+      "instance_id": "neos-911970",
+      "model_risk": 0.016288582235574722,
+      "native_selected_count": 33,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 7,
+      "instance_id": "air05",
+      "model_risk": 0.017630962654948235,
+      "native_selected_count": 6,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 9,
+      "instance_id": "air05",
+      "model_risk": 0.03495539724826813,
+      "native_selected_count": 8,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06451612903225806,
+      "candidate_count": 9,
+      "instance_id": "air05",
+      "model_risk": 0.03495539724826813,
+      "native_selected_count": 8,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 9,
+      "instance_id": "air05",
+      "model_risk": 0.020239224657416344,
+      "native_selected_count": 7,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 9,
+      "instance_id": "air05",
+      "model_risk": 0.020239224657416344,
+      "native_selected_count": 7,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06451612903225806,
+      "candidate_count": 9,
+      "instance_id": "air05",
+      "model_risk": 0.020239224657416344,
+      "native_selected_count": 7,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.041322290897369385,
+      "native_selected_count": 5,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.041322290897369385,
+      "native_selected_count": 5,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.034883975982666016,
+      "native_selected_count": 5,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.041322290897369385,
+      "native_selected_count": 5,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.041322290897369385,
+      "native_selected_count": 5,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.034883975982666016,
+      "native_selected_count": 5,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.041322290897369385,
+      "native_selected_count": 5,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.041322290897369385,
+      "native_selected_count": 5,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 231,
+      "instance_id": "cod105",
+      "model_risk": 0.034883975982666016,
+      "native_selected_count": 5,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.03125,
+      "candidate_count": 440,
+      "instance_id": "neos-3004026-krka",
+      "model_risk": 0.022178255021572113,
+      "native_selected_count": 208,
+      "seed": 0,
+      "unsafe": true
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.03225806451612903,
+      "candidate_count": 440,
+      "instance_id": "neos-3004026-krka",
+      "model_risk": 0.022178255021572113,
+      "native_selected_count": 208,
+      "seed": 0,
+      "unsafe": true
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.03225806451612903,
+      "candidate_count": 440,
+      "instance_id": "neos-3004026-krka",
+      "model_risk": 0.022178255021572113,
+      "native_selected_count": 208,
+      "seed": 0,
+      "unsafe": true
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.03125,
+      "candidate_count": 378,
+      "instance_id": "neos-3004026-krka",
+      "model_risk": 0.020133312791585922,
+      "native_selected_count": 180,
+      "seed": 1,
+      "unsafe": true
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.03225806451612903,
+      "candidate_count": 378,
+      "instance_id": "neos-3004026-krka",
+      "model_risk": 0.020133312791585922,
+      "native_selected_count": 180,
+      "seed": 1,
+      "unsafe": true
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.03225806451612903,
+      "candidate_count": 378,
+      "instance_id": "neos-3004026-krka",
+      "model_risk": 0.020133312791585922,
+      "native_selected_count": 180,
+      "seed": 1,
+      "unsafe": true
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 215,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.04690675064921379,
+      "native_selected_count": 47,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 215,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.05692462623119354,
+      "native_selected_count": 47,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 215,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.0464487262070179,
+      "native_selected_count": 47,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 189,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.040990497916936874,
+      "native_selected_count": 48,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 189,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.040990497916936874,
+      "native_selected_count": 48,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 189,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.05666794627904892,
+      "native_selected_count": 48,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 211,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.14116171002388,
+      "native_selected_count": 55,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 211,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.1433439999818802,
+      "native_selected_count": 55,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 211,
+      "instance_id": "nursesched-sprint02",
+      "model_risk": 0.13865956664085388,
+      "native_selected_count": 55,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 381,
+      "instance_id": "roll3000",
+      "model_risk": 0.04863446205854416,
+      "native_selected_count": 24,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 381,
+      "instance_id": "roll3000",
+      "model_risk": 0.04266230762004852,
+      "native_selected_count": 24,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 381,
+      "instance_id": "roll3000",
+      "model_risk": 0.0466185063123703,
+      "native_selected_count": 24,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 379,
+      "instance_id": "roll3000",
+      "model_risk": 0.04863446205854416,
+      "native_selected_count": 30,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 379,
+      "instance_id": "roll3000",
+      "model_risk": 0.08437159657478333,
+      "native_selected_count": 30,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 379,
+      "instance_id": "roll3000",
+      "model_risk": 0.03647938370704651,
+      "native_selected_count": 30,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 376,
+      "instance_id": "roll3000",
+      "model_risk": 0.04863446205854416,
+      "native_selected_count": 26,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 376,
+      "instance_id": "roll3000",
+      "model_risk": 0.04266230762004852,
+      "native_selected_count": 26,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 376,
+      "instance_id": "roll3000",
+      "model_risk": 0.057150699198246,
+      "native_selected_count": 26,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 1684,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.33851030468940735,
+      "native_selected_count": 170,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.04918032786885246,
+      "candidate_count": 1684,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.4158727824687958,
+      "native_selected_count": 170,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1684,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.4158727824687958,
+      "native_selected_count": 170,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 1794,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.33851030468940735,
+      "native_selected_count": 172,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.04918032786885246,
+      "candidate_count": 1794,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.33851030468940735,
+      "native_selected_count": 172,
+      "seed": 1,
+      "unsafe": true
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1794,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.4158727824687958,
+      "native_selected_count": 172,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 1719,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.33851030468940735,
+      "native_selected_count": 173,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.04918032786885246,
+      "candidate_count": 1719,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.33851030468940735,
+      "native_selected_count": 173,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1719,
+      "instance_id": "fhnw-binpack4-4",
+      "model_risk": 0.4158727824687958,
+      "native_selected_count": 173,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.028996549546718597,
+      "native_selected_count": 2,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.028996549546718597,
+      "native_selected_count": 2,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.05316329747438431,
+      "native_selected_count": 2,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.028996549546718597,
+      "native_selected_count": 2,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.028996549546718597,
+      "native_selected_count": 2,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.05316329747438431,
+      "native_selected_count": 2,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.028996549546718597,
+      "native_selected_count": 2,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.028996549546718597,
+      "native_selected_count": 2,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 8,
+      "instance_id": "eil33-2",
+      "model_risk": 0.05316329747438431,
+      "native_selected_count": 2,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 1143,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.5872042179107666,
+      "native_selected_count": 567,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1143,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.5872042179107666,
+      "native_selected_count": 567,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1143,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.5741390585899353,
+      "native_selected_count": 567,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 1100,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.5759426355361938,
+      "native_selected_count": 565,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1100,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.5911559462547302,
+      "native_selected_count": 565,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1100,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.5339659452438354,
+      "native_selected_count": 565,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 1142,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.5694332122802734,
+      "native_selected_count": 567,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1142,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.49055933952331543,
+      "native_selected_count": 567,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 1142,
+      "instance_id": "istanbul-no-cutoff",
+      "model_risk": 0.5741390585899353,
+      "native_selected_count": 567,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 33,
+      "instance_id": "dano3_3",
+      "model_risk": 0.18310652673244476,
+      "native_selected_count": 5,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 33,
+      "instance_id": "dano3_3",
+      "model_risk": 0.18310652673244476,
+      "native_selected_count": 5,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 33,
+      "instance_id": "dano3_3",
+      "model_risk": 0.15818774700164795,
+      "native_selected_count": 5,
+      "seed": 0,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 36,
+      "instance_id": "dano3_3",
+      "model_risk": 0.2916530966758728,
+      "native_selected_count": 7,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 36,
+      "instance_id": "dano3_3",
+      "model_risk": 0.18727345764636993,
+      "native_selected_count": 7,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 36,
+      "instance_id": "dano3_3",
+      "model_risk": 0.15818774700164795,
+      "native_selected_count": 7,
+      "seed": 1,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap",
+      "action_prior_risk": 0.06349206349206349,
+      "candidate_count": 33,
+      "instance_id": "dano3_3",
+      "model_risk": 0.2916530966758728,
+      "native_selected_count": 5,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "boundary-swap-2",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 33,
+      "instance_id": "dano3_3",
+      "model_risk": 0.18310652673244476,
+      "native_selected_count": 5,
+      "seed": 2,
+      "unsafe": false
+    },
+    {
+      "action": "efficacy-promote",
+      "action_prior_risk": 0.06557377049180328,
+      "candidate_count": 33,
+      "instance_id": "dano3_3",
+      "model_risk": 0.15818774700164795,
+      "native_selected_count": 5,
+      "seed": 2,
+      "unsafe": false
+    }
+  ],
+  "purpose": "preliminary instance-grouped diagnosis of whether leakage-safe pre-intervention context predicts unsafe declared root actions",
+  "runtime": {
+    "numpy": "2.5.1",
+    "xgboost": "3.2.0"
+  },
+  "schema_version": 1
+}

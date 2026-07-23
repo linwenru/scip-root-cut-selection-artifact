@@ -1,0 +1,857 @@
+{
+  "actions": {
+    "adaptive-score": {
+      "action": "adaptive-score",
+      "gate": {
+        "checks": {
+          "more_instance_wins_than_losses": false,
+          "penalized_time_ci95_upper_below_one": false,
+          "zero_instance_safety_failures": false
+        },
+        "passed": false
+      },
+      "instances_predeclared": 5,
+      "instances_with_native_complete_pair": 5,
+      "intervention_pairs": 4,
+      "native_complete_pairs": 13,
+      "native_incomplete_instances": 0,
+      "pairs": 15,
+      "penalized_time": {
+        "cluster_bootstrap_interval": {
+          "confidence": 0.95,
+          "lower": 0.9793793055656111,
+          "replicates": 10000,
+          "seed": 1863406368,
+          "upper": 1.2564179826678143
+        },
+        "geometric_mean_ratio_treatment_over_native": 1.0719139798056447,
+        "instance_losses": 3,
+        "instance_ties": 0,
+        "instance_wins": 2,
+        "par_factor": 2,
+        "relative_saving": -0.07191397980564473
+      },
+      "per_instance": [
+        {
+          "geometric_mean_penalized_time_ratio": 0.9832879632806834,
+          "instance_id": "exp-1-500-5-5",
+          "instance_sha256": "6e00da7741d808d331ff37bfcaf498bcc4c57ac24f32622f01047b6bbc7d870f",
+          "intervention_pairs": 0,
+          "mean_log_penalized_time_ratio": -0.016853258417412576,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9800376581411313,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.019127149791263,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9518555210434663,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 3,
+          "relative_time_saving": 0.016712036719316647,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 1.4634347087631276,
+          "instance_id": "neos-1171448",
+          "instance_sha256": "07c1847ca86e1f1d01895ba2bc207c4592f5db69dd4dda9abc6514ab038133e7",
+          "intervention_pairs": 2,
+          "mean_log_penalized_time_ratio": 0.3807862130785106,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 3.378473112590657,
+              "policy_fallback": false,
+              "safety_failure": true,
+              "seed": 0,
+              "solver_equivalent": false,
+              "treatment_status": "timelimit"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.8908963679114116,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.041291679244067,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 1,
+          "relative_time_saving": -0.46343470876312765,
+          "safety_failure_instance": true,
+          "safety_failure_pairs": 1,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 1.0042548433463432,
+          "instance_id": "neos8",
+          "instance_sha256": "3634f20854022d788ba8e796273cbe029e0d089a2c6c67493179f8b94204e7d3",
+          "intervention_pairs": 2,
+          "mean_log_penalized_time_ratio": 0.004245817094858527,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9048330191426425,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9986845169805136,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.1208178722080604,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 1,
+          "relative_time_saving": -0.0042548433463431845,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 0.9638994309563961,
+          "instance_id": "piperout-27",
+          "instance_sha256": "0dde1d272f3d2ea0a2aafc38a82dd3e72dd1794927530175ad74f46e925482d0",
+          "intervention_pairs": 0,
+          "mean_log_penalized_time_ratio": -0.03676831454782399,
+          "native_complete_pairs": 2,
+          "pairs": [
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9301460353526317,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.998877679079531,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": false,
+              "native_complete": false,
+              "native_status": "timelimit",
+              "penalized_time_ratio_treatment_over_native": null,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": false,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 3,
+          "relative_time_saving": 0.036100569043603925,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 1.0159444031436793,
+          "instance_id": "swath1",
+          "instance_sha256": "05b713125dfdea88f22c1d028a4a4ab081e1d03c31401b302b41025f8b0f844d",
+          "intervention_pairs": 0,
+          "mean_log_penalized_time_ratio": 0.01581862634374804,
+          "native_complete_pairs": 2,
+          "pairs": [
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.046330596753402,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": false,
+              "native_complete": false,
+              "native_status": "timelimit",
+              "penalized_time_ratio_treatment_over_native": null,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": false,
+              "treatment_status": "timelimit"
+            },
+            {
+              "intervention": false,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9864406464663682,
+              "policy_fallback": true,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 3,
+          "relative_time_saving": -0.015944403143679287,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        }
+      ],
+      "policy_fallback_pairs": 11,
+      "safety_failure_instances": 1,
+      "safety_failure_pairs": 1,
+      "safety_failure_rate_instance": 0.2,
+      "safety_failure_rate_upper_one_sided": 0.6574083180011387
+    },
+    "efficacy-rank": {
+      "action": "efficacy-rank",
+      "gate": {
+        "checks": {
+          "more_instance_wins_than_losses": false,
+          "penalized_time_ci95_upper_below_one": false,
+          "zero_instance_safety_failures": false
+        },
+        "passed": false
+      },
+      "instances_predeclared": 5,
+      "instances_with_native_complete_pair": 5,
+      "intervention_pairs": 15,
+      "native_complete_pairs": 13,
+      "native_incomplete_instances": 0,
+      "pairs": 15,
+      "penalized_time": {
+        "cluster_bootstrap_interval": {
+          "confidence": 0.95,
+          "lower": 0.8805520574539263,
+          "replicates": 10000,
+          "seed": 1036610024,
+          "upper": 1.1485103722930068
+        },
+        "geometric_mean_ratio_treatment_over_native": 1.0007483884911317,
+        "instance_losses": 3,
+        "instance_ties": 0,
+        "instance_wins": 2,
+        "par_factor": 2,
+        "relative_saving": -0.0007483884911316796
+      },
+      "per_instance": [
+        {
+          "geometric_mean_penalized_time_ratio": 1.0001572346526275,
+          "instance_id": "exp-1-500-5-5",
+          "instance_sha256": "6e00da7741d808d331ff37bfcaf498bcc4c57ac24f32622f01047b6bbc7d870f",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": 0.00015722229255509096,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0386028504065614,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0283667578850646,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9367146285332353,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": -0.00015723465262751368,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 0.8088715114071756,
+          "instance_id": "neos-1171448",
+          "instance_sha256": "07c1847ca86e1f1d01895ba2bc207c4592f5db69dd4dda9abc6514ab038133e7",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": -0.21211519850886074,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.7903007640642176,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.8548995201761743,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.7833054425944831,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": 0.19112848859282439,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 0.9247255358597116,
+          "instance_id": "neos8",
+          "instance_sha256": "3634f20854022d788ba8e796273cbe029e0d089a2c6c67493179f8b94204e7d3",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": -0.07825830348870522,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.8282192284702744,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9939866003207589,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.960533935299278,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": 0.07527446414028838,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 1.269109122660782,
+          "instance_id": "piperout-27",
+          "instance_sha256": "0dde1d272f3d2ea0a2aafc38a82dd3e72dd1794927530175ad74f46e925482d0",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": 0.23831517609967698,
+          "native_complete_pairs": 2,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.6766715568755144,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 2.3802359488225466,
+              "policy_fallback": false,
+              "safety_failure": true,
+              "seed": 1,
+              "solver_equivalent": false,
+              "treatment_status": "timelimit"
+            },
+            {
+              "intervention": true,
+              "native_complete": false,
+              "native_status": "timelimit",
+              "penalized_time_ratio_treatment_over_native": null,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": false,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": -0.269109122660782,
+          "safety_failure_instance": true,
+          "safety_failure_pairs": 1,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 1.0572187578523178,
+          "instance_id": "swath1",
+          "instance_sha256": "05b713125dfdea88f22c1d028a4a4ab081e1d03c31401b302b41025f8b0f844d",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": 0.055641646545868756,
+          "native_complete_pairs": 2,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0722174281256136,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": false,
+              "native_status": "timelimit",
+              "penalized_time_ratio_treatment_over_native": null,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": false,
+              "treatment_status": "timelimit"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0424298958735583,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": -0.05721875785231778,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        }
+      ],
+      "policy_fallback_pairs": 0,
+      "safety_failure_instances": 1,
+      "safety_failure_pairs": 1,
+      "safety_failure_rate_instance": 0.2,
+      "safety_failure_rate_upper_one_sided": 0.6574083180011387
+    },
+    "random-rank": {
+      "action": "random-rank",
+      "gate": {
+        "checks": {
+          "more_instance_wins_than_losses": false,
+          "penalized_time_ci95_upper_below_one": false,
+          "zero_instance_safety_failures": true
+        },
+        "passed": false
+      },
+      "instances_predeclared": 5,
+      "instances_with_native_complete_pair": 5,
+      "intervention_pairs": 15,
+      "native_complete_pairs": 13,
+      "native_incomplete_instances": 0,
+      "pairs": 15,
+      "penalized_time": {
+        "cluster_bootstrap_interval": {
+          "confidence": 0.95,
+          "lower": 0.9780941242181961,
+          "replicates": 10000,
+          "seed": 2585585196,
+          "upper": 1.0622589700975804
+        },
+        "geometric_mean_ratio_treatment_over_native": 1.0193082247536884,
+        "instance_losses": 3,
+        "instance_ties": 0,
+        "instance_wins": 2,
+        "par_factor": 2,
+        "relative_saving": -0.01930822475368843
+      },
+      "per_instance": [
+        {
+          "geometric_mean_penalized_time_ratio": 0.9845185339025506,
+          "instance_id": "exp-1-500-5-5",
+          "instance_sha256": "6e00da7741d808d331ff37bfcaf498bcc4c57ac24f32622f01047b6bbc7d870f",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": -0.015602555379243307,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.966549640646917,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0158919761101013,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9718516919018689,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": 0.015481466097449381,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 1.08391075250557,
+          "instance_id": "neos-1171448",
+          "instance_sha256": "07c1847ca86e1f1d01895ba2bc207c4592f5db69dd4dda9abc6514ab038133e7",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": 0.08057556799109127,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.8414372767885046,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.8147794008469419,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.8574570700818407,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": -0.08391075250557001,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 1.0106870378223265,
+          "instance_id": "neos8",
+          "instance_sha256": "3634f20854022d788ba8e796273cbe029e0d089a2c6c67493179f8b94204e7d3",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": 0.010630335065538546,
+          "native_complete_pairs": 3,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.9682750164758532,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0183610242785412,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0470070164227052,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": -0.010687037822326495,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 0.955915229178896,
+          "instance_id": "piperout-27",
+          "instance_sha256": "0dde1d272f3d2ea0a2aafc38a82dd3e72dd1794927530175ad74f46e925482d0",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": -0.04508604226937855,
+          "native_complete_pairs": 2,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0895678874297778,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 0.8386571740212321,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": false,
+              "native_status": "timelimit",
+              "penalized_time_ratio_treatment_over_native": null,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": false,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": 0.04408477082110396,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        },
+        {
+          "geometric_mean_penalized_time_ratio": 1.067269614999691,
+          "instance_id": "swath1",
+          "instance_sha256": "05b713125dfdea88f22c1d028a4a4ab081e1d03c31401b302b41025f8b0f844d",
+          "intervention_pairs": 3,
+          "mean_log_penalized_time_ratio": 0.06510362549823098,
+          "native_complete_pairs": 2,
+          "pairs": [
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0656569507548272,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 0,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": false,
+              "native_status": "timelimit",
+              "penalized_time_ratio_treatment_over_native": null,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 1,
+              "solver_equivalent": false,
+              "treatment_status": "optimal"
+            },
+            {
+              "intervention": true,
+              "native_complete": true,
+              "native_status": "optimal",
+              "penalized_time_ratio_treatment_over_native": 1.0688847196978026,
+              "policy_fallback": false,
+              "safety_failure": false,
+              "seed": 2,
+              "solver_equivalent": true,
+              "treatment_status": "optimal"
+            }
+          ],
+          "policy_fallback_pairs": 0,
+          "relative_time_saving": -0.06726961499969097,
+          "safety_failure_instance": false,
+          "safety_failure_pairs": 0,
+          "total_pairs": 3
+        }
+      ],
+      "policy_fallback_pairs": 0,
+      "safety_failure_instances": 0,
+      "safety_failure_pairs": 0,
+      "safety_failure_rate_instance": 0.0,
+      "safety_failure_rate_upper_one_sided": 0.45071972834694096
+    }
+  },
+  "analysis_contract": {
+    "aggregation": "instance-equal geometric mean",
+    "bootstrap": "resample instances with all nested seed outcomes",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260717,
+    "confidence": 0.95,
+    "independent_unit": "instance",
+    "primary_metric": "PAR-2 penalized solving-time ratio",
+    "safety_interval": "one-sided exact Clopper-Pearson",
+    "safety_unit": "instance with at least one native-complete pair",
+    "seed_handling": "mean paired log ratios within instance"
+  },
+  "created_at_utc": "2026-07-17T03:25:18.799229+00:00",
+  "schema_version": 1,
+  "source_manifest": "${PROJECT_ROOT}/data/manifests/causal_fixed_baseline_train_pilot_v1.json",
+  "source_manifest_content_sha256": "4acc33a24797670d53b4dc8e314113c0d9d06a18ed457b85d9e9b3e33d0662ab"
+}

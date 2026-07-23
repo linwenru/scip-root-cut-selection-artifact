@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "status": "pre_registered_before_active_outcomes",
+  "created_date": "2026-07-17",
+  "split": "train",
+  "purpose": "independent confirmation of efficacy-promote as a single fixed first-run root action before any further ML work",
+  "selection_contract": {
+    "source_runtime_table": "${TRACE_SOURCE_ROOT}/benchmark_output_train/summary.csv",
+    "source_observational_manifest": "data/manifests/root_observational_v1.json",
+    "source_assignments": "data/manifests/evaluation_protocols/instance_assignments.csv",
+    "requirements": [
+      "original split is train",
+      "source trace status is ok",
+      "source trace elapsed time is greater than 60 and at most 120 seconds",
+      "at least one policy-eligible root decision exists",
+      "the local MPS file exists",
+      "the instance was not used in the first-run pilot or cohorts A and B"
+    ],
+    "sampling": "complete enumeration of all eight instances satisfying the requirements; no active outcome or current risk label was used for selection",
+    "official_group_check": "six instances have distinct nonempty official MIPLIB Groups and two are officially ungrouped"
+  },
+  "experiment_contract": {
+    "actions": [
+      "efficacy-promote"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "time_limit_seconds": 120,
+    "node_limit": null,
+    "intervention_scope": "first-run-only",
+    "primary_metric": "lp_iterations",
+    "native_wins_ties": true,
+    "process_isolation": "one fresh Python/SCIP process per arm and seed",
+    "arms_per_seed": 2,
+    "decision_budget": "at most one root cut-selection intervention in the first SCIP run of the complete solve"
+  },
+  "confirmation_gate": {
+    "attributable_pair_rule": "native arm must finish with optimal, infeasible, unbounded, or inforunbd status",
+    "unsafe_rule": "an attributable treatment arm is unsafe when it fails to finish while its native arm finishes",
+    "minimum_attributable_pairs": 18,
+    "checks": [
+      "zero attributable unsafe treatment pairs",
+      "instance-equal mean relative LP-iteration saving is positive",
+      "more instances have positive than negative mean relative LP-iteration saving",
+      "no instance has mean relative LP-iteration saving below -0.25"
+    ],
+    "passing_consequence": "supports a separate family-disjoint fixed-action validation; does not yet authorize online deployment",
+    "failure_consequence": "reject efficacy-promote as a generally safe fixed action and do not train an ML gate unless independent unsafe-instance support becomes materially larger"
+  },
+  "instances": [
+    {
+      "instance_id": "binkar10_1",
+      "instance": "${MIPLIB_INSTANCES_DIR}/binkar10_1.mps.gz",
+      "official_group": "",
+      "source_trace_elapsed_seconds": 65.03782486915588,
+      "first_eligible_observed_candidates": 74,
+      "first_eligible_observed_applied": 12
+    },
+    {
+      "instance_id": "n2seq36q",
+      "instance": "${MIPLIB_INSTANCES_DIR}/n2seq36q.mps.gz",
+      "official_group": "nseq",
+      "source_trace_elapsed_seconds": 79.88986611366272,
+      "first_eligible_observed_candidates": 425,
+      "first_eligible_observed_applied": 46
+    },
+    {
+      "instance_id": "rmatr100-p10",
+      "instance": "${MIPLIB_INSTANCES_DIR}/rmatr100-p10.mps.gz",
+      "official_group": "rmatr",
+      "source_trace_elapsed_seconds": 85.76090788841248,
+      "first_eligible_observed_candidates": 51,
+      "first_eligible_observed_applied": 1
+    },
+    {
+      "instance_id": "h80x6320d",
+      "instance": "${MIPLIB_INSTANCES_DIR}/h80x6320d.mps.gz",
+      "official_group": "fixed-cost-network-flow",
+      "source_trace_elapsed_seconds": 91.71338605880737,
+      "first_eligible_observed_candidates": 208,
+      "first_eligible_observed_applied": 82
+    },
+    {
+      "instance_id": "physiciansched6-2",
+      "instance": "${MIPLIB_INSTANCES_DIR}/physiciansched6-2.mps.gz",
+      "official_group": "physiciansched",
+      "source_trace_elapsed_seconds": 95.49144124984741,
+      "first_eligible_observed_candidates": 197,
+      "first_eligible_observed_applied": 47
+    },
+    {
+      "instance_id": "mik-250-20-75-4",
+      "instance": "${MIPLIB_INSTANCES_DIR}/mik-250-20-75-4.mps.gz",
+      "official_group": "mik_250",
+      "source_trace_elapsed_seconds": 105.16181230545044,
+      "first_eligible_observed_candidates": 235,
+      "first_eligible_observed_applied": 75
+    },
+    {
+      "instance_id": "ns1830653",
+      "instance": "${MIPLIB_INSTANCES_DIR}/ns1830653.mps.gz",
+      "official_group": "neos-pseudoapplication-110",
+      "source_trace_elapsed_seconds": 109.14981412887573,
+      "first_eligible_observed_candidates": 215,
+      "first_eligible_observed_applied": 10
+    },
+    {
+      "instance_id": "30n20b8",
+      "instance": "${MIPLIB_INSTANCES_DIR}/30n20b8.mps.gz",
+      "official_group": "",
+      "source_trace_elapsed_seconds": 117.28701400756836,
+      "first_eligible_observed_candidates": 122,
+      "first_eligible_observed_applied": 28
+    }
+  ]
+}

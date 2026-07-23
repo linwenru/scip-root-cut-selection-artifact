@@ -1,0 +1,510 @@
+{
+  "analysis_contract": {
+    "callback_coverage": "reported descriptively and not used to remove any block",
+    "inference": "implementation-path overhead and neutrality only; no learned-policy efficacy or generalization claim",
+    "overhead_estimands": [
+      "full-block ITT PAR-2 solving-time ratio shadow/native",
+      "full-block ITT PAR-2 Python arm-wall-time ratio shadow/native",
+      "model-load, callback, context, hybrid, and policy timing components"
+    ],
+    "primary_population": "all 36 predeclared instance-seed blocks",
+    "structural_gate": "all same-status fields, bounds, nodes, LP iterations, LP counts, and cuts applied match; no shadow arm changes the selected set"
+  },
+  "checks": {
+    "balanced_first_arm": true,
+    "model_was_not_authorized_for_efficacy": true,
+    "test_remains_sealed": true,
+    "thirty_six_blocks": true,
+    "three_seeds": true,
+    "twelve_training_instances": true
+  },
+  "created_at_utc": "2026-07-20T07:31:34.178918+00:00",
+  "data_boundary": {
+    "independent_unit": "MPS instance",
+    "selection_split": "train",
+    "test_split": "sealed",
+    "validation_split": "untouched"
+  },
+  "experiment": {
+    "arms": [
+      "native",
+      "xgb-imitation-shadow"
+    ],
+    "execution_order_key": "major-revision-shadow-overhead-v1-20260720",
+    "execution_schedule": [
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos-1582420",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "swath1",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos859080",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "exp-1-500-5-5",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos-1171448",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "mc11",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "swath1",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "hypothyroid-k1",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos-911970",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "neos8",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos859080",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "neos-1171448",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos8",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "exp-1-500-5-5",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos-1582420",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "neos8",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "piperout-27",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "piperout-27",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "mc11",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "hypothyroid-k1",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "cbs-cta",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "cbs-cta",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "nu25-pr12",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "nu25-pr12",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "swath1",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "neos-1171448",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos859080",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "nu25-pr12",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "exp-1-500-5-5",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "neos-1582420",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "neos-911970",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "neos-911970",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "cbs-cta",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "mc11",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "instance_id": "hypothyroid-k1",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "instance_id": "piperout-27",
+        "seed": 1
+      }
+    ],
+    "instances": [
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-96",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos859080.mps.gz",
+        "instance_id": "neos859080",
+        "instance_name": "neos859080.mps.gz",
+        "instance_sha256": "bace2c785ab613cdd997b74197a44eca35b7b7871b18e4d958a9e83fa5ee205b",
+        "official_group": "neos-pseudoapplication-96",
+        "policy_eligible_applied_labels": 2,
+        "policy_eligible_candidates": 7,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 1.0810229778289795
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-15",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos8.mps.gz",
+        "instance_id": "neos8",
+        "instance_name": "neos8.mps.gz",
+        "instance_sha256": "3634f20854022d788ba8e796273cbe029e0d089a2c6c67493179f8b94204e7d3",
+        "official_group": "neos-pseudoapplication-15",
+        "policy_eligible_applied_labels": 1,
+        "policy_eligible_candidates": 17,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 1.3562321662902832
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "exp_and_fc",
+        "instance": "${MIPLIB_INSTANCES_DIR}/exp-1-500-5-5.mps.gz",
+        "instance_id": "exp-1-500-5-5",
+        "instance_name": "exp-1-500-5-5.mps.gz",
+        "instance_sha256": "6e00da7741d808d331ff37bfcaf498bcc4c57ac24f32622f01047b6bbc7d870f",
+        "official_group": "exp_and_fc",
+        "policy_eligible_applied_labels": 134,
+        "policy_eligible_candidates": 403,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 3.3219680786132812
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "nus-prxy",
+        "instance": "${MIPLIB_INSTANCES_DIR}/nu25-pr12.mps.gz",
+        "instance_id": "nu25-pr12",
+        "instance_name": "nu25-pr12.mps.gz",
+        "instance_sha256": "161c4c89b351d8671ae4e4d7af0fc222e1910e14564419053f22600460ef3236",
+        "official_group": "nus-prxy",
+        "policy_eligible_applied_labels": 36,
+        "policy_eligible_candidates": 255,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 3.945017099380493
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "hypothyroid",
+        "instance": "${MIPLIB_INSTANCES_DIR}/hypothyroid-k1.mps.gz",
+        "instance_id": "hypothyroid-k1",
+        "instance_name": "hypothyroid-k1.mps.gz",
+        "instance_sha256": "489ffe662de76b8dbb93855fc971d383ca27e613ea5805437652efe3a9e9230e",
+        "official_group": "hypothyroid",
+        "policy_eligible_applied_labels": 9,
+        "policy_eligible_candidates": 2752,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 4.882781028747559
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-8",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-1171448.mps.gz",
+        "instance_id": "neos-1171448",
+        "instance_name": "neos-1171448.mps.gz",
+        "instance_sha256": "07c1847ca86e1f1d01895ba2bc207c4592f5db69dd4dda9abc6514ab038133e7",
+        "official_group": "neos-pseudoapplication-8",
+        "policy_eligible_applied_labels": 21,
+        "policy_eligible_candidates": 97,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 6.886309862136841
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "piperout",
+        "instance": "${MIPLIB_INSTANCES_DIR}/piperout-27.mps.gz",
+        "instance_id": "piperout-27",
+        "instance_name": "piperout-27.mps.gz",
+        "instance_sha256": "0dde1d272f3d2ea0a2aafc38a82dd3e72dd1794927530175ad74f46e925482d0",
+        "official_group": "piperout",
+        "policy_eligible_applied_labels": 141,
+        "policy_eligible_candidates": 769,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 7.614707946777344
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "swath",
+        "instance": "${MIPLIB_INSTANCES_DIR}/swath1.mps.gz",
+        "instance_id": "swath1",
+        "instance_name": "swath1.mps.gz",
+        "instance_sha256": "05b713125dfdea88f22c1d028a4a4ab081e1d03c31401b302b41025f8b0f844d",
+        "official_group": "swath",
+        "policy_eligible_applied_labels": 12,
+        "policy_eligible_candidates": 45,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 8.72131609916687
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "cta",
+        "instance": "${MIPLIB_INSTANCES_DIR}/cbs-cta.mps.gz",
+        "instance_id": "cbs-cta",
+        "instance_name": "cbs-cta.mps.gz",
+        "instance_sha256": "4f688482bbf0702ff0176fc027ee13967c1a8dbf8f243f8b2cebbb35bef534fa",
+        "official_group": "cta",
+        "policy_eligible_applied_labels": 69,
+        "policy_eligible_candidates": 188,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 13.917890071868896
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "mc",
+        "instance": "${MIPLIB_INSTANCES_DIR}/mc11.mps.gz",
+        "instance_id": "mc11",
+        "instance_name": "mc11.mps.gz",
+        "instance_sha256": "55f4d9c9d2022cffeb3e07cd7398753f5aab720f16fa49ab17223375bab83874",
+        "official_group": "mc",
+        "policy_eligible_applied_labels": 290,
+        "policy_eligible_candidates": 678,
+        "policy_eligible_decisions": 2,
+        "source_trace_elapsed_seconds": 14.821326732635498
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-10",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-1582420.mps.gz",
+        "instance_id": "neos-1582420",
+        "instance_name": "neos-1582420.mps.gz",
+        "instance_sha256": "39f3bdab0bf6f68d8ff403f30d071e29bbf52bbf3decabf6711069d9ae49d458",
+        "official_group": "neos-pseudoapplication-10",
+        "policy_eligible_applied_labels": 13,
+        "policy_eligible_candidates": 18,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 17.167590856552124
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-70",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-911970.mps.gz",
+        "instance_id": "neos-911970",
+        "instance_name": "neos-911970.mps.gz",
+        "instance_sha256": "cf9ad35ade0015d140f33ce83a593d76672c09fd8cc30c0539213be7e4a65ebb",
+        "official_group": "neos-pseudoapplication-70",
+        "policy_eligible_applied_labels": 62,
+        "policy_eligible_candidates": 511,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 17.62437868118286
+      }
+    ],
+    "intervention_scope": "first-run-only",
+    "max_workers": 1,
+    "node_limit": null,
+    "output_dir": "${PROJECT_ROOT}/experiments/major_revision_shadow_overhead_v1",
+    "result_manifest": "${PROJECT_ROOT}/data/manifests/causal_major_revision_shadow_overhead_v1.json",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "statistics_manifest": "${PROJECT_ROOT}/data/manifests/major_revision_shadow_overhead_statistics_v1.json",
+    "time_limit_seconds": 60.0
+  },
+  "purpose": "measure structural neutrality and total implementation overhead of the same native-hybrid, context, feature, and XGBoost inference path",
+  "schema_version": 1,
+  "source_artifacts": {
+    "learned_model_manifest": {
+      "model_sha256": "7c1f3ce6d9250064ecdce1efa36cc76e995024c020f674e86aa4ae98711b49c6",
+      "offline_stage_gate_passed": false,
+      "path": "${PROJECT_ROOT}/data/manifests/ranking_imitation_online_xgb_revision_v1.json",
+      "sha256": "1bca19ec8ceac6af46cdda6edc2c58cbb6c5ebb78899a611368e757bc84aee4d"
+    },
+    "publication_strengthening_plan": {
+      "path": "${PROJECT_ROOT}/data/manifests/publication_strengthening_plan_v1.json",
+      "sha256": "dba5bbdcc8c11e3896e5331b7ed6e929bab1acc512943047823191c498900307"
+    }
+  },
+  "status": "frozen before shadow-overhead outcomes"
+}

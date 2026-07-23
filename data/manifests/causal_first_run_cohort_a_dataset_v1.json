@@ -1,0 +1,51 @@
+{
+  "action_label_counts": {
+    "boundary-swap": {
+      "positive_lp_saving": 14,
+      "safe": 25,
+      "valid": 25
+    },
+    "boundary-swap-2": {
+      "positive_lp_saving": 10,
+      "safe": 26,
+      "valid": 24
+    },
+    "efficacy-promote": {
+      "positive_lp_saving": 13,
+      "safe": 26,
+      "valid": 24
+    }
+  },
+  "actions": [
+    "boundary-swap",
+    "boundary-swap-2",
+    "efficacy-promote"
+  ],
+  "candidate_count": {
+    "max": 4051,
+    "mean": 713.0,
+    "min": 7
+  },
+  "context_contract": "one shared pre-intervention first-run context per instance and seed; no solve time, final outcome, or post-action field in model context",
+  "created_at_utc": "2026-07-16T13:06:25.506261+00:00",
+  "instances": 9,
+  "native_status_counts": {
+    "infeasible": 3,
+    "optimal": 23
+  },
+  "output": "${PROJECT_ROOT}/data/processed/causal_first_run_cohort_a_v1.jsonl.gz",
+  "output_sha256": "c5a6497f1b15906f0cd22bcbd00f4d9bc3bd6a32d0da93655fe7ac31b5080308",
+  "records": 26,
+  "schema_version": 1,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "skipped_native_incomplete_pairs": 0,
+  "skipped_no_context_pairs": 1,
+  "source_manifest": "${PROJECT_ROOT}/data/manifests/causal_action_oracle_first_run_cohort_a_v1.json",
+  "source_manifest_sha256": "dde65d5ca90c53cfbe129de5c2c44a172634f027783c2d3b7d832edf59c35679",
+  "source_pairs": 27,
+  "split": "train"
+}

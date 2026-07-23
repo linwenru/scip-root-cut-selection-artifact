@@ -1,0 +1,32 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "affiliation": "School of Computer and Big Data, Minjiang University; School of Artificial Intelligence and Data Science, University of Science and Technology of China",
+      "name": "Lin, Wenru"
+    },
+    {
+      "affiliation": "School of Mathematical Sciences, University of Science and Technology of China",
+      "name": "Yang, Zhouwang"
+    }
+  ],
+  "description": "Audited tracing, leakage-controlled ranking data, and process-isolated complete-solve experiments for root cut selection in SCIP 10.0.2.",
+  "keywords": [
+    "mixed-integer linear programming",
+    "cutting planes",
+    "SCIP",
+    "machine learning",
+    "reproducibility"
+  ],
+  "license": "Apache-2.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/linwenru/scip-root-cut-selection-artifact",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "title": "SCIP Root Cut Selection Audit",
+  "upload_type": "software",
+  "version": "1.0.0"
+}

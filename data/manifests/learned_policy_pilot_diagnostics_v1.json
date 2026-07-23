@@ -1,0 +1,260 @@
+{
+  "active_safety_diagnostic": {
+    "active_complete_native_incomplete_pairs": [],
+    "both_incomplete_same_status_pairs": [
+      {
+        "instance_id": "hanoi5",
+        "seed": 0,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "hanoi5",
+        "seed": 1,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "hanoi5",
+        "seed": 2,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "supportcase20",
+        "seed": 0,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "supportcase20",
+        "seed": 1,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "supportcase20",
+        "seed": 2,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "ofi",
+        "seed": 0,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "ofi",
+        "seed": 1,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "ofi",
+        "seed": 2,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "bmoipr2",
+        "seed": 0,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "bmoipr2",
+        "seed": 1,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "bmoipr2",
+        "seed": 2,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "neos-3209519-ruhr",
+        "seed": 0,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "neos-3209519-ruhr",
+        "seed": 1,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "neos-3209519-ruhr",
+        "seed": 2,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "rlp1",
+        "seed": 1,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "neos-619167",
+        "seed": 0,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "neos-619167",
+        "seed": 1,
+        "status": "timelimit"
+      },
+      {
+        "instance_id": "neos-619167",
+        "seed": 2,
+        "status": "timelimit"
+      }
+    ],
+    "interpretation": "Objective disagreement remains a frozen safety-gate failure. The official Collection objective is reported only as a post-hoc attribution diagnostic.",
+    "mechanical_mismatch_pairs": [],
+    "native_complete_active_incomplete_pairs": [
+      {
+        "active_status": "timelimit",
+        "instance_id": "mine-90-10",
+        "native_status": "optimal",
+        "seed": 2
+      }
+    ],
+    "objective_mismatch_pairs": [
+      {
+        "active_objective": 399.37391784799996,
+        "closer_to_official": "active",
+        "instance_id": "neos-585467",
+        "native_objective": 398.4116785212426,
+        "official_collection_objective": 399.3739,
+        "official_details_url": "https://miplib.zib.de/instance_details_neos-585467.html",
+        "seed": 0
+      }
+    ]
+  },
+  "coverage": {
+    "active_fallback_pairs": 14,
+    "active_intervention_pairs": 40,
+    "arm_records": 162,
+    "group_keys": 18,
+    "paired_blocks": 54,
+    "pre_action_context_mismatch_pairs": 0,
+    "pre_action_context_observed_pairs": 45
+  },
+  "created_at_utc": "2026-07-21T14:07:36.082087+00:00",
+  "frozen_decision": {
+    "decision": "stop learned-policy development; do not tune on pilot outcomes or open the existing sealed test",
+    "gate_checks": {
+      "all_planned_pairs_present": true,
+      "enough_group_keys_receive_active_intervention": true,
+      "one_sided_80_percent_upper_ratio_at_most_one": false,
+      "primary_point_ratio_at_most_0_95": false,
+      "shadow_structural_matches_all_pairs": false,
+      "zero_active_correctness_failure_group_keys": false,
+      "zero_native_complete_active_incomplete_group_keys": false,
+      "zero_observed_pre_action_context_mismatches": true
+    },
+    "passed": false,
+    "primary_full_process_wall_time": {
+      "active_native_par2_ratio": 1.4931101245419856,
+      "cluster_bootstrap_interval_95": {
+        "confidence": 0.95,
+        "lower": 1.130902798961889,
+        "replicates": 10000,
+        "seed": 20260721,
+        "upper": 2.107812080236349
+      },
+      "estimand": "Group-equal geometric mean active/native full-process wall-time PAR-2 ratio; seeds are averaged on the log scale within Group",
+      "one_sided_percentile_upper_80": {
+        "replicates": 10000,
+        "seed": 20260722,
+        "upper": 1.699264879352885
+      }
+    },
+    "secondary_scip_solving_time": {
+      "active_native_par2_ratio": 1.0680687008795327,
+      "cluster_bootstrap_interval_95": {
+        "confidence": 0.95,
+        "lower": 0.9929259189636124,
+        "replicates": 10000,
+        "seed": 20260723,
+        "upper": 1.166378026356877
+      }
+    }
+  },
+  "implementation_timing_seconds": {
+    "median_model_load": {
+      "xgb-imitation-rank": 0.136356792,
+      "xgb-imitation-shadow": 0.133440791
+    },
+    "median_policy_compute": {
+      "xgb-imitation-rank": 0.005016125,
+      "xgb-imitation-shadow": 0.0045541875
+    },
+    "median_wall_minus_scip_solving": {
+      "native": 0.009265291999980718,
+      "xgb-imitation-rank": 0.1544224584999938,
+      "xgb-imitation-shadow": 0.15390787550000656
+    }
+  },
+  "interpretation_boundary": "These diagnostics were computed after the frozen No-Go result. They explain failure modes but neither alter the gate nor authorize model tuning, test-set opening, or another learned-policy iteration.",
+  "performance_decomposition": {
+    "arm_wall_time_seconds": {
+      "active_over_native": 1.4931101245419856,
+      "active_over_shadow": 1.0299368816730199,
+      "shadow_over_native": 1.44971031828338
+    },
+    "solving_time": {
+      "active_over_native": 1.0680687008795327,
+      "active_over_shadow": 1.0401761038894035,
+      "shadow_over_native": 1.026815264151747
+    }
+  },
+  "schema_version": 1,
+  "shadow_diagnostic": {
+    "classifications": {
+      "full_safety_match": 35,
+      "same_incomplete_limit_status": 19
+    },
+    "completed_pairs": 35,
+    "completed_pairs_with_full_safety_match": 35,
+    "failed_check_counts": {
+      "native_complete": 19,
+      "same_dual_bound": 8,
+      "shadow_same_cuts_applied": 12,
+      "shadow_same_dual_bound": 8,
+      "shadow_same_gap": 7,
+      "shadow_same_lp_count": 15,
+      "shadow_same_lp_iterations": 19,
+      "shadow_same_nodes": 15,
+      "shadow_same_total_nodes": 15,
+      "treatment_complete": 19
+    },
+    "interpretation": "The frozen full-safety gate includes completion and terminal structural counters. Same-limit incomplete pairs are not evidence that shadow changed the selected cut set."
+  },
+  "source_artifacts": {
+    "frozen_statistics": {
+      "path": "data/manifests/learned_policy_pilot_statistics_v1.json",
+      "sha256": "7f3ad99bfe52f83fef75ad6f6cfe67fbc657afdd785b9a982289c4eab60a09fd"
+    },
+    "official_collection_html": {
+      "path": "vendor/miplib2017_collection_snapshot/set_collection.html",
+      "sha256": "0e1a6f99b6e3844bec06d19ef157dc98ff83224a36e07b0ec962b0fe67707794",
+      "url": "https://miplib.zib.de/set_collection.html"
+    },
+    "plan": {
+      "path": "data/manifests/learned_policy_pilot_plan_v1.json",
+      "sha256": "8b4bc206376a27a89119fbc79c8353cbbe94d0d8f11651a00b5e6a649580ae61"
+    },
+    "result": {
+      "path": "data/manifests/causal_learned_policy_pilot_v1.json",
+      "sha256": "135ffbea25c59ee839d066de4e01c55951f4fedfa831063b200361d668d8f484"
+    }
+  },
+  "status": "post-hoc diagnostic; frozen Go/No-Go decision unchanged",
+  "status_counts": {
+    "native": {
+      "inforunbd": 3,
+      "optimal": 32,
+      "timelimit": 19
+    },
+    "xgb-imitation-rank": {
+      "inforunbd": 3,
+      "optimal": 31,
+      "timelimit": 20
+    },
+    "xgb-imitation-shadow": {
+      "inforunbd": 3,
+      "optimal": 32,
+      "timelimit": 19
+    }
+  }
+}

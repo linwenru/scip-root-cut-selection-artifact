@@ -1,0 +1,10 @@
+# Exact Python package snapshot used for the reported model and online harness.
+# Install SCIP 10.0.2 first, then install this file with SCIPOPTDIR set.
+Cython==3.2.8
+numpy==2.5.1
+packaging==26.2
+PySCIPOpt==6.2.1
+scipy==1.18.0
+setuptools==83.0.0
+wheel==0.47.0
+xgboost==3.2.0

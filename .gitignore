@@ -1,0 +1,43 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.so
+src/scip_cut_trace_v2/_scip_pointer.c
+.venv/
+.pytest_cache/
+
+# Raw traces are large, machine-local, and immutable inputs.
+data/raw/*
+!data/raw/.gitkeep
+
+# Reproducible processed tables are large; commit only their manifests.
+data/processed/*
+!data/processed/.gitkeep
+
+# Derived model matrices are reproducible and may be regenerated from processed data.
+data/datasets/*
+!data/datasets/.gitkeep
+
+# Local editable-install metadata.
+*.egg-info/
+build/
+dist/
+
+# Trained model binaries are reproducible from committed code and manifests.
+models/*
+!models/.gitkeep
+
+# Manuscript render directories are local visual-QA intermediates.
+paper/rendered/
+paper/rendered_v2/
+paper/rendered_final/
+paper/rendered_zh/
+paper/rendered_review*/
+
+# Active SCIP experiments are machine-local; commit their JSON manifests selectively.
+experiments/*
+!experiments/.gitkeep
+!experiments/fixed_baseline_train_pilot_v1/
+!experiments/fixed_baseline_train_pilot_v1/**/*.json
+!experiments/fixed_baseline_disjoint_train_pilot_v2/
+!experiments/fixed_baseline_disjoint_train_pilot_v2/**/*.json

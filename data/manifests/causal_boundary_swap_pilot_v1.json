@@ -1,0 +1,408 @@
+{
+  "aggregate": {
+    "cuts_applied": {
+      "losses": 1,
+      "mean_delta_treatment_minus_native": -494.3333333333333,
+      "ties": 0,
+      "wins": 2
+    },
+    "lp_count": {
+      "losses": 1,
+      "mean_delta_treatment_minus_native": -85.66666666666667,
+      "ties": 0,
+      "wins": 2
+    },
+    "lp_iterations": {
+      "losses": 1,
+      "mean_delta_treatment_minus_native": -3317.3333333333335,
+      "ties": 0,
+      "wins": 2
+    },
+    "nodes": {
+      "losses": 1,
+      "mean_delta_treatment_minus_native": -130.33333333333334,
+      "ties": 0,
+      "wins": 2
+    },
+    "primal_dual_integral": {
+      "losses": 1,
+      "mean_delta_treatment_minus_native": -58.069338352768476,
+      "ties": 0,
+      "wins": 2
+    },
+    "solving_time": {
+      "losses": 1,
+      "mean_delta_treatment_minus_native": -0.5638,
+      "ties": 0,
+      "wins": 2
+    },
+    "total_nodes": {
+      "losses": 1,
+      "mean_delta_treatment_minus_native": -130.33333333333334,
+      "ties": 0,
+      "wins": 2
+    }
+  },
+  "created_at_utc": "2026-07-16T08:36:14.697785+00:00",
+  "experiment": "native-vs-root-boundary-swap-once-per-run",
+  "instance": "${MIPLIB_INSTANCES_DIR}/neos-3381206-awhea.mps.gz",
+  "instance_sha256": "58d33361a14a26ae1c497a9c8726fb33a699205a9dfad4f6c90e18ba7994db56",
+  "node_limit": null,
+  "pairs": [
+    {
+      "comparison": {
+        "metrics": {
+          "cuts_applied": {
+            "delta_treatment_minus_native": -831.0,
+            "native": 4479.0,
+            "relative_saving": 0.1855324849296718,
+            "treatment": 3648.0
+          },
+          "lp_count": {
+            "delta_treatment_minus_native": -104.0,
+            "native": 143.0,
+            "relative_saving": 0.7272727272727273,
+            "treatment": 39.0
+          },
+          "lp_iterations": {
+            "delta_treatment_minus_native": -6326.0,
+            "native": 19875.0,
+            "relative_saving": 0.3182893081761006,
+            "treatment": 13549.0
+          },
+          "nodes": {
+            "delta_treatment_minus_native": -131.0,
+            "native": 132.0,
+            "relative_saving": 0.9924242424242424,
+            "treatment": 1.0
+          },
+          "primal_dual_integral": {
+            "delta_treatment_minus_native": -49.90330404850334,
+            "native": 112.7033525584371,
+            "relative_saving": 0.44278455711979187,
+            "treatment": 62.80004850993377
+          },
+          "solving_time": {
+            "delta_treatment_minus_native": -0.5092530000000001,
+            "native": 1.138085,
+            "relative_saving": 0.44746482029022444,
+            "treatment": 0.628832
+          },
+          "total_nodes": {
+            "delta_treatment_minus_native": -131.0,
+            "native": 132.0,
+            "relative_saving": 0.9924242424242424,
+            "treatment": 1.0
+          }
+        },
+        "safety_checks": {
+          "arm_order": true,
+          "one_record_per_intervention": true,
+          "run_budget_respected": true,
+          "same_dual_bound": true,
+          "same_instance_sha256": true,
+          "same_objective_sense": true,
+          "same_parameters": true,
+          "same_primal_bound": true,
+          "same_runtime_versions": true,
+          "same_seed": true,
+          "same_status": true,
+          "treatment_exercised": true
+        },
+        "valid": true
+      },
+      "native_outcome": {
+        "cuts_applied": 4479,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 143,
+        "lp_iterations": 19875,
+        "nodes": 132,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 112.7033525584371,
+        "solving_time": 1.138085,
+        "status": "optimal",
+        "total_nodes": 132
+      },
+      "seed": 0,
+      "treatment_outcome": {
+        "cuts_applied": 3648,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 39,
+        "lp_iterations": 13549,
+        "nodes": 1,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 62.80004850993377,
+        "solving_time": 0.628832,
+        "status": "optimal",
+        "total_nodes": 1
+      },
+      "treatment_selector": {
+        "calls": 18,
+        "candidate_cuts": 15737,
+        "eligible_root_calls": 1,
+        "forced_cuts": 0,
+        "ineligible_root_calls": 0,
+        "intervention_records": [
+          {
+            "added_cut_name": "scg21_x595",
+            "candidate_cuts": 779,
+            "forced_cuts": 0,
+            "removed_cut_name": "cmir21_178",
+            "run": 1,
+            "selected_cuts": 298,
+            "selector_call": 1
+          }
+        ],
+        "interventions": 1,
+        "mode": "boundary-swap",
+        "root_calls": 18,
+        "run_count": 1,
+        "selected_cuts": 298
+      }
+    },
+    {
+      "comparison": {
+        "metrics": {
+          "cuts_applied": {
+            "delta_treatment_minus_native": 272.0,
+            "native": 3600.0,
+            "relative_saving": -0.07555555555555556,
+            "treatment": 3872.0
+          },
+          "lp_count": {
+            "delta_treatment_minus_native": 28.0,
+            "native": 40.0,
+            "relative_saving": -0.7,
+            "treatment": 68.0
+          },
+          "lp_iterations": {
+            "delta_treatment_minus_native": 1477.0,
+            "native": 14117.0,
+            "relative_saving": -0.10462562867464759,
+            "treatment": 15594.0
+          },
+          "nodes": {
+            "delta_treatment_minus_native": 19.0,
+            "native": 21.0,
+            "relative_saving": -0.9047619047619048,
+            "treatment": 40.0
+          },
+          "primal_dual_integral": {
+            "delta_treatment_minus_native": 8.521720540625836,
+            "native": 68.02209142383441,
+            "relative_saving": -0.12527871993127063,
+            "treatment": 76.54381196446025
+          },
+          "solving_time": {
+            "delta_treatment_minus_native": 0.14325600000000005,
+            "native": 0.6985979999999999,
+            "relative_saving": -0.20506213874073512,
+            "treatment": 0.841854
+          },
+          "total_nodes": {
+            "delta_treatment_minus_native": 19.0,
+            "native": 21.0,
+            "relative_saving": -0.9047619047619048,
+            "treatment": 40.0
+          }
+        },
+        "safety_checks": {
+          "arm_order": true,
+          "one_record_per_intervention": true,
+          "run_budget_respected": true,
+          "same_dual_bound": true,
+          "same_instance_sha256": true,
+          "same_objective_sense": true,
+          "same_parameters": true,
+          "same_primal_bound": true,
+          "same_runtime_versions": true,
+          "same_seed": true,
+          "same_status": true,
+          "treatment_exercised": true
+        },
+        "valid": true
+      },
+      "native_outcome": {
+        "cuts_applied": 3600,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 40,
+        "lp_iterations": 14117,
+        "nodes": 21,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 68.02209142383441,
+        "solving_time": 0.6985979999999999,
+        "status": "optimal",
+        "total_nodes": 21
+      },
+      "seed": 1,
+      "treatment_outcome": {
+        "cuts_applied": 3872,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 68,
+        "lp_iterations": 15594,
+        "nodes": 40,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 76.54381196446025,
+        "solving_time": 0.841854,
+        "status": "optimal",
+        "total_nodes": 40
+      },
+      "treatment_selector": {
+        "calls": 21,
+        "candidate_cuts": 16898,
+        "eligible_root_calls": 1,
+        "forced_cuts": 0,
+        "ineligible_root_calls": 0,
+        "intervention_records": [
+          {
+            "added_cut_name": "scg9_x1084",
+            "candidate_cuts": 764,
+            "forced_cuts": 0,
+            "removed_cut_name": "cmir9_270",
+            "run": 1,
+            "selected_cuts": 298,
+            "selector_call": 1
+          }
+        ],
+        "interventions": 1,
+        "mode": "boundary-swap",
+        "root_calls": 21,
+        "run_count": 1,
+        "selected_cuts": 298
+      }
+    },
+    {
+      "comparison": {
+        "metrics": {
+          "cuts_applied": {
+            "delta_treatment_minus_native": -924.0,
+            "native": 4481.0,
+            "relative_saving": 0.20620397232760546,
+            "treatment": 3557.0
+          },
+          "lp_count": {
+            "delta_treatment_minus_native": -181.0,
+            "native": 205.0,
+            "relative_saving": 0.8829268292682927,
+            "treatment": 24.0
+          },
+          "lp_iterations": {
+            "delta_treatment_minus_native": -5103.0,
+            "native": 19974.0,
+            "relative_saving": 0.25548212676479426,
+            "treatment": 14871.0
+          },
+          "nodes": {
+            "delta_treatment_minus_native": -279.0,
+            "native": 280.0,
+            "relative_saving": 0.9964285714285714,
+            "treatment": 1.0
+          },
+          "primal_dual_integral": {
+            "delta_treatment_minus_native": -132.8264315504279,
+            "native": 199.7269,
+            "relative_saving": 0.6650402702411539,
+            "treatment": 66.9004684495721
+          },
+          "solving_time": {
+            "delta_treatment_minus_native": -1.3254029999999999,
+            "native": 1.9974889999999998,
+            "relative_saving": 0.6635345676496842,
+            "treatment": 0.672086
+          },
+          "total_nodes": {
+            "delta_treatment_minus_native": -279.0,
+            "native": 280.0,
+            "relative_saving": 0.9964285714285714,
+            "treatment": 1.0
+          }
+        },
+        "safety_checks": {
+          "arm_order": true,
+          "one_record_per_intervention": true,
+          "run_budget_respected": true,
+          "same_dual_bound": true,
+          "same_instance_sha256": true,
+          "same_objective_sense": true,
+          "same_parameters": true,
+          "same_primal_bound": true,
+          "same_runtime_versions": true,
+          "same_seed": true,
+          "same_status": true,
+          "treatment_exercised": true
+        },
+        "valid": true
+      },
+      "native_outcome": {
+        "cuts_applied": 4481,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 205,
+        "lp_iterations": 19974,
+        "nodes": 280,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 199.7269,
+        "solving_time": 1.9974889999999998,
+        "status": "optimal",
+        "total_nodes": 280
+      },
+      "seed": 2,
+      "treatment_outcome": {
+        "cuts_applied": 3557,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 24,
+        "lp_iterations": 14871,
+        "nodes": 1,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 66.9004684495721,
+        "solving_time": 0.672086,
+        "status": "optimal",
+        "total_nodes": 1
+      },
+      "treatment_selector": {
+        "calls": 17,
+        "candidate_cuts": 15673,
+        "eligible_root_calls": 1,
+        "forced_cuts": 0,
+        "ineligible_root_calls": 0,
+        "intervention_records": [
+          {
+            "added_cut_name": "cmir7_220",
+            "candidate_cuts": 769,
+            "forced_cuts": 0,
+            "removed_cut_name": "cmir7_0",
+            "run": 1,
+            "selected_cuts": 299,
+            "selector_call": 1
+          }
+        ],
+        "interventions": 1,
+        "mode": "boundary-swap",
+        "root_calls": 17,
+        "run_count": 1,
+        "selected_cuts": 299
+      }
+    }
+  ],
+  "schema_version": 2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit": 60.0,
+  "treatment_contract": "at the first eligible root callback of each SCIP run, call native hybrid, keep its selected count, and exchange the last selected cut with the first unselected cut; delegate all later callbacks in that run",
+  "valid": true,
+  "valid_pairs": 3
+}

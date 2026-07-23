@@ -1,0 +1,168 @@
+{
+  "available_sealed_test": {
+    "adequate_for_10_percent_improvement_and_5_percent_failure_cap": false,
+    "distinct_group_keys": 34,
+    "group_key_definition": "nonempty official MIPLIB Group; officially ungrouped instances use one instance-specific key",
+    "group_keys_seen_in_training": 10,
+    "group_keys_unseen_in_training": 24,
+    "group_ood_limitation": "10 test Group keys also occur in training, so the sealed split cannot support a strict Group-OOD claim as a whole",
+    "instance_independence_sensitivity": {
+      "assumption": "all 35 test instances are mutually independent",
+      "independent_units": 35,
+      "minimum_detectable_ratio": 0.8544950172275052,
+      "minimum_detectable_relative_improvement": 0.1455049827724948,
+      "zero_failure_upper_bound": 0.08203163585667045
+    },
+    "instances": 35,
+    "official_group_cluster_sensitivity": {
+      "independent_units": 34,
+      "minimum_detectable_ratio": 0.8525356344073259,
+      "minimum_detectable_relative_improvement": 0.14746436559267406,
+      "zero_failure_upper_bound": 0.08433964335062538
+    },
+    "repeated_test_group_keys": {
+      "square": [
+        "square41.mps.gz",
+        "square47.mps.gz"
+      ]
+    },
+    "seen_training_group_keys": [
+      "cryptanalysis",
+      "csched",
+      "dano",
+      "map",
+      "physiciansched",
+      "rmatr",
+      "rococo",
+      "sing",
+      "sp9",
+      "uccase"
+    ],
+    "source_group_metadata": "${PROJECT_ROOT}/data/manifests/miplib2017_benchmark_metadata_2026-07-16.csv",
+    "source_test_list": "${PROJECT_ROOT}/vendor/tracer_snapshot/split/test.test",
+    "strict_group_ood": false,
+    "unseen_training_group_keys": [
+      "graphs",
+      "neos-pseudoapplication-104",
+      "neos-pseudoapplication-12",
+      "neos-pseudoapplication-23",
+      "neos-pseudoapplication-31",
+      "neos-pseudoapplication-34",
+      "neos-pseudoapplication-37",
+      "neos-pseudoapplication-48",
+      "neos-pseudoapplication-61",
+      "neos-pseudoapplication-71",
+      "neos-pseudoapplication-76",
+      "neos-pseudoapplication-88",
+      "nxy-z",
+      "officially-ungrouped:academictimetablesmall.mps.gz",
+      "officially-ungrouped:irp.mps.gz",
+      "officially-ungrouped:mad.mps.gz",
+      "officially-ungrouped:mzzv42z.mps.gz",
+      "officially-ungrouped:nw04.mps.gz",
+      "officially-ungrouped:seymour1.mps.gz",
+      "officially-ungrouped:supportcase10.mps.gz",
+      "officially-ungrouped:uct-subprob.mps.gz",
+      "pr_product",
+      "square",
+      "timtab"
+    ]
+  },
+  "created_at_utc": "2026-07-21T03:02:22.136985+00:00",
+  "decision": "Do not unseal the 35-instance test merely to answer the review: it contains only 34 independent Group keys, including 10 seen in training, and is insufficient for the proposed superiority, noninferiority, and safety claims. A superiority-plus-safety study needs 78 independent Group keys; a dual-purpose design that can also establish 5% noninferiority under a true ratio of 1.00 needs 364.",
+  "performance_precision": {
+    "alpha": 0.05,
+    "effect_sizes": {
+      "10%": {
+        "required_instances_one_sided_alpha_0.05_power_0.80": 78,
+        "target_ratio": 0.9
+      },
+      "15%": {
+        "required_instances_one_sided_alpha_0.05_power_0.80": 33,
+        "target_ratio": 0.85
+      },
+      "5%": {
+        "required_instances_one_sided_alpha_0.05_power_0.80": 329,
+        "target_ratio": 0.95
+      }
+    },
+    "estimand": "instance-equal geometric mean paired PAR-2 ratio of learned policy to native; historical SCIP-time variability is used only as a planning proxy for a future implementation-aware endpoint",
+    "noninferiority_test": {
+      "interpretation": "approximately 80% power to exclude the 5% harm margin when the true ratio is 1.00",
+      "null_hypothesis": "ratio >= 1.05",
+      "planning_alternative": "ratio = 1.00",
+      "required_instances": 364
+    },
+    "normal_approximation_formula": "ceil((sigma * (z_(1-alpha) + z_power) / (log(null_ratio) - log(alternative_ratio)))^2)",
+    "one_sided": true,
+    "power": 0.8,
+    "superiority_test": {
+      "interpretation": "approximately 80% power when the true ratio is 0.90; this is not an 80% probability of proving an improvement of at least 10%",
+      "null_hypothesis": "ratio >= 1.00",
+      "planning_alternative": "ratio = 0.90",
+      "required_instances": 78
+    }
+  },
+  "recommended_future_design": {
+    "additional_group_ood_keys_beyond_current_unseen_test": 340,
+    "additional_independent_group_keys_beyond_sealed_test": 330,
+    "arms": [
+      "native",
+      "xgb-imitation-shadow",
+      "xgb-imitation-rank"
+    ],
+    "dual_purpose_minimum_independent_instances": 364,
+    "group_ood_requirement": "a future Group-OOD queue must use evaluation Group keys that are disjoint from every development and training Group key",
+    "independent_unit_definition": "official MIPLIB Group key; officially ungrouped instances use one instance-specific key",
+    "maximum_acceptable_group_key_failure_probability": 0.05,
+    "maximum_basis": {
+      "maximum": 364,
+      "noninferiority_instances": 364,
+      "superiority_instances": 78,
+      "zero_failure_safety_instances": 59
+    },
+    "minimum_independent_instances": 364,
+    "minimum_meaningful_improvement": 0.1,
+    "performance_noninferiority_margin": 0.05,
+    "primary_multiplicity": "one learned-versus-native policy contrast; superiority and noninferiority serve distinct predeclared claims, while shadow-versus-native remains a structural and overhead diagnostic",
+    "seeds_per_instance": 3,
+    "superiority_and_safety_minimum_instances": 78,
+    "superiority_and_safety_three_arm_including_shadow_runs": 702,
+    "superiority_and_safety_two_arm_runs": 468,
+    "three_arm_including_shadow_runs": 3276,
+    "two_arm_main_comparison_runs": 2184
+  },
+  "safety_precision": {
+    "acceptance_rule": "observe zero failures and require the one-sided exact 95% Clopper-Pearson upper bound to be no greater than 0.05",
+    "confidence": 0.95,
+    "interpretation": "a confidence-bound requirement, not an 80%-power calculation",
+    "maximum_failure_probability_scenarios": {
+      "10.0%": {
+        "achieved_upper_bound": 0.0981446276772957,
+        "required_zero_failure_instances": 29
+      },
+      "2.5%": {
+        "achieved_upper_bound": 0.024859992430424388,
+        "required_zero_failure_instances": 119
+      },
+      "5.0%": {
+        "achieved_upper_bound": 0.04950760988822693,
+        "required_zero_failure_instances": 59
+      }
+    },
+    "required_instances_for_five_percent_cap": 59,
+    "unit": "independent Group key"
+  },
+  "schema_version": 3,
+  "status": "post-review prospective planning; not applied retroactively",
+  "variance_source": {
+    "conservative_planning_standard_deviation": 0.3741327367245724,
+    "instance_log_ratio_standard_deviation_by_fixed_policy": {
+      "adaptive-score": 0.3741327367245724,
+      "efficacy-rank": 0.3660932435840212,
+      "random-rank": 0.29654973254289274
+    },
+    "limitation": "fixed-policy variability is a proxy because no multi-instance learned online experiment exists",
+    "source": "${PROJECT_ROOT}/data/manifests/paper_statistics_publication_fixed_baselines_itt_v2.json"
+  }
+}

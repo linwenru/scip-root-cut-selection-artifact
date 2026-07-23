@@ -1,0 +1,709 @@
+{
+  "created_at_utc": "2026-07-21T03:02:36.747557+00:00",
+  "fixed_policy_intention_to_treat": {
+    "actions": {
+      "adaptive-score": {
+        "ci95": [
+          0.8639879305481107,
+          1.0842413962572017
+        ],
+        "conditional_policy_safety": {
+          "causal_attribution_to_selection_change": false,
+          "estimand": "conditional ITT policy safety; fallback is part of the assigned policy and no selection-change attribution is claimed",
+          "failure_instances": 0,
+          "failure_rate": 0.0,
+          "failure_rule": "an instance fails if any native-complete pair has an incomplete or terminally nonequivalent policy outcome",
+          "includes_policy_fallbacks": true,
+          "instances": 31,
+          "native_complete_pairs": 91,
+          "policy_fallback_pairs_in_population_instances": 52,
+          "population_rule": "instances with at least one native-complete predeclared seed block",
+          "upper_one_sided_exact_clopper_pearson": 0.09211405994732369
+        },
+        "gate_passed": false,
+        "instance_wins_ties_losses": [
+          19,
+          9,
+          12
+        ],
+        "instances": 40,
+        "intervention_pairs": 62,
+        "native_complete_secondary_ratio": 1.0018973831581204,
+        "outcome_pair_counts": {
+          "both_complete": 91,
+          "both_incomplete": 28,
+          "native_complete_treatment_incomplete": 0,
+          "native_incomplete_treatment_complete": 1
+        },
+        "pairs": 120,
+        "policy_fallback_pairs": 58,
+        "ratio_treatment_over_native": 0.9783830991204797
+      },
+      "efficacy-rank": {
+        "ci95": [
+          0.9081196239881193,
+          1.1366870219867238
+        ],
+        "conditional_policy_safety": {
+          "causal_attribution_to_selection_change": false,
+          "estimand": "conditional ITT policy safety; fallback is part of the assigned policy and no selection-change attribution is claimed",
+          "failure_instances": 2,
+          "failure_rate": 0.06451612903225806,
+          "failure_rule": "an instance fails if any native-complete pair has an incomplete or terminally nonequivalent policy outcome",
+          "includes_policy_fallbacks": true,
+          "instances": 31,
+          "native_complete_pairs": 91,
+          "policy_fallback_pairs_in_population_instances": 15,
+          "population_rule": "instances with at least one native-complete predeclared seed block",
+          "upper_one_sided_exact_clopper_pearson": 0.18946446742553874
+        },
+        "gate_passed": false,
+        "instance_wins_ties_losses": [
+          16,
+          9,
+          15
+        ],
+        "instances": 40,
+        "intervention_pairs": 103,
+        "native_complete_secondary_ratio": 1.0646621041272069,
+        "outcome_pair_counts": {
+          "both_complete": 89,
+          "both_incomplete": 28,
+          "native_complete_treatment_incomplete": 2,
+          "native_incomplete_treatment_complete": 1
+        },
+        "pairs": 120,
+        "policy_fallback_pairs": 17,
+        "ratio_treatment_over_native": 1.01026338599963
+      },
+      "random-rank": {
+        "ci95": [
+          0.9641646633725905,
+          1.152111068868835
+        ],
+        "conditional_policy_safety": {
+          "causal_attribution_to_selection_change": false,
+          "estimand": "conditional ITT policy safety; fallback is part of the assigned policy and no selection-change attribution is claimed",
+          "failure_instances": 1,
+          "failure_rate": 0.03225806451612903,
+          "failure_rule": "an instance fails if any native-complete pair has an incomplete or terminally nonequivalent policy outcome",
+          "includes_policy_fallbacks": true,
+          "instances": 31,
+          "native_complete_pairs": 91,
+          "policy_fallback_pairs_in_population_instances": 7,
+          "population_rule": "instances with at least one native-complete predeclared seed block",
+          "upper_one_sided_exact_clopper_pearson": 0.14409039131834483
+        },
+        "gate_passed": false,
+        "instance_wins_ties_losses": [
+          14,
+          9,
+          17
+        ],
+        "instances": 40,
+        "intervention_pairs": 113,
+        "native_complete_secondary_ratio": 1.1113891183107125,
+        "outcome_pair_counts": {
+          "both_complete": 89,
+          "both_incomplete": 28,
+          "native_complete_treatment_incomplete": 2,
+          "native_incomplete_treatment_complete": 1
+        },
+        "pairs": 120,
+        "policy_fallback_pairs": 7,
+        "ratio_treatment_over_native": 1.0408323956434418
+      }
+    },
+    "all_predeclared_blocks_retained": true,
+    "full_arm_wall_time_limitation": "historical fixed-policy records did not retain paired full-arm wall time",
+    "full_arm_wall_time_sensitivity_available": false,
+    "primary_estimand": "intention-to-treat PAR-2 penalized solving-time ratio",
+    "primary_time_field": "SCIP-reported solving_time"
+  },
+  "learned_policy_online_evidence": {
+    "complete_solve_effect_established": false,
+    "inference": "The learned ranker has integration evidence only and has not received an independent complete-solve efficacy test.",
+    "learned_action_in_publication_experiment": false,
+    "publication_fixed_actions": [
+      "random-rank",
+      "efficacy-rank",
+      "adaptive-score"
+    ],
+    "smoke_test_eligible_pairs": 0,
+    "smoke_test_instances": 1,
+    "smoke_test_policy_fallback_pairs": 1
+  },
+  "model_selection": {
+    "best_iteration": 134,
+    "early_stopping_dataset": "official_group_ood_val",
+    "early_stopping_metric": "ndcg@10",
+    "label": "native SCIP cut application",
+    "model_kind": "XGBoost rank:ndcg imitation model",
+    "required_revision": "select the boosting round inside training groups, freeze it, then evaluate once with Group-level resampling",
+    "same_dataset_used_for_reported_interval": true,
+    "stage_gate_passed": false
+  },
+  "observational_scope": {
+    "forced_root_rows": 701,
+    "interpretation": "Post-action labels define metric/training informativeness only; they are not part of the online actionability condition.",
+    "offline_pairwise_informative_definition": "post-action native labels contain at least one applied and one non-applied candidate",
+    "online_actionable_candidates": 219892,
+    "online_actionable_decisions": 318,
+    "online_actionable_definition": [
+      "first not-yet-used root decision in a SCIP run",
+      "pre-action LP state is present",
+      "at least two logical optional candidates",
+      "no ambiguous source cut_id collision"
+    ],
+    "optional_root_candidate_occurrences": 8454995,
+    "root_row_accounting_closes": true,
+    "source_root_rows": 8455696,
+    "train_actionable_queries": 215,
+    "train_all_applied_queries_excluded_from_pairwise_fit": 11,
+    "train_pairwise_informative_queries": 204
+  },
+  "parity": {
+    "complete_callback_exercised_pairs_per_arm": {
+      "direct-hybrid": 34,
+      "noop": 34
+    },
+    "conditional_complete_callback_evidence_passed": true,
+    "exceptions": [
+      {
+        "candidate_arm": "noop",
+        "candidate_status": "optimal",
+        "classification": "callback_not_exercised",
+        "instance_id": "hypothyroid-k1",
+        "native_status": "optimal",
+        "seed": 1
+      },
+      {
+        "candidate_arm": "direct-hybrid",
+        "candidate_status": "optimal",
+        "classification": "callback_not_exercised",
+        "instance_id": "hypothyroid-k1",
+        "native_status": "optimal",
+        "seed": 1
+      },
+      {
+        "candidate_arm": "noop",
+        "candidate_status": "timelimit",
+        "classification": "both_arms_same_incomplete_limit_status",
+        "instance_id": "neos-1582420",
+        "native_status": "timelimit",
+        "seed": 2
+      },
+      {
+        "candidate_arm": "direct-hybrid",
+        "candidate_status": "timelimit",
+        "classification": "both_arms_same_incomplete_limit_status",
+        "instance_id": "neos-1582420",
+        "native_status": "timelimit",
+        "seed": 2
+      }
+    ],
+    "manuscript_status": "conditional diagnostic parity only; the strict predeclared gate failed",
+    "pairs_per_arm": {
+      "direct-hybrid": 36,
+      "noop": 36
+    },
+    "predeclared_strict_all_pair_gate_passed": false
+  },
+  "post_review_model_selection": {
+    "boosting_rounds": 42,
+    "bootstrap_cluster": "official Group; ungrouped instances are unique keys",
+    "official_group_ood_selection_overlap": {
+      "bootstrap_probability_positive": 0.9988,
+      "ci95_lower": 0.010387927185467476,
+      "ci95_upper": 0.06171235288701229,
+      "clusters": 18,
+      "delta": 0.03398928778379227,
+      "instances": 20
+    },
+    "primary_offline_metric": "selection_overlap at each query's native budget",
+    "round_selection_external_validation_used": false,
+    "seen_group_selection_overlap": {
+      "bootstrap_probability_positive": 0.0,
+      "ci95_lower": -0.014022933588150977,
+      "ci95_upper": 0.0,
+      "clusters": 5,
+      "delta": -0.00633062589584329,
+      "instances": 5
+    },
+    "stage_gate": {
+      "checks": {
+        "primary_native_budget_overlap_group_ci95_excludes_zero": true,
+        "primary_native_budget_overlap_point_improves": true,
+        "primary_ndcg10_point_does_not_regress": true,
+        "seen_group_native_budget_overlap_does_not_regress": false
+      },
+      "consequence": "retitle as an audit/fixed-intervention study; do not unseal test",
+      "passed": false
+    }
+  },
+  "prospective_precision": {
+    "available_test": {
+      "adequate_for_10_percent_improvement_and_5_percent_failure_cap": false,
+      "distinct_group_keys": 34,
+      "group_key_definition": "nonempty official MIPLIB Group; officially ungrouped instances use one instance-specific key",
+      "group_keys_seen_in_training": 10,
+      "group_keys_unseen_in_training": 24,
+      "group_ood_limitation": "10 test Group keys also occur in training, so the sealed split cannot support a strict Group-OOD claim as a whole",
+      "instance_independence_sensitivity": {
+        "assumption": "all 35 test instances are mutually independent",
+        "independent_units": 35,
+        "minimum_detectable_ratio": 0.8544950172275052,
+        "minimum_detectable_relative_improvement": 0.1455049827724948,
+        "zero_failure_upper_bound": 0.08203163585667045
+      },
+      "instances": 35,
+      "official_group_cluster_sensitivity": {
+        "independent_units": 34,
+        "minimum_detectable_ratio": 0.8525356344073259,
+        "minimum_detectable_relative_improvement": 0.14746436559267406,
+        "zero_failure_upper_bound": 0.08433964335062538
+      },
+      "repeated_test_group_keys": {
+        "square": [
+          "square41.mps.gz",
+          "square47.mps.gz"
+        ]
+      },
+      "seen_training_group_keys": [
+        "cryptanalysis",
+        "csched",
+        "dano",
+        "map",
+        "physiciansched",
+        "rmatr",
+        "rococo",
+        "sing",
+        "sp9",
+        "uccase"
+      ],
+      "source_group_metadata": "${PROJECT_ROOT}/data/manifests/miplib2017_benchmark_metadata_2026-07-16.csv",
+      "source_test_list": "${PROJECT_ROOT}/vendor/tracer_snapshot/split/test.test",
+      "strict_group_ood": false,
+      "unseen_training_group_keys": [
+        "graphs",
+        "neos-pseudoapplication-104",
+        "neos-pseudoapplication-12",
+        "neos-pseudoapplication-23",
+        "neos-pseudoapplication-31",
+        "neos-pseudoapplication-34",
+        "neos-pseudoapplication-37",
+        "neos-pseudoapplication-48",
+        "neos-pseudoapplication-61",
+        "neos-pseudoapplication-71",
+        "neos-pseudoapplication-76",
+        "neos-pseudoapplication-88",
+        "nxy-z",
+        "officially-ungrouped:academictimetablesmall.mps.gz",
+        "officially-ungrouped:irp.mps.gz",
+        "officially-ungrouped:mad.mps.gz",
+        "officially-ungrouped:mzzv42z.mps.gz",
+        "officially-ungrouped:nw04.mps.gz",
+        "officially-ungrouped:seymour1.mps.gz",
+        "officially-ungrouped:supportcase10.mps.gz",
+        "officially-ungrouped:uct-subprob.mps.gz",
+        "pr_product",
+        "square",
+        "timtab"
+      ]
+    },
+    "decision": "Do not unseal the 35-instance test merely to answer the review: it contains only 34 independent Group keys, including 10 seen in training, and is insufficient for the proposed superiority, noninferiority, and safety claims. A superiority-plus-safety study needs 78 independent Group keys; a dual-purpose design that can also establish 5% noninferiority under a true ratio of 1.00 needs 364.",
+    "recommended_future_design": {
+      "additional_group_ood_keys_beyond_current_unseen_test": 340,
+      "additional_independent_group_keys_beyond_sealed_test": 330,
+      "arms": [
+        "native",
+        "xgb-imitation-shadow",
+        "xgb-imitation-rank"
+      ],
+      "dual_purpose_minimum_independent_instances": 364,
+      "group_ood_requirement": "a future Group-OOD queue must use evaluation Group keys that are disjoint from every development and training Group key",
+      "independent_unit_definition": "official MIPLIB Group key; officially ungrouped instances use one instance-specific key",
+      "maximum_acceptable_group_key_failure_probability": 0.05,
+      "maximum_basis": {
+        "maximum": 364,
+        "noninferiority_instances": 364,
+        "superiority_instances": 78,
+        "zero_failure_safety_instances": 59
+      },
+      "minimum_independent_instances": 364,
+      "minimum_meaningful_improvement": 0.1,
+      "performance_noninferiority_margin": 0.05,
+      "primary_multiplicity": "one learned-versus-native policy contrast; superiority and noninferiority serve distinct predeclared claims, while shadow-versus-native remains a structural and overhead diagnostic",
+      "seeds_per_instance": 3,
+      "superiority_and_safety_minimum_instances": 78,
+      "superiority_and_safety_three_arm_including_shadow_runs": 702,
+      "superiority_and_safety_two_arm_runs": 468,
+      "three_arm_including_shadow_runs": 3276,
+      "two_arm_main_comparison_runs": 2184
+    }
+  },
+  "publication_cohort_grouping": {
+    "distinct_group_keys": 40,
+    "distinct_nonempty_official_groups": 30,
+    "instances": 40,
+    "instances_with_official_group": 30,
+    "officially_ungrouped_instances": 10,
+    "wording": "40 distinct group keys: 30 nonempty official Groups and 10 instance-specific keys for officially ungrouped cases"
+  },
+  "publication_cohort_overlap": {
+    "active_instances": 40,
+    "inference": "The active cohort is a selected training-split development cohort, not an independent generalization cohort.",
+    "overlap_by_queue": {
+      "action_oracle_pilot": {
+        "count": 5,
+        "instance_ids": [
+          "exp-1-500-5-5",
+          "neos-1171448",
+          "neos8",
+          "piperout-27",
+          "swath1"
+        ]
+      },
+      "cohort_a": {
+        "count": 8,
+        "instance_ids": [
+          "air05",
+          "cbs-cta",
+          "hypothyroid-k1",
+          "mc11",
+          "neos-1582420",
+          "neos-911970",
+          "neos859080",
+          "nu25-pr12"
+        ]
+      },
+      "cohort_b": {
+        "count": 8,
+        "instance_ids": [
+          "cod105",
+          "dano3_3",
+          "eil33-2",
+          "fhnw-binpack4-4",
+          "istanbul-no-cutoff",
+          "neos-3004026-krka",
+          "nursesched-sprint02",
+          "roll3000"
+        ]
+      },
+      "cohort_c": {
+        "count": 8,
+        "instance_ids": [
+          "30n20b8",
+          "binkar10_1",
+          "h80x6320d",
+          "mik-250-20-75-4",
+          "n2seq36q",
+          "ns1830653",
+          "physiciansched6-2",
+          "rmatr100-p10"
+        ]
+      },
+      "fixed_baseline_disjoint_pilot": {
+        "count": 0,
+        "instance_ids": []
+      },
+      "fixed_baseline_train_pilot": {
+        "count": 5,
+        "instance_ids": [
+          "exp-1-500-5-5",
+          "neos-1171448",
+          "neos8",
+          "piperout-27",
+          "swath1"
+        ]
+      }
+    },
+    "previously_unevaluated_instance_ids": [
+      "blp-ic98",
+      "co-100",
+      "fast0507",
+      "lectsched-5-obj",
+      "neos-3046615-murg",
+      "neos-5104907-jarama",
+      "neos-662469",
+      "neos-848589",
+      "pg5_34",
+      "rail507",
+      "supportcase6"
+    ],
+    "previously_unevaluated_instances": 11,
+    "unique_instances_previously_evaluated": 29,
+    "unique_previously_evaluated_instance_ids": [
+      "30n20b8",
+      "air05",
+      "binkar10_1",
+      "cbs-cta",
+      "cod105",
+      "dano3_3",
+      "eil33-2",
+      "exp-1-500-5-5",
+      "fhnw-binpack4-4",
+      "h80x6320d",
+      "hypothyroid-k1",
+      "istanbul-no-cutoff",
+      "mc11",
+      "mik-250-20-75-4",
+      "n2seq36q",
+      "neos-1171448",
+      "neos-1582420",
+      "neos-3004026-krka",
+      "neos-911970",
+      "neos8",
+      "neos859080",
+      "ns1830653",
+      "nu25-pr12",
+      "nursesched-sprint02",
+      "physiciansched6-2",
+      "piperout-27",
+      "rmatr100-p10",
+      "roll3000",
+      "swath1"
+    ]
+  },
+  "revision_decisions": {
+    "current_generalization_claim_supported": false,
+    "current_learned_complete_solve_claim_supported": false,
+    "current_reproducible_claim_supported": false,
+    "existing_fixed_policy_result": "No fixed policy passes the predeclared joint gate under full-block ITT; the intervals remain compatible with benefit and harm."
+  },
+  "same_path_shadow_overhead": {
+    "analysis_contract": {
+      "bootstrap_replicates": 10000,
+      "bootstrap_type": "paired percentile instance-cluster bootstrap",
+      "bootstrap_unit": "12 MPS instances",
+      "callback_coverage": "reported descriptively and not used to remove any block",
+      "exposure_bootstrap_seeds": {
+        "arm_wall_time_seconds": 20260821,
+        "solving_time": 20260820
+      },
+      "exposure_population": "35 pairs in which the complete feature-and-inference path executed",
+      "inference": "implementation-path overhead and neutrality only; no learned-policy efficacy or generalization claim",
+      "itt_bootstrap_seeds": {
+        "arm_wall_time_seconds": 20260721,
+        "solving_time": 20260720
+      },
+      "itt_population": "all 36 fallback-inclusive predeclared pairs",
+      "overhead_estimands": [
+        "full-block ITT PAR-2 solving-time ratio shadow/native",
+        "full-block ITT PAR-2 Python arm-wall-time ratio shadow/native",
+        "model-load, callback, context, hybrid, and policy timing components"
+      ],
+      "primary_population": "all 36 predeclared instance-seed blocks",
+      "seed_handling": "average paired log ratios over nested seeds within each instance",
+      "structural_gate": "all same-status fields, bounds, nodes, LP iterations, LP counts, and cuts applied match; no shadow arm changes the selected set"
+    },
+    "full_path_exposure_sensitivity": {
+      "arm_wall_time_seconds": {
+        "cluster_bootstrap_interval": {
+          "confidence": 0.95,
+          "lower": 0.9547712535348809,
+          "replicates": 10000,
+          "seed": 20260821,
+          "upper": 1.117622678844272
+        },
+        "geometric_mean_ratio_shadow_over_native": 1.0361288158646538,
+        "instances": 12,
+        "pairs": 35
+      },
+      "solving_time": {
+        "cluster_bootstrap_interval": {
+          "confidence": 0.95,
+          "lower": 0.9078391634521245,
+          "replicates": 10000,
+          "seed": 20260820,
+          "upper": 1.0220818833648555
+        },
+        "geometric_mean_ratio_shadow_over_native": 0.970559642385681,
+        "instances": 12,
+        "pairs": 35
+      }
+    },
+    "full_path_structural_matches": 35,
+    "inference": "No structural difference was observed in the 36 fallback-inclusive policy pairs; only 35 pairs executed the complete learned path. The time analyses quantify implementation-path overhead, not learned-ranking efficacy or generalization.",
+    "instances": 12,
+    "itt_par2": {
+      "arm_wall_time_seconds": {
+        "cluster_bootstrap_interval": {
+          "confidence": 0.95,
+          "lower": 1.0153484858731596,
+          "replicates": 10000,
+          "seed": 20260721,
+          "upper": 1.13903747800965
+        },
+        "geometric_mean_ratio_shadow_over_native": 1.0748244940175116,
+        "instances": 12,
+        "pairs": 36
+      },
+      "solving_time": {
+        "cluster_bootstrap_interval": {
+          "confidence": 0.95,
+          "lower": 0.9727532487686316,
+          "replicates": 10000,
+          "seed": 20260720,
+          "upper": 1.0455990914605955
+        },
+        "geometric_mean_ratio_shadow_over_native": 1.0076896148036867,
+        "instances": 12,
+        "pairs": 36
+      }
+    },
+    "pairs": 36,
+    "policy_pair_structural_matches": 36,
+    "proposed_selected_set_change_pairs": 32,
+    "shadow_evaluation_pairs": 35,
+    "structural_gate_passed": true,
+    "timing_seconds": {
+      "callback_total": {
+        "mean": 0.052453824833333336,
+        "median": 0.027250625,
+        "p95": 0.313214,
+        "records": 36,
+        "sum": 1.888337694
+      },
+      "context_capture": {
+        "mean": 0.014016684,
+        "median": 0.0069265625,
+        "p95": 0.099468542,
+        "records": 36,
+        "sum": 0.5046006239999999
+      },
+      "model_load": {
+        "mean": 0.4620285521388889,
+        "median": 0.358161271,
+        "p95": 0.814963875,
+        "records": 36,
+        "sum": 16.633027877
+      },
+      "native_hybrid": {
+        "mean": 0.0030963993055555554,
+        "median": 0.0009521665,
+        "p95": 0.017624208,
+        "records": 36,
+        "sum": 0.111470375
+      },
+      "policy_compute": {
+        "mean": 0.032511540472222225,
+        "median": 0.016525771,
+        "p95": 0.204554708,
+        "records": 36,
+        "sum": 1.170415457
+      }
+    }
+  },
+  "schema_version": 2,
+  "source_artifacts": {
+    "active_plan": {
+      "path": "${PROJECT_ROOT}/data/manifests/publication_active_plan_v1.json",
+      "sha256": "cb57b35cfb43acfd4993fb145ee2c7296b6cd9e2924f96ae2a5a3e5bdd8d307f"
+    },
+    "assignments": {
+      "path": "${PROJECT_ROOT}/data/manifests/evaluation_protocols/instance_assignments.csv",
+      "sha256": "5af50bd3da90809f1c5ee321c42c016a496b272a943608275b807a4a9a343941"
+    },
+    "development_action_oracle_pilot": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_action_oracle_pilot_v1.json",
+      "sha256": "cfd5a7e6dfa2c2c5b4961505bbff05f37747545f43c2c9f738cf2d471473ecf3"
+    },
+    "development_cohort_a": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_action_oracle_first_run_cohort_a_v1.json",
+      "sha256": "dde65d5ca90c53cfbe129de5c2c44a172634f027783c2d3b7d832edf59c35679"
+    },
+    "development_cohort_b": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_action_oracle_first_run_cohort_b_v1.json",
+      "sha256": "1b7641623a86ba350589fe3df77d502525c47d04f2eb3c94ab9c861c54e9f68c"
+    },
+    "development_cohort_c": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_action_efficacy_first_run_cohort_c_v1.json",
+      "sha256": "e35e68b7fec021bdd9879aac5287bc28130a1d04eaee1043625fd5efe767bae8"
+    },
+    "development_fixed_baseline_disjoint_pilot": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_fixed_baseline_disjoint_train_pilot_v2.json",
+      "sha256": "f8ff45b5b3218af928c0e6d0a798da2576a85b9a2dbfb397669688522de2c330"
+    },
+    "development_fixed_baseline_train_pilot": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_fixed_baseline_train_pilot_v1.json",
+      "sha256": "10e6d0f5539e7af9f1b0502d8e5768dd031b84bd6437ceb8a85526b71ee80d28"
+    },
+    "fixed_results": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_publication_fixed_baselines_v1.json",
+      "sha256": "021c9fe381082e9f5de1d87f604b9026cffed37df291b9f4408881e97ae60249"
+    },
+    "itt_reanalysis": {
+      "path": "${PROJECT_ROOT}/data/manifests/paper_statistics_publication_fixed_baselines_itt_v2.json",
+      "sha256": "f4edc1d6b441e543563250408225fea4c9815f2eb51f894bb4c5ae16627f8116"
+    },
+    "learned_smoke": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_online_imitation_smoke_v1.json",
+      "sha256": "923c6c742bfcfe452b58c65ea26ea3be86aca666a32a346d84eeeb0bd74d40b0"
+    },
+    "online_dataset": {
+      "path": "${PROJECT_ROOT}/data/manifests/ranking_imitation_online_v1.json",
+      "sha256": "4d018fda2e3b9e1ad7c709baf7ca29510dbeb6902600e96556eae039915d2908"
+    },
+    "online_model": {
+      "path": "${PROJECT_ROOT}/data/manifests/ranking_imitation_online_xgb_v1.json",
+      "sha256": "3746ce2f5f539ba1cc1d8d9fc14a2b0b2bc7f1d3f1af2ffaaccdb4e8edb9d64d"
+    },
+    "parity": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_publication_parity_v1.json",
+      "sha256": "1c2b6570b04d649e01082cbbc9e4106fc08595a5102c51bc6d7af5c1b2a7d8e6"
+    },
+    "post_review_model": {
+      "path": "${PROJECT_ROOT}/data/manifests/ranking_imitation_online_xgb_revision_v1.json",
+      "sha256": "1bca19ec8ceac6af46cdda6edc2c58cbb6c5ebb78899a611368e757bc84aee4d"
+    },
+    "precision_plan": {
+      "path": "${PROJECT_ROOT}/data/manifests/major_revision_precision_plan_v1.json",
+      "sha256": "6d2500366bfe03d0c7072edc6bacf52e1aa02c673ed03e645a9024abfadf28ff"
+    },
+    "root_observational": {
+      "path": "${PROJECT_ROOT}/data/manifests/root_observational_v1.json",
+      "sha256": "fa64c1307b3f0e63ab102d52b1d4e4d969b692304d2be72f09bad381ef1b1d47"
+    },
+    "shadow_overhead": {
+      "path": "${PROJECT_ROOT}/data/manifests/major_revision_shadow_overhead_statistics_v1.json",
+      "sha256": "e16d08aeaa928adc8359bb90b29b362bb7e22a481e88b8976bd0861f5f7fa48f"
+    }
+  },
+  "status": "post-review diagnostic audit; not a preregistration",
+  "validation_grouping": {
+    "assigned_official_group_ood": {
+      "instances": 22,
+      "official_groups": 19,
+      "repeated_groups": {
+        "drayage": [
+          "drayage-100-23.mps.gz",
+          "drayage-25-23.mps.gz"
+        ],
+        "rail0": [
+          "rail01.mps.gz",
+          "rail02.mps.gz"
+        ],
+        "rocI": [
+          "rocI-4-11.mps.gz",
+          "rocII-5-11.mps.gz"
+        ]
+      }
+    },
+    "bootstrap_issue": "The published interval resampled evaluated instances, while official Group is the highest shared clustering level.",
+    "evaluated_eligible_official_group_ood": {
+      "instances": 20,
+      "official_groups": 18,
+      "repeated_groups": {
+        "drayage": [
+          "drayage-100-23.mps.gz",
+          "drayage-25-23.mps.gz"
+        ],
+        "rocI": [
+          "rocI-4-11.mps.gz",
+          "rocII-5-11.mps.gz"
+        ]
+      }
+    }
+  }
+}

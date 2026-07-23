@@ -1,0 +1,4 @@
+*.docx binary
+*.pdf binary
+*.png binary
+vendor/miplib2017_collection_snapshot/set_collection.html whitespace=-trailing-space

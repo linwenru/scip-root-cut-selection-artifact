@@ -1,0 +1,39 @@
+{
+  "created_at_utc": "2026-07-21T07:51:08.915392+00:00",
+  "output": {
+    "path": "data/manifests/miplib2017_collection_metadata_2026-07-21.csv",
+    "sha256": "918dded2f463e8b1b05ffb5afd950284b718a8d9f36cd1b06b36fb2fee04e357"
+  },
+  "purpose": "freeze official MIPLIB 2017 Collection Group metadata and current status sets for leakage-safe learned-policy pilot selection",
+  "schema_version": 1,
+  "sources": {
+    "collection_html": {
+      "path": "vendor/miplib2017_collection_snapshot/set_collection.html",
+      "sha256": "0e1a6f99b6e3844bec06d19ef157dc98ff83224a36e07b0ec962b0fe67707794",
+      "url": "https://miplib.zib.de/set_collection.html"
+    },
+    "easy_test": {
+      "path": "vendor/miplib2017_collection_snapshot/easy-v18.test",
+      "sha256": "dcf3b46e0b59397581b79657b516262eb532a4dd41980b4d7ad810065b0cfb62",
+      "url": "https://miplib.zib.de/downloads/easy-v18.test"
+    },
+    "infeasible_test": {
+      "path": "vendor/miplib2017_collection_snapshot/infeasible-v7.test",
+      "sha256": "abc873c5c8f0224bc0d7d6aaae09b9dd4c4d99e72e4a5b10e63be27c4b864cd3",
+      "url": "https://miplib.zib.de/downloads/infeasible-v7.test"
+    }
+  },
+  "status_precedence": "infeasible-v7 overrides easy-v18; easy-v18 overrides the Collection HTML; an HTML-only easy label absent from easy-v18 becomes not-easy-current",
+  "summary": {
+    "grouped_instances": 844,
+    "instances": 1065,
+    "status_counts": {
+      "easy": 711,
+      "hard": 44,
+      "infeasible": 44,
+      "not-easy-current": 1,
+      "open": 265
+    },
+    "unique_nonempty_groups": 240
+  }
+}

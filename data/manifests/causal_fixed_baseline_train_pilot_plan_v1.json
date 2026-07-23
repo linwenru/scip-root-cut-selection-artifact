@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "status": "pre_registered_before_active_outcomes",
+  "created_date": "2026-07-17",
+  "split": "train",
+  "purpose": "implementation, intervention-coverage, and safety pilot for three fixed first-run ranking baselines; not validation evidence",
+  "selection_contract": {
+    "source_runtime_table": "${TRACE_SOURCE_ROOT}/benchmark_output_train/summary.csv",
+    "source_ranking_matrix": "data/datasets/ranking_imitation_v1/train.npz",
+    "source_assignments": "data/manifests/evaluation_protocols/instance_assignments.csv",
+    "requirements": [
+      "original split is train",
+      "source trace status is ok",
+      "a first-run policy-eligible root decision exists in the leakage-safe observational view",
+      "source trace elapsed time is below 10 seconds",
+      "the local MPS file exists and matches the recorded SHA-256",
+      "the instance was not used by the first-run pilot or cohorts A, B, or C",
+      "official MIPLIB Group is nonempty and distinct within this pilot"
+    ],
+    "sampling": "complete enumeration of all five instances satisfying the requirements; no active treatment outcome was used",
+    "role": "development pilot only; outcomes may determine whether a larger train cohort is worth running but cannot support validation or test claims"
+  },
+  "experiment_contract": {
+    "actions": [
+      "random-rank",
+      "efficacy-rank",
+      "adaptive-score"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "time_limit_seconds": 30,
+    "node_limit": null,
+    "intervention_scope": "first-run-only",
+    "arms_per_seed": 4,
+    "process_isolation": "one fresh Python/SCIP process per instance, seed, and arm",
+    "selected_cut_budget": "each fixed baseline preserves native hybrid selected-cut count and leaves forced cuts untouched",
+    "primary_metric": "PAR-2 penalized solving-time ratio, aggregated over seeds and then instances",
+    "secondary_metrics": [
+      "LP iterations",
+      "total nodes",
+      "primal-dual integral",
+      "cuts applied",
+      "actual intervention coverage"
+    ],
+    "analysis_command": "scip-cut-trace-v2-paper-stats with 10000 cluster-bootstrap replicates and seed 20260717"
+  },
+  "pilot_gate": {
+    "checks_per_action": [
+      "all five native arms complete for all three seeds",
+      "zero instance-level safety failures",
+      "actual selected-set changes occur on at least three instances",
+      "instance-equal penalized-time point ratio is below 1.0",
+      "more instance wins than losses"
+    ],
+    "selection_rule": "among actions passing every pilot check, choose the smallest penalized-time ratio; ties are resolved in the fixed order efficacy-rank, adaptive-score, random-rank",
+    "passing_consequence": "pre-register a larger, disjoint train cohort; does not authorize validation or test",
+    "failure_consequence": "do not enlarge or tune the failed action on these outcomes"
+  },
+  "instances": [
+    {
+      "instance_id": "exp-1-500-5-5",
+      "instance": "${MIPLIB_INSTANCES_DIR}/exp-1-500-5-5.mps.gz",
+      "instance_sha256": "6e00da7741d808d331ff37bfcaf498bcc4c57ac24f32622f01047b6bbc7d870f",
+      "official_group": "exp_and_fc",
+      "source_trace_elapsed_seconds": 3.3219680786132812,
+      "first_run_eligible_candidates": 403,
+      "first_run_observed_applied": 134
+    },
+    {
+      "instance_id": "neos-1171448",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos-1171448.mps.gz",
+      "instance_sha256": "07c1847ca86e1f1d01895ba2bc207c4592f5db69dd4dda9abc6514ab038133e7",
+      "official_group": "neos-pseudoapplication-8",
+      "source_trace_elapsed_seconds": 6.886309862136841,
+      "first_run_eligible_candidates": 97,
+      "first_run_observed_applied": 21
+    },
+    {
+      "instance_id": "neos8",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos8.mps.gz",
+      "instance_sha256": "3634f20854022d788ba8e796273cbe029e0d089a2c6c67493179f8b94204e7d3",
+      "official_group": "neos-pseudoapplication-15",
+      "source_trace_elapsed_seconds": 1.3562321662902832,
+      "first_run_eligible_candidates": 17,
+      "first_run_observed_applied": 1
+    },
+    {
+      "instance_id": "piperout-27",
+      "instance": "${MIPLIB_INSTANCES_DIR}/piperout-27.mps.gz",
+      "instance_sha256": "0dde1d272f3d2ea0a2aafc38a82dd3e72dd1794927530175ad74f46e925482d0",
+      "official_group": "piperout",
+      "source_trace_elapsed_seconds": 7.614707946777344,
+      "first_run_eligible_candidates": 769,
+      "first_run_observed_applied": 141
+    },
+    {
+      "instance_id": "swath1",
+      "instance": "${MIPLIB_INSTANCES_DIR}/swath1.mps.gz",
+      "instance_sha256": "05b713125dfdea88f22c1d028a4a4ab081e1d03c31401b302b41025f8b0f844d",
+      "official_group": "swath",
+      "source_trace_elapsed_seconds": 8.72131609916687,
+      "first_run_eligible_candidates": 45,
+      "first_run_observed_applied": 12
+    }
+  ]
+}

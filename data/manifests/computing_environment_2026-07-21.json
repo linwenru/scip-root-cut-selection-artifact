@@ -1,0 +1,97 @@
+{
+  "captured_at_local": "2026-07-21T12:52:01+08:00",
+  "hardware": {
+    "architecture": "arm64",
+    "chip": "Apple M5",
+    "cpu_cores": {
+      "efficiency": 6,
+      "performance": 4,
+      "total": 10
+    },
+    "memory_gb": 16,
+    "model_identifier": "Mac17,3",
+    "model_name": "MacBook Air"
+  },
+  "privacy_omissions": [
+    "hardware UUID",
+    "provisioning UDID",
+    "serial number",
+    "user account name"
+  ],
+  "recorded_online_runtime": {
+    "parameters": {
+      "lp/threads": 1,
+      "parallel/maxnthreads": 1,
+      "randomization/lpseed": "paired seed 0, 1, or 2",
+      "randomization/permutationseed": "paired seed 0, 1, or 2",
+      "randomization/randomseedshift": "paired seed 0, 1, or 2"
+    },
+    "pyscipopt": "6.2.1",
+    "python": "3.13.7",
+    "scip": "10.0.2",
+    "source": "per-arm JSON runtime and parameter fields"
+  },
+  "scip_binary_build": {
+    "api_version": 156,
+    "build": "Release",
+    "build_host_ostype": "Darwin-24.6.0",
+    "compiler": "AppleClang 17.0.0.17000604",
+    "external_libraries": {
+      "AMPL/MP": "4.0.4",
+      "Boost": "1.90.0",
+      "CppAD": "20180000.0",
+      "GMP": "6.3.0",
+      "Ipopt": "3.14.19",
+      "MPFR": "4.2.2",
+      "Nauty": "2.8.8",
+      "PaPILO": "3.0.0",
+      "Readline": "8.3",
+      "SoPlex": "8.0.1",
+      "TinyCThread": "1.2",
+      "ZLIB": "1.2.12",
+      "sassy": "2.1"
+    },
+    "git_hash": "b8eaf989f9",
+    "lp_solver": "SoPlex 8.0.1",
+    "mode": "optimized",
+    "precision": "8 byte",
+    "scip": "10.0.2",
+    "selected_options": {
+      "ARCH": "arm64",
+      "BUILD": "Release",
+      "DEBUGSOL": "OFF",
+      "LPS": "spx",
+      "LTO": "OFF",
+      "SANITIZE": "OFF",
+      "SHARED": "ON",
+      "THREADSAFE": "ON;FORCE"
+    },
+    "source": "scip --version output captured on the reported host"
+  },
+  "scope": {
+    "hardware_identity": "The author confirmed that this physical Mac produced the reported online runs.",
+    "os_snapshot": "The OS fields below describe the host at capture time, not a per-arm historical OS record.",
+    "software_identity": "Per-arm records establish Python, PySCIPOpt, and SCIP versions. The current SCIP binary matches the recorded SCIP version."
+  },
+  "training_runtime": {
+    "numpy": "2.5.1",
+    "xgboost": "3.2.0",
+    "xgboost_nthread": 4,
+    "source": "frozen XGBoost model manifest"
+  },
+  "unrecoverable_or_unrecorded": [
+    "exact runtime macOS version for each historical arm",
+    "historical Cython compiler version for the bridge",
+    "power mode during each arm",
+    "process affinity during each arm",
+    "background-load policy during each arm",
+    "paired full-arm wall time for the fixed-policy experiment"
+  ],
+  "current_os_snapshot": {
+    "build": "25F71",
+    "kernel": "Darwin 25.5.0",
+    "product": "macOS",
+    "version": "26.5"
+  },
+  "schema_version": 1
+}

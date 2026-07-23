@@ -1,0 +1,91 @@
+{
+  "actions": {
+    "adaptive-score": {
+      "checks": {
+        "all_native_arms_complete": false,
+        "more_instance_wins_than_losses": false,
+        "penalized_time_point_ratio_below_one": false,
+        "selected_set_changes_on_at_least_three_instances": false,
+        "zero_instance_safety_failures": false
+      },
+      "expected_native_complete_pairs": 15,
+      "instance_losses": 3,
+      "instance_wins": 2,
+      "intervention_instances": 2,
+      "observed_native_complete_pairs": 13,
+      "passed": false,
+      "penalized_time_ratio": 1.0719139798056447,
+      "safety_failure_instances": 1
+    },
+    "efficacy-rank": {
+      "checks": {
+        "all_native_arms_complete": false,
+        "more_instance_wins_than_losses": false,
+        "penalized_time_point_ratio_below_one": false,
+        "selected_set_changes_on_at_least_three_instances": true,
+        "zero_instance_safety_failures": false
+      },
+      "expected_native_complete_pairs": 15,
+      "instance_losses": 3,
+      "instance_wins": 2,
+      "intervention_instances": 5,
+      "observed_native_complete_pairs": 13,
+      "passed": false,
+      "penalized_time_ratio": 1.0007483884911317,
+      "safety_failure_instances": 1
+    },
+    "random-rank": {
+      "checks": {
+        "all_native_arms_complete": false,
+        "more_instance_wins_than_losses": false,
+        "penalized_time_point_ratio_below_one": false,
+        "selected_set_changes_on_at_least_three_instances": true,
+        "zero_instance_safety_failures": true
+      },
+      "expected_native_complete_pairs": 15,
+      "instance_losses": 3,
+      "instance_wins": 2,
+      "intervention_instances": 5,
+      "observed_native_complete_pairs": 13,
+      "passed": false,
+      "penalized_time_ratio": 1.0193082247536884,
+      "safety_failure_instances": 0
+    }
+  },
+  "artifact_contract_checks": {
+    "actions_match": true,
+    "instances_match": true,
+    "intervention_scope_matches": true,
+    "node_limit_matches": true,
+    "plan_pre_registered": true,
+    "seeds_match": true,
+    "statistics_actions_match": true,
+    "time_limit_matches": true
+  },
+  "created_at_utc": "2026-07-17T03:28:59.368972+00:00",
+  "decision": "no fixed baseline advances; do not enlarge or tune these actions on pilot outcomes",
+  "minimum_intervention_instances": 3,
+  "passed": false,
+  "purpose": "machine-readable application of the pre-registered fixed-baseline train pilot gate",
+  "schema_version": 1,
+  "selected_action_for_larger_train_cohort": null,
+  "sources": {
+    "causal_manifest": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_fixed_baseline_train_pilot_v1.json",
+      "sha256": "10e6d0f5539e7af9f1b0502d8e5768dd031b84bd6437ceb8a85526b71ee80d28"
+    },
+    "plan": {
+      "path": "${PROJECT_ROOT}/data/manifests/causal_fixed_baseline_train_pilot_plan_v1.json",
+      "sha256": "f8bd86ae04bf78b6a511de41684634706082c5df299ff10cb5ad6ea63dad4cfe"
+    },
+    "statistics": {
+      "path": "${PROJECT_ROOT}/data/manifests/paper_statistics_fixed_baseline_train_pilot_v1.json",
+      "sha256": "c1fa8fc0d1814c3dff10d7dc876e4ea55a22c3119066745090a5a8b1a1c18a56"
+    }
+  },
+  "tie_order": [
+    "efficacy-rank",
+    "adaptive-score",
+    "random-rank"
+  ]
+}

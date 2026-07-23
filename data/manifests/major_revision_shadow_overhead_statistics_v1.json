@@ -1,0 +1,723 @@
+{
+  "analysis_contract": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_type": "paired percentile instance-cluster bootstrap",
+    "bootstrap_unit": "12 MPS instances",
+    "callback_coverage": "reported descriptively and not used to remove any block",
+    "exposure_bootstrap_seeds": {
+      "arm_wall_time_seconds": 20260821,
+      "solving_time": 20260820
+    },
+    "exposure_population": "35 pairs in which the complete feature-and-inference path executed",
+    "inference": "implementation-path overhead and neutrality only; no learned-policy efficacy or generalization claim",
+    "itt_bootstrap_seeds": {
+      "arm_wall_time_seconds": 20260721,
+      "solving_time": 20260720
+    },
+    "itt_population": "all 36 fallback-inclusive predeclared pairs",
+    "overhead_estimands": [
+      "full-block ITT PAR-2 solving-time ratio shadow/native",
+      "full-block ITT PAR-2 Python arm-wall-time ratio shadow/native",
+      "model-load, callback, context, hybrid, and policy timing components"
+    ],
+    "primary_population": "all 36 predeclared instance-seed blocks",
+    "seed_handling": "average paired log ratios over nested seeds within each instance",
+    "structural_gate": "all same-status fields, bounds, nodes, LP iterations, LP counts, and cuts applied match; no shadow arm changes the selected set"
+  },
+  "created_at_utc": "2026-07-20T13:02:45.463007+00:00",
+  "full_path_exposure_sensitivity": {
+    "arm_wall_time_seconds": {
+      "cluster_bootstrap_interval": {
+        "confidence": 0.95,
+        "lower": 0.9547712535348809,
+        "replicates": 10000,
+        "seed": 20260821,
+        "upper": 1.117622678844272
+      },
+      "geometric_mean_ratio_shadow_over_native": 1.0361288158646538,
+      "instances": 12,
+      "pairs": 35
+    },
+    "solving_time": {
+      "cluster_bootstrap_interval": {
+        "confidence": 0.95,
+        "lower": 0.9078391634521245,
+        "replicates": 10000,
+        "seed": 20260820,
+        "upper": 1.0220818833648555
+      },
+      "geometric_mean_ratio_shadow_over_native": 0.970559642385681,
+      "instances": 12,
+      "pairs": 35
+    }
+  },
+  "full_path_structural_matching_pairs": 35,
+  "inference": "No structural difference was observed in the 36 fallback-inclusive policy pairs; only 35 pairs executed the complete learned path. The time analyses quantify implementation-path overhead, not learned-ranking efficacy or generalization.",
+  "instances": 12,
+  "itt_par2": {
+    "arm_wall_time_seconds": {
+      "cluster_bootstrap_interval": {
+        "confidence": 0.95,
+        "lower": 1.0153484858731596,
+        "replicates": 10000,
+        "seed": 20260721,
+        "upper": 1.13903747800965
+      },
+      "geometric_mean_ratio_shadow_over_native": 1.0748244940175116,
+      "instances": 12,
+      "pairs": 36
+    },
+    "solving_time": {
+      "cluster_bootstrap_interval": {
+        "confidence": 0.95,
+        "lower": 0.9727532487686316,
+        "replicates": 10000,
+        "seed": 20260720,
+        "upper": 1.0455990914605955
+      },
+      "geometric_mean_ratio_shadow_over_native": 1.0076896148036867,
+      "instances": 12,
+      "pairs": 36
+    }
+  },
+  "outcome_pair_counts": {
+    "both_complete": 36
+  },
+  "pairs": 36,
+  "per_instance": [
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.2671546182025804,
+        "solving_time": 0.984298870284824
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.2671546182025804,
+        "solving_time": 0.984298870284824
+      },
+      "instance_id": "neos859080",
+      "pairs": [
+        {
+          "native_status": "infeasible",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.4843637150374285,
+            "solving_time": 0.9743613520667334
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "infeasible",
+          "structural_match": true
+        },
+        {
+          "native_status": "infeasible",
+          "proposed_selected_set_change": false,
+          "ratios": {
+            "arm_wall_time_seconds": 1.2165012038114384,
+            "solving_time": 1.0217681996356864
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "infeasible",
+          "structural_match": true
+        },
+        {
+          "native_status": "infeasible",
+          "proposed_selected_set_change": false,
+          "ratios": {
+            "arm_wall_time_seconds": 1.1267717749164312,
+            "solving_time": 0.957874316124004
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "infeasible",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.2610281923469324,
+        "solving_time": 1.0969610368048772
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.2610281923469324,
+        "solving_time": 1.0969610368048772
+      },
+      "instance_id": "neos8",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": false,
+          "ratios": {
+            "arm_wall_time_seconds": 1.227272900956455,
+            "solving_time": 1.087997157883444
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.2336435944168513,
+            "solving_time": 1.083227986764106
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.3244742987516678,
+            "solving_time": 1.1200205036581552
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.2030572578192633,
+        "solving_time": 1.019984788619467
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.2030572578192633,
+        "solving_time": 1.019984788619467
+      },
+      "instance_id": "exp-1-500-5-5",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0294069593317339,
+            "solving_time": 0.932414375391165
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.3754218894742063,
+            "solving_time": 1.0359771581490398
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.229803885033255,
+            "solving_time": 1.0985553528314844
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 0.9874293812905587,
+        "solving_time": 0.9238805949408065
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 0.9874293812905587,
+        "solving_time": 0.9238805949408065
+      },
+      "instance_id": "nu25-pr12",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.016097627502113,
+            "solving_time": 0.9501430188522876
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.9348385885229358,
+            "solving_time": 0.8820653190783608
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0135520785532135,
+            "solving_time": 0.9409310657347294
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 0.7545274232346878,
+        "solving_time": 0.7194695630797222
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.1715495547404566,
+        "solving_time": 1.1289301606947195
+      },
+      "instance_id": "hypothyroid-k1",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.49109219590445347,
+            "solving_time": 0.46443802068552975
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": false,
+          "ratios": {
+            "arm_wall_time_seconds": 2.824437261694896,
+            "solving_time": 2.7795620638466514
+          },
+          "seed": 1,
+          "shadow_evaluation": false,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.159276480386063,
+            "solving_time": 1.1145436616797082
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.00675681498079,
+        "solving_time": 0.9737660621621805
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.00675681498079,
+        "solving_time": 0.9737660621621805
+      },
+      "instance_id": "neos-1171448",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.1038703848507057,
+            "solving_time": 1.0773296362237843
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.9321786926874286,
+            "solving_time": 0.8931915244443003
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.9916455801916415,
+            "solving_time": 0.9595568338209371
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 0.929417331765467,
+        "solving_time": 0.91378612036382
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 0.929417331765467,
+        "solving_time": 0.91378612036382
+      },
+      "instance_id": "piperout-27",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0062737185532917,
+            "solving_time": 0.9814571371281857
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.8184395187889726,
+            "solving_time": 0.8097800194950023
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.9748315564140929,
+            "solving_time": 0.9600531508373938
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.0037981104339435,
+        "solving_time": 0.9887350502144422
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.0037981104339435,
+        "solving_time": 0.9887350502144422
+      },
+      "instance_id": "swath1",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0263726352398388,
+            "solving_time": 1.0089009471865276
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.886836089391142,
+            "solving_time": 0.8795388841240648
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.1111960750588012,
+            "solving_time": 1.0892716884713056
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 0.9646246129023902,
+        "solving_time": 0.9550742066864095
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 0.9646246129023902,
+        "solving_time": 0.9550742066864095
+      },
+      "instance_id": "cbs-cta",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0912283627524255,
+            "solving_time": 1.0768000216232847
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.7704840797320212,
+            "solving_time": 0.7632891762478399
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0675683798875886,
+            "solving_time": 1.0599544186706296
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.0037549230302472,
+        "solving_time": 0.9902877566676428
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.0037549230302472,
+        "solving_time": 0.9902877566676428
+      },
+      "instance_id": "mc11",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0265324752029432,
+            "solving_time": 1.009931498186676
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 0.9779575220366765,
+            "solving_time": 0.9625082119529732
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0073731712522869,
+            "solving_time": 0.999051481748264
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.0729166682252471,
+        "solving_time": 1.0643732657140017
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.0729166682252471,
+        "solving_time": 1.0643732657140017
+      },
+      "instance_id": "neos-1582420",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.033389319635524,
+            "solving_time": 1.020202245142586
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.11433259856892,
+            "solving_time": 1.1067437648106802
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0725540143710448,
+            "solving_time": 1.0679440837146412
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    },
+    {
+      "full_path_geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.0954927497983087,
+        "solving_time": 1.0775935492165942
+      },
+      "geometric_mean_ratios": {
+        "arm_wall_time_seconds": 1.0954927497983087,
+        "solving_time": 1.0775935492165942
+      },
+      "instance_id": "neos-911970",
+      "pairs": [
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.126811250730991,
+            "solving_time": 1.0983105609242236
+          },
+          "seed": 0,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0860598670381267,
+            "solving_time": 1.0695443716775213
+          },
+          "seed": 1,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        },
+        {
+          "native_status": "optimal",
+          "proposed_selected_set_change": true,
+          "ratios": {
+            "arm_wall_time_seconds": 1.0742950701354146,
+            "solving_time": 1.0652240974277871
+          },
+          "seed": 2,
+          "shadow_evaluation": true,
+          "shadow_status": "optimal",
+          "structural_match": true
+        }
+      ]
+    }
+  ],
+  "proposed_selected_set_change_pairs": 32,
+  "schema_version": 2,
+  "shadow_evaluation_pairs": 35,
+  "source_plan": "${PROJECT_ROOT}/data/manifests/major_revision_shadow_overhead_plan_v1.json",
+  "source_plan_sha256": "50825552333cc07217eac25e778d4e71f255b981cc20c897117ca23d8f66fc2c",
+  "source_result": "${PROJECT_ROOT}/data/manifests/causal_major_revision_shadow_overhead_v1.json",
+  "source_result_sha256": "80240a52c1eb3305c7007f1fa88a4ce94b172d4a7b5c5d381ce35aae74c0045f",
+  "structural_gate_passed": true,
+  "structural_matching_pairs": 36,
+  "timing_seconds": {
+    "callback_total": {
+      "mean": 0.052453824833333336,
+      "median": 0.027250625,
+      "p95": 0.313214,
+      "records": 36,
+      "sum": 1.888337694
+    },
+    "context_capture": {
+      "mean": 0.014016684,
+      "median": 0.0069265625,
+      "p95": 0.099468542,
+      "records": 36,
+      "sum": 0.5046006239999999
+    },
+    "model_load": {
+      "mean": 0.4620285521388889,
+      "median": 0.358161271,
+      "p95": 0.814963875,
+      "records": 36,
+      "sum": 16.633027877
+    },
+    "native_hybrid": {
+      "mean": 0.0030963993055555554,
+      "median": 0.0009521665,
+      "p95": 0.017624208,
+      "records": 36,
+      "sum": 0.111470375
+    },
+    "policy_compute": {
+      "mean": 0.032511540472222225,
+      "median": 0.016525771,
+      "p95": 0.204554708,
+      "records": 36,
+      "sum": 1.170415457
+    }
+  }
+}

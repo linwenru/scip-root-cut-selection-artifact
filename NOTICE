@@ -1,0 +1,14 @@
+SCIP Root Cut Selection Audit
+Copyright 2026 Wenru Lin and Zhouwang Yang
+
+This artifact is licensed under the Apache License, Version 2.0, except for
+third-party materials that are explicitly identified by source or provenance.
+
+SCIP is developed by the SCIP Optimization Suite contributors and is not
+redistributed in this artifact. SCIP 10.0.2 is separately available under the
+Apache License, Version 2.0.
+
+MIPLIB instance files are not redistributed. Instance names, official Group
+metadata, and source URLs remain attributable to the MIPLIB maintainers and
+are provided only for reproducibility and provenance. The Apache-2.0 license
+in this repository does not relicense third-party materials.

@@ -1,0 +1,236 @@
+{
+  "candidate_arm": "noop",
+  "created_at_utc": "2026-07-16T08:31:51.896676+00:00",
+  "experiment": "native-vs-noop-cut-selector",
+  "gate_contract": {
+    "gating": "status, bounds, gap, nodes, total nodes, LP iterations, LP count, cuts applied, versions, parameters, and an exercised no-op callback",
+    "non_gating": "wall-clock solving time and primal-dual integral include Python callback overhead and are reported but excluded from no-op structural parity"
+  },
+  "instance": "${MIPLIB_INSTANCES_DIR}/neos-3381206-awhea.mps.gz",
+  "instance_sha256": "58d33361a14a26ae1c497a9c8726fb33a699205a9dfad4f6c90e18ba7994db56",
+  "node_limit": null,
+  "pairs": [
+    {
+      "candidate_outcome": {
+        "cuts_applied": 4479,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 143,
+        "lp_iterations": 19875,
+        "nodes": 132,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 110.51311722526573,
+        "solving_time": 1.11645,
+        "status": "optimal",
+        "total_nodes": 132
+      },
+      "candidate_result": "${PROJECT_ROOT}/experiments/noop_parity_v1/neos-3381206-awhea/seed_0_noop.json",
+      "candidate_selector": {
+        "calls": 37,
+        "candidate_cuts": 18372,
+        "forced_cuts": 0,
+        "mode": "noop",
+        "root_calls": 17,
+        "selected_cuts": 0
+      },
+      "comparison": {
+        "candidate_arm": "noop",
+        "checks": {
+          "arm_order": true,
+          "candidate_callback_exercised": true,
+          "same_cuts_applied": true,
+          "same_dual_bound": true,
+          "same_gap": true,
+          "same_instance_sha256": true,
+          "same_lp_count": true,
+          "same_lp_iterations": true,
+          "same_nodes": true,
+          "same_objective_sense": true,
+          "same_parameters": true,
+          "same_primal_bound": true,
+          "same_runtime_versions": true,
+          "same_seed": true,
+          "same_status": true,
+          "same_total_nodes": true
+        },
+        "non_gating_measurements": {
+          "primal_dual_integral_candidate": 110.51311722526573,
+          "primal_dual_integral_delta_candidate_minus_native": 0.2082828693203851,
+          "primal_dual_integral_native": 110.30483435594535,
+          "solving_time_candidate": 1.11645,
+          "solving_time_native": 1.114022,
+          "solving_time_ratio_candidate_over_native": 1.0021794901716483
+        },
+        "passed": true
+      },
+      "native_outcome": {
+        "cuts_applied": 4479,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 143,
+        "lp_iterations": 19875,
+        "nodes": 132,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 110.30483435594535,
+        "solving_time": 1.114022,
+        "status": "optimal",
+        "total_nodes": 132
+      },
+      "native_result": "${PROJECT_ROOT}/experiments/noop_parity_v1/neos-3381206-awhea/seed_0_native.json",
+      "seed": 0
+    },
+    {
+      "candidate_outcome": {
+        "cuts_applied": 3600,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 40,
+        "lp_iterations": 14117,
+        "nodes": 21,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 67.9144510090108,
+        "solving_time": 0.697638,
+        "status": "optimal",
+        "total_nodes": 21
+      },
+      "candidate_result": "${PROJECT_ROOT}/experiments/noop_parity_v1/neos-3381206-awhea/seed_1_noop.json",
+      "candidate_selector": {
+        "calls": 19,
+        "candidate_cuts": 14970,
+        "forced_cuts": 0,
+        "mode": "noop",
+        "root_calls": 17,
+        "selected_cuts": 0
+      },
+      "comparison": {
+        "candidate_arm": "noop",
+        "checks": {
+          "arm_order": true,
+          "candidate_callback_exercised": true,
+          "same_cuts_applied": true,
+          "same_dual_bound": true,
+          "same_gap": true,
+          "same_instance_sha256": true,
+          "same_lp_count": true,
+          "same_lp_iterations": true,
+          "same_nodes": true,
+          "same_objective_sense": true,
+          "same_parameters": true,
+          "same_primal_bound": true,
+          "same_runtime_versions": true,
+          "same_seed": true,
+          "same_status": true,
+          "same_total_nodes": true
+        },
+        "non_gating_measurements": {
+          "primal_dual_integral_candidate": 67.9144510090108,
+          "primal_dual_integral_delta_candidate_minus_native": 0.3813699750856756,
+          "primal_dual_integral_native": 67.53308103392513,
+          "solving_time_candidate": 0.697638,
+          "solving_time_native": 0.693658,
+          "solving_time_ratio_candidate_over_native": 1.0057376978280363
+        },
+        "passed": true
+      },
+      "native_outcome": {
+        "cuts_applied": 3600,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 40,
+        "lp_iterations": 14117,
+        "nodes": 21,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 67.53308103392513,
+        "solving_time": 0.693658,
+        "status": "optimal",
+        "total_nodes": 21
+      },
+      "native_result": "${PROJECT_ROOT}/experiments/noop_parity_v1/neos-3381206-awhea/seed_1_native.json",
+      "seed": 1
+    },
+    {
+      "candidate_outcome": {
+        "cuts_applied": 4481,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 205,
+        "lp_iterations": 19974,
+        "nodes": 280,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 202.7497001655629,
+        "solving_time": 2.027714,
+        "status": "optimal",
+        "total_nodes": 280
+      },
+      "candidate_result": "${PROJECT_ROOT}/experiments/noop_parity_v1/neos-3381206-awhea/seed_2_noop.json",
+      "candidate_selector": {
+        "calls": 47,
+        "candidate_cuts": 19770,
+        "forced_cuts": 0,
+        "mode": "noop",
+        "root_calls": 19,
+        "selected_cuts": 0
+      },
+      "comparison": {
+        "candidate_arm": "noop",
+        "checks": {
+          "arm_order": true,
+          "candidate_callback_exercised": true,
+          "same_cuts_applied": true,
+          "same_dual_bound": true,
+          "same_gap": true,
+          "same_instance_sha256": true,
+          "same_lp_count": true,
+          "same_lp_iterations": true,
+          "same_nodes": true,
+          "same_objective_sense": true,
+          "same_parameters": true,
+          "same_primal_bound": true,
+          "same_runtime_versions": true,
+          "same_seed": true,
+          "same_status": true,
+          "same_total_nodes": true
+        },
+        "non_gating_measurements": {
+          "primal_dual_integral_candidate": 202.7497001655629,
+          "primal_dual_integral_delta_candidate_minus_native": 2.999700165562871,
+          "primal_dual_integral_native": 199.75000000000003,
+          "solving_time_candidate": 2.027714,
+          "solving_time_native": 1.997714,
+          "solving_time_ratio_candidate_over_native": 1.0150171646191597
+        },
+        "passed": true
+      },
+      "native_outcome": {
+        "cuts_applied": 4481,
+        "dual_bound": 453.0,
+        "gap": 0.0,
+        "lp_count": 205,
+        "lp_iterations": 19974,
+        "nodes": 280,
+        "objective_sense": "minimize",
+        "primal_bound": 453.0,
+        "primal_dual_integral": 199.75000000000003,
+        "solving_time": 1.997714,
+        "status": "optimal",
+        "total_nodes": 280
+      },
+      "native_result": "${PROJECT_ROOT}/experiments/noop_parity_v1/neos-3381206-awhea/seed_2_native.json",
+      "seed": 2
+    }
+  ],
+  "passed": true,
+  "process_isolation": "one fresh Python/SCIP process per arm and seed",
+  "schema_version": 2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit": 60.0
+}

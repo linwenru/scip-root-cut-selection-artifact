@@ -1,0 +1,717 @@
+{
+  "analysis": "data/manifests/eligible_ranking_analysis_v1.json",
+  "analysis_sha256": "1903048b24d69564d6243580d752d36874d6b9daefaf2417e2884601bf1676aa",
+  "checks": {
+    "all_effective_group_weights_instance_balanced": true,
+    "all_eligible_groups_partitioned": true,
+    "all_matrices_instance_balanced": true,
+    "matrix_feature_count_matches_contract": true,
+    "no_prohibited_model_fields": true,
+    "test_matrices_constructed_but_not_scored": true
+  },
+  "feature_contract": {
+    "candidate_rows_seen": 162776,
+    "category_counts": {
+      "origin_type": {
+        "CONS": 48216,
+        "CONSHDLR": 1913,
+        "SEPA": 112647
+      },
+      "pre_lp_status": {
+        "OPTIMAL": 215
+      }
+    },
+    "category_vocabulary": {
+      "origin_type": [
+        "CONS",
+        "CONSHDLR",
+        "SEPA",
+        "<UNK>"
+      ]
+    },
+    "decision_groups_seen": 215,
+    "dropped_constant_or_empty_numeric": [
+      "is_local",
+      "is_modifiable",
+      "pre_state_available",
+      "n_open_nodes_pre"
+    ],
+    "dropped_single_category": [
+      "pre_lp_status"
+    ],
+    "encoded_feature_names": [
+      "score_rank_pre",
+      "score_rank_fraction_pre",
+      "score",
+      "nnz",
+      "rhs",
+      "lhs",
+      "constant",
+      "coeff_norm_l2",
+      "coeff_norm_l1",
+      "coeff_max_abs",
+      "coeff_min_abs",
+      "coeff_mean_abs",
+      "coeff_std_abs",
+      "efficacy",
+      "obj_parallelism",
+      "cutoff_distance",
+      "cutoff_distance_available",
+      "n_int_cols",
+      "is_removable",
+      "is_integral",
+      "in_global_cutpool",
+      "run_number",
+      "sep_round_node",
+      "sep_round_run",
+      "sep_round_global",
+      "lp_round_node",
+      "lp_round_run",
+      "lp_round_global",
+      "n_candidate_occurrences",
+      "n_logical_candidates",
+      "n_lp_rows_pre",
+      "n_lp_cols_pre",
+      "lp_obj_val_pre",
+      "lp_iterations_total_pre",
+      "lp_iterations_node_pre",
+      "dual_bound_pre",
+      "primal_bound_pre",
+      "gap_pre",
+      "n_cuts_applied_pre",
+      "n_cuts_generated_node_pre",
+      "origin_type==CONS",
+      "origin_type==CONSHDLR",
+      "origin_type==SEPA",
+      "origin_type==<UNK>"
+    ],
+    "fit_scope": "eligible decisions from original training split only",
+    "numeric_audit": {
+      "coeff_max_abs": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 44179.81569352951,
+        "minimum": 0.054435218136285775,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "coeff_mean_abs": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 22090.407846764756,
+        "minimum": 0.001333816060282307,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "coeff_min_abs": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 4864.0,
+        "minimum": 0.00010000000000000053,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "coeff_norm_l1": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 15264242.0,
+        "minimum": 0.05496243574535393,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "coeff_norm_l2": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 233769.58584255565,
+        "minimum": 0.05443585641052085,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "coeff_std_abs": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 22089.407846764756,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "constant": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 17421.0,
+        "minimum": -2.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "cutoff_distance": {
+        "count": 162776,
+        "finite": 83413,
+        "informative_in_training": true,
+        "maximum": 1493575.7671335603,
+        "minimum": 0.0012297540265718723,
+        "missing": 79363,
+        "nonfinite": 0
+      },
+      "cutoff_distance_available": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "dual_bound_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 800005035.6020776,
+        "minimum": -38816392.863237604,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "efficacy": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 450.4270196158307,
+        "minimum": -0.0005157801643007391,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "gap_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 1e+20,
+        "minimum": 3.9255752980638105e-06,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "in_global_cutpool": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "is_integral": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "is_local": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": false,
+        "maximum": 0.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "is_modifiable": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": false,
+        "maximum": 0.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "is_removable": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "lhs": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 1.0,
+        "minimum": -1e+20,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "lp_iterations_node_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 3571166.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "lp_iterations_total_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 3758370.0,
+        "minimum": 5.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "lp_obj_val_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 2019325604.6486387,
+        "minimum": -5358470774.76572,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "lp_round_global": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 9526.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "lp_round_node": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 2.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "lp_round_run": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 2.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "n_candidate_occurrences": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 42321.0,
+        "minimum": 2.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "n_cuts_applied_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 4207.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "n_cuts_generated_node_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 25724.0,
+        "minimum": 2.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "n_int_cols": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 10890.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "n_logical_candidates": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 42321.0,
+        "minimum": 2.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "n_lp_cols_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 550539.0,
+        "minimum": 30.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "n_lp_rows_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 317952.0,
+        "minimum": 4.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "n_open_nodes_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": false,
+        "maximum": 0.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "nnz": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 10890.0,
+        "minimum": 2.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "obj_parallelism": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 0.9999968399484587,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "pre_state_available": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": false,
+        "maximum": 1.0,
+        "minimum": 1.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "primal_bound_pre": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 1e+20,
+        "minimum": -36050839.091742285,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "rhs": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 1e+20,
+        "minimum": -72510.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "run_number": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 9.0,
+        "minimum": 1.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "score": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 450.4270196158307,
+        "minimum": 0.004355826552898107,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "score_rank_fraction_pre": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "score_rank_pre": {
+        "count": 162776,
+        "finite": 162776,
+        "informative_in_training": true,
+        "maximum": 42321.0,
+        "minimum": 1.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "sep_round_global": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 11065.0,
+        "minimum": 1.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "sep_round_node": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 10.0,
+        "minimum": 1.0,
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "sep_round_run": {
+        "count": 215,
+        "finite": 215,
+        "informative_in_training": true,
+        "maximum": 10.0,
+        "minimum": 1.0,
+        "missing": 0,
+        "nonfinite": 0
+      }
+    },
+    "numeric_features": [
+      "score_rank_pre",
+      "score_rank_fraction_pre",
+      "score",
+      "nnz",
+      "rhs",
+      "lhs",
+      "constant",
+      "coeff_norm_l2",
+      "coeff_norm_l1",
+      "coeff_max_abs",
+      "coeff_min_abs",
+      "coeff_mean_abs",
+      "coeff_std_abs",
+      "efficacy",
+      "obj_parallelism",
+      "cutoff_distance",
+      "cutoff_distance_available",
+      "n_int_cols",
+      "is_removable",
+      "is_integral",
+      "in_global_cutpool",
+      "run_number",
+      "sep_round_node",
+      "sep_round_run",
+      "sep_round_global",
+      "lp_round_node",
+      "lp_round_run",
+      "lp_round_global",
+      "n_candidate_occurrences",
+      "n_logical_candidates",
+      "n_lp_rows_pre",
+      "n_lp_cols_pre",
+      "lp_obj_val_pre",
+      "lp_iterations_total_pre",
+      "lp_iterations_node_pre",
+      "dual_bound_pre",
+      "primal_bound_pre",
+      "gap_pre",
+      "n_cuts_applied_pre",
+      "n_cuts_generated_node_pre"
+    ]
+  },
+  "group_weight_semantics": "one XGBoost ranking weight per decision; normalized so each instance has equal total weight and mean group weight is one",
+  "matrices": {
+    "official_group_ood_test": {
+      "bytes": 348269,
+      "effective_group_weights_instance_balanced": true,
+      "effective_target_total_weight_per_instance": 1.5714285714285714,
+      "features": 44,
+      "group_weights_instance_balanced": true,
+      "groups": 22,
+      "instances": 14,
+      "label_statistics": "sealed",
+      "path": "data/datasets/ranking_imitation_v1/official_group_ood_test.npz",
+      "rows": 3647,
+      "sha256": "fc7a75f55b5e2a4712f74e2bebcc063677b10abd920ac8d9b8721eaa3392554d",
+      "target_total_weight_per_instance": 1.5714285714285714
+    },
+    "official_group_ood_val": {
+      "baseline_score_top_k_positive_capture": {
+        "top_1": {
+          "captured_positives": 26,
+          "positive_recall": 0.012987012987012988
+        },
+        "top_10": {
+          "captured_positives": 149,
+          "positive_recall": 0.07442557442557443
+        },
+        "top_20": {
+          "captured_positives": 242,
+          "positive_recall": 0.12087912087912088
+        },
+        "top_5": {
+          "captured_positives": 88,
+          "positive_recall": 0.04395604395604396
+        }
+      },
+      "bytes": 795512,
+      "effective_group_weights_instance_balanced": true,
+      "effective_pair_groups": 27,
+      "effective_target_total_weight_per_instance": 1.35,
+      "features": 44,
+      "group_weights_instance_balanced": true,
+      "groups": 27,
+      "instances": 20,
+      "path": "data/datasets/ranking_imitation_v1/official_group_ood_val.npz",
+      "positive_rate": 0.20860685630926332,
+      "positives": 2002,
+      "rows": 9597,
+      "sha256": "d99ca075a34dfdffb7a03dad37b2df64b6183284bbeaa84622f721c491a2e843",
+      "target_total_weight_per_instance": 1.35
+    },
+    "officially_ungrouped_test": {
+      "bytes": 202915,
+      "effective_group_weights_instance_balanced": true,
+      "effective_target_total_weight_per_instance": 2.5714285714285716,
+      "features": 44,
+      "group_weights_instance_balanced": true,
+      "groups": 18,
+      "instances": 7,
+      "label_statistics": "sealed",
+      "path": "data/datasets/ranking_imitation_v1/officially_ungrouped_test.npz",
+      "rows": 2240,
+      "sha256": "d3b6737ae8461e7a637bc56d9edaf12866201384d4cf62b9a4541ff34a1ec4da",
+      "target_total_weight_per_instance": 2.5714285714285716
+    },
+    "officially_ungrouped_val": {
+      "baseline_score_top_k_positive_capture": {
+        "top_1": {
+          "captured_positives": 12,
+          "positive_recall": 0.0038910505836575876
+        },
+        "top_10": {
+          "captured_positives": 75,
+          "positive_recall": 0.024319066147859923
+        },
+        "top_20": {
+          "captured_positives": 135,
+          "positive_recall": 0.04377431906614786
+        },
+        "top_5": {
+          "captured_positives": 41,
+          "positive_recall": 0.013294422827496757
+        }
+      },
+      "bytes": 1273863,
+      "effective_group_weights_instance_balanced": true,
+      "effective_pair_groups": 13,
+      "effective_target_total_weight_per_instance": 1.8571428571428572,
+      "features": 44,
+      "group_weights_instance_balanced": true,
+      "groups": 13,
+      "instances": 7,
+      "path": "data/datasets/ranking_imitation_v1/officially_ungrouped_val.npz",
+      "positive_rate": 0.17617823479005998,
+      "positives": 3084,
+      "rows": 17505,
+      "sha256": "c871778efdb66676c0ec356845ccdcec2fdbe0c00ba693e0d21aa3573e140795",
+      "target_total_weight_per_instance": 1.8571428571428572
+    },
+    "seen_family_test": {
+      "bytes": 1503001,
+      "effective_group_weights_instance_balanced": true,
+      "effective_target_total_weight_per_instance": 1.2,
+      "features": 44,
+      "group_weights_instance_balanced": true,
+      "groups": 12,
+      "instances": 10,
+      "label_statistics": "sealed",
+      "path": "data/datasets/ranking_imitation_v1/seen_family_test.npz",
+      "rows": 21720,
+      "sha256": "92f77d30daa99d30b1cbb4b8469dfa46b7986b71d1fb53b8eb2bc97ed02080da",
+      "target_total_weight_per_instance": 1.2
+    },
+    "seen_family_val": {
+      "baseline_score_top_k_positive_capture": {
+        "top_1": {
+          "captured_positives": 11,
+          "positive_recall": 0.021484375
+        },
+        "top_10": {
+          "captured_positives": 52,
+          "positive_recall": 0.1015625
+        },
+        "top_20": {
+          "captured_positives": 88,
+          "positive_recall": 0.171875
+        },
+        "top_5": {
+          "captured_positives": 32,
+          "positive_recall": 0.0625
+        }
+      },
+      "bytes": 219812,
+      "effective_group_weights_instance_balanced": true,
+      "effective_pair_groups": 11,
+      "effective_target_total_weight_per_instance": 2.2,
+      "features": 44,
+      "group_weights_instance_balanced": true,
+      "groups": 11,
+      "instances": 5,
+      "path": "data/datasets/ranking_imitation_v1/seen_family_val.npz",
+      "positive_rate": 0.21271292064810968,
+      "positives": 512,
+      "rows": 2407,
+      "sha256": "658f848d04b575550779fb2d64e0d07c3d28d93a3046bece7666ca798222c397",
+      "target_total_weight_per_instance": 2.2
+    },
+    "train": {
+      "baseline_score_top_k_positive_capture": {
+        "top_1": {
+          "captured_positives": 207,
+          "positive_recall": 0.011333150834930195
+        },
+        "top_10": {
+          "captured_positives": 1014,
+          "positive_recall": 0.05551601423487545
+        },
+        "top_20": {
+          "captured_positives": 1685,
+          "positive_recall": 0.09225294278675061
+        },
+        "top_5": {
+          "captured_positives": 634,
+          "positive_recall": 0.03471119627703258
+        }
+      },
+      "bytes": 12026666,
+      "effective_group_weights_instance_balanced": true,
+      "effective_pair_groups": 204,
+      "effective_target_total_weight_per_instance": 1.511111111111111,
+      "features": 44,
+      "group_weights_instance_balanced": true,
+      "groups": 215,
+      "instances": 142,
+      "path": "data/datasets/ranking_imitation_v1/train.npz",
+      "positive_rate": 0.11220941662161497,
+      "positives": 18265,
+      "rows": 162776,
+      "sha256": "43ea8911e9ab4e4b2b4bfdf4e41e2109ac420f4a9fd12469e5dc07d41ffcb59f",
+      "target_total_weight_per_instance": 1.5140845070422535
+    }
+  },
+  "numpy_version": "2.5.1",
+  "output_dir": "data/datasets/ranking_imitation_v1",
+  "schema_version": 1,
+  "source_manifest": "data/manifests/root_observational_v1.json",
+  "source_manifest_sha256": "fa64c1307b3f0e63ab102d52b1d4e4d969b692304d2be72f09bad381ef1b1d47",
+  "test_policy": "matrices constructed and sealed; no test metric computed"
+}

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "Cython>=3.1,<4", "PySCIPOpt==6.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scip-cut-trace-v2"
+version = "1.0.0"
+description = "Audited data and causal experiments for SCIP root cut selection"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0,<3",
+  "PySCIPOpt==6.2.1",
+  "xgboost>=3.2,<3.3",
+]
+
+[project.scripts]
+scip-cut-trace-v2-audit = "scip_cut_trace_v2.audit:main"
+scip-cut-trace-v2-observational = "scip_cut_trace_v2.observational:main"
+scip-cut-trace-v2-ranking-data = "scip_cut_trace_v2.ranking_dataset:main"
+scip-cut-trace-v2-online-ranking-data = "scip_cut_trace_v2.online_imitation:main"
+scip-cut-trace-v2-ranking-group-cv = "scip_cut_trace_v2.ranking_crossval:main"
+scip-cut-trace-v2-splits = "scip_cut_trace_v2.split_protocols:main"
+scip-cut-trace-v2-train-imitation = "scip_cut_trace_v2.ranking_train:main"
+scip-cut-trace-v2-train-revision = "scip_cut_trace_v2.ranking_train_revision:main"
+scip-cut-trace-v2-causal = "scip_cut_trace_v2.causal_harness:main"
+scip-cut-trace-v2-causal-data = "scip_cut_trace_v2.causal_dataset:main"
+scip-cut-trace-v2-causal-risk = "scip_cut_trace_v2.causal_risk:main"
+scip-cut-trace-v2-causal-confirm = "scip_cut_trace_v2.causal_confirmation:main"
+scip-cut-trace-v2-paper-stats = "scip_cut_trace_v2.paper_statistics:main"
+scip-cut-trace-v2-revision-audit = "scip_cut_trace_v2.revision_audit:main"
+scip-cut-trace-v2-precision-plan = "scip_cut_trace_v2.precision_planning:main"
+scip-cut-trace-v2-shadow-overhead = "scip_cut_trace_v2.revision_overhead:main"
+scip-cut-trace-v2-fixed-baseline-pilot = "scip_cut_trace_v2.fixed_baseline_pilot:main"
+scip-cut-trace-v2-publication = "scip_cut_trace_v2.publication_protocol:main"
+scip-cut-trace-v2-artifact-index = "scip_cut_trace_v2.artifact_index:main"
+scip-cut-trace-v2-release = "scip_cut_trace_v2.release_bundle:main"
+scip-cut-trace-v2-learned-pilot = "scip_cut_trace_v2.learned_policy_pilot:main"
+scip-cut-trace-v2-learned-pilot-diagnostics = "scip_cut_trace_v2.learned_policy_diagnostics:main"
+scip-cut-trace-v2-miplib-metadata = "scip_cut_trace_v2.miplib_collection_metadata:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,830 @@
+{
+  "analysis_contract": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260721,
+    "failure_action": "stop learned-policy development, do not tune on pilot outcomes, keep the existing test sealed, and submit the audited study to the planned journal",
+    "go_no_go_thresholds": {
+      "maximum_active_correctness_failure_group_keys": 0,
+      "maximum_native_complete_active_incomplete_group_keys": 0,
+      "maximum_one_sided_80_percent_upper_ratio": 1.0,
+      "maximum_primary_point_ratio": 0.95,
+      "minimum_group_keys_with_active_intervention": 12,
+      "required_shadow_structural_matches": 54
+    },
+    "interpretation": "a pass authorizes one separately frozen 78-Group confirmation study; it is not confirmatory evidence by itself",
+    "primary_estimand": "Group-equal geometric mean active/native full-process wall-time PAR-2 ratio; seeds are averaged on the log scale within Group",
+    "primary_population": "all 54 fallback-inclusive instance-seed blocks"
+  },
+  "checks": {
+    "all_groups_disjoint_from_existing_233": true,
+    "all_instances_easy_and_local": true,
+    "arm_positions_balanced": true,
+    "eighteen_distinct_group_keys": true,
+    "eighteen_instances": true,
+    "existing_validation_and_test_not_selected": true,
+    "fifty_four_blocks": true,
+    "frozen_model_offline_gate_recorded_as_failed": true,
+    "selection_matches_frozen_download_plan": true,
+    "three_paired_seeds": true,
+    "verified_downloads_match_frozen_instances": true
+  },
+  "created_at_utc": "2026-07-21T07:52:25.444887+00:00",
+  "data_boundary": {
+    "existing_233_instance_splits": "untouched; existing validation and test remain sealed",
+    "independent_unit": "official MIPLIB Group key; each officially ungrouped instance is its own key",
+    "outcome_blinding": "selection uses only easy status, official Group, instance identity, and a frozen SHA-256 order",
+    "pilot_source": "MIPLIB 2017 Collection instances outside all existing split Group keys"
+  },
+  "experiment": {
+    "arms": [
+      "native",
+      "xgb-imitation-shadow",
+      "xgb-imitation-rank"
+    ],
+    "execution_order_key": "learned-policy-pilot-v1-20260721",
+    "execution_schedule": [
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "23588",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "supportcase20",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-585467",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "dcmulti",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "neos-4954340-beaury",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "neos-585467",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "dcmulti",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "bmoipr2",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "shipschedule6shipsmixi",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "rlp1",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "dcmulti",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "ofi",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos-585467",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "rpp22falsei",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-3116779-oban",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "23588",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "neos-4954340-beaury",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "ofi",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "mine-90-10",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "neos-3209519-ruhr",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-619167",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "bmoipr2",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "neos-3116779-oban",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "neos-3116779-oban",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "ofi",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "neos-3209519-ruhr",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "rlp1",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "rpp22falsei",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "neos-3611689-kaihu",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "neos-3611689-kaihu",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "ic97_tension",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "rpp22falsei",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-619167",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "hanoi5",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "supportcase20",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "hanoi5",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "mine-90-10",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "bmoipr2",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-3611689-kaihu",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "neos-3209519-ruhr",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "mine-90-10",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "neos-5192052-neckar",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "shipschedule6shipsmixi",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "shipschedule6shipsmixi",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-5192052-neckar",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "hanoi5",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "23588",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "neos-5192052-neckar",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "ic97_tension",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 1,
+        "instance_id": "ic97_tension",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "native",
+          "xgb-imitation-rank"
+        ],
+        "design_row": 2,
+        "instance_id": "supportcase20",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-shadow",
+          "xgb-imitation-rank",
+          "native"
+        ],
+        "design_row": 3,
+        "instance_id": "neos-4954340-beaury",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "native",
+          "xgb-imitation-shadow"
+        ],
+        "design_row": 4,
+        "instance_id": "neos-619167",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "xgb-imitation-rank",
+          "xgb-imitation-shadow",
+          "native"
+        ],
+        "design_row": 5,
+        "instance_id": "rlp1",
+        "seed": 0
+      }
+    ],
+    "instances": [
+      {
+        "group_key": "officially-ungrouped:hanoi5",
+        "instance": "data/raw/miplib2017_collection/hanoi5.mps.gz",
+        "instance_id": "hanoi5",
+        "instance_name": "hanoi5.mps.gz",
+        "instance_sha256": "282cbb87673bfa237d7a9f0b584dae650e58eec176f082165e3f94a6ccd9e05c",
+        "official_group": null,
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "neos-pseudoapplication-92",
+        "instance": "data/raw/miplib2017_collection/neos-585467.mps.gz",
+        "instance_id": "neos-585467",
+        "instance_name": "neos-585467.mps.gz",
+        "instance_sha256": "d98142cea4fc8bfde60127c5cd6146a262cb42297bb098893c31af8ee591424d",
+        "official_group": "neos-pseudoapplication-92",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "neos-pseudoapplication-74",
+        "instance": "data/raw/miplib2017_collection/neos-5192052-neckar.mps.gz",
+        "instance_id": "neos-5192052-neckar",
+        "instance_name": "neos-5192052-neckar.mps.gz",
+        "instance_sha256": "a683554818c078fca80fe21c0f452463d5d6a051f6898d9da641d5d9f9575906",
+        "official_group": "neos-pseudoapplication-74",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "officially-ungrouped:supportcase20",
+        "instance": "data/raw/miplib2017_collection/supportcase20.mps.gz",
+        "instance_id": "supportcase20",
+        "instance_name": "supportcase20.mps.gz",
+        "instance_sha256": "99157bf8c67c9d5fb45e94b500e78b4f96fb2c94383509f86ee931550d04067f",
+        "official_group": null,
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "officially-ungrouped:ofi",
+        "instance": "data/raw/miplib2017_collection/ofi.mps.gz",
+        "instance_id": "ofi",
+        "instance_name": "ofi.mps.gz",
+        "instance_sha256": "b2ec9c2efb387e362b5e04984e863f8f770e689f2b9b01d90446a17e88082284",
+        "official_group": null,
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "mine",
+        "instance": "data/raw/miplib2017_collection/mine-90-10.mps.gz",
+        "instance_id": "mine-90-10",
+        "instance_name": "mine-90-10.mps.gz",
+        "instance_sha256": "917855ca305ab7f9ec6c3c89d0bd903dee91c67e2d8f736147b69d6bda73b6a8",
+        "official_group": "mine",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "shipschedule",
+        "instance": "data/raw/miplib2017_collection/shipschedule6shipsmixi.mps.gz",
+        "instance_id": "shipschedule6shipsmixi",
+        "instance_name": "shipschedule6shipsmixi.mps.gz",
+        "instance_sha256": "c0a97e5b135b2f50cb528f9776e5d306af347bef3e0b25e1d42227b0a8869086",
+        "official_group": "shipschedule",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "neos-pseudoapplication-59",
+        "instance": "data/raw/miplib2017_collection/neos-4954340-beaury.mps.gz",
+        "instance_id": "neos-4954340-beaury",
+        "instance_name": "neos-4954340-beaury.mps.gz",
+        "instance_sha256": "80cbd42ef3caec5ce3ccb0396f27ca827d4827f7924d02cd3de5bcb6b4869b2a",
+        "official_group": "neos-pseudoapplication-59",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "officially-ungrouped:23588",
+        "instance": "data/raw/miplib2017_collection/23588.mps.gz",
+        "instance_id": "23588",
+        "instance_name": "23588.mps.gz",
+        "instance_sha256": "7c94abc1aae206cef54c43107f1493d027719b1b4f3b9dfcbfaf0d5fa66a129b",
+        "official_group": null,
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "officially-ungrouped:ic97_tension",
+        "instance": "data/raw/miplib2017_collection/ic97_tension.mps.gz",
+        "instance_id": "ic97_tension",
+        "instance_name": "ic97_tension.mps.gz",
+        "instance_sha256": "ef6446254400f2e61079fc0b6260c300a74d9cfaf017eddcdd126d2085ffc4d9",
+        "official_group": null,
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "officially-ungrouped:bmoipr2",
+        "instance": "data/raw/miplib2017_collection/bmoipr2.mps.gz",
+        "instance_id": "bmoipr2",
+        "instance_name": "bmoipr2.mps.gz",
+        "instance_sha256": "703cd87102114becbe49e4eaa2fd2b267d60f6a5f16cb20b64cc8347830226df",
+        "official_group": null,
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "neos-pseudoapplication-14",
+        "instance": "data/raw/miplib2017_collection/neos-3209519-ruhr.mps.gz",
+        "instance_id": "neos-3209519-ruhr",
+        "instance_name": "neos-3209519-ruhr.mps.gz",
+        "instance_sha256": "ace630f2849837cd83e669bfe5494eecea42631174d9d1f360bfdc4a59943900",
+        "official_group": "neos-pseudoapplication-14",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "rpp",
+        "instance": "data/raw/miplib2017_collection/rpp22falsei.mps.gz",
+        "instance_id": "rpp22falsei",
+        "instance_name": "rpp22falsei.mps.gz",
+        "instance_sha256": "94b9b406d78405f2329375052a3bf31bf6a537fcca43850ba86ae07f10cfe00f",
+        "official_group": "rpp",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "officially-ungrouped:dcmulti",
+        "instance": "data/raw/miplib2017_collection/dcmulti.mps.gz",
+        "instance_id": "dcmulti",
+        "instance_name": "dcmulti.mps.gz",
+        "instance_sha256": "83627542fa87eb04e4eb22ce805d3bcde64e2a58f3caa3eafac7004816c470df",
+        "official_group": null,
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "officially-ungrouped:rlp1",
+        "instance": "data/raw/miplib2017_collection/rlp1.mps.gz",
+        "instance_id": "rlp1",
+        "instance_name": "rlp1.mps.gz",
+        "instance_sha256": "edd6f521c7abe8b2de7425601d1739599b44d27bc192e8c757fe9b5ba03fa2c3",
+        "official_group": null,
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "neos-pseudoapplication-26",
+        "instance": "data/raw/miplib2017_collection/neos-3116779-oban.mps.gz",
+        "instance_id": "neos-3116779-oban",
+        "instance_name": "neos-3116779-oban.mps.gz",
+        "instance_sha256": "df0fc5be05f4d722b229951889be73b77429c648ff274d5db5ed9e25e3b38a73",
+        "official_group": "neos-pseudoapplication-26",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "neos-pseudoapplication-83",
+        "instance": "data/raw/miplib2017_collection/neos-619167.mps.gz",
+        "instance_id": "neos-619167",
+        "instance_name": "neos-619167.mps.gz",
+        "instance_sha256": "e244e5281aef6c8a2407e85c1f1a56fd757824774b4d969fd3f95f7adf0d0244",
+        "official_group": "neos-pseudoapplication-83",
+        "status": "easy",
+        "tags": []
+      },
+      {
+        "group_key": "neos-pseudoapplication-91",
+        "instance": "data/raw/miplib2017_collection/neos-3611689-kaihu.mps.gz",
+        "instance_id": "neos-3611689-kaihu",
+        "instance_name": "neos-3611689-kaihu.mps.gz",
+        "instance_sha256": "60004f4ee9cef8f8e7e9d811d5de63e75e6e96b577a54c923ef1971b89a87039",
+        "official_group": "neos-pseudoapplication-91",
+        "status": "easy",
+        "tags": []
+      }
+    ],
+    "intervention_scope": "first-run-only",
+    "max_workers": 1,
+    "node_limit": null,
+    "output_dir": "experiments/learned_policy_pilot_v1",
+    "resource_isolation": "one fresh single-threaded SCIP process at a time",
+    "result_manifest": "data/manifests/causal_learned_policy_pilot_v1.json",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "statistics_manifest": "data/manifests/learned_policy_pilot_statistics_v1.json",
+    "time_limit_seconds": 300.0
+  },
+  "purpose": "one-shot exploratory Go/No-Go test of the already frozen learned ranker; failure stops learned-policy development rather than starting another model iteration",
+  "schema_version": 1,
+  "selection_contract": {
+    "candidate_pool_size": 229,
+    "rule": "SHA-256 order by frozen key, Group key, and instance ID; retain the first 18 distinct Group keys without examining solver outcomes",
+    "selection_key": "learned-policy-pilot-v1-20260721"
+  },
+  "source_artifacts": {
+    "collection_metadata": {
+      "path": "data/manifests/miplib2017_collection_metadata_2026-07-21.csv",
+      "sha256": "918dded2f463e8b1b05ffb5afd950284b718a8d9f36cd1b06b36fb2fee04e357"
+    },
+    "development_metadata": {
+      "path": "data/manifests/miplib2017_benchmark_metadata_2026-07-16.csv",
+      "sha256": "4f77a4b470e86c7d8c7a7070523224c2904d6ebc8d21408d109a14cccd0bd8df"
+    },
+    "development_splits": [
+      {
+        "path": "vendor/tracer_snapshot/split/train.test",
+        "sha256": "a9998abb7d1ccf6c4147d72f4059b868358af0ef8b2b377c265f5d8622c5c4fc"
+      },
+      {
+        "path": "vendor/tracer_snapshot/split/val.test",
+        "sha256": "288375d98dcb2e8a52bc7620406489244337add064af0f98957eebe2cbfe9c59"
+      },
+      {
+        "path": "vendor/tracer_snapshot/split/test.test",
+        "sha256": "f55ac8f0900ee1e6b9f28dedfe6c08785c52f3e33ad01f652c97a4decda81024"
+      }
+    ],
+    "download_plan": {
+      "path": "data/manifests/learned_policy_pilot_download_plan_v1.json",
+      "sha256": "819a7f8f8de895645c2860d5635bf016600ac93bf68ed2f4d7c54593822586d7"
+    },
+    "download_result": {
+      "path": "data/manifests/learned_policy_pilot_downloads_v1.json",
+      "sha256": "e88e21d447e169fd881cfc252952e09223b0c59b9acb692ae8ed5e75f7a8a84d"
+    },
+    "learned_model_manifest": {
+      "model_path": "models/ranking_imitation_online_xgb_revision_v1/model.ubj",
+      "model_sha256": "7c1f3ce6d9250064ecdce1efa36cc76e995024c020f674e86aa4ae98711b49c6",
+      "offline_stage_gate_passed": false,
+      "path": "data/manifests/ranking_imitation_online_xgb_revision_v1.json",
+      "sha256": "1bca19ec8ceac6af46cdda6edc2c58cbb6c5ebb78899a611368e757bc84aee4d"
+    }
+  },
+  "status": "pre_registered_before_any_new_group_online_outcomes"
+}

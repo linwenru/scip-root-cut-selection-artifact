@@ -1,0 +1,367 @@
+{
+  "action_summary": {
+    "xgb-imitation-rank": {
+      "eligible_instances": 1,
+      "eligible_pairs": 0,
+      "instance_equal_mean_primary_delta": 0.0,
+      "instance_equal_mean_relative_saving": 0.0,
+      "instance_losses": 0,
+      "instance_ties": 1,
+      "instance_wins": 0,
+      "policy_fallback_pairs": 1,
+      "safe": true,
+      "unsafe_eligible_pairs": 0,
+      "unsafe_policy_pairs": 0,
+      "valid_pairs": 1
+    }
+  },
+  "actions": [
+    "xgb-imitation-rank"
+  ],
+  "all_actions_safe": true,
+  "all_observed_contexts_match": true,
+  "created_at_utc": "2026-07-18T05:11:00.513146+00:00",
+  "experiment": "predeclared-root-action-library-oracle-v1",
+  "initial_context_match_pairs": 1,
+  "initial_context_missing_pairs": 0,
+  "initial_context_observed_pairs": 1,
+  "initial_context_partial_pairs": 0,
+  "initial_context_total_pairs": 1,
+  "instances": 1,
+  "intervention_scope": "first-run-only",
+  "learned_model_manifest": "${PROJECT_ROOT}/data/manifests/ranking_imitation_online_xgb_v1.json",
+  "learned_model_manifest_sha256": "3746ce2f5f539ba1cc1d8d9fc14a2b0b2bc7f1d3f1af2ffaaccdb4e8edb9d64d",
+  "leave_one_seed_out_summary": {
+    "instance_equal_mean_relative_saving": 0.0,
+    "instance_losses": 0,
+    "instance_ties": 1,
+    "instance_wins": 0,
+    "safe": true,
+    "seed_losses": 0,
+    "seed_ties": 1,
+    "seed_wins": 0,
+    "selected_action_counts": {
+      "native": 1,
+      "xgb-imitation-rank": 0
+    },
+    "selection_rule": "choose the action with the largest positive mean relative LP-iteration saving on all other seeds; exclude actions with any unsafe training seed; native wins ties",
+    "unsafe_held_out_seeds": 0
+  },
+  "node_limit": null,
+  "oracle_summary": {
+    "eligible_instances": 1,
+    "instance_equal_mean_delta_selected_minus_native": 0.0,
+    "instance_equal_mean_relative_saving": 0.0,
+    "instance_losses": 0,
+    "instance_ties": 1,
+    "instance_wins": 0,
+    "primary_metric": "lp_iterations",
+    "selected_action_counts": {
+      "native": 1,
+      "xgb-imitation-rank": 0
+    }
+  },
+  "per_instance": [
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos859080.mps.gz",
+      "instance_id": "neos859080",
+      "instance_sha256": "bace2c785ab613cdd997b74197a44eca35b7b7871b18e4d958a9e83fa5ee205b",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 1,
+        "evaluations": [
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {},
+            "training_seeds": []
+          }
+        ],
+        "losses": 0,
+        "mean_relative_saving": 0.0,
+        "safe": true,
+        "selected_action_counts": {
+          "native": 1,
+          "xgb-imitation-rank": 0
+        },
+        "ties": 1,
+        "unsafe_seeds": 0,
+        "wins": 0
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": 0.0,
+        "mean_relative_saving": 0.0,
+        "selected_action_counts": {
+          "native": 1,
+          "xgb-imitation-rank": 0
+        },
+        "ties": 1,
+        "wins": 0
+      },
+      "pairs": [
+        {
+          "actions": {
+            "xgb-imitation-rank": {
+              "comparison": {
+                "eligible": false,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 108.0,
+                    "relative_saving": 0.0,
+                    "treatment": 108.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 417.0,
+                    "relative_saving": 0.0,
+                    "treatment": 417.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 2508.0,
+                    "relative_saving": 0.0,
+                    "treatment": 2508.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 428.0,
+                    "relative_saving": 0.0,
+                    "treatment": 428.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -7.324299999999994,
+                    "native": 112.9021,
+                    "relative_saving": 0.06487301830523962,
+                    "treatment": 105.57780000000001
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -0.07324299999999995,
+                    "native": 1.129021,
+                    "relative_saving": 0.06487301830523962,
+                    "treatment": 1.055778
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 428.0,
+                    "relative_saving": 0.0,
+                    "treatment": 428.0
+                  }
+                },
+                "policy_evaluable": true,
+                "policy_fallback": true,
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "9078a97ee76193e5a46fe7e973b634e4cf9858af0c7ae86ed7ffc3ce153c74ff",
+              "outcome": {
+                "cuts_applied": 108,
+                "dual_bound": 1e+20,
+                "gap": 0.0,
+                "lp_count": 417,
+                "lp_iterations": 2508,
+                "nodes": 428,
+                "objective_sense": "minimize",
+                "primal_bound": 1e+20,
+                "primal_dual_integral": 105.57780000000001,
+                "solving_time": 1.055778,
+                "status": "infeasible",
+                "total_nodes": 428
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/online_imitation_smoke_v1/neos859080/seed_0_xgb-imitation-rank.json",
+              "selector": {
+                "calls": 65,
+                "candidate_cuts": 1621,
+                "context_records": [
+                  {
+                    "action_metadata": {
+                      "anchor": "native-hybrid top candidate",
+                      "candidate_occurrences": 7,
+                      "dataset_manifest": "${PROJECT_ROOT}/data/manifests/ranking_imitation_online_v1.json",
+                      "dataset_manifest_sha256": "4d018fda2e3b9e1ad7c709baf7ca29510dbeb6902600e96556eae039915d2908",
+                      "duplicate_occurrences": 0,
+                      "feature_schema_version": 1,
+                      "features": 37,
+                      "label_semantics": "imitate native SCIP application, not solve benefit",
+                      "logical_candidates": 7,
+                      "model": "${PROJECT_ROOT}/models/ranking_imitation_online_xgb_v1/model.ubj",
+                      "model_manifest": "${PROJECT_ROOT}/data/manifests/ranking_imitation_online_xgb_v1.json",
+                      "model_manifest_sha256": "3746ce2f5f539ba1cc1d8d9fc14a2b0b2bc7f1d3f1af2ffaaccdb4e8edb9d64d",
+                      "model_sha256": "a5b1f9f53a63351d52623e1393a7d5efc1b9478d99c3959d35c218cd46bf330d",
+                      "offline_stage_gate_passed": false,
+                      "prediction_max": 4.723423004150391,
+                      "prediction_min": -1.575311303138733,
+                      "ranking": "xgboost-native-application-imitation-online-v1",
+                      "tie_break": "pre-action hybrid-score rank"
+                    },
+                    "changed_selected_cuts": 0,
+                    "context_sha256": "9078a97ee76193e5a46fe7e973b634e4cf9858af0c7ae86ed7ffc3ce153c74ff",
+                    "requested_action": "xgb-imitation-rank",
+                    "run": 1,
+                    "selected_set_changed": false,
+                    "selector_call": 1
+                  }
+                ],
+                "decisions": 1,
+                "eligible_root_calls": 0,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 1,
+                "intervention_records": [],
+                "intervention_scope": "first-run-only",
+                "interventions": 0,
+                "learned_model_manifest": "${PROJECT_ROOT}/data/manifests/ranking_imitation_online_xgb_v1.json",
+                "learned_model_manifest_sha256": "3746ce2f5f539ba1cc1d8d9fc14a2b0b2bc7f1d3f1af2ffaaccdb4e8edb9d64d",
+                "mode": "xgb-imitation-rank",
+                "root_calls": 20,
+                "run_count": 1,
+                "selected_cuts": 2
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "xgb-imitation-rank": "9078a97ee76193e5a46fe7e973b634e4cf9858af0c7ae86ed7ffc3ce153c74ff"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 108,
+            "dual_bound": 1e+20,
+            "gap": 0.0,
+            "lp_count": 417,
+            "lp_iterations": 2508,
+            "nodes": 428,
+            "objective_sense": "minimize",
+            "primal_bound": 1e+20,
+            "primal_dual_integral": 112.9021,
+            "solving_time": 1.129021,
+            "status": "infeasible",
+            "total_nodes": 428
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/online_imitation_smoke_v1/neos859080/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 2508.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 2508.0,
+            "valid_treatment_actions": [
+              "xgb-imitation-rank"
+            ]
+          },
+          "seed": 0
+        }
+      ],
+      "per_action": {
+        "xgb-imitation-rank": {
+          "aggregate": {
+            "cuts_applied": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": 0.0,
+              "mean_relative_saving": 0.0,
+              "ties": 1,
+              "valid_pairs": 1,
+              "wins": 0
+            },
+            "lp_count": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": 0.0,
+              "mean_relative_saving": 0.0,
+              "ties": 1,
+              "valid_pairs": 1,
+              "wins": 0
+            },
+            "lp_iterations": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": 0.0,
+              "mean_relative_saving": 0.0,
+              "ties": 1,
+              "valid_pairs": 1,
+              "wins": 0
+            },
+            "nodes": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": 0.0,
+              "mean_relative_saving": 0.0,
+              "ties": 1,
+              "valid_pairs": 1,
+              "wins": 0
+            },
+            "primal_dual_integral": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -7.324299999999994,
+              "mean_relative_saving": 0.06487301830523962,
+              "ties": 0,
+              "valid_pairs": 1,
+              "wins": 1
+            },
+            "solving_time": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -0.07324299999999995,
+              "mean_relative_saving": 0.06487301830523962,
+              "ties": 0,
+              "valid_pairs": 1,
+              "wins": 1
+            },
+            "total_nodes": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": 0.0,
+              "mean_relative_saving": 0.0,
+              "ties": 1,
+              "valid_pairs": 1,
+              "wins": 0
+            }
+          },
+          "eligible_pairs": 0,
+          "policy_fallback_pairs": 1,
+          "safe": true,
+          "safe_pairs": 1,
+          "unsafe_eligible_pairs": 0,
+          "unsafe_policy_pairs": 0,
+          "valid_pairs": 1
+        }
+      }
+    }
+  ],
+  "pre_registered_contract": {
+    "intervention_budget": "at most one action in the first SCIP run of the complete solve",
+    "oracle_scope": "post-hoc per instance and seed; an upper bound only, never a deployable policy",
+    "primary_metric": "lp_iterations",
+    "safety": "both arms complete with matching status, objective sense, final primal and dual bounds, runtime, parameters, and run budget",
+    "selected_cut_budget": "preserve native hybrid selected-cut count",
+    "tie_rule": "native wins every primary-metric tie"
+  },
+  "process_isolation": "one fresh Python/SCIP process per arm and seed",
+  "schema_version": 2,
+  "seeds": [
+    0
+  ],
+  "time_limit": 30.0
+}

@@ -1,0 +1,195 @@
+{
+  "checks": {
+    "all_gzip_streams_valid": true,
+    "all_planned_instances_present": true,
+    "all_sizes_match": true
+  },
+  "created_at_utc": "2026-07-21T07:52:12.048854+00:00",
+  "downloads": [
+    {
+      "content_length": 267381,
+      "destination": "data/raw/miplib2017_collection/hanoi5.mps.gz",
+      "etag": "\"41475-6020b6b0a5900\"",
+      "instance_id": "hanoi5",
+      "last_modified": "Thu, 03 Aug 2023 21:25:24 GMT",
+      "reused": true,
+      "sha256": "282cbb87673bfa237d7a9f0b584dae650e58eec176f082165e3f94a6ccd9e05c",
+      "url": "https://miplib.zib.de/WebData/instances/hanoi5.mps.gz"
+    },
+    {
+      "content_length": 183227,
+      "destination": "data/raw/miplib2017_collection/neos-585467.mps.gz",
+      "etag": "\"2cbbb-6020b6dd782c0\"",
+      "instance_id": "neos-585467",
+      "last_modified": "Thu, 03 Aug 2023 21:26:11 GMT",
+      "reused": true,
+      "sha256": "d98142cea4fc8bfde60127c5cd6146a262cb42297bb098893c31af8ee591424d",
+      "url": "https://miplib.zib.de/WebData/instances/neos-585467.mps.gz"
+    },
+    {
+      "content_length": 3257,
+      "destination": "data/raw/miplib2017_collection/neos-5192052-neckar.mps.gz",
+      "etag": "\"cb9-6020b6dd782c0\"",
+      "instance_id": "neos-5192052-neckar",
+      "last_modified": "Thu, 03 Aug 2023 21:26:11 GMT",
+      "reused": true,
+      "sha256": "a683554818c078fca80fe21c0f452463d5d6a051f6898d9da641d5d9f9575906",
+      "url": "https://miplib.zib.de/WebData/instances/neos-5192052-neckar.mps.gz"
+    },
+    {
+      "content_length": 132321,
+      "destination": "data/raw/miplib2017_collection/supportcase20.mps.gz",
+      "etag": "\"204e1-6020b6f08afc0\"",
+      "instance_id": "supportcase20",
+      "last_modified": "Thu, 03 Aug 2023 21:26:31 GMT",
+      "reused": true,
+      "sha256": "99157bf8c67c9d5fb45e94b500e78b4f96fb2c94383509f86ee931550d04067f",
+      "url": "https://miplib.zib.de/WebData/instances/supportcase20.mps.gz"
+    },
+    {
+      "content_length": 11304277,
+      "destination": "data/raw/miplib2017_collection/ofi.mps.gz",
+      "etag": "\"ac7d55-6020b6e148bc0\"",
+      "instance_id": "ofi",
+      "last_modified": "Thu, 03 Aug 2023 21:26:15 GMT",
+      "reused": true,
+      "sha256": "b2ec9c2efb387e362b5e04984e863f8f770e689f2b9b01d90446a17e88082284",
+      "url": "https://miplib.zib.de/WebData/instances/ofi.mps.gz"
+    },
+    {
+      "content_length": 102273,
+      "destination": "data/raw/miplib2017_collection/mine-90-10.mps.gz",
+      "etag": "\"18f81-6020b6ba2ef80\"",
+      "instance_id": "mine-90-10",
+      "last_modified": "Thu, 03 Aug 2023 21:25:34 GMT",
+      "reused": true,
+      "sha256": "917855ca305ab7f9ec6c3c89d0bd903dee91c67e2d8f736147b69d6bda73b6a8",
+      "url": "https://miplib.zib.de/WebData/instances/mine-90-10.mps.gz"
+    },
+    {
+      "content_length": 431612,
+      "destination": "data/raw/miplib2017_collection/shipschedule6shipsmixi.mps.gz",
+      "etag": "\"695fc-6020b6e8e9dc0\"",
+      "instance_id": "shipschedule6shipsmixi",
+      "last_modified": "Thu, 03 Aug 2023 21:26:23 GMT",
+      "reused": true,
+      "sha256": "c0a97e5b135b2f50cb528f9776e5d306af347bef3e0b25e1d42227b0a8869086",
+      "url": "https://miplib.zib.de/WebData/instances/shipschedule6shipsmixi.mps.gz"
+    },
+    {
+      "content_length": 351509,
+      "destination": "data/raw/miplib2017_collection/neos-4954340-beaury.mps.gz",
+      "etag": "\"55d15-6020b6db8fe40\"",
+      "instance_id": "neos-4954340-beaury",
+      "last_modified": "Thu, 03 Aug 2023 21:26:09 GMT",
+      "reused": true,
+      "sha256": "80cbd42ef3caec5ce3ccb0396f27ca827d4827f7924d02cd3de5bcb6b4869b2a",
+      "url": "https://miplib.zib.de/WebData/instances/neos-4954340-beaury.mps.gz"
+    },
+    {
+      "content_length": 13727,
+      "destination": "data/raw/miplib2017_collection/23588.mps.gz",
+      "etag": "\"359f-6020b6a43fbc0\"",
+      "instance_id": "23588",
+      "last_modified": "Thu, 03 Aug 2023 21:25:11 GMT",
+      "reused": true,
+      "sha256": "7c94abc1aae206cef54c43107f1493d027719b1b4f3b9dfcbfaf0d5fa66a129b",
+      "url": "https://miplib.zib.de/WebData/instances/23588.mps.gz"
+    },
+    {
+      "content_length": 16938,
+      "destination": "data/raw/miplib2017_collection/ic97_tension.mps.gz",
+      "etag": "\"422a-6020b6b846b00\"",
+      "instance_id": "ic97_tension",
+      "last_modified": "Thu, 03 Aug 2023 21:25:32 GMT",
+      "reused": true,
+      "sha256": "ef6446254400f2e61079fc0b6260c300a74d9cfaf017eddcdd126d2085ffc4d9",
+      "url": "https://miplib.zib.de/WebData/instances/ic97_tension.mps.gz"
+    },
+    {
+      "content_length": 342656,
+      "destination": "data/raw/miplib2017_collection/bmoipr2.mps.gz",
+      "etag": "\"53a80-6020b6a71c280\"",
+      "instance_id": "bmoipr2",
+      "last_modified": "Thu, 03 Aug 2023 21:25:14 GMT",
+      "reused": true,
+      "sha256": "703cd87102114becbe49e4eaa2fd2b267d60f6a5f16cb20b64cc8347830226df",
+      "url": "https://miplib.zib.de/WebData/instances/bmoipr2.mps.gz"
+    },
+    {
+      "content_length": 354805,
+      "destination": "data/raw/miplib2017_collection/neos-3209519-ruhr.mps.gz",
+      "etag": "\"569f5-6020b6bef3ac0\"",
+      "instance_id": "neos-3209519-ruhr",
+      "last_modified": "Thu, 03 Aug 2023 21:25:39 GMT",
+      "reused": true,
+      "sha256": "ace630f2849837cd83e669bfe5494eecea42631174d9d1f360bfdc4a59943900",
+      "url": "https://miplib.zib.de/WebData/instances/neos-3209519-ruhr.mps.gz"
+    },
+    {
+      "content_length": 506114,
+      "destination": "data/raw/miplib2017_collection/rpp22falsei.mps.gz",
+      "etag": "\"7b902-6020b6e60d700\"",
+      "instance_id": "rpp22falsei",
+      "last_modified": "Thu, 03 Aug 2023 21:26:20 GMT",
+      "reused": true,
+      "sha256": "94b9b406d78405f2329375052a3bf31bf6a537fcca43850ba86ae07f10cfe00f",
+      "url": "https://miplib.zib.de/WebData/instances/rpp22falsei.mps.gz"
+    },
+    {
+      "content_length": 8983,
+      "destination": "data/raw/miplib2017_collection/dcmulti.mps.gz",
+      "etag": "\"2317-6020b6a904700\"",
+      "instance_id": "dcmulti",
+      "last_modified": "Thu, 03 Aug 2023 21:25:16 GMT",
+      "reused": true,
+      "sha256": "83627542fa87eb04e4eb22ce805d3bcde64e2a58f3caa3eafac7004816c470df",
+      "url": "https://miplib.zib.de/WebData/instances/dcmulti.mps.gz"
+    },
+    {
+      "content_length": 3895,
+      "destination": "data/raw/miplib2017_collection/rlp1.mps.gz",
+      "etag": "\"f37-6020b6e5194c0\"",
+      "instance_id": "rlp1",
+      "last_modified": "Thu, 03 Aug 2023 21:26:19 GMT",
+      "reused": true,
+      "sha256": "edd6f521c7abe8b2de7425601d1739599b44d27bc192e8c757fe9b5ba03fa2c3",
+      "url": "https://miplib.zib.de/WebData/instances/rlp1.mps.gz"
+    },
+    {
+      "content_length": 77713,
+      "destination": "data/raw/miplib2017_collection/neos-3116779-oban.mps.gz",
+      "etag": "\"12f91-6020b6bd0b640\"",
+      "instance_id": "neos-3116779-oban",
+      "last_modified": "Thu, 03 Aug 2023 21:25:37 GMT",
+      "reused": true,
+      "sha256": "df0fc5be05f4d722b229951889be73b77429c648ff274d5db5ed9e25e3b38a73",
+      "url": "https://miplib.zib.de/WebData/instances/neos-3116779-oban.mps.gz"
+    },
+    {
+      "content_length": 96435,
+      "destination": "data/raw/miplib2017_collection/neos-619167.mps.gz",
+      "etag": "\"178b3-6020b6dd782c0\"",
+      "instance_id": "neos-619167",
+      "last_modified": "Thu, 03 Aug 2023 21:26:11 GMT",
+      "reused": true,
+      "sha256": "e244e5281aef6c8a2407e85c1f1a56fd757824774b4d969fd3f95f7adf0d0244",
+      "url": "https://miplib.zib.de/WebData/instances/neos-619167.mps.gz"
+    },
+    {
+      "content_length": 8086,
+      "destination": "data/raw/miplib2017_collection/neos-3611689-kaihu.mps.gz",
+      "etag": "\"1f96-6020b6c4ac840\"",
+      "instance_id": "neos-3611689-kaihu",
+      "last_modified": "Thu, 03 Aug 2023 21:25:45 GMT",
+      "reused": true,
+      "sha256": "60004f4ee9cef8f8e7e9d811d5de63e75e6e96b577a54c923ef1971b89a87039",
+      "url": "https://miplib.zib.de/WebData/instances/neos-3611689-kaihu.mps.gz"
+    }
+  ],
+  "range_chunk_bytes": 131072,
+  "schema_version": 1,
+  "source_plan": "data/manifests/learned_policy_pilot_download_plan_v1.json",
+  "source_plan_sha256": "819a7f8f8de895645c2860d5635bf016600ac93bf68ed2f4d7c54593822586d7",
+  "status": "all frozen pilot instances downloaded and verified"
+}

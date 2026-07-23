@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "pre_registered_before_active_outcomes",
+  "created_date": "2026-07-16",
+  "split": "train",
+  "selection_contract": {
+    "source_runtime_table": "${TRACE_SOURCE_ROOT}/benchmark_output_train/summary.csv",
+    "source_observational_manifest": "data/manifests/root_observational_v1.json",
+    "source_assignments": "data/manifests/evaluation_protocols/instance_assignments.csv",
+    "requirements": [
+      "original split is train",
+      "source trace status is ok",
+      "source trace elapsed time is greater than 30 and at most 60 seconds",
+      "at least one policy-eligible root decision exists",
+      "the local MPS file exists",
+      "the instance was not used in the first-run pilot or cohort A"
+    ],
+    "ordering": "ascending source trace elapsed time",
+    "official_group_check": "five instances have distinct nonempty official MIPLIB Groups and three are officially ungrouped"
+  },
+  "experiment_contract": {
+    "actions": [
+      "boundary-swap",
+      "boundary-swap-2",
+      "efficacy-promote"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "time_limit_seconds": 120,
+    "node_limit": null,
+    "intervention_scope": "first-run-only",
+    "primary_metric": "lp_iterations",
+    "native_wins_ties": true,
+    "process_isolation": "one fresh Python/SCIP process per arm and seed"
+  },
+  "instances": [
+    {
+      "instance_id": "cod105",
+      "instance": "${MIPLIB_INSTANCES_DIR}/cod105.mps.gz",
+      "official_group": "",
+      "source_trace_elapsed_seconds": 32.63897085189819,
+      "policy_eligible_candidates": 231
+    },
+    {
+      "instance_id": "neos-3004026-krka",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos-3004026-krka.mps.gz",
+      "official_group": "neos-pseudoapplication-38",
+      "source_trace_elapsed_seconds": 36.13664269447327,
+      "policy_eligible_candidates": 440
+    },
+    {
+      "instance_id": "nursesched-sprint02",
+      "instance": "${MIPLIB_INSTANCES_DIR}/nursesched-sprint02.mps.gz",
+      "official_group": "nursescheduling",
+      "source_trace_elapsed_seconds": 39.63824009895325,
+      "policy_eligible_candidates": 334
+    },
+    {
+      "instance_id": "roll3000",
+      "instance": "${MIPLIB_INSTANCES_DIR}/roll3000.mps.gz",
+      "official_group": "",
+      "source_trace_elapsed_seconds": 46.91232991218567,
+      "policy_eligible_candidates": 667
+    },
+    {
+      "instance_id": "fhnw-binpack4-4",
+      "instance": "${MIPLIB_INSTANCES_DIR}/fhnw-binpack4-4.mps.gz",
+      "official_group": "binpack",
+      "source_trace_elapsed_seconds": 47.31965088844299,
+      "policy_eligible_candidates": 3762
+    },
+    {
+      "instance_id": "eil33-2",
+      "instance": "${MIPLIB_INSTANCES_DIR}/eil33-2.mps.gz",
+      "official_group": "eil",
+      "source_trace_elapsed_seconds": 47.4889018535614,
+      "policy_eligible_candidates": 8
+    },
+    {
+      "instance_id": "istanbul-no-cutoff",
+      "instance": "${MIPLIB_INSTANCES_DIR}/istanbul-no-cutoff.mps.gz",
+      "official_group": "",
+      "source_trace_elapsed_seconds": 53.841403007507324,
+      "policy_eligible_candidates": 1143
+    },
+    {
+      "instance_id": "dano3_3",
+      "instance": "${MIPLIB_INSTANCES_DIR}/dano3_3.mps.gz",
+      "official_group": "dano",
+      "source_trace_elapsed_seconds": 56.64434003829956,
+      "policy_eligible_candidates": 33
+    }
+  ]
+}

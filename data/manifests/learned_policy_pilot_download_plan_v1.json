@@ -1,0 +1,186 @@
+{
+  "checks": {
+    "all_groups_disjoint_from_existing_233": true,
+    "eighteen_distinct_group_keys": true,
+    "eighteen_instances": true,
+    "existing_validation_and_test_not_selected": true
+  },
+  "created_at_utc": "2026-07-21T07:51:23.149752+00:00",
+  "eligible_candidate_instances": 229,
+  "instances": [
+    {
+      "destination": "data/raw/miplib2017_collection/hanoi5.mps.gz",
+      "group_key": "officially-ungrouped:hanoi5",
+      "instance_id": "hanoi5",
+      "instance_name": "hanoi5.mps.gz",
+      "official_group": null,
+      "url": "https://miplib.zib.de/WebData/instances/hanoi5.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/neos-585467.mps.gz",
+      "group_key": "neos-pseudoapplication-92",
+      "instance_id": "neos-585467",
+      "instance_name": "neos-585467.mps.gz",
+      "official_group": "neos-pseudoapplication-92",
+      "url": "https://miplib.zib.de/WebData/instances/neos-585467.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/neos-5192052-neckar.mps.gz",
+      "group_key": "neos-pseudoapplication-74",
+      "instance_id": "neos-5192052-neckar",
+      "instance_name": "neos-5192052-neckar.mps.gz",
+      "official_group": "neos-pseudoapplication-74",
+      "url": "https://miplib.zib.de/WebData/instances/neos-5192052-neckar.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/supportcase20.mps.gz",
+      "group_key": "officially-ungrouped:supportcase20",
+      "instance_id": "supportcase20",
+      "instance_name": "supportcase20.mps.gz",
+      "official_group": null,
+      "url": "https://miplib.zib.de/WebData/instances/supportcase20.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/ofi.mps.gz",
+      "group_key": "officially-ungrouped:ofi",
+      "instance_id": "ofi",
+      "instance_name": "ofi.mps.gz",
+      "official_group": null,
+      "url": "https://miplib.zib.de/WebData/instances/ofi.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/mine-90-10.mps.gz",
+      "group_key": "mine",
+      "instance_id": "mine-90-10",
+      "instance_name": "mine-90-10.mps.gz",
+      "official_group": "mine",
+      "url": "https://miplib.zib.de/WebData/instances/mine-90-10.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/shipschedule6shipsmixi.mps.gz",
+      "group_key": "shipschedule",
+      "instance_id": "shipschedule6shipsmixi",
+      "instance_name": "shipschedule6shipsmixi.mps.gz",
+      "official_group": "shipschedule",
+      "url": "https://miplib.zib.de/WebData/instances/shipschedule6shipsmixi.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/neos-4954340-beaury.mps.gz",
+      "group_key": "neos-pseudoapplication-59",
+      "instance_id": "neos-4954340-beaury",
+      "instance_name": "neos-4954340-beaury.mps.gz",
+      "official_group": "neos-pseudoapplication-59",
+      "url": "https://miplib.zib.de/WebData/instances/neos-4954340-beaury.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/23588.mps.gz",
+      "group_key": "officially-ungrouped:23588",
+      "instance_id": "23588",
+      "instance_name": "23588.mps.gz",
+      "official_group": null,
+      "url": "https://miplib.zib.de/WebData/instances/23588.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/ic97_tension.mps.gz",
+      "group_key": "officially-ungrouped:ic97_tension",
+      "instance_id": "ic97_tension",
+      "instance_name": "ic97_tension.mps.gz",
+      "official_group": null,
+      "url": "https://miplib.zib.de/WebData/instances/ic97_tension.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/bmoipr2.mps.gz",
+      "group_key": "officially-ungrouped:bmoipr2",
+      "instance_id": "bmoipr2",
+      "instance_name": "bmoipr2.mps.gz",
+      "official_group": null,
+      "url": "https://miplib.zib.de/WebData/instances/bmoipr2.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/neos-3209519-ruhr.mps.gz",
+      "group_key": "neos-pseudoapplication-14",
+      "instance_id": "neos-3209519-ruhr",
+      "instance_name": "neos-3209519-ruhr.mps.gz",
+      "official_group": "neos-pseudoapplication-14",
+      "url": "https://miplib.zib.de/WebData/instances/neos-3209519-ruhr.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/rpp22falsei.mps.gz",
+      "group_key": "rpp",
+      "instance_id": "rpp22falsei",
+      "instance_name": "rpp22falsei.mps.gz",
+      "official_group": "rpp",
+      "url": "https://miplib.zib.de/WebData/instances/rpp22falsei.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/dcmulti.mps.gz",
+      "group_key": "officially-ungrouped:dcmulti",
+      "instance_id": "dcmulti",
+      "instance_name": "dcmulti.mps.gz",
+      "official_group": null,
+      "url": "https://miplib.zib.de/WebData/instances/dcmulti.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/rlp1.mps.gz",
+      "group_key": "officially-ungrouped:rlp1",
+      "instance_id": "rlp1",
+      "instance_name": "rlp1.mps.gz",
+      "official_group": null,
+      "url": "https://miplib.zib.de/WebData/instances/rlp1.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/neos-3116779-oban.mps.gz",
+      "group_key": "neos-pseudoapplication-26",
+      "instance_id": "neos-3116779-oban",
+      "instance_name": "neos-3116779-oban.mps.gz",
+      "official_group": "neos-pseudoapplication-26",
+      "url": "https://miplib.zib.de/WebData/instances/neos-3116779-oban.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/neos-619167.mps.gz",
+      "group_key": "neos-pseudoapplication-83",
+      "instance_id": "neos-619167",
+      "instance_name": "neos-619167.mps.gz",
+      "official_group": "neos-pseudoapplication-83",
+      "url": "https://miplib.zib.de/WebData/instances/neos-619167.mps.gz"
+    },
+    {
+      "destination": "data/raw/miplib2017_collection/neos-3611689-kaihu.mps.gz",
+      "group_key": "neos-pseudoapplication-91",
+      "instance_id": "neos-3611689-kaihu",
+      "instance_name": "neos-3611689-kaihu.mps.gz",
+      "official_group": "neos-pseudoapplication-91",
+      "url": "https://miplib.zib.de/WebData/instances/neos-3611689-kaihu.mps.gz"
+    }
+  ],
+  "instances_dir": "data/raw/miplib2017_collection",
+  "purpose": "content-blind acquisition list for the one-shot learned-policy pilot",
+  "schema_version": 1,
+  "selection_key": "learned-policy-pilot-v1-20260721",
+  "selection_rule": "same frozen SHA-256 Group-disjoint rule used by the online pilot plan; no solver outcome or local file property participates",
+  "source_artifacts": {
+    "collection_metadata": {
+      "path": "data/manifests/miplib2017_collection_metadata_2026-07-21.csv",
+      "sha256": "918dded2f463e8b1b05ffb5afd950284b718a8d9f36cd1b06b36fb2fee04e357"
+    },
+    "development_metadata": {
+      "path": "data/manifests/miplib2017_benchmark_metadata_2026-07-16.csv",
+      "sha256": "4f77a4b470e86c7d8c7a7070523224c2904d6ebc8d21408d109a14cccd0bd8df"
+    },
+    "development_splits": [
+      {
+        "path": "vendor/tracer_snapshot/split/train.test",
+        "sha256": "a9998abb7d1ccf6c4147d72f4059b868358af0ef8b2b377c265f5d8622c5c4fc"
+      },
+      {
+        "path": "vendor/tracer_snapshot/split/val.test",
+        "sha256": "288375d98dcb2e8a52bc7620406489244337add064af0f98957eebe2cbfe9c59"
+      },
+      {
+        "path": "vendor/tracer_snapshot/split/test.test",
+        "sha256": "f55ac8f0900ee1e6b9f28dedfe6c08785c52f3e33ad01f652c97a4decda81024"
+      }
+    ]
+  },
+  "status": "frozen before downloading new pilot instances"
+}

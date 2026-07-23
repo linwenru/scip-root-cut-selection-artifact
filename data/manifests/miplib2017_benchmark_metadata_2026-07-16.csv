@@ -1,0 +1,241 @@
+instance_name,status,submitter,group,tags
+50v-10.mps.gz,easy,Serge Bisaillon,,benchmark decomposition benchmark_suitable mixed_binary general_linear
+drayage-25-23.mps.gz,easy,F. Jordan Srour,drayage,benchmark benchmark_suitable precedence set_partitioning mixed_binary
+drayage-100-23.mps.gz,easy,F. Jordan Srour,drayage,benchmark benchmark_suitable precedence set_partitioning mixed_binary
+savsched1.mps.gz,easy,Gerardo Gonzalez,,benchmark benchmark_suitable aggregations variable_bound set_packing invariant_knapsack mixed_binary
+reblock115.mps.gz,easy,Andreas Bley,reblock,benchmark binary benchmark_suitable precedence knapsack
+ran14x18-disj-8.mps.gz,easy,J. Aronson,ran,benchmark benchmark_suitable variable_bound set_covering mixed_binary
+roi2alpha3n4.mps.gz,easy,Domenico Salvagnin,,benchmark benchmark_suitable variable_bound cardinality binpacking mixed_binary
+leo2.mps.gz,easy,COR@L test set,,benchmark benchmark_suitable variable_bound set_packing set_covering mixed_binary
+academictimetablesmall.mps.gz,easy,Joshua Friedman,,benchmark binary decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack equation_knapsack binpacking knapsack
+bab6.mps.gz,easy,Elmar Swarat,bab,benchmark binary benchmark_suitable aggregations precedence set_partitioning set_packing set_covering cardinality invariant_knapsack equation_knapsack knapsack mixed_binary
+gen-ip002.mps.gz,easy,Simon Bowly,generated,benchmark benchmark_suitable general_linear
+gen-ip054.mps.gz,easy,Simon Bowly,generated,benchmark benchmark_suitable variable_bound general_linear
+comp21-2idx.mps.gz,easy,Matias Sørensen,coursetimetabling,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear
+comp07-2idx.mps.gz,easy,Matias Sørensen,coursetimetabling,benchmark decomposition benchmark_suitable precedence variable_bound set_packing cardinality invariant_knapsack mixed_binary general_linear
+map16715-04.mps.gz,easy,Kiyan Ahmadizadeh,map,benchmark benchmark_suitable precedence variable_bound knapsack mixed_binary
+ic97_potential.mps.gz,easy,L. Peeters,,benchmark benchmark_suitable precedence mixed_binary general_linear
+roi5alpha10n8.mps.gz,easy,Domenico Salvagnin,,benchmark decomposition benchmark_suitable variable_bound cardinality binpacking mixed_binary
+neos-1122047.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-46,benchmark benchmark_suitable precedence variable_bound mixed_binary
+pk1.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable precedence mixed_binary
+n5-3.mps.gz,easy,A. Atamtürk,nxy-z,benchmark decomposition benchmark_suitable aggregations mixed_binary general_linear
+fiball.mps.gz,easy,MIPLIB submission pool,,benchmark decomposition benchmark_suitable aggregations precedence set_partitioning general_linear
+CMS750_4.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable precedence invariant_knapsack mixed_binary
+neos859080.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-96,benchmark infeasible benchmark_suitable variable_bound general_linear
+neos-787933.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-36,benchmark binary decomposition benchmark_suitable binpacking mixed_binary
+air05.mps.gz,easy,G. Astfalk,air,benchmark binary benchmark_suitable set_partitioning
+blp-ic98.mps.gz,easy,M. Lübbecke,blp,benchmark decomposition benchmark_suitable set_packing mixed_binary general_linear
+mzzv42z.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality general_linear
+nu25-pr12.mps.gz,easy,MIPLIB submission pool,nus-prxy,benchmark decomposition benchmark_suitable aggregations variable_bound cardinality general_linear
+neos-911970.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-70,benchmark benchmark_suitable set_partitioning set_covering mixed_binary
+irp.mps.gz,easy,MIPLIB submission pool,,benchmark binary benchmark_suitable set_partitioning
+seymour1.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable variable_bound set_covering mixed_binary
+h80x6320d.mps.gz,easy,MIPLIB submission pool,fixed-cost-network-flow,benchmark decomposition benchmark_suitable variable_bound set_partitioning set_packing mixed_binary
+neos-848589.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-77,benchmark benchmark_suitable cardinality mixed_binary
+neos-1456979.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-102,benchmark decomposition benchmark_suitable variable_bound set_partitioning set_packing cardinality knapsack mixed_binary general_linear
+p200x1188c.mps.gz,easy,MIPLIB submission pool,pr_product,benchmark decomposition benchmark_suitable variable_bound mixed_binary
+b1c1s1.mps.gz,easy,"M. Vyve, Y. Pochet",c1s1,benchmark benchmark_suitable aggregations variable_bound mixed_binary
+markshare2.mps.gz,hard,"G. Cornuéjols, M. Dawande",markshare,benchmark benchmark_suitable integer_knapsack general_linear
+mas74.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable invariant_knapsack mixed_binary
+nexp-150-20-8-5.mps.gz,easy,MIPLIB submission pool,exp_and_fc,benchmark benchmark_suitable set_packing mixed_binary
+rd-rplusc-21.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning mixed_binary
+exp-1-500-5-5.mps.gz,easy,MIPLIB submission pool,exp_and_fc,benchmark benchmark_suitable variable_bound set_packing mixed_binary
+markshare_4_0.mps.gz,easy,"G. Cornuéjols, M. Dawande",markshare,benchmark benchmark_suitable integer_knapsack general_linear
+qap10.mps.gz,easy,MIPLIB submission pool,,benchmark binary benchmark_suitable set_partitioning
+cost266-UUE.mps.gz,easy,MIPLIB submission pool,network_design,benchmark decomposition benchmark_suitable aggregations set_packing mixed_binary
+neos-873061.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-61,benchmark decomposition benchmark_suitable precedence variable_bound mixed_binary
+mas76.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable invariant_knapsack mixed_binary
+neos8.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-15,benchmark benchmark_suitable precedence set_packing cardinality invariant_knapsack binpacking general_linear
+sp98ar.mps.gz,easy,"J. Goessens, S. v. Hoessel, L. Kroon",sp9,benchmark binary benchmark_suitable variable_bound set_packing set_covering mixed_binary
+neos-860300.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-23,benchmark benchmark_suitable set_partitioning set_packing set_covering invariant_knapsack general_linear
+neos-1445765.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-88,benchmark benchmark_suitable aggregations invariant_knapsack mixed_binary
+tr12-30.mps.gz,easy,MIPLIB submission pool,,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary
+neos5.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-21,benchmark benchmark_suitable mixed_binary
+neos-1171448.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-8,benchmark benchmark_suitable variable_bound invariant_knapsack mixed_binary
+icir97_tension.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable aggregations mixed_binary general_linear
+neos-960392.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-94,benchmark binary benchmark_suitable precedence variable_bound set_partitioning set_packing invariant_knapsack binpacking knapsack
+enlight_hard.mps.gz,easy,A. Zymolka,enlight,benchmark benchmark_suitable equation_knapsack general_linear
+swath3.mps.gz,easy,D. Panton,swath,benchmark benchmark_suitable mixed_binary
+sp150x300d.mps.gz,easy,MIPLIB submission pool,sp_product,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary
+mik-250-20-75-4.mps.gz,easy,MIPLIB submission pool,mik_250,benchmark benchmark_suitable general_linear
+dano3_3.mps.gz,easy,Daniel Bienstock,dano,benchmark benchmark_suitable variable_bound cardinality mixed_binary
+neos-827175.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-87,benchmark decomposition benchmark_suitable aggregations set_partitioning set_packing cardinality binpacking mixed_binary general_linear
+neos-1582420.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-10,benchmark decomposition benchmark_suitable variable_bound set_covering integer_knapsack general_linear
+fast0507.mps.gz,easy,MIPLIB submission pool,,benchmark binary benchmark_suitable variable_bound set_covering
+neos-950242.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-72,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_covering invariant_knapsack general_linear
+neos-662469.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-73,benchmark benchmark_suitable variable_bound set_packing set_covering binpacking knapsack integer_knapsack general_linear
+dano3_5.mps.gz,easy,Daniel Bienstock,dano,benchmark benchmark_suitable variable_bound cardinality mixed_binary
+neos-957323.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-48,benchmark binary benchmark_suitable precedence variable_bound set_packing invariant_knapsack binpacking knapsack
+neos17.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-66,benchmark benchmark_suitable mixed_binary
+trento1.mps.gz,easy,MIPLIB submission pool,,benchmark benchmark_suitable mixed_binary general_linear
+nw04.mps.gz,easy,MIPLIB submission pool,,benchmark binary benchmark_suitable set_partitioning
+swath1.mps.gz,easy,D. Panton,swath,benchmark benchmark_suitable mixed_binary
+neos-1354092.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-47,benchmark decomposition benchmark_suitable variable_bound set_partitioning general_linear
+ns1830653.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-110,benchmark benchmark_suitable variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack mixed_binary
+var-smallemery-m6j6.mps.gz,easy,Daniel Espinoza,,benchmark benchmark_suitable precedence invariant_knapsack mixed_binary
+s250r10.mps.gz,easy,Daniel Espinoza,Spinoza,benchmark benchmark_suitable aggregations set_partitioning set_packing cardinality invariant_knapsack knapsack mixed_binary
+mzzv11.mps.gz,easy,S. Lukac,,benchmark benchmark_suitable variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack general_linear
+netdiversion.mps.gz,easy,Chris Cullenbine,,benchmark binary benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack
+cbs-cta.mps.gz,easy,Jordi Castro,cta,benchmark decomposition benchmark_suitable variable_bound mixed_binary
+neos-933966.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-34,benchmark benchmark_suitable precedence variable_bound set_packing invariant_knapsack mixed_binary
+mushroom-best.mps.gz,easy,Berk Ustun,ustun,benchmark benchmark_suitable variable_bound general_linear
+sct2.mps.gz,easy,Siemens,sct,benchmark benchmark_suitable precedence invariant_knapsack knapsack mixed_binary general_linear
+sorrell3.mps.gz,easy,Toni Sorrell,independentset,benchmark binary benchmark_suitable variable_bound
+bnatt400.mps.gz,easy,Tatsuya Akutsu,bnatt,benchmark binary benchmark_suitable precedence set_covering invariant_knapsack binpacking knapsack
+tbfp-network.mps.gz,easy,Rob Pratt,,benchmark binary benchmark_suitable set_partitioning cardinality
+glass-sc.mps.gz,easy,Marc Pfetsch,maxfeassub,benchmark binary benchmark_suitable set_covering
+physiciansched6-2.mps.gz,easy,Pelin Damci-Kurt,physiciansched,benchmark decomposition benchmark_suitable precedence variable_bound set_packing set_covering invariant_knapsack binpacking knapsack mixed_binary
+physiciansched3-3.mps.gz,easy,Pelin Damci-Kurt,physiciansched,benchmark decomposition benchmark_suitable precedence variable_bound set_packing set_covering invariant_knapsack binpacking knapsack mixed_binary
+ex9.mps.gz,easy,Iulian Ober,,benchmark binary benchmark_suitable precedence set_partitioning invariant_knapsack
+buildingenergy.mps.gz,easy,Kristopher A. Pruitt,,benchmark benchmark_suitable aggregations precedence variable_bound mixed_binary general_linear
+momentum1.mps.gz,easy,T. Koch,momentum,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning mixed_binary
+rocI-4-11.mps.gz,easy,Joerg Rambau,rocI,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning mixed_binary general_linear
+rocII-5-11.mps.gz,easy,Joerg Rambau,rocI,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing mixed_binary
+ns1760995.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-12,benchmark benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality mixed_binary
+neos-5107597-kakapo.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-54,benchmark benchmark_suitable aggregations precedence mixed_binary
+neos-4532248-waihi.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-6,benchmark benchmark_suitable aggregations precedence set_partitioning cardinality binpacking knapsack mixed_binary
+neos-4954672-berkel.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-43,benchmark benchmark_suitable aggregations variable_bound mixed_binary
+neos-3024952-loue.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-86,benchmark decomposition benchmark_suitable precedence integer_knapsack general_linear
+neos-4738912-atrato.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-37,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning set_packing knapsack integer_knapsack general_linear
+neos-4300652-rahue.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-13,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality knapsack mixed_binary
+neos-3656078-kumeu.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-44,benchmark benchmark_suitable aggregations precedence variable_bound set_packing cardinality invariant_knapsack knapsack mixed_binary general_linear
+neos-4722843-widden.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-30,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning invariant_knapsack binpacking knapsack mixed_binary general_linear
+neos-5114902-kasavu.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-104,benchmark benchmark_suitable variable_bound cardinality invariant_knapsack mixed_binary
+neos-2978193-inde.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-5,benchmark decomposition benchmark_suitable cardinality mixed_binary
+neos-5188808-nattai.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-98,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality knapsack mixed_binary
+neos-4387871-tavua.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-58,benchmark benchmark_suitable variable_bound binpacking mixed_binary
+neos-3083819-nubu.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-31,benchmark decomposition benchmark_suitable aggregations integer_knapsack general_linear
+neos-5104907-jarama.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-24,benchmark benchmark_suitable aggregations variable_bound set_partitioning cardinality invariant_knapsack mixed_binary
+neos-4338804-snowy.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-40,benchmark benchmark_suitable precedence set_covering mixed_binary general_linear
+neos-5093327-huahum.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-17,benchmark decomposition benchmark_suitable aggregations mixed_binary
+neos-2657525-crna.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-7,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning integer_knapsack general_linear
+neos-2987310-joes.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-82,benchmark benchmark_suitable precedence mixed_binary
+neos-3381206-awhea.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-105,benchmark decomposition benchmark_suitable integer_knapsack general_linear
+neos-2746589-doon.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-52,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary general_linear
+neos-5052403-cygnet.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-100,benchmark binary benchmark_suitable set_covering invariant_knapsack
+neos-4413714-turia.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-67,benchmark benchmark_suitable set_partitioning binpacking mixed_binary
+neos-3402294-bobin.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-71,benchmark benchmark_suitable precedence set_partitioning set_covering invariant_knapsack mixed_binary
+neos-5049753-cuanza.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-85,benchmark benchmark_suitable variable_bound cardinality invariant_knapsack mixed_binary
+neos-3627168-kasai.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-25,benchmark decomposition benchmark_suitable variable_bound invariant_knapsack mixed_binary general_linear
+neos-3216931-puriri.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-56,benchmark benchmark_suitable aggregations variable_bound set_partitioning set_packing set_covering cardinality invariant_knapsack binpacking knapsack general_linear
+neos-3046615-murg.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-90,benchmark benchmark_suitable aggregations variable_bound mixed_binary general_linear
+neos-3754480-nidda.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-107,benchmark benchmark_suitable precedence variable_bound knapsack mixed_binary
+neos-5195221-niemur.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-32,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack knapsack mixed_binary
+neos-3402454-bohle.mps.gz,hard,Jeff Linderoth,neos-pseudoapplication-4,benchmark infeasible benchmark_suitable precedence set_partitioning set_covering invariant_knapsack mixed_binary
+neos-3004026-krka.mps.gz,easy,Jeff Linderoth,neos-pseudoapplication-38,benchmark feasibility benchmark_suitable set_partitioning general_linear
+app1-1.mps.gz,easy,Emilie Danna,app,benchmark benchmark_suitable precedence variable_bound set_covering mixed_binary
+app1-2.mps.gz,easy,Emilie Danna,app,benchmark decomposition benchmark_suitable precedence variable_bound set_covering mixed_binary
+beasleyC3.mps.gz,easy,"F. Ortega, L. Wolsey",beasley,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary
+csched008.mps.gz,easy,Tallys Yunes,csched,benchmark benchmark_suitable aggregations variable_bound set_partitioning mixed_binary general_linear
+rmatr100-p10.mps.gz,easy,Dmitry Krushinsky,rmatr,benchmark benchmark_suitable cardinality mixed_binary
+nursesched-sprint02.mps.gz,easy,Haroldo Gambini Santos,nursescheduling,benchmark benchmark_suitable set_partitioning set_packing cardinality invariant_knapsack general_linear
+nursesched-medium-hint03.mps.gz,hard,Haroldo Gambini Santos,nursescheduling,benchmark decomposition benchmark_suitable set_partitioning set_packing cardinality invariant_knapsack general_linear
+sing326.mps.gz,easy,Daniel Espinoza,sing,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary
+sing44.mps.gz,easy,Daniel Espinoza,sing,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary
+sp97ar.mps.gz,easy,"J. Goessens, S. v. Hoessel, L. Kroon",sp9,benchmark binary benchmark_suitable variable_bound set_packing set_covering mixed_binary
+thor50dday.mps.gz,easy,Daniel Rehfeldt,,benchmark decomposition benchmark_suitable variable_bound mixed_binary
+atlanta-ip.mps.gz,easy,"E-Plus, D. Bienstock, A. Bley, R. Wessäly",,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_covering cardinality invariant_knapsack binpacking knapsack integer_knapsack mixed_binary general_linear
+graph20-20-1rand.mps.gz,easy,Michael Bastubbe,graphs,benchmark binary decomposition benchmark_suitable precedence set_partitioning invariant_knapsack
+wachplan.mps.gz,easy,Sebastian Orlowski,,benchmark benchmark_suitable variable_bound set_partitioning set_packing set_covering invariant_knapsack mixed_binary general_linear
+supportcase42.mps.gz,easy,Domenico Salvagnin,,benchmark benchmark_suitable precedence variable_bound general_linear
+decomp2.mps.gz,easy,Martin Berger,,benchmark binary decomposition benchmark_suitable precedence set_partitioning set_packing invariant_knapsack binpacking mixed_binary
+highschool1-aigio.mps.gz,easy,George Fonseca,timetabling,benchmark benchmark_suitable aggregations variable_bound set_partitioning set_packing set_covering cardinality invariant_knapsack equation_knapsack general_linear
+brazil3.mps.gz,easy,George Fonseca,timetabling,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering cardinality invariant_knapsack equation_knapsack mixed_binary general_linear
+mad.mps.gz,easy,Koichi Fujii,,benchmark benchmark_suitable set_partitioning set_packing invariant_knapsack mixed_binary
+bppc4-08.mps.gz,easy,Manuel Iori,bppc,benchmark benchmark_suitable set_partitioning mixed_binary
+germanrr.mps.gz,easy,Q. Chen,,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning general_linear
+ns1208400.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-108,benchmark benchmark_suitable variable_bound set_partitioning set_covering invariant_knapsack mixed_binary general_linear
+neos-1171737.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-80,benchmark benchmark_suitable variable_bound set_packing mixed_binary
+eilA101-2.mps.gz,easy,J. Linderoth,eil,benchmark binary benchmark_suitable set_partitioning
+glass4.mps.gz,easy,I. Luzzi,,benchmark benchmark_suitable precedence set_partitioning mixed_binary
+gmu-35-50.mps.gz,easy,Nora Konnyu,gmu,benchmark benchmark_suitable variable_bound set_packing mixed_binary
+net12.mps.gz,easy,P. Belotti,,benchmark decomposition benchmark_suitable precedence set_packing cardinality invariant_knapsack mixed_binary
+30n20b8.mps.gz,easy,"E. Coughlan, M. Lübbecke, J. Schulz",,benchmark benchmark_suitable precedence set_partitioning general_linear
+supportcase18.mps.gz,easy,Michael Winkler,,benchmark binary benchmark_suitable set_partitioning binpacking
+supportcase6.mps.gz,easy,Michael Winkler,,benchmark benchmark_suitable set_partitioning cardinality general_linear
+supportcase22.mps.gz,open,Michael Winkler,,benchmark binary benchmark_suitable aggregations set_covering invariant_knapsack binpacking knapsack
+supportcase10.mps.gz,easy,Michael Winkler,,benchmark binary benchmark_suitable aggregations precedence variable_bound set_covering invariant_knapsack
+supportcase12.mps.gz,easy,Michael Winkler,,benchmark benchmark_suitable aggregations variable_bound integer_knapsack mixed_binary general_linear
+supportcase26.mps.gz,easy,Michael Winkler,,benchmark benchmark_suitable precedence mixed_binary
+supportcase19.mps.gz,easy,Michael Winkler,,benchmark benchmark_suitable variable_bound set_partitioning set_covering general_linear
+supportcase7.mps.gz,easy,Michael Winkler,,benchmark benchmark_suitable precedence variable_bound invariant_knapsack mixed_binary
+n3div36.mps.gz,easy,R. Meirich,nseq,benchmark binary decomposition benchmark_suitable set_packing set_covering mixed_binary
+cvs16r128-89.mps.gz,easy,Michael Bastubbe,cvs,benchmark binary decomposition benchmark_suitable precedence set_packing invariant_knapsack
+dws008-01.mps.gz,easy,Philipp Leise,dws,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning set_packing mixed_binary
+cmflsp50-24-8-8.mps.gz,easy,Andrea Arias,cmflsp,benchmark benchmark_suitable precedence variable_bound mixed_binary
+co-100.mps.gz,easy,Axel Werner,,benchmark binary benchmark_suitable precedence set_partitioning set_packing binpacking knapsack
+lectsched-5-obj.mps.gz,easy,Harald Schilly,lectsched,benchmark benchmark_suitable aggregations precedence variable_bound set_covering invariant_knapsack integer_knapsack general_linear
+rail507.mps.gz,easy,"A. Caprara, M. Fischetti, P. Toth",,benchmark binary benchmark_suitable variable_bound set_covering invariant_knapsack
+roll3000.mps.gz,easy,L. Kroon,,benchmark benchmark_suitable precedence variable_bound set_packing set_covering invariant_knapsack binpacking integer_knapsack mixed_binary general_linear
+neos-3555904-turama.mps.gz,easy,Hans Mittelmann,neos-pseudoapplication-81,benchmark binary benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack
+neos-4647030-tutaki.mps.gz,hard,Hans Mittelmann,neos-pseudoapplication-29,benchmark benchmark_suitable set_packing mixed_binary
+neos-4763324-toguru.mps.gz,easy,Hans Mittelmann,neos-pseudoapplication-106,benchmark benchmark_suitable precedence variable_bound set_partitioning cardinality
+neos-3988577-wolgan.mps.gz,easy,Hans Mittelmann,neos-pseudoapplication-64,benchmark infeasible binary decomposition benchmark_suitable precedence set_packing cardinality invariant_knapsack binpacking knapsack
+neos-2075418-temuka.mps.gz,easy,Hans Mittelmann,neos-pseudoapplication-62,benchmark infeasible binary benchmark_suitable precedence variable_bound set_covering invariant_knapsack knapsack
+ns1116954.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-51,benchmark feasibility benchmark_suitable precedence set_partitioning set_packing cardinality binpacking knapsack mixed_binary
+milo-v12-6-r2-40-1.mps.gz,easy,Tamas Terlaky,milo,benchmark decomposition benchmark_suitable aggregations precedence variable_bound mixed_binary general_linear
+fhnw-binpack4-4.mps.gz,easy,Simon Felix,binpack,benchmark infeasible feasibility benchmark_suitable precedence variable_bound invariant_knapsack mixed_binary
+fhnw-binpack4-48.mps.gz,easy,Simon Felix,binpack,benchmark feasibility benchmark_suitable precedence variable_bound invariant_knapsack mixed_binary
+splice1k1.mps.gz,easy,Gleb Belov,splice,benchmark benchmark_suitable set_covering binpacking general_linear
+hypothyroid-k1.mps.gz,easy,Gleb Belov,hypothyroid,benchmark benchmark_suitable aggregations precedence set_covering binpacking general_linear
+cryptanalysiskb128n5obj16.mps.gz,easy,Gleb Belov,cryptanalysis,benchmark feasibility benchmark_suitable aggregations precedence variable_bound set_covering cardinality invariant_knapsack binpacking knapsack integer_knapsack mixed_binary general_linear
+proteindesign121hz512p9.mps.gz,easy,Gleb Belov,proteindesign,benchmark benchmark_suitable set_partitioning general_linear
+gfd-schedulen180f7d50m30k18.mps.gz,easy,Gleb Belov,gfd-schedule,benchmark feasibility benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear
+k1mushroom.mps.gz,easy,Gleb Belov,k1mushroom,benchmark benchmark_suitable set_covering binpacking general_linear
+cryptanalysiskb128n5obj14.mps.gz,easy,Gleb Belov,cryptanalysis,benchmark infeasible feasibility benchmark_suitable aggregations precedence variable_bound set_covering cardinality invariant_knapsack binpacking knapsack integer_knapsack mixed_binary general_linear
+radiationm18-12-05.mps.gz,easy,Gleb Belov,radiation,benchmark decomposition benchmark_suitable aggregations precedence variable_bound integer_knapsack mixed_binary general_linear
+traininstance6.mps.gz,easy,Gleb Belov,traininstance,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear
+traininstance2.mps.gz,easy,Gleb Belov,traininstance,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear
+proteindesign122trx11p8.mps.gz,easy,Gleb Belov,proteindesign,benchmark benchmark_suitable set_partitioning general_linear
+radiationm40-10-02.mps.gz,easy,Gleb Belov,radiation,benchmark decomposition benchmark_suitable aggregations precedence variable_bound integer_knapsack mixed_binary general_linear
+mcsched.mps.gz,easy,Q. Chen,,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing invariant_knapsack general_linear
+satellites2-60-fs.mps.gz,easy,He Renjie,satellites,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality knapsack mixed_binary
+uct-subprob.mps.gz,easy,Gerald Lach,,benchmark benchmark_suitable aggregations variable_bound set_partitioning set_packing mixed_binary
+peg-solitaire-a3.mps.gz,easy,Hiroshige Dan ; Koichi Fujii,pegsolitaire,benchmark binary benchmark_suitable aggregations variable_bound set_partitioning cardinality binpacking
+cod105.mps.gz,easy,MIPLIB submission pool,,benchmark binary benchmark_suitable set_packing
+supportcase33.mps.gz,easy,Domenico Salvagnin,,benchmark benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack integer_knapsack general_linear
+lotsize.mps.gz,easy,"Dinakar Gade, Simge Kucukyavuz",,benchmark decomposition benchmark_suitable variable_bound set_packing invariant_knapsack mixed_binary
+rail02.mps.gz,easy,Thomas Schlechte,rail0,benchmark binary benchmark_suitable aggregations set_partitioning set_packing cardinality
+gmu-35-40.mps.gz,easy,Nora Konnyu,gmu,benchmark benchmark_suitable variable_bound set_packing mixed_binary
+ns1952667.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-78,benchmark feasibility benchmark_suitable integer_knapsack general_linear
+seymour.mps.gz,easy,"W. Cook, P. Seymour",,benchmark binary benchmark_suitable variable_bound set_covering
+ex10.mps.gz,easy,Iulian Ober,,benchmark binary benchmark_suitable precedence set_partitioning invariant_knapsack
+rococoC10-001000.mps.gz,easy,"A. Chabrier, E. Danna, C. Le Pape, L. Perron",rococo,benchmark benchmark_suitable precedence set_partitioning cardinality general_linear
+irish-electricity.mps.gz,easy,Paula Carroll,,benchmark benchmark_suitable precedence variable_bound invariant_knapsack binpacking knapsack mixed_binary
+n2seq36q.mps.gz,easy,R. Meirich,nseq,benchmark binary benchmark_suitable set_packing set_covering invariant_knapsack binpacking knapsack
+triptim1.mps.gz,easy,MIPLIB submission pool,triptim,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering invariant_knapsack general_linear
+piperout-08.mps.gz,easy,Gleb Belov,piperout,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering invariant_knapsack equation_knapsack integer_knapsack mixed_binary general_linear
+piperout-27.mps.gz,easy,Gleb Belov,piperout,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering invariant_knapsack equation_knapsack integer_knapsack mixed_binary general_linear
+unitcal_7.mps.gz,easy,R. O’Neill,,benchmark benchmark_suitable precedence variable_bound mixed_binary general_linear
+bnatt500.mps.gz,easy,Tatsuya Akutsu,bnatt,benchmark infeasible binary benchmark_suitable precedence set_covering invariant_knapsack binpacking knapsack
+fastxgemm-n2r6s0t2.mps.gz,easy,Laurent Sorber,fastxgemm,benchmark decomposition benchmark_suitable variable_bound set_partitioning set_covering mixed_binary general_linear
+mc11.mps.gz,easy,"F. Ortega, L. Wolsey",mc,benchmark decomposition benchmark_suitable variable_bound mixed_binary
+graphdraw-domain.mps.gz,easy,Cézar Augusto Nascimento e Silva,graphdraw,benchmark benchmark_suitable variable_bound set_partitioning invariant_knapsack mixed_binary general_linear
+s100.mps.gz,hard,Daniel Espinoza,Spinoza,benchmark binary benchmark_suitable aggregations set_partitioning set_packing cardinality invariant_knapsack knapsack
+opm2-z10-s4.mps.gz,easy,Daniel Espinoza,opm2,benchmark binary benchmark_suitable precedence knapsack
+timtab1.mps.gz,easy,"C. Liebchen, R. Möhring",timtab,benchmark benchmark_suitable aggregations mixed_binary general_linear
+square47.mps.gz,easy,Sascha Kurz,square,benchmark benchmark_suitable set_partitioning general_linear
+square41.mps.gz,easy,Sascha Kurz,square,benchmark benchmark_suitable set_partitioning general_linear
+rail01.mps.gz,easy,Thomas Schlechte,rail0,benchmark binary benchmark_suitable aggregations variable_bound set_partitioning set_packing cardinality knapsack
+pg.mps.gz,easy,M. Dawande,,benchmark decomposition benchmark_suitable mixed_binary
+csched007.mps.gz,easy,Tallys Yunes,csched,benchmark benchmark_suitable aggregations variable_bound set_partitioning mixed_binary general_linear
+rococoB10-011000.mps.gz,easy,"A. Chabrier, E. Danna, C. Le Pape, L. Perron",rococo,benchmark decomposition benchmark_suitable precedence set_partitioning cardinality general_linear
+uccase9.mps.gz,easy,Daniel Espinoza,uccase,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning invariant_knapsack binpacking knapsack mixed_binary
+uccase12.mps.gz,easy,Daniel Espinoza,uccase,benchmark benchmark_suitable aggregations precedence variable_bound mixed_binary
+neos-631710.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-75,benchmark binary benchmark_suitable precedence set_partitioning set_packing binpacking
+satellites2-40.mps.gz,easy,He Renjie,satellites,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack mixed_binary
+ns1644855.mps.gz,easy,NEOS Server Submission,neos-pseudoapplication-76,benchmark benchmark_suitable variable_bound set_partitioning mixed_binary general_linear
+bab2.mps.gz,hard,Elmar Swarat,bab,benchmark binary decomposition benchmark_suitable aggregations set_partitioning set_packing set_covering cardinality invariant_knapsack equation_knapsack knapsack mixed_binary
+chromaticindex512-7.mps.gz,easy,Pierre Le Bodic,chromaticindex,benchmark binary benchmark_suitable set_partitioning set_packing
+chromaticindex1024-7.mps.gz,easy,Pierre Le Bodic,chromaticindex,benchmark binary benchmark_suitable set_partitioning set_packing
+assign1-5-8.mps.gz,easy,Robert Fourer,assign1,benchmark benchmark_suitable set_partitioning cardinality mixed_binary
+binkar10_1.mps.gz,easy,H. Mittelmann,,benchmark benchmark_suitable aggregations mixed_binary
+blp-ar98.mps.gz,easy,M. Lübbecke,blp,benchmark decomposition benchmark_suitable variable_bound set_packing equation_knapsack mixed_binary general_linear
+istanbul-no-cutoff.mps.gz,easy,Utz-Uwe Haus,,benchmark benchmark_suitable aggregations variable_bound knapsack mixed_binary
+leo1.mps.gz,easy,COR@L test set,,benchmark benchmark_suitable variable_bound set_packing set_covering mixed_binary
+rmatr200-p5.mps.gz,easy,Dmitry Krushinsky,rmatr,benchmark benchmark_suitable cardinality mixed_binary
+pg5_34.mps.gz,easy,M. Dawande,,benchmark decomposition benchmark_suitable mixed_binary
+eil33-2.mps.gz,easy,J. Linderoth,eil,benchmark binary benchmark_suitable set_partitioning
+snp-02-004-104.mps.gz,easy,Gerald Gamrath,supplynetworkplanning,benchmark benchmark_suitable aggregations variable_bound mixed_binary general_linear
+map10.mps.gz,easy,Kiyan Ahmadizadeh,map,benchmark benchmark_suitable precedence variable_bound knapsack mixed_binary
+supportcase40.mps.gz,easy,Domenico Salvagnin,,benchmark decomposition benchmark_suitable precedence variable_bound set_packing mixed_binary

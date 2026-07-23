@@ -1,0 +1,1027 @@
+{
+  "aggregate": {
+    "cuts_applied": {
+      "eligible_instances": 10,
+      "instance_equal_mean_delta_treatment_minus_native": 76.30000000000001,
+      "instance_losses": 6,
+      "instance_ties": 1,
+      "instance_wins": 3
+    },
+    "lp_count": {
+      "eligible_instances": 10,
+      "instance_equal_mean_delta_treatment_minus_native": 91.08333333333333,
+      "instance_losses": 4,
+      "instance_ties": 2,
+      "instance_wins": 4
+    },
+    "lp_iterations": {
+      "eligible_instances": 10,
+      "instance_equal_mean_delta_treatment_minus_native": 183.39999999999998,
+      "instance_losses": 7,
+      "instance_ties": 1,
+      "instance_wins": 2
+    },
+    "nodes": {
+      "eligible_instances": 10,
+      "instance_equal_mean_delta_treatment_minus_native": 79.06666666666668,
+      "instance_losses": 3,
+      "instance_ties": 5,
+      "instance_wins": 2
+    },
+    "primal_dual_integral": {
+      "eligible_instances": 10,
+      "instance_equal_mean_delta_treatment_minus_native": -26.26005162212409,
+      "instance_losses": 5,
+      "instance_ties": 0,
+      "instance_wins": 5
+    },
+    "solving_time": {
+      "eligible_instances": 10,
+      "instance_equal_mean_delta_treatment_minus_native": 0.09123381666666668,
+      "instance_losses": 6,
+      "instance_ties": 0,
+      "instance_wins": 4
+    },
+    "total_nodes": {
+      "eligible_instances": 10,
+      "instance_equal_mean_delta_treatment_minus_native": 79.33333333333334,
+      "instance_losses": 3,
+      "instance_ties": 5,
+      "instance_wins": 2
+    }
+  },
+  "aggregation": "first average paired seed deltas within each instance, then weight eligible instances equally; metric aggregates exclude noncomparable pairs, which are reported separately and still fail suite safety",
+  "created_at_utc": "2026-07-16T08:49:19.876740+00:00",
+  "eligible_instances": 10,
+  "noncomparable_eligible_pairs": 1,
+  "unsafe_instances": [
+    "cbs-cta"
+  ],
+  "experiment": "root-boundary-swap-train-suite-v1",
+  "instances": 10,
+  "node_limit": null,
+  "per_instance": [
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": 5.666666666666667,
+          "ties": 0,
+          "wins": 2
+        },
+        "lp_count": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 416.0,
+          "ties": 0,
+          "wins": 1
+        },
+        "lp_iterations": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 2900.3333333333335,
+          "ties": 0,
+          "wins": 1
+        },
+        "nodes": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 397.6666666666667,
+          "ties": 0,
+          "wins": 1
+        },
+        "primal_dual_integral": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 19.64966666666665,
+          "ties": 0,
+          "wins": 1
+        },
+        "solving_time": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 0.19649666666666663,
+          "ties": 0,
+          "wins": 1
+        },
+        "total_nodes": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 398.6666666666667,
+          "ties": 0,
+          "wins": 1
+        }
+      },
+      "eligible_pairs": 3,
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos859080.mps.gz",
+      "instance_id": "neos859080",
+      "instance_sha256": "bace2c785ab613cdd997b74197a44eca35b7b7871b18e4d958a9e83fa5ee205b",
+      "intervention_records": [
+        {
+          "added_cut_name": "gom11_x47",
+          "candidate_cuts": 7,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom11_x7",
+          "run": 1,
+          "selected_cuts": 2,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "gom11_x59",
+          "candidate_cuts": 7,
+          "forced_cuts": 0,
+          "removed_cut_name": "zerohalf11_x44",
+          "run": 1,
+          "selected_cuts": 1,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "gom10_x59",
+          "candidate_cuts": 7,
+          "forced_cuts": 0,
+          "removed_cut_name": "zerohalf10_x55",
+          "run": 1,
+          "selected_cuts": 1,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "gom66_x11",
+          "candidate_cuts": 3,
+          "forced_cuts": 0,
+          "removed_cut_name": "zerohalf66_x19",
+          "run": 2,
+          "selected_cuts": 1,
+          "selector_call": 21
+        },
+        {
+          "added_cut_name": "scg100_x31",
+          "candidate_cuts": 13,
+          "forced_cuts": 0,
+          "removed_cut_name": "zerohalf100_x8",
+          "run": 3,
+          "selected_cuts": 1,
+          "selector_call": 41
+        },
+        {
+          "added_cut_name": "gom148_x4",
+          "candidate_cuts": 3,
+          "forced_cuts": 0,
+          "removed_cut_name": "zerohalf148_x4",
+          "run": 4,
+          "selected_cuts": 1,
+          "selector_call": 61
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": 0.6666666666666666,
+          "ties": 2,
+          "wins": 0
+        },
+        "lp_count": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": 0.3333333333333333,
+          "ties": 2,
+          "wins": 0
+        },
+        "lp_iterations": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": 2.3333333333333335,
+          "ties": 2,
+          "wins": 0
+        },
+        "nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 3,
+          "wins": 0
+        },
+        "primal_dual_integral": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 0.6482704123379316,
+          "ties": 0,
+          "wins": 0
+        },
+        "solving_time": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 0.011104666666666652,
+          "ties": 0,
+          "wins": 0
+        },
+        "total_nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 3,
+          "wins": 0
+        }
+      },
+      "eligible_pairs": 3,
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos8.mps.gz",
+      "instance_id": "neos8",
+      "instance_sha256": "3634f20854022d788ba8e796273cbe029e0d089a2c6c67493179f8b94204e7d3",
+      "intervention_records": [
+        {
+          "added_cut_name": "gom1_s137",
+          "candidate_cuts": 17,
+          "forced_cuts": 0,
+          "removed_cut_name": "scg1_s1159",
+          "run": 1,
+          "selected_cuts": 1,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "flower_00002_1flower",
+          "candidate_cuts": 17,
+          "forced_cuts": 0,
+          "removed_cut_name": "flower_00003_1flower",
+          "run": 1,
+          "selected_cuts": 2,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "andgate_73_1",
+          "candidate_cuts": 39,
+          "forced_cuts": 0,
+          "removed_cut_name": "implbd1_11",
+          "run": 1,
+          "selected_cuts": 6,
+          "selector_call": 1
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 16.666666666666668,
+          "ties": 0,
+          "wins": 1
+        },
+        "lp_count": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": -1.0,
+          "ties": 0,
+          "wins": 2
+        },
+        "lp_iterations": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 149.66666666666666,
+          "ties": 0,
+          "wins": 1
+        },
+        "nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 3,
+          "wins": 0
+        },
+        "primal_dual_integral": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 1.1317359881332127,
+          "ties": 0,
+          "wins": 1
+        },
+        "solving_time": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": 0.03872633333333334,
+          "ties": 0,
+          "wins": 2
+        },
+        "total_nodes": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 1,
+          "wins": 1
+        }
+      },
+      "eligible_pairs": 3,
+      "instance": "${MIPLIB_INSTANCES_DIR}/exp-1-500-5-5.mps.gz",
+      "instance_id": "exp-1-500-5-5",
+      "instance_sha256": "6e00da7741d808d331ff37bfcaf498bcc4c57ac24f32622f01047b6bbc7d870f",
+      "intervention_records": [
+        {
+          "added_cut_name": "gom2_x35",
+          "candidate_cuts": 403,
+          "forced_cuts": 0,
+          "removed_cut_name": "flowcover2_16",
+          "run": 1,
+          "selected_cuts": 134,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "flowcover2_17",
+          "candidate_cuts": 403,
+          "forced_cuts": 0,
+          "removed_cut_name": "flowcover2_16",
+          "run": 1,
+          "selected_cuts": 134,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "flowcover2_17",
+          "candidate_cuts": 405,
+          "forced_cuts": 0,
+          "removed_cut_name": "flowcover2_16",
+          "run": 1,
+          "selected_cuts": 135,
+          "selector_call": 1
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": -68.66666666666667,
+          "ties": 0,
+          "wins": 2
+        },
+        "lp_count": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 54.333333333333336,
+          "ties": 0,
+          "wins": 0
+        },
+        "lp_iterations": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 3056.0,
+          "ties": 0,
+          "wins": 0
+        },
+        "nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -21.333333333333332,
+          "ties": 0,
+          "wins": 3
+        },
+        "primal_dual_integral": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": -0.5512931718020345,
+          "ties": 0,
+          "wins": 2
+        },
+        "solving_time": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 0.2208643333333334,
+          "ties": 0,
+          "wins": 0
+        },
+        "total_nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -18.666666666666668,
+          "ties": 0,
+          "wins": 3
+        }
+      },
+      "eligible_pairs": 3,
+      "instance": "${MIPLIB_INSTANCES_DIR}/nu25-pr12.mps.gz",
+      "instance_id": "nu25-pr12",
+      "instance_sha256": "161c4c89b351d8671ae4e4d7af0fc222e1910e14564419053f22600460ef3236",
+      "intervention_records": [
+        {
+          "added_cut_name": "cmir12_42",
+          "candidate_cuts": 134,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir12_14",
+          "run": 1,
+          "selected_cuts": 23,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "scg60_x1818",
+          "candidate_cuts": 220,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir60_16",
+          "run": 2,
+          "selected_cuts": 7,
+          "selector_call": 25
+        },
+        {
+          "added_cut_name": "scg99_x969",
+          "candidate_cuts": 151,
+          "forced_cuts": 0,
+          "removed_cut_name": "scg99_s818",
+          "run": 3,
+          "selected_cuts": 5,
+          "selector_call": 45
+        },
+        {
+          "added_cut_name": "scg134_s1033",
+          "candidate_cuts": 208,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir134_6",
+          "run": 4,
+          "selected_cuts": 4,
+          "selector_call": 68
+        },
+        {
+          "added_cut_name": "gom174_s418",
+          "candidate_cuts": 181,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom174_s4",
+          "run": 5,
+          "selected_cuts": 5,
+          "selector_call": 87
+        },
+        {
+          "added_cut_name": "cmir11_45",
+          "candidate_cuts": 141,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir11_1",
+          "run": 1,
+          "selected_cuts": 26,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "gom61_x510",
+          "candidate_cuts": 49,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir61_10",
+          "run": 2,
+          "selected_cuts": 8,
+          "selector_call": 26
+        },
+        {
+          "added_cut_name": "scg125_x2053",
+          "candidate_cuts": 25,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom125_x1906",
+          "run": 3,
+          "selected_cuts": 4,
+          "selector_call": 46
+        },
+        {
+          "added_cut_name": "gom164_s1071",
+          "candidate_cuts": 209,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom164_s554",
+          "run": 4,
+          "selected_cuts": 5,
+          "selector_call": 67
+        },
+        {
+          "added_cut_name": "cf4_68",
+          "candidate_cuts": 159,
+          "forced_cuts": 0,
+          "removed_cut_name": "implbd206_0",
+          "run": 5,
+          "selected_cuts": 7,
+          "selector_call": 91
+        },
+        {
+          "added_cut_name": "gom253_s105",
+          "candidate_cuts": 162,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir253_1",
+          "run": 6,
+          "selected_cuts": 4,
+          "selector_call": 116
+        },
+        {
+          "added_cut_name": "cmir7_44",
+          "candidate_cuts": 133,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir7_1",
+          "run": 1,
+          "selected_cuts": 24,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "gom84_x464",
+          "candidate_cuts": 23,
+          "forced_cuts": 0,
+          "removed_cut_name": "scg84_s304",
+          "run": 2,
+          "selected_cuts": 2,
+          "selector_call": 23
+        },
+        {
+          "added_cut_name": "cmir121_13",
+          "candidate_cuts": 51,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir121_12",
+          "run": 3,
+          "selected_cuts": 7,
+          "selector_call": 44
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 2,
+          "wins": 0
+        },
+        "lp_count": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 2,
+          "wins": 0
+        },
+        "lp_iterations": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 0,
+          "wins": 1
+        },
+        "nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 2,
+          "wins": 0
+        },
+        "primal_dual_integral": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 2.355362976202912,
+          "ties": 0,
+          "wins": 0
+        },
+        "solving_time": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 0.02121749999999989,
+          "ties": 0,
+          "wins": 0
+        },
+        "total_nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 2,
+          "wins": 0
+        }
+      },
+      "eligible_pairs": 2,
+      "instance": "${MIPLIB_INSTANCES_DIR}/hypothyroid-k1.mps.gz",
+      "instance_id": "hypothyroid-k1",
+      "instance_sha256": "489ffe662de76b8dbb93855fc971d383ca27e613ea5805437652efe3a9e9230e",
+      "intervention_records": [
+        {
+          "added_cut_name": "andgate_70_9",
+          "candidate_cuts": 2752,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom1_s454",
+          "run": 1,
+          "selected_cuts": 9,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "andgate_70_129",
+          "candidate_cuts": 2752,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom1_s342",
+          "run": 1,
+          "selected_cuts": 9,
+          "selector_call": 1
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 22.0,
+          "ties": 0,
+          "wins": 0
+        },
+        "lp_count": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 3,
+          "wins": 0
+        },
+        "lp_iterations": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 673.3333333333334,
+          "ties": 0,
+          "wins": 0
+        },
+        "nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 3,
+          "wins": 0
+        },
+        "primal_dual_integral": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -8.350101920143649,
+          "ties": 0,
+          "wins": 3
+        },
+        "solving_time": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -0.4204443333333335,
+          "ties": 0,
+          "wins": 3
+        },
+        "total_nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 3,
+          "wins": 0
+        }
+      },
+      "eligible_pairs": 3,
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos-1171448.mps.gz",
+      "instance_id": "neos-1171448",
+      "instance_sha256": "07c1847ca86e1f1d01895ba2bc207c4592f5db69dd4dda9abc6514ab038133e7",
+      "intervention_records": [
+        {
+          "added_cut_name": "gom5_s6647",
+          "candidate_cuts": 97,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom5_s12976",
+          "run": 1,
+          "selected_cuts": 21,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "gom5_s3623",
+          "candidate_cuts": 77,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom5_s7591",
+          "run": 1,
+          "selected_cuts": 12,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "gom5_s7392",
+          "candidate_cuts": 72,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom5_s4292",
+          "run": 1,
+          "selected_cuts": 9,
+          "selector_call": 1
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -1298.6666666666667,
+          "ties": 2,
+          "wins": 1
+        },
+        "lp_count": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -132.66666666666666,
+          "ties": 2,
+          "wins": 1
+        },
+        "lp_iterations": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -9715.333333333334,
+          "ties": 2,
+          "wins": 1
+        },
+        "nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -27.666666666666668,
+          "ties": 2,
+          "wins": 1
+        },
+        "primal_dual_integral": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -25.850395665328637,
+          "ties": 0,
+          "wins": 3
+        },
+        "solving_time": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -1.3858976666666667,
+          "ties": 0,
+          "wins": 3
+        },
+        "total_nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -28.0,
+          "ties": 2,
+          "wins": 1
+        }
+      },
+      "eligible_pairs": 3,
+      "instance": "${MIPLIB_INSTANCES_DIR}/piperout-27.mps.gz",
+      "instance_id": "piperout-27",
+      "instance_sha256": "0dde1d272f3d2ea0a2aafc38a82dd3e72dd1794927530175ad74f46e925482d0",
+      "intervention_records": [
+        {
+          "added_cut_name": "andgate_1261_1",
+          "candidate_cuts": 769,
+          "forced_cuts": 0,
+          "removed_cut_name": "implbd115_244",
+          "run": 1,
+          "selected_cuts": 141,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "implbd126_149",
+          "candidate_cuts": 787,
+          "forced_cuts": 0,
+          "removed_cut_name": "implbd126_126",
+          "run": 1,
+          "selected_cuts": 132,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "implbd71_144",
+          "candidate_cuts": 661,
+          "forced_cuts": 0,
+          "removed_cut_name": "implbd71_43",
+          "run": 1,
+          "selected_cuts": 128,
+          "selector_call": 1
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 317.0,
+          "ties": 0,
+          "wins": 0
+        },
+        "lp_count": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 652.6666666666666,
+          "ties": 0,
+          "wins": 1
+        },
+        "lp_iterations": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 7774.666666666667,
+          "ties": 0,
+          "wins": 0
+        },
+        "nodes": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 413.0,
+          "ties": 0,
+          "wins": 0
+        },
+        "primal_dual_integral": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 92.26958341450138,
+          "ties": 0,
+          "wins": 0
+        },
+        "solving_time": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 5.495363666666667,
+          "ties": 0,
+          "wins": 0
+        },
+        "total_nodes": {
+          "losses": 3,
+          "mean_delta_treatment_minus_native": 412.3333333333333,
+          "ties": 0,
+          "wins": 0
+        }
+      },
+      "eligible_pairs": 3,
+      "instance": "${MIPLIB_INSTANCES_DIR}/swath1.mps.gz",
+      "instance_id": "swath1",
+      "instance_sha256": "05b713125dfdea88f22c1d028a4a4ab081e1d03c31401b302b41025f8b0f844d",
+      "intervention_records": [
+        {
+          "added_cut_name": "gom14_x1470",
+          "candidate_cuts": 45,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom14_x1694",
+          "run": 1,
+          "selected_cuts": 12,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "cmir337_1",
+          "candidate_cuts": 19,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir337_12",
+          "run": 2,
+          "selected_cuts": 7,
+          "selector_call": 19
+        },
+        {
+          "added_cut_name": "gom12_x2006",
+          "candidate_cuts": 41,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir12_25",
+          "run": 1,
+          "selected_cuts": 15,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "cmir340_4",
+          "candidate_cuts": 13,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir340_5",
+          "run": 2,
+          "selected_cuts": 5,
+          "selector_call": 23
+        },
+        {
+          "added_cut_name": "zerohalf359_x7",
+          "candidate_cuts": 6,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir359_0",
+          "run": 3,
+          "selected_cuts": 5,
+          "selector_call": 39
+        },
+        {
+          "added_cut_name": "gom11_x1470",
+          "candidate_cuts": 36,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom11_x1694",
+          "run": 1,
+          "selected_cuts": 11,
+          "selector_call": 1
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 2081.3333333333335,
+          "ties": 0,
+          "wins": 1
+        },
+        "lp_count": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": -77.33333333333333,
+          "ties": 0,
+          "wins": 2
+        },
+        "lp_iterations": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": 7816.0,
+          "ties": 0,
+          "wins": 2
+        },
+        "nodes": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 29.0,
+          "ties": 0,
+          "wins": 1
+        },
+        "primal_dual_integral": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": -32.12659492180823,
+          "ties": 0,
+          "wins": 2
+        },
+        "solving_time": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": -0.1466390000000001,
+          "ties": 0,
+          "wins": 2
+        },
+        "total_nodes": {
+          "losses": 2,
+          "mean_delta_treatment_minus_native": 29.0,
+          "ties": 0,
+          "wins": 1
+        }
+      },
+      "eligible_pairs": 3,
+      "instance": "${MIPLIB_INSTANCES_DIR}/piperout-08.mps.gz",
+      "instance_id": "piperout-08",
+      "instance_sha256": "9000694c9a77ac82cebf25a46699a80351800229cc56bfbc4db0c8b6dcfaf39c",
+      "intervention_records": [
+        {
+          "added_cut_name": "implbd88_2097",
+          "candidate_cuts": 3957,
+          "forced_cuts": 0,
+          "removed_cut_name": "implbd88_493",
+          "run": 1,
+          "selected_cuts": 870,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "andgate_853_0",
+          "candidate_cuts": 4051,
+          "forced_cuts": 0,
+          "removed_cut_name": "andgate_184_1",
+          "run": 1,
+          "selected_cuts": 888,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "scg65_s5090",
+          "candidate_cuts": 775,
+          "forced_cuts": 0,
+          "removed_cut_name": "implbd65_94",
+          "run": 1,
+          "selected_cuts": 114,
+          "selector_call": 1
+        }
+      ],
+      "safe": true,
+      "total_pairs": 3
+    },
+    {
+      "aggregate": {
+        "cuts_applied": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -313.0,
+          "ties": 0,
+          "wins": 2
+        },
+        "lp_count": {
+          "losses": 1,
+          "mean_delta_treatment_minus_native": -1.5,
+          "ties": 0,
+          "wins": 1
+        },
+        "lp_iterations": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -10823.0,
+          "ties": 0,
+          "wins": 2
+        },
+        "nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 2,
+          "wins": 0
+        },
+        "primal_dual_integral": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -311.77675000000045,
+          "ties": 0,
+          "wins": 2
+        },
+        "solving_time": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": -3.118454,
+          "ties": 0,
+          "wins": 2
+        },
+        "total_nodes": {
+          "losses": 0,
+          "mean_delta_treatment_minus_native": 0.0,
+          "ties": 2,
+          "wins": 0
+        }
+      },
+      "eligible_pairs": 2,
+      "instance": "${MIPLIB_INSTANCES_DIR}/cbs-cta.mps.gz",
+      "instance_id": "cbs-cta",
+      "instance_sha256": "4f688482bbf0702ff0176fc027ee13967c1a8dbf8f243f8b2cebbb35bef534fa",
+      "intervention_records": [
+        {
+          "added_cut_name": "cmir2_49",
+          "candidate_cuts": 188,
+          "forced_cuts": 0,
+          "removed_cut_name": "flowcover2_125",
+          "run": 1,
+          "selected_cuts": 69,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "cmir2_2",
+          "candidate_cuts": 603,
+          "forced_cuts": 0,
+          "removed_cut_name": "cmir2_398",
+          "run": 1,
+          "selected_cuts": 180,
+          "selector_call": 1
+        },
+        {
+          "added_cut_name": "cmir2_401",
+          "candidate_cuts": 630,
+          "forced_cuts": 0,
+          "removed_cut_name": "gom2_x2219",
+          "run": 1,
+          "selected_cuts": 181,
+          "selector_call": 1
+        }
+      ],
+      "safe": false,
+      "total_pairs": 3
+    }
+  ],
+  "safe": false,
+  "schema_version": 2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit": 120.0
+}

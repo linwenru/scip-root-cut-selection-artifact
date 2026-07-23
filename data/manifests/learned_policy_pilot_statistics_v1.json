@@ -1,0 +1,249 @@
+{
+  "artifact_contract_checks": {
+    "actions_match": true,
+    "instances_match": true,
+    "intervention_scope_matches": true,
+    "model_manifest_matches": true,
+    "plan_pre_registered": true,
+    "seeds_match": true,
+    "time_limit_matches": true
+  },
+  "created_at_utc": "2026-07-21T13:53:21.988097+00:00",
+  "decision": "stop learned-policy development; do not tune on pilot outcomes or open the existing sealed test",
+  "gate_checks": {
+    "all_planned_pairs_present": true,
+    "enough_group_keys_receive_active_intervention": true,
+    "one_sided_80_percent_upper_ratio_at_most_one": false,
+    "primary_point_ratio_at_most_0_95": false,
+    "shadow_structural_matches_all_pairs": false,
+    "zero_active_correctness_failure_group_keys": false,
+    "zero_native_complete_active_incomplete_group_keys": false,
+    "zero_observed_pre_action_context_mismatches": true
+  },
+  "passed": false,
+  "per_group": [
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0,
+      "active_native_solving_time_ratio": 1.0,
+      "group_key": "officially-ungrouped:hanoi5",
+      "instance_id": "hanoi5",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 0
+    },
+    {
+      "active_correctness_failure": true,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 0.9989754253012509,
+      "active_native_solving_time_ratio": 0.9681387938586694,
+      "group_key": "neos-pseudoapplication-92",
+      "instance_id": "neos-585467",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 8.811744861133246,
+      "active_native_solving_time_ratio": 1.1411487506763365,
+      "group_key": "neos-pseudoapplication-74",
+      "instance_id": "neos-5192052-neckar",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0,
+      "active_native_solving_time_ratio": 1.0,
+      "group_key": "officially-ungrouped:supportcase20",
+      "instance_id": "supportcase20",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 0
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": false,
+      "active_native_arm_wall_time_ratio": 1.0,
+      "active_native_solving_time_ratio": 1.0,
+      "group_key": "officially-ungrouped:ofi",
+      "instance_id": "ofi",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 0
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.6918520579611755,
+      "active_native_solving_time_ratio": 1.690689665268694,
+      "group_key": "mine",
+      "instance_id": "mine-90-10",
+      "native_complete_active_incomplete": true,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.31435480808198,
+      "active_native_solving_time_ratio": 1.3027963967265348,
+      "group_key": "shipschedule",
+      "instance_id": "shipschedule6shipsmixi",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": false,
+      "active_native_arm_wall_time_ratio": 3.838821413832754,
+      "active_native_solving_time_ratio": 0.9816887958018444,
+      "group_key": "neos-pseudoapplication-59",
+      "instance_id": "neos-4954340-beaury",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0164413116966449,
+      "active_native_solving_time_ratio": 0.9658743912346333,
+      "group_key": "officially-ungrouped:23588",
+      "instance_id": "23588",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0071738781155322,
+      "active_native_solving_time_ratio": 0.9914374539167662,
+      "group_key": "officially-ungrouped:ic97_tension",
+      "instance_id": "ic97_tension",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0,
+      "active_native_solving_time_ratio": 1.0,
+      "group_key": "officially-ungrouped:bmoipr2",
+      "instance_id": "bmoipr2",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 0
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0,
+      "active_native_solving_time_ratio": 1.0,
+      "group_key": "neos-pseudoapplication-14",
+      "instance_id": "neos-3209519-ruhr",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 0
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0187400490579677,
+      "active_native_solving_time_ratio": 1.0175346302457233,
+      "group_key": "rpp",
+      "instance_id": "rpp22falsei",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.1020754323628743,
+      "active_native_solving_time_ratio": 1.0112812559328606,
+      "group_key": "officially-ungrouped:dcmulti",
+      "instance_id": "dcmulti",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 2.1922044604947297,
+      "active_native_solving_time_ratio": 1.641843950025056,
+      "group_key": "officially-ungrouped:rlp1",
+      "instance_id": "rlp1",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 2
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": false,
+      "active_native_arm_wall_time_ratio": 7.040805930089355,
+      "active_native_solving_time_ratio": 0.9751955048375618,
+      "group_key": "neos-pseudoapplication-26",
+      "instance_id": "neos-3116779-oban",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0,
+      "active_native_solving_time_ratio": 1.0,
+      "group_key": "neos-pseudoapplication-83",
+      "instance_id": "neos-619167",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 0
+    },
+    {
+      "active_correctness_failure": false,
+      "active_intervention_observed": true,
+      "active_native_arm_wall_time_ratio": 1.0204661512160451,
+      "active_native_solving_time_ratio": 0.868081564414174,
+      "group_key": "neos-pseudoapplication-91",
+      "instance_id": "neos-3611689-kaihu",
+      "native_complete_active_incomplete": false,
+      "shadow_structural_matches": 3
+    }
+  ],
+  "population": {
+    "active_correctness_failure_group_keys": 1,
+    "active_fallback_pairs": 14,
+    "active_intervention_group_keys": 15,
+    "context_mismatch_pairs": 0,
+    "group_keys": 18,
+    "native_complete_active_incomplete_group_keys": 1,
+    "observed_context_pairs": 45,
+    "pairs": 54,
+    "shadow_structural_matches": 35
+  },
+  "primary_full_process_wall_time": {
+    "active_native_par2_ratio": 1.4931101245419856,
+    "cluster_bootstrap_interval_95": {
+      "confidence": 0.95,
+      "lower": 1.130902798961889,
+      "replicates": 10000,
+      "seed": 20260721,
+      "upper": 2.107812080236349
+    },
+    "estimand": "Group-equal geometric mean active/native full-process wall-time PAR-2 ratio; seeds are averaged on the log scale within Group",
+    "one_sided_percentile_upper_80": {
+      "replicates": 10000,
+      "seed": 20260722,
+      "upper": 1.699264879352885
+    }
+  },
+  "schema_version": 1,
+  "secondary_scip_solving_time": {
+    "active_native_par2_ratio": 1.0680687008795327,
+    "cluster_bootstrap_interval_95": {
+      "confidence": 0.95,
+      "lower": 0.9929259189636124,
+      "replicates": 10000,
+      "seed": 20260723,
+      "upper": 1.166378026356877
+    }
+  },
+  "source_plan": "data/manifests/learned_policy_pilot_plan_v1.json",
+  "source_plan_sha256": "8b4bc206376a27a89119fbc79c8353cbbe94d0d8f11651a00b5e6a649580ae61",
+  "source_result": "data/manifests/causal_learned_policy_pilot_v1.json",
+  "source_result_sha256": "135ffbea25c59ee839d066de4e01c55951f4fedfa831063b200361d668d8f484",
+  "status": "one-shot learned-policy pilot decision"
+}

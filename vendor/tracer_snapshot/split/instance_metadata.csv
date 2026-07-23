@@ -1,0 +1,234 @@
+instance_name,status,vars,bin_vars,int_vars,cont_vars,constr,nonzeroes,tags
+50v-10.mps.gz,easy,2013,1464,183,366,233,2745,benchmark decomposition benchmark_suitable mixed_binary general_linear
+drayage-25-23.mps.gz,easy,11090,11025,0,65,4630,41550,benchmark benchmark_suitable precedence set_partitioning mixed_binary
+drayage-100-23.mps.gz,easy,11090,11025,0,65,4630,41550,benchmark benchmark_suitable precedence set_partitioning mixed_binary
+savsched1.mps.gz,easy,328575,252731,0,75844,295989,1770507,benchmark benchmark_suitable aggregations variable_bound set_packing invariant_knapsack mixed_binary
+reblock115.mps.gz,easy,1150,1150,0,0,4735,13724,benchmark binary benchmark_suitable precedence knapsack
+ran14x18-disj-8.mps.gz,easy,504,252,0,252,447,10277,benchmark benchmark_suitable variable_bound set_covering mixed_binary
+roi2alpha3n4.mps.gz,easy,6816,6642,0,174,1251,878812,benchmark benchmark_suitable variable_bound cardinality binpacking mixed_binary
+leo2.mps.gz,easy,11100,11099,0,1,593,219959,benchmark benchmark_suitable variable_bound set_packing set_covering mixed_binary
+academictimetablesmall.mps.gz,easy,28926,28926,0,0,23294,268350,benchmark binary decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack equation_knapsack binpacking knapsack
+bab6.mps.gz,easy,114240,114240,0,0,29904,1283181,benchmark binary benchmark_suitable aggregations precedence set_partitioning set_packing set_covering cardinality invariant_knapsack equation_knapsack knapsack mixed_binary
+gen-ip002.mps.gz,easy,41,0,41,0,24,922,benchmark benchmark_suitable general_linear
+gen-ip054.mps.gz,easy,30,0,30,0,27,532,benchmark benchmark_suitable variable_bound general_linear
+comp21-2idx.mps.gz,easy,10863,10792,71,0,14038,57301,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear
+comp07-2idx.mps.gz,easy,17264,17155,109,0,21235,86577,benchmark decomposition benchmark_suitable precedence variable_bound set_packing cardinality invariant_knapsack mixed_binary general_linear
+map16715-04.mps.gz,easy,164547,146,0,164401,328818,549920,benchmark benchmark_suitable precedence variable_bound knapsack mixed_binary
+ic97_potential.mps.gz,easy,728,450,73,205,1046,3138,benchmark benchmark_suitable precedence mixed_binary general_linear
+roi5alpha10n8.mps.gz,easy,106150,105950,0,200,4665,2370224,benchmark decomposition benchmark_suitable variable_bound cardinality binpacking mixed_binary
+neos-1122047.mps.gz,easy,5100,100,0,5000,57791,163640,benchmark benchmark_suitable precedence variable_bound mixed_binary
+pk1.mps.gz,easy,86,55,0,31,45,915,benchmark benchmark_suitable precedence mixed_binary
+n5-3.mps.gz,easy,2550,0,150,2400,1062,9900,benchmark decomposition benchmark_suitable aggregations mixed_binary general_linear
+fiball.mps.gz,easy,34219,33960,258,1,3707,104792,benchmark decomposition benchmark_suitable aggregations precedence set_partitioning general_linear
+CMS750_4.mps.gz,easy,11697,7196,0,4501,16381,44903,benchmark benchmark_suitable precedence invariant_knapsack mixed_binary
+neos859080.mps.gz,easy,160,80,80,0,164,1280,benchmark infeasible benchmark_suitable variable_bound general_linear
+neos-787933.mps.gz,easy,236376,236376,0,0,1897,298320,benchmark binary decomposition benchmark_suitable binpacking mixed_binary
+air05.mps.gz,easy,7195,7195,0,0,426,52121,benchmark binary benchmark_suitable set_partitioning
+blp-ic98.mps.gz,easy,13640,13550,0,90,717,191947,benchmark decomposition benchmark_suitable set_packing mixed_binary general_linear
+mzzv42z.mps.gz,easy,11717,11482,235,0,10460,151261,benchmark benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality general_linear
+nu25-pr12.mps.gz,easy,5868,5832,36,0,2313,17712,benchmark decomposition benchmark_suitable aggregations variable_bound cardinality general_linear
+neos-911970.mps.gz,easy,888,840,0,48,107,3408,benchmark benchmark_suitable set_partitioning set_covering mixed_binary
+irp.mps.gz,easy,20315,20315,0,0,39,98254,benchmark binary benchmark_suitable set_partitioning
+seymour1.mps.gz,easy,1372,451,0,921,4944,33549,benchmark benchmark_suitable variable_bound set_covering mixed_binary
+h80x6320d.mps.gz,easy,12640,6320,0,6320,6558,31521,benchmark decomposition benchmark_suitable variable_bound set_partitioning set_packing mixed_binary
+neos-848589.mps.gz,easy,550539,747,0,549792,1484,1101078,benchmark benchmark_suitable cardinality mixed_binary
+neos-1456979.mps.gz,easy,4605,4245,180,180,6770,36440,benchmark decomposition benchmark_suitable variable_bound set_partitioning set_packing cardinality knapsack mixed_binary general_linear
+p200x1188c.mps.gz,easy,2376,1188,0,1188,1388,4752,benchmark decomposition benchmark_suitable variable_bound mixed_binary
+b1c1s1.mps.gz,easy,3872,288,0,3584,3904,11408,benchmark benchmark_suitable aggregations variable_bound mixed_binary
+mas74.mps.gz,easy,151,150,0,1,13,1706,benchmark benchmark_suitable invariant_knapsack mixed_binary
+nexp-150-20-8-5.mps.gz,easy,20115,17880,0,2235,4620,42465,benchmark benchmark_suitable set_packing mixed_binary
+rd-rplusc-21.mps.gz,easy,622,457,0,165,125899,852384,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning mixed_binary
+exp-1-500-5-5.mps.gz,easy,990,250,0,740,550,1980,benchmark benchmark_suitable variable_bound set_packing mixed_binary
+markshare_4_0.mps.gz,easy,34,30,0,4,4,123,benchmark benchmark_suitable integer_knapsack general_linear
+qap10.mps.gz,easy,4150,4150,0,0,1820,18200,benchmark binary benchmark_suitable set_partitioning
+cost266-UUE.mps.gz,easy,4161,171,0,3990,1446,12312,benchmark decomposition benchmark_suitable aggregations set_packing mixed_binary
+neos-873061.mps.gz,easy,175288,87644,0,87644,93360,350576,benchmark decomposition benchmark_suitable precedence variable_bound mixed_binary
+mas76.mps.gz,easy,151,150,0,1,12,1640,benchmark benchmark_suitable invariant_knapsack mixed_binary
+neos8.mps.gz,easy,23228,23224,4,0,46324,313180,benchmark benchmark_suitable precedence set_packing cardinality invariant_knapsack binpacking general_linear
+sp98ar.mps.gz,easy,15085,15085,0,0,1435,426148,benchmark binary benchmark_suitable variable_bound set_packing set_covering mixed_binary
+neos-860300.mps.gz,easy,1385,1384,0,1,850,384329,benchmark benchmark_suitable set_partitioning set_packing set_covering invariant_knapsack general_linear
+neos-1445765.mps.gz,easy,20617,2150,0,18467,2147,40230,benchmark benchmark_suitable aggregations invariant_knapsack mixed_binary
+tr12-30.mps.gz,easy,1080,360,0,720,750,2508,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary
+neos5.mps.gz,easy,63,53,0,10,63,2016,benchmark benchmark_suitable mixed_binary
+neos-1171448.mps.gz,easy,4914,2457,0,2457,13206,131859,benchmark benchmark_suitable variable_bound invariant_knapsack mixed_binary
+icir97_tension.mps.gz,easy,2494,262,573,1659,1203,22333,benchmark benchmark_suitable aggregations mixed_binary general_linear
+neos-960392.mps.gz,easy,59376,59376,0,0,4744,189503,benchmark binary benchmark_suitable precedence variable_bound set_partitioning set_packing invariant_knapsack binpacking knapsack
+enlight_hard.mps.gz,easy,200,100,100,0,100,560,benchmark benchmark_suitable equation_knapsack general_linear
+swath3.mps.gz,easy,6805,2706,0,4099,884,34965,benchmark benchmark_suitable mixed_binary
+sp150x300d.mps.gz,easy,600,300,0,300,450,1200,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary
+mik-250-20-75-4.mps.gz,easy,270,75,175,20,195,9270,benchmark benchmark_suitable general_linear
+dano3_3.mps.gz,easy,13873,69,0,13804,3202,79655,benchmark benchmark_suitable variable_bound cardinality mixed_binary
+neos-827175.mps.gz,easy,32504,21350,0,11154,14187,110790,benchmark decomposition benchmark_suitable aggregations set_partitioning set_packing cardinality binpacking mixed_binary general_linear
+neos-1582420.mps.gz,easy,10100,10000,100,0,10180,24814,benchmark decomposition benchmark_suitable variable_bound set_covering integer_knapsack general_linear
+fast0507.mps.gz,easy,63009,63009,0,0,507,409349,benchmark binary benchmark_suitable variable_bound set_covering
+neos-950242.mps.gz,easy,5760,5520,240,0,34224,104160,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_covering invariant_knapsack general_linear
+neos-662469.mps.gz,easy,18235,17907,328,0,1085,200055,benchmark benchmark_suitable variable_bound set_packing set_covering binpacking knapsack integer_knapsack general_linear
+dano3_5.mps.gz,easy,13873,115,0,13758,3202,79655,benchmark benchmark_suitable variable_bound cardinality mixed_binary
+neos-957323.mps.gz,easy,57756,57756,0,0,3757,499656,benchmark binary benchmark_suitable precedence variable_bound set_packing invariant_knapsack binpacking knapsack
+neos17.mps.gz,easy,535,300,0,235,486,4931,benchmark benchmark_suitable mixed_binary
+trento1.mps.gz,easy,7687,6415,0,1272,1265,93571,benchmark benchmark_suitable mixed_binary general_linear
+nw04.mps.gz,easy,87482,87482,0,0,36,636666,benchmark binary benchmark_suitable set_partitioning
+swath1.mps.gz,easy,6805,2306,0,4499,884,34965,benchmark benchmark_suitable mixed_binary
+neos-1354092.mps.gz,easy,13702,13282,420,0,3135,187187,benchmark decomposition benchmark_suitable variable_bound set_partitioning general_linear
+ns1830653.mps.gz,easy,1629,1458,0,171,2932,100933,benchmark benchmark_suitable variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack mixed_binary
+var-smallemery-m6j6.mps.gz,easy,5608,5606,0,2,13416,850621,benchmark benchmark_suitable precedence invariant_knapsack mixed_binary
+s250r10.mps.gz,easy,273142,273139,0,3,10962,1318607,benchmark benchmark_suitable aggregations set_partitioning set_packing cardinality invariant_knapsack knapsack mixed_binary
+mzzv11.mps.gz,easy,10240,9989,251,0,9499,134603,benchmark benchmark_suitable variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack general_linear
+netdiversion.mps.gz,easy,129180,129180,0,0,119589,615282,benchmark binary benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack
+cbs-cta.mps.gz,easy,24793,2467,0,22326,10112,64388,benchmark decomposition benchmark_suitable variable_bound mixed_binary
+neos-933966.mps.gz,easy,31762,27982,0,3780,12047,180618,benchmark benchmark_suitable precedence variable_bound set_packing invariant_knapsack mixed_binary
+mushroom-best.mps.gz,easy,8468,8237,118,113,8580,188735,benchmark benchmark_suitable variable_bound general_linear
+sct2.mps.gz,easy,5885,2872,0,3013,2151,23643,benchmark benchmark_suitable precedence invariant_knapsack knapsack mixed_binary general_linear
+sorrell3.mps.gz,easy,1024,1024,0,0,169162,338324,benchmark binary benchmark_suitable variable_bound
+bnatt400.mps.gz,easy,3600,3600,0,0,5614,21698,benchmark binary benchmark_suitable precedence set_covering invariant_knapsack binpacking knapsack
+tbfp-network.mps.gz,easy,72747,72747,0,0,2436,215837,benchmark binary benchmark_suitable set_partitioning cardinality
+glass-sc.mps.gz,easy,214,214,0,0,6119,63918,benchmark binary benchmark_suitable set_covering
+physiciansched6-2.mps.gz,easy,111827,109346,0,2481,168336,480259,benchmark decomposition benchmark_suitable precedence variable_bound set_packing set_covering invariant_knapsack binpacking knapsack mixed_binary
+physiciansched3-3.mps.gz,easy,79555,72141,0,7414,266227,1062479,benchmark decomposition benchmark_suitable precedence variable_bound set_packing set_covering invariant_knapsack binpacking knapsack mixed_binary
+ex9.mps.gz,easy,10404,0,10404,0,40962,517112,benchmark binary benchmark_suitable precedence set_partitioning invariant_knapsack
+buildingenergy.mps.gz,easy,154978,0,26287,128691,277594,788969,benchmark benchmark_suitable aggregations precedence variable_bound mixed_binary general_linear
+momentum1.mps.gz,easy,5174,2349,0,2825,42680,103191,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning mixed_binary
+rocI-4-11.mps.gz,easy,6839,5192,1016,631,10883,27383,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning mixed_binary general_linear
+rocII-5-11.mps.gz,easy,11523,11341,0,182,26897,303291,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing mixed_binary
+ns1760995.mps.gz,easy,17956,17822,0,134,615388,1854012,benchmark benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality mixed_binary
+neos-5107597-kakapo.mps.gz,easy,3114,2976,0,138,6498,19392,benchmark benchmark_suitable aggregations precedence mixed_binary
+neos-4532248-waihi.mps.gz,easy,86842,86841,0,1,167322,525339,benchmark benchmark_suitable aggregations precedence set_partitioning cardinality binpacking knapsack mixed_binary
+neos-4954672-berkel.mps.gz,easy,1533,630,0,903,1848,8007,benchmark benchmark_suitable aggregations variable_bound mixed_binary
+neos-3024952-loue.mps.gz,easy,3255,0,3255,0,3705,17310,benchmark decomposition benchmark_suitable precedence integer_knapsack general_linear
+neos-4738912-atrato.mps.gz,easy,6216,1120,5096,0,1947,19521,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning set_packing knapsack integer_knapsack general_linear
+neos-4300652-rahue.mps.gz,easy,33003,20900,0,12103,76992,183616,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality knapsack mixed_binary
+neos-3656078-kumeu.mps.gz,easy,14870,9755,4455,660,17656,59292,benchmark benchmark_suitable aggregations precedence variable_bound set_packing cardinality invariant_knapsack knapsack mixed_binary general_linear
+neos-4722843-widden.mps.gz,easy,77723,73349,20,4354,113555,311529,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning invariant_knapsack binpacking knapsack mixed_binary general_linear
+neos-5114902-kasavu.mps.gz,easy,710164,14560,0,695604,961170,4240376,benchmark benchmark_suitable variable_bound cardinality invariant_knapsack mixed_binary
+neos-2978193-inde.mps.gz,easy,20800,64,0,20736,396,41600,benchmark decomposition benchmark_suitable cardinality mixed_binary
+neos-5188808-nattai.mps.gz,easy,14544,288,0,14256,29452,133686,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality knapsack mixed_binary
+neos-4387871-tavua.mps.gz,easy,4004,2000,0,2004,4554,23496,benchmark benchmark_suitable variable_bound binpacking mixed_binary
+neos-3083819-nubu.mps.gz,easy,8644,0,8644,0,4725,24048,benchmark decomposition benchmark_suitable aggregations integer_knapsack general_linear
+neos-5104907-jarama.mps.gz,easy,345856,9520,0,336336,489818,2053548,benchmark benchmark_suitable aggregations variable_bound set_partitioning cardinality invariant_knapsack mixed_binary
+neos-4338804-snowy.mps.gz,easy,1344,1260,42,42,1701,6342,benchmark benchmark_suitable precedence set_covering mixed_binary general_linear
+neos-5093327-huahum.mps.gz,easy,40640,64,0,40576,51840,784768,benchmark decomposition benchmark_suitable aggregations mixed_binary
+neos-2657525-crna.mps.gz,easy,524,146,378,0,342,1690,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning integer_knapsack general_linear
+neos-2987310-joes.mps.gz,easy,27837,3051,0,24786,29015,580291,benchmark benchmark_suitable precedence mixed_binary
+neos-3381206-awhea.mps.gz,easy,2375,475,1900,0,479,4275,benchmark decomposition benchmark_suitable integer_knapsack general_linear
+neos-2746589-doon.mps.gz,easy,50936,50704,224,8,31530,271072,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary general_linear
+neos-5052403-cygnet.mps.gz,easy,32868,32868,0,0,38268,4898304,benchmark binary benchmark_suitable set_covering invariant_knapsack
+neos-4413714-turia.mps.gz,easy,190402,190201,0,201,2303,761756,benchmark benchmark_suitable set_partitioning binpacking mixed_binary
+neos-3402294-bobin.mps.gz,easy,2904,2616,0,288,591076,2034888,benchmark benchmark_suitable precedence set_partitioning set_covering invariant_knapsack mixed_binary
+neos-5049753-cuanza.mps.gz,easy,242736,8304,0,234432,322248,1440672,benchmark benchmark_suitable variable_bound cardinality invariant_knapsack mixed_binary
+neos-3627168-kasai.mps.gz,easy,1462,535,0,927,1655,5158,benchmark decomposition benchmark_suitable variable_bound invariant_knapsack mixed_binary general_linear
+neos-3216931-puriri.mps.gz,easy,3555,3268,0,287,5989,91691,benchmark benchmark_suitable aggregations variable_bound set_partitioning set_packing set_covering cardinality invariant_knapsack binpacking knapsack general_linear
+neos-3046615-murg.mps.gz,easy,274,240,16,18,498,1266,benchmark benchmark_suitable aggregations variable_bound mixed_binary general_linear
+neos-3754480-nidda.mps.gz,easy,253,50,0,203,402,1488,benchmark benchmark_suitable precedence variable_bound knapsack mixed_binary
+neos-5195221-niemur.mps.gz,easy,14546,9792,0,4754,42256,176586,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack knapsack mixed_binary
+neos-3004026-krka.mps.gz,easy,17030,16900,130,0,12545,41860,benchmark feasibility benchmark_suitable set_partitioning general_linear
+app1-1.mps.gz,easy,2480,1225,0,1255,4926,18275,benchmark benchmark_suitable precedence variable_bound set_covering mixed_binary
+app1-2.mps.gz,easy,26871,13300,0,13571,53467,199175,benchmark decomposition benchmark_suitable precedence variable_bound set_covering mixed_binary
+beasleyC3.mps.gz,easy,2500,1250,0,1250,1750,5000,benchmark decomposition benchmark_suitable aggregations variable_bound mixed_binary
+csched008.mps.gz,easy,1536,1284,0,252,351,5687,benchmark benchmark_suitable aggregations variable_bound set_partitioning mixed_binary general_linear
+rmatr100-p10.mps.gz,easy,7359,100,0,7259,7260,21877,benchmark benchmark_suitable cardinality mixed_binary
+nursesched-sprint02.mps.gz,easy,10250,10230,20,0,3522,204000,benchmark benchmark_suitable set_partitioning set_packing cardinality invariant_knapsack general_linear
+sing326.mps.gz,easy,55156,40010,0,15146,50781,268173,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary
+sing44.mps.gz,easy,59708,43524,0,16184,54745,281260,benchmark decomposition benchmark_suitable aggregations variable_bound set_partitioning cardinality mixed_binary
+sp97ar.mps.gz,easy,14101,14101,0,0,1761,290968,benchmark binary benchmark_suitable variable_bound set_packing set_covering mixed_binary
+thor50dday.mps.gz,easy,106261,53131,0,53130,53360,212060,benchmark decomposition benchmark_suitable variable_bound mixed_binary
+atlanta-ip.mps.gz,easy,48738,46667,106,1965,21732,257532,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_covering cardinality invariant_knapsack binpacking knapsack integer_knapsack mixed_binary general_linear
+graph20-20-1rand.mps.gz,easy,2183,2183,0,0,5587,19277,benchmark binary decomposition benchmark_suitable precedence set_partitioning invariant_knapsack
+wachplan.mps.gz,easy,3361,3360,1,0,1553,89361,benchmark benchmark_suitable variable_bound set_partitioning set_packing set_covering invariant_knapsack mixed_binary general_linear
+supportcase42.mps.gz,easy,19466,0,1026,18440,18439,435653,benchmark benchmark_suitable precedence variable_bound general_linear
+decomp2.mps.gz,easy,14387,14387,0,0,10765,64073,benchmark binary decomposition benchmark_suitable precedence set_partitioning set_packing invariant_knapsack binpacking mixed_binary
+highschool1-aigio.mps.gz,easy,320404,319686,718,0,92568,1562168,benchmark benchmark_suitable aggregations variable_bound set_partitioning set_packing set_covering cardinality invariant_knapsack equation_knapsack general_linear
+brazil3.mps.gz,easy,23968,23874,94,0,14646,133184,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering cardinality invariant_knapsack equation_knapsack mixed_binary general_linear
+mad.mps.gz,easy,220,200,0,20,51,2808,benchmark benchmark_suitable set_partitioning set_packing invariant_knapsack mixed_binary
+bppc4-08.mps.gz,easy,1456,1454,0,2,111,23964,benchmark benchmark_suitable set_partitioning mixed_binary
+germanrr.mps.gz,easy,10813,5323,5251,239,10779,175547,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning general_linear
+ns1208400.mps.gz,easy,2883,2880,0,3,4289,81746,benchmark benchmark_suitable variable_bound set_partitioning set_covering invariant_knapsack mixed_binary general_linear
+neos-1171737.mps.gz,easy,2340,1170,0,1170,4179,58620,benchmark benchmark_suitable variable_bound set_packing mixed_binary
+eilA101-2.mps.gz,easy,65832,65832,0,0,100,959373,benchmark binary benchmark_suitable set_partitioning
+glass4.mps.gz,easy,322,302,0,20,396,1815,benchmark benchmark_suitable precedence set_partitioning mixed_binary
+gmu-35-50.mps.gz,easy,1919,1914,0,5,435,8643,benchmark benchmark_suitable variable_bound set_packing mixed_binary
+net12.mps.gz,easy,14115,1603,0,12512,14021,80384,benchmark decomposition benchmark_suitable precedence set_packing cardinality invariant_knapsack mixed_binary
+30n20b8.mps.gz,easy,18380,18318,62,0,576,109706,benchmark benchmark_suitable precedence set_partitioning general_linear
+supportcase18.mps.gz,easy,13410,13410,0,0,240,28920,benchmark binary benchmark_suitable set_partitioning binpacking
+supportcase6.mps.gz,easy,130052,130051,1,0,771,584976,benchmark benchmark_suitable set_partitioning cardinality general_linear
+supportcase10.mps.gz,easy,14770,14770,0,0,165684,555082,benchmark binary benchmark_suitable aggregations precedence variable_bound set_covering invariant_knapsack
+supportcase12.mps.gz,easy,799616,0,200,799416,166781,2334437,benchmark benchmark_suitable aggregations variable_bound integer_knapsack mixed_binary general_linear
+supportcase26.mps.gz,easy,436,396,0,40,870,2492,benchmark benchmark_suitable precedence mixed_binary
+supportcase19.mps.gz,easy,1429098,1311292,117806,0,10713,4287094,benchmark benchmark_suitable variable_bound set_partitioning set_covering general_linear
+supportcase7.mps.gz,easy,138844,451,14,138379,6532,2845545,benchmark benchmark_suitable precedence variable_bound invariant_knapsack mixed_binary
+n3div36.mps.gz,easy,22120,22120,0,0,4484,340740,benchmark binary decomposition benchmark_suitable set_packing set_covering mixed_binary
+cvs16r128-89.mps.gz,easy,3472,3472,0,0,4633,12528,benchmark binary decomposition benchmark_suitable precedence set_packing invariant_knapsack
+dws008-01.mps.gz,easy,11096,6608,0,4488,6064,56400,benchmark decomposition benchmark_suitable precedence variable_bound set_partitioning set_packing mixed_binary
+cmflsp50-24-8-8.mps.gz,easy,16392,1392,0,15000,3520,158622,benchmark benchmark_suitable precedence variable_bound mixed_binary
+co-100.mps.gz,easy,48417,48417,0,0,2187,1995817,benchmark binary benchmark_suitable precedence set_partitioning set_packing binpacking knapsack
+lectsched-5-obj.mps.gz,easy,21805,21389,416,0,38884,239608,benchmark benchmark_suitable aggregations precedence variable_bound set_covering invariant_knapsack integer_knapsack general_linear
+rail507.mps.gz,easy,63019,63009,0,10,509,468878,benchmark binary benchmark_suitable variable_bound set_covering invariant_knapsack
+roll3000.mps.gz,easy,1166,246,492,428,2295,29386,benchmark benchmark_suitable precedence variable_bound set_packing set_covering invariant_knapsack binpacking integer_knapsack mixed_binary general_linear
+neos-3555904-turama.mps.gz,easy,37461,37461,0,0,146493,793605,benchmark binary benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack
+neos-4763324-toguru.mps.gz,easy,53593,53592,0,1,106954,266805,benchmark benchmark_suitable precedence variable_bound set_partitioning cardinality
+neos-3988577-wolgan.mps.gz,easy,25870,25870,0,0,44662,350350,benchmark infeasible binary decomposition benchmark_suitable precedence set_packing cardinality invariant_knapsack binpacking knapsack
+neos-2075418-temuka.mps.gz,easy,122304,122304,0,0,349602,7610261,benchmark infeasible binary benchmark_suitable precedence variable_bound set_covering invariant_knapsack knapsack
+ns1116954.mps.gz,easy,12648,7482,0,5166,131991,410582,benchmark feasibility benchmark_suitable precedence set_partitioning set_packing cardinality binpacking knapsack mixed_binary
+milo-v12-6-r2-40-1.mps.gz,easy,2688,840,0,1848,5628,14604,benchmark decomposition benchmark_suitable aggregations precedence variable_bound mixed_binary general_linear
+fhnw-binpack4-4.mps.gz,easy,520,481,0,39,620,2332,benchmark infeasible feasibility benchmark_suitable precedence variable_bound invariant_knapsack mixed_binary
+fhnw-binpack4-48.mps.gz,easy,3710,3605,0,105,4480,17290,benchmark feasibility benchmark_suitable precedence variable_bound invariant_knapsack mixed_binary
+splice1k1.mps.gz,easy,3253,3252,1,0,6505,1761016,benchmark benchmark_suitable set_covering binpacking general_linear
+hypothyroid-k1.mps.gz,easy,2602,2601,1,0,5195,433884,benchmark benchmark_suitable aggregations precedence set_covering binpacking general_linear
+cryptanalysiskb128n5obj16.mps.gz,easy,48950,47830,1120,0,98021,292875,benchmark feasibility benchmark_suitable aggregations precedence variable_bound set_covering cardinality invariant_knapsack binpacking knapsack integer_knapsack mixed_binary general_linear
+proteindesign121hz512p9.mps.gz,easy,159145,159054,91,0,301,629449,benchmark benchmark_suitable set_partitioning general_linear
+gfd-schedulen180f7d50m30k18.mps.gz,easy,227535,192408,2025,33102,457985,1233372,benchmark feasibility benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear
+k1mushroom.mps.gz,easy,8211,8210,1,0,16419,1697946,benchmark benchmark_suitable set_covering binpacking general_linear
+cryptanalysiskb128n5obj14.mps.gz,easy,48950,47830,1120,0,98021,292875,benchmark infeasible feasibility benchmark_suitable aggregations precedence variable_bound set_covering cardinality invariant_knapsack binpacking knapsack integer_knapsack mixed_binary general_linear
+radiationm18-12-05.mps.gz,easy,40623,14688,11247,14688,40935,96149,benchmark decomposition benchmark_suitable aggregations precedence variable_bound integer_knapsack mixed_binary general_linear
+traininstance6.mps.gz,easy,10218,4154,2056,4008,12309,32785,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear
+traininstance2.mps.gz,easy,12890,5278,2602,5010,15603,41531,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning cardinality invariant_knapsack mixed_binary general_linear
+proteindesign122trx11p8.mps.gz,easy,127326,127248,78,0,254,503427,benchmark benchmark_suitable set_partitioning general_linear
+radiationm40-10-02.mps.gz,easy,172013,62400,47213,62400,173603,406825,benchmark decomposition benchmark_suitable aggregations precedence variable_bound integer_knapsack mixed_binary general_linear
+mcsched.mps.gz,easy,1747,1745,0,2,2107,8088,benchmark decomposition benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing invariant_knapsack general_linear
+satellites2-60-fs.mps.gz,easy,35378,34324,0,1054,16516,125048,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality knapsack mixed_binary
+uct-subprob.mps.gz,easy,2256,379,0,1877,1973,10147,benchmark benchmark_suitable aggregations variable_bound set_partitioning set_packing mixed_binary
+peg-solitaire-a3.mps.gz,easy,4552,4552,0,0,4587,28387,benchmark binary benchmark_suitable aggregations variable_bound set_partitioning cardinality binpacking
+cod105.mps.gz,easy,1024,1024,0,0,1024,57344,benchmark binary benchmark_suitable set_packing
+supportcase33.mps.gz,easy,20203,20102,101,0,20489,211915,benchmark benchmark_suitable precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack integer_knapsack general_linear
+lotsize.mps.gz,easy,2985,1195,0,1790,1920,6565,benchmark decomposition benchmark_suitable variable_bound set_packing invariant_knapsack mixed_binary
+rail02.mps.gz,easy,270869,270869,0,0,95791,756228,benchmark binary benchmark_suitable aggregations set_partitioning set_packing cardinality
+gmu-35-40.mps.gz,easy,1205,1200,0,5,424,4843,benchmark benchmark_suitable variable_bound set_packing mixed_binary
+ns1952667.mps.gz,easy,13264,0,13264,0,41,335643,benchmark feasibility benchmark_suitable integer_knapsack general_linear
+seymour.mps.gz,easy,1372,1372,0,0,4944,33549,benchmark binary benchmark_suitable variable_bound set_covering
+ex10.mps.gz,easy,17680,0,17680,0,69608,1162000,benchmark binary benchmark_suitable precedence set_partitioning invariant_knapsack
+rococoC10-001000.mps.gz,easy,3117,2993,124,0,1293,11751,benchmark benchmark_suitable precedence set_partitioning cardinality general_linear
+irish-electricity.mps.gz,easy,61728,9888,0,51840,104259,523257,benchmark benchmark_suitable precedence variable_bound invariant_knapsack binpacking knapsack mixed_binary
+n2seq36q.mps.gz,easy,22480,22480,0,0,2565,183292,benchmark binary benchmark_suitable set_packing set_covering invariant_knapsack binpacking knapsack
+triptim1.mps.gz,easy,30055,20456,9592,7,15706,515436,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering invariant_knapsack general_linear
+piperout-08.mps.gz,easy,10399,10245,130,24,14589,44959,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering invariant_knapsack equation_knapsack integer_knapsack mixed_binary general_linear
+piperout-27.mps.gz,easy,11659,11514,121,24,18442,54662,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing set_covering invariant_knapsack equation_knapsack integer_knapsack mixed_binary general_linear
+unitcal_7.mps.gz,easy,25755,2856,0,22899,48939,127595,benchmark benchmark_suitable precedence variable_bound mixed_binary general_linear
+bnatt500.mps.gz,easy,4500,4500,0,0,7029,27203,benchmark infeasible binary benchmark_suitable precedence set_covering invariant_knapsack binpacking knapsack
+fastxgemm-n2r6s0t2.mps.gz,easy,784,48,0,736,5998,19376,benchmark decomposition benchmark_suitable variable_bound set_partitioning set_covering mixed_binary general_linear
+mc11.mps.gz,easy,3040,1520,0,1520,1920,6080,benchmark decomposition benchmark_suitable variable_bound mixed_binary
+graphdraw-domain.mps.gz,easy,254,180,20,54,865,2600,benchmark benchmark_suitable variable_bound set_partitioning invariant_knapsack mixed_binary general_linear
+opm2-z10-s4.mps.gz,easy,6250,6250,0,0,160633,371240,benchmark binary benchmark_suitable precedence knapsack
+timtab1.mps.gz,easy,397,77,94,226,171,829,benchmark benchmark_suitable aggregations mixed_binary general_linear
+square47.mps.gz,easy,95030,94987,43,0,61591,27329856,benchmark benchmark_suitable set_partitioning general_linear
+square41.mps.gz,easy,62234,62197,37,0,40160,13566426,benchmark benchmark_suitable set_partitioning general_linear
+rail01.mps.gz,easy,117527,117527,0,0,46843,392086,benchmark binary benchmark_suitable aggregations variable_bound set_partitioning set_packing cardinality knapsack
+pg.mps.gz,easy,2700,100,0,2600,125,5200,benchmark decomposition benchmark_suitable mixed_binary
+csched007.mps.gz,easy,1758,1457,0,301,351,6379,benchmark benchmark_suitable aggregations variable_bound set_partitioning mixed_binary general_linear
+rococoB10-011000.mps.gz,easy,4456,4320,136,0,1667,16517,benchmark decomposition benchmark_suitable precedence set_partitioning cardinality general_linear
+uccase9.mps.gz,easy,33242,8064,0,25178,49565,332316,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning invariant_knapsack binpacking knapsack mixed_binary
+uccase12.mps.gz,easy,62529,9072,0,53457,121161,419447,benchmark benchmark_suitable aggregations precedence variable_bound mixed_binary
+neos-631710.mps.gz,easy,167056,167056,0,0,169576,834166,benchmark binary benchmark_suitable precedence set_partitioning set_packing binpacking
+satellites2-40.mps.gz,easy,35378,34324,0,1054,20916,283668,benchmark benchmark_suitable aggregations precedence variable_bound set_partitioning set_packing cardinality invariant_knapsack knapsack mixed_binary
+ns1644855.mps.gz,easy,30200,10000,0,20200,40698,2110696,benchmark benchmark_suitable variable_bound set_partitioning mixed_binary general_linear
+chromaticindex512-7.mps.gz,easy,36864,36864,0,0,33791,135156,benchmark binary benchmark_suitable set_partitioning set_packing
+chromaticindex1024-7.mps.gz,easy,73728,73728,0,0,67583,270324,benchmark binary benchmark_suitable set_partitioning set_packing
+assign1-5-8.mps.gz,easy,156,130,0,26,161,3720,benchmark benchmark_suitable set_partitioning cardinality mixed_binary
+binkar10_1.mps.gz,easy,2298,170,0,2128,1026,4496,benchmark benchmark_suitable aggregations mixed_binary
+blp-ar98.mps.gz,easy,16021,15806,0,215,1128,200601,benchmark decomposition benchmark_suitable variable_bound set_packing equation_knapsack mixed_binary general_linear
+istanbul-no-cutoff.mps.gz,easy,5282,30,0,5252,20346,71477,benchmark benchmark_suitable aggregations variable_bound knapsack mixed_binary
+leo1.mps.gz,easy,6731,6730,0,1,593,131218,benchmark benchmark_suitable variable_bound set_packing set_covering mixed_binary
+rmatr200-p5.mps.gz,easy,37816,200,0,37616,37617,113048,benchmark benchmark_suitable cardinality mixed_binary
+pg5_34.mps.gz,easy,2600,100,0,2500,225,7700,benchmark decomposition benchmark_suitable mixed_binary
+eil33-2.mps.gz,easy,4516,4516,0,0,32,44243,benchmark binary benchmark_suitable set_partitioning
+snp-02-004-104.mps.gz,easy,228350,167,167,228016,126512,463941,benchmark benchmark_suitable aggregations variable_bound mixed_binary general_linear
+map10.mps.gz,easy,164547,146,0,164401,328818,549920,benchmark benchmark_suitable precedence variable_bound knapsack mixed_binary
+supportcase40.mps.gz,easy,16440,2000,0,14440,38192,104420,benchmark decomposition benchmark_suitable precedence variable_bound set_packing mixed_binary

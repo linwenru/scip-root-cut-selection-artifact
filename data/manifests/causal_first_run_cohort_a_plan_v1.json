@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "status": "pre_registered_before_active_outcomes",
+  "created_date": "2026-07-16",
+  "split": "train",
+  "selection_contract": {
+    "source_runtime_table": "${TRACE_SOURCE_ROOT}/benchmark_output_train/summary.csv",
+    "source_observational_manifest": "data/manifests/root_observational_v1.json",
+    "source_assignments": "data/manifests/evaluation_protocols/instance_assignments.csv",
+    "requirements": [
+      "original split is train",
+      "source trace status is ok",
+      "source trace elapsed time is at most 30 seconds",
+      "at least one policy-eligible root decision exists",
+      "the local MPS file exists",
+      "the instance was not used in causal_action_oracle_first_run_pilot_v1"
+    ],
+    "ordering": "ascending source trace elapsed time",
+    "official_group_check": "all nine selected instances have distinct nonempty official MIPLIB Groups"
+  },
+  "experiment_contract": {
+    "actions": [
+      "boundary-swap",
+      "boundary-swap-2",
+      "efficacy-promote"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "time_limit_seconds": 120,
+    "node_limit": null,
+    "intervention_scope": "first-run-only",
+    "primary_metric": "lp_iterations",
+    "native_wins_ties": true,
+    "process_isolation": "one fresh Python/SCIP process per arm and seed"
+  },
+  "instances": [
+    {
+      "instance_id": "neos859080",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos859080.mps.gz",
+      "official_group": "neos-pseudoapplication-96",
+      "source_trace_elapsed_seconds": 1.0810229778289795,
+      "policy_eligible_candidates": 7,
+      "policy_eligible_decisions": 1
+    },
+    {
+      "instance_id": "nu25-pr12",
+      "instance": "${MIPLIB_INSTANCES_DIR}/nu25-pr12.mps.gz",
+      "official_group": "nus-prxy",
+      "source_trace_elapsed_seconds": 3.945017099380493,
+      "policy_eligible_candidates": 255,
+      "policy_eligible_decisions": 3
+    },
+    {
+      "instance_id": "hypothyroid-k1",
+      "instance": "${MIPLIB_INSTANCES_DIR}/hypothyroid-k1.mps.gz",
+      "official_group": "hypothyroid",
+      "source_trace_elapsed_seconds": 4.882781028747559,
+      "policy_eligible_candidates": 2752,
+      "policy_eligible_decisions": 1
+    },
+    {
+      "instance_id": "piperout-08",
+      "instance": "${MIPLIB_INSTANCES_DIR}/piperout-08.mps.gz",
+      "official_group": "piperout",
+      "source_trace_elapsed_seconds": 8.87012505531311,
+      "policy_eligible_candidates": 3957,
+      "policy_eligible_decisions": 1
+    },
+    {
+      "instance_id": "cbs-cta",
+      "instance": "${MIPLIB_INSTANCES_DIR}/cbs-cta.mps.gz",
+      "official_group": "cta",
+      "source_trace_elapsed_seconds": 13.917890071868896,
+      "policy_eligible_candidates": 188,
+      "policy_eligible_decisions": 1
+    },
+    {
+      "instance_id": "mc11",
+      "instance": "${MIPLIB_INSTANCES_DIR}/mc11.mps.gz",
+      "official_group": "mc",
+      "source_trace_elapsed_seconds": 14.821326732635498,
+      "policy_eligible_candidates": 678,
+      "policy_eligible_decisions": 2
+    },
+    {
+      "instance_id": "neos-1582420",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos-1582420.mps.gz",
+      "official_group": "neos-pseudoapplication-10",
+      "source_trace_elapsed_seconds": 17.167590856552124,
+      "policy_eligible_candidates": 18,
+      "policy_eligible_decisions": 3
+    },
+    {
+      "instance_id": "neos-911970",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos-911970.mps.gz",
+      "official_group": "neos-pseudoapplication-70",
+      "source_trace_elapsed_seconds": 17.62437868118286,
+      "policy_eligible_candidates": 511,
+      "policy_eligible_decisions": 3
+    },
+    {
+      "instance_id": "air05",
+      "instance": "${MIPLIB_INSTANCES_DIR}/air05.mps.gz",
+      "official_group": "air",
+      "source_trace_elapsed_seconds": 21.62914204597473,
+      "policy_eligible_candidates": 7,
+      "policy_eligible_decisions": 1
+    }
+  ]
+}

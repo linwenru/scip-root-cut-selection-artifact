@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "status": "pre_registered_before_active_outcomes",
+  "created_date": "2026-07-17",
+  "split": "train",
+  "purpose": "disjoint development pilot correcting the instance-overlap defect documented for fixed-baseline pilot v1; not validation or test evidence",
+  "supersedes_for_independence_claims": "data/manifests/causal_fixed_baseline_train_pilot_plan_v1.json",
+  "integrity_audit": "docs/FIXED_BASELINE_PILOT_AUDIT.md",
+  "selection_contract": {
+    "source_runtime_table": "${TRACE_SOURCE_ROOT}/benchmark_output_train/summary.csv",
+    "source_ranking_matrix": "data/datasets/ranking_imitation_v1/train.npz",
+    "source_assignments": "data/manifests/evaluation_protocols/instance_assignments.csv",
+    "excluded_active_artifacts": [
+      "data/manifests/causal_action_oracle_first_run_pilot_v1.json",
+      "data/manifests/causal_first_run_cohort_a_plan_v1.json",
+      "data/manifests/causal_first_run_cohort_b_plan_v1.json",
+      "data/manifests/causal_first_run_efficacy_cohort_c_plan_v1.json"
+    ],
+    "requirements": [
+      "original split is train",
+      "source trace status is ok",
+      "a first-run policy-eligible root decision exists in the leakage-safe observational view",
+      "the first-run observed applied count is strictly between zero and the logical-candidate count",
+      "the local MPS file exists and matches the recorded SHA-256",
+      "the instance does not occur in the first-run pilot or cohorts A, B, or C"
+    ],
+    "sampling": "sort all satisfying instances by source trace elapsed seconds and then instance id; take the first eight",
+    "outcome_blinding": "no v2 native or treatment outcome existed or was inspected before this plan was committed",
+    "role": "disjoint training-split development evidence only; validation and test remain sealed"
+  },
+  "experiment_contract": {
+    "actions": [
+      "random-rank",
+      "efficacy-rank",
+      "adaptive-score"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "time_limit_seconds": 30,
+    "node_limit": null,
+    "intervention_scope": "first-run-only",
+    "arms_per_seed": 4,
+    "process_isolation": "one fresh Python/SCIP process per instance, seed, and arm",
+    "selected_cut_budget": "each fixed baseline preserves native hybrid selected-cut count and leaves forced cuts untouched",
+    "primary_metric": "PAR-2 penalized solving-time ratio, aggregated over seeds and then instances",
+    "secondary_metrics": [
+      "LP iterations",
+      "total nodes",
+      "primal-dual integral",
+      "cuts applied",
+      "actual intervention coverage"
+    ],
+    "analysis_command": "scip-cut-trace-v2-paper-stats with 10000 instance-cluster bootstrap replicates and seed 20260717"
+  },
+  "pilot_gate": {
+    "checks_per_action": [
+      "all eight native arms complete for all three seeds",
+      "zero attributable instance-level safety failures",
+      "actual selected-set changes occur on at least five instances",
+      "the upper endpoint of the 95% instance-cluster bootstrap interval for the PAR-2 time ratio is below 1.0",
+      "more instance wins than losses"
+    ],
+    "selection_rule": "an action advances only if it passes every check; if several pass, choose the smallest penalized-time ratio, resolving exact ties in the fixed order efficacy-rank, adaptive-score, random-rank",
+    "passing_consequence": "report disjoint training-split support and pre-register a separate official-Group-OOD validation experiment; this does not authorize test access",
+    "failure_consequence": "do not tune or enlarge a failed action on these outcomes"
+  },
+  "instances": [
+    {
+      "instance_id": "neos-4413714-turia",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos-4413714-turia.mps.gz",
+      "instance_sha256": "2d267d7e060439e00e48c18da2e7f6b97c832fa5d60f6b27377f9382d207c490",
+      "official_group": "neos-pseudoapplication-67",
+      "source_trace_elapsed_seconds": 167.09723114967346,
+      "first_run_eligible_candidates": 205,
+      "first_run_observed_applied": 8
+    },
+    {
+      "instance_id": "neos-3627168-kasai",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos-3627168-kasai.mps.gz",
+      "instance_sha256": "adf4a013825ad2932531128132c387eab68470ca087e23ea5cca4d2930954d7e",
+      "official_group": "neos-pseudoapplication-25",
+      "source_trace_elapsed_seconds": 175.95810317993164,
+      "first_run_eligible_candidates": 480,
+      "first_run_observed_applied": 102
+    },
+    {
+      "instance_id": "mzzv11",
+      "instance": "${MIPLIB_INSTANCES_DIR}/mzzv11.mps.gz",
+      "instance_sha256": "589a65f16ca2dc15161586510e5be20fe6f8b2d8b141386268c9403a209b2371",
+      "official_group": null,
+      "source_trace_elapsed_seconds": 185.2292938232422,
+      "first_run_eligible_candidates": 473,
+      "first_run_observed_applied": 153
+    },
+    {
+      "instance_id": "mcsched",
+      "instance": "${MIPLIB_INSTANCES_DIR}/mcsched.mps.gz",
+      "instance_sha256": "49deeb8c67d5ab6eec17c5e60019b93150773688271dc53510c31945dabed192",
+      "official_group": null,
+      "source_trace_elapsed_seconds": 211.30595564842224,
+      "first_run_eligible_candidates": 204,
+      "first_run_observed_applied": 3
+    },
+    {
+      "instance_id": "unitcal_7",
+      "instance": "${MIPLIB_INSTANCES_DIR}/unitcal_7.mps.gz",
+      "instance_sha256": "e9c83822eacf7b929134baf74c75be489304c545d390858666869e5755fec9a0",
+      "official_group": null,
+      "source_trace_elapsed_seconds": 270.440970659256,
+      "first_run_eligible_candidates": 2113,
+      "first_run_observed_applied": 639
+    },
+    {
+      "instance_id": "neos-1354092",
+      "instance": "${MIPLIB_INSTANCES_DIR}/neos-1354092.mps.gz",
+      "instance_sha256": "75ef3beb7def82cd729df0ffc7d0c490489b50b73c5a8fc414076c94c3b02c72",
+      "official_group": "neos-pseudoapplication-47",
+      "source_trace_elapsed_seconds": 300.57171607017517,
+      "first_run_eligible_candidates": 61,
+      "first_run_observed_applied": 8
+    },
+    {
+      "instance_id": "peg-solitaire-a3",
+      "instance": "${MIPLIB_INSTANCES_DIR}/peg-solitaire-a3.mps.gz",
+      "instance_sha256": "d3d2519a2670d64639a409313a872dfabec2a88915d793826132826062a8cb63",
+      "official_group": "pegsolitaire",
+      "source_trace_elapsed_seconds": 300.6344790458679,
+      "first_run_eligible_candidates": 14,
+      "first_run_observed_applied": 7
+    },
+    {
+      "instance_id": "cmflsp50-24-8-8",
+      "instance": "${MIPLIB_INSTANCES_DIR}/cmflsp50-24-8-8.mps.gz",
+      "instance_sha256": "97df2475adbc6cb319f2db153c24bc235f76c53c8d6d419c7b319016b0e76b01",
+      "official_group": "cmflsp",
+      "source_trace_elapsed_seconds": 300.67849922180176,
+      "first_run_eligible_candidates": 20,
+      "first_run_observed_applied": 2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+.git
+.venv
+__pycache__
+*.pyc
+*.so
+build
+dist
+data/raw
+data/processed
+data/datasets
+experiments
+models
+paper/rendered
+paper/rendered_v2
+paper/rendered_final
+paper/rendered_zh

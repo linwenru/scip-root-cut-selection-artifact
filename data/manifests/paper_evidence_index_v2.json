@@ -1,0 +1,517 @@
+{
+  "artifacts": {
+    ".dockerignore": {
+      "bytes": 174,
+      "sha256": "a26cdffc12a18f90fcd01cd5fee82b0bc083c1f70add3f82bc7da65129ef6f42"
+    },
+    ".zenodo.json": {
+      "bytes": 1018,
+      "sha256": "5e21c8d6941e3becc82c255673066398fec368c581412bddf982082323b871e1"
+    },
+    "CITATION.cff": {
+      "bytes": 1012,
+      "sha256": "066811f2fb0302cbbda0432e01f7d9e810e49d1c0905091e66a52b7811b954c6"
+    },
+    "Dockerfile": {
+      "bytes": 1868,
+      "sha256": "bf754800bbff4c27a98c9ff67e01ed20c3d7c3b7a60305ae0cd9d7dc4978a15c"
+    },
+    "LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "NOTICE": {
+      "bytes": 700,
+      "sha256": "f98156d7bff91bc136d91e1a7bb67cd76be2830745ecd7fbb541cf170b52508a"
+    },
+    "data/manifests/causal_direct_hybrid_parity_v1.json": {
+      "bytes": 8077,
+      "sha256": "fecc9c39577dfd197f1a29676806690a2d2aa0a91500b939a9ed637e871a4aae"
+    },
+    "data/manifests/causal_first_run_efficacy_cohort_c_confirmation_v1.json": {
+      "bytes": 4385,
+      "sha256": "02c52ca09aab5369219ace2fffcde08f332496d956302f4eda4415722e6c9485"
+    },
+    "data/manifests/causal_fixed_baseline_disjoint_train_pilot_decision_v2.json": {
+      "bytes": 3217,
+      "sha256": "2e7b34fe4463a8ec45de484701843d56d2a9432c6254bdfe63a11abacc1c8268"
+    },
+    "data/manifests/causal_fixed_baseline_disjoint_train_pilot_plan_v2.json": {
+      "bytes": 6738,
+      "sha256": "065fdb0b920bb7c64dc72d595e032524d02ac28da5fea077d514e76ba9a7d45f"
+    },
+    "data/manifests/causal_fixed_baseline_disjoint_train_pilot_v2.json": {
+      "bytes": 814412,
+      "sha256": "3936c2d13bd93a7a387de5b3d48b7d28f32aaadd91215545772fcedfad397e59"
+    },
+    "data/manifests/causal_fixed_baseline_train_pilot_decision_v1.json": {
+      "bytes": 3225,
+      "sha256": "6e8548c5771ead62c5f719ef7f6d430c144681966b0ff0aa73711490488f2bcb"
+    },
+    "data/manifests/causal_fixed_baseline_train_pilot_plan_v1.json": {
+      "bytes": 4867,
+      "sha256": "0f9292294dcf830367d4900cd7d814d20f3b4df3eded842795ac2da768864c8b"
+    },
+    "data/manifests/causal_fixed_baseline_train_pilot_v1.json": {
+      "bytes": 494939,
+      "sha256": "9d8ecedeb9ff617d07484047a370701e07e0c3ea7b7dc5a2b5fb7932b5106546"
+    },
+    "data/manifests/causal_learned_policy_pilot_v1.json": {
+      "bytes": 2936034,
+      "sha256": "bc93aa8cb6edbffcb6790f71759c231bc58486da788cf0660e12ab1e36463c83"
+    },
+    "data/manifests/causal_noop_parity_v1.json": {
+      "bytes": 7888,
+      "sha256": "9334ac2f726e36c6ce648b037ec56eeb02f0f3557f16d66227bb15cf1c9a8a9f"
+    },
+    "data/manifests/causal_online_imitation_smoke_v1.json": {
+      "bytes": 13837,
+      "sha256": "c2ae037cf027a27692e0e9973c03590647d617aad76fa48eb8e586462ec31aca"
+    },
+    "data/manifests/causal_publication_fixed_baselines_v1.json": {
+      "bytes": 4257949,
+      "sha256": "d9c011d15ba1dde20b3583abb7f6c96a6851368e762e6f573507b5e4813d6963"
+    },
+    "data/manifests/causal_risk_grouped_oof_v1.json": {
+      "bytes": 69100,
+      "sha256": "09117c1759cdc5278ba1d2729a0f09c9081da43264a53493d966f4b5369f65d8"
+    },
+    "data/manifests/evaluation_protocols/instance_assignments.csv": {
+      "bytes": 12452,
+      "sha256": "5af50bd3da90809f1c5ee321c42c016a496b272a943608275b807a4a9a343941"
+    },
+    "data/manifests/evaluation_protocols/protocol_summary.json": {
+      "bytes": 5850,
+      "sha256": "e944d37cece3bb354430c4322bb94d7159ee633136bec90f72e559713efdc38e"
+    },
+    "data/manifests/learned_policy_pilot_diagnostics_v1.json": {
+      "bytes": 7800,
+      "sha256": "37840162be4e97bf595c190885b0a0b451fdfd329497be1011c76b7f1aed08f0"
+    },
+    "data/manifests/learned_policy_pilot_plan_v1.json": {
+      "bytes": 24045,
+      "sha256": "8b4bc206376a27a89119fbc79c8353cbbe94d0d8f11651a00b5e6a649580ae61"
+    },
+    "data/manifests/learned_policy_pilot_statistics_v1.json": {
+      "bytes": 9438,
+      "sha256": "7f3ad99bfe52f83fef75ad6f6cfe67fbc657afdd785b9a982289c4eab60a09fd"
+    },
+    "data/manifests/paper_statistics_cohort_c_development_v1.json": {
+      "bytes": 16813,
+      "sha256": "c7a1d99943fe103b8c861cd2e30cbaacb2d0179fa52d3704c0d2ff3f321d6c0b"
+    },
+    "data/manifests/paper_statistics_fixed_baseline_disjoint_train_pilot_v2.json": {
+      "bytes": 46969,
+      "sha256": "e8352cd83ca0d8400338c0d4fc678b94aa44a5d6a162f5d5bf7330cf7a84f11f"
+    },
+    "data/manifests/paper_statistics_fixed_baseline_train_pilot_v1.json": {
+      "bytes": 32126,
+      "sha256": "b80ee89ababf8741a952123f4f5aef08e2075fc17b868cc59a8d681b626f19ed"
+    },
+    "data/manifests/paper_statistics_publication_fixed_baselines_v1.json": {
+      "bytes": 223963,
+      "sha256": "3ea2bf1cf14ce15b728dd9733aa7961c446049846c680e66c31007078f3dc38b"
+    },
+    "data/manifests/publication_active_plan_v1.json": {
+      "bytes": 53779,
+      "sha256": "ed8397a85b42654d96e03682af61971383abdde0d718971460c890444a85625e"
+    },
+    "data/manifests/publication_strengthening_plan_v1.json": {
+      "bytes": 34994,
+      "sha256": "17b16f304d0b2680be3bb50165c7460d47dccf4c09eb5388f3c3292ee216b182"
+    },
+    "data/manifests/ranking_imitation_online_v1.json": {
+      "bytes": 8630,
+      "sha256": "4d018fda2e3b9e1ad7c709baf7ca29510dbeb6902600e96556eae039915d2908"
+    },
+    "data/manifests/ranking_imitation_online_xgb_v1.json": {
+      "bytes": 113860,
+      "sha256": "3746ce2f5f539ba1cc1d8d9fc14a2b0b2bc7f1d3f1af2ffaaccdb4e8edb9d64d"
+    },
+    "data/manifests/ranking_imitation_v1.json": {
+      "bytes": 20067,
+      "sha256": "c56b07c44c83bf732fbbf29b161cb42556dfa4a34d1006e601d2746019a666a8"
+    },
+    "data/manifests/ranking_imitation_xgb_group_cv_v1.json": {
+      "bytes": 295464,
+      "sha256": "0f2914acd9e9f38335020c19abbb9bbe78d8d741c20c09daa113c7f933e23976"
+    },
+    "data/manifests/ranking_imitation_xgb_v1.json": {
+      "bytes": 112594,
+      "sha256": "9aab8589f12641aaa8ea4a1da51b169e143ec208f203ad63cea5e30e28e4134b"
+    },
+    "data/manifests/root_observational_v1.json": {
+      "bytes": 381317,
+      "sha256": "b5ee4f2082e6b1bafc3b4ec820d3bd7d7c16ead73203db39f1268517288db779"
+    },
+    "docs/ARTIFACT_RELEASE.md": {
+      "bytes": 5668,
+      "sha256": "7aea3b30fd3199a2172a3af292391f24894a4fbf6d2984c5acdeaee56e2db356"
+    },
+    "docs/CAUSAL_HARNESS.md": {
+      "bytes": 9005,
+      "sha256": "564b298b7a814289157bfb7c4818037660a823c6a9070d231661be7f73e6e3ac"
+    },
+    "docs/CAUSAL_RISK_DIAGNOSTIC.md": {
+      "bytes": 6458,
+      "sha256": "688a84e7084bc0da72a9081d8def3df41795521035f413f5963beea7334b823c"
+    },
+    "docs/EVALUATION_PROTOCOLS.md": {
+      "bytes": 1885,
+      "sha256": "276c561dd1bb02aa6f43600dfca97e5274f5bb18894efe993393bf45b3dd79e2"
+    },
+    "docs/FIXED_BASELINE_PILOT_AUDIT.md": {
+      "bytes": 2701,
+      "sha256": "ba73016f366f8b15ad8fc8779057c5ab7bde1264e55bb2b76a9a208a4e0c6f82"
+    },
+    "docs/IMITATION_BASELINE.md": {
+      "bytes": 5791,
+      "sha256": "235d29f63906608e6f39f879281d5c205e5b1ff1263a9cb97d4b8d66faedf4e2"
+    },
+    "docs/IMITATION_ONLINE_AUDIT.md": {
+      "bytes": 4314,
+      "sha256": "4f426360555f94ae124ef8b6bb1cd60ece57cc0e804dd12d8a1f69f3b1966da8"
+    },
+    "docs/LEARNED_POLICY_PILOT.md": {
+      "bytes": 5228,
+      "sha256": "ce2656401c61e885ad83b7b385722d7fa14e770fa16c114fe02115eef5b049f2"
+    },
+    "docs/PAPER_PROTOCOL.md": {
+      "bytes": 8244,
+      "sha256": "b770b768183e071e7e9b4dcdfad597328c31bd838070256caa5e5e1c963e78ee"
+    },
+    "docs/PROJECT_STATUS.md": {
+      "bytes": 9398,
+      "sha256": "6581d005ccaec5a155a95379d1215fc55169bcb25eee84531147436dc0ffd157"
+    },
+    "docs/PUBLICATION_STRENGTHENING_V1.md": {
+      "bytes": 7236,
+      "sha256": "6d3a3c21619ac65d05104610ad0d66ea9bf48ebc4d9f2998d30aeeb98af5900a"
+    },
+    "docs/RANKING_IMITATION_DATA.md": {
+      "bytes": 4950,
+      "sha256": "5a165e6a6b7e70d50ca11e1867f6aa3a11023dcbd3ac0d409ad552a412424e93"
+    },
+    "docs/REPRODUCIBILITY.md": {
+      "bytes": 6117,
+      "sha256": "1816f7d6099f3bce17f2d1f31224e17e887298e463eb23284a767c84d721545a"
+    },
+    "docs/ROOT_OBSERVATIONAL_DATA.md": {
+      "bytes": 3442,
+      "sha256": "316399a9c60c841a347659d18ea02a2afeda56405359bfa50f9e34fba505a1af"
+    },
+    "models/ranking_imitation_xgb_v1/model.ubj": {
+      "bytes": 7820,
+      "sha256": "596c4f72f64423972b3b738ea87fa568e9fe05d6664d1b097aa7e1dc19f9e4e7"
+    },
+    "pyproject.toml": {
+      "bytes": 2307,
+      "sha256": "cf7ff6fcd3d779857e97ac16936e9267e5cacd24e35c4be71707b247fb5345d2"
+    },
+    "src/scip_cut_trace_v2/artifact_index.py": {
+      "bytes": 11779,
+      "sha256": "63cbf6cd6b2912f3661626bc98fb4252e19e5c9a2fd33dd11b544a7c3f16bbdf"
+    },
+    "src/scip_cut_trace_v2/causal_harness.py": {
+      "bytes": 97196,
+      "sha256": "5b37ec855884b36242443a9d6d31ed0e35e71ee8cd129bb92a7ccea5ed13e59a"
+    },
+    "src/scip_cut_trace_v2/cut_selection_baselines.py": {
+      "bytes": 8574,
+      "sha256": "d68c1d1f05f8a66863a8b8a7ed28c24a95ddb70960912a8cee424cc5eba010fe"
+    },
+    "src/scip_cut_trace_v2/fixed_baseline_pilot.py": {
+      "bytes": 6962,
+      "sha256": "fe3cafeb46cad7de99389757ee35a94ca54284cacb2b4235ffb8e1eed9a6d968"
+    },
+    "src/scip_cut_trace_v2/learned_policy_diagnostics.py": {
+      "bytes": 16918,
+      "sha256": "405bbadc64fa6af94804bf95945fd7e67e1f9d0872509bd03304f18de8114195"
+    },
+    "src/scip_cut_trace_v2/learned_policy_pilot.py": {
+      "bytes": 46830,
+      "sha256": "e0430b5b595e4e8920d7e670ed16c1b892a9f920f9621075e86f190fc66febb3"
+    },
+    "src/scip_cut_trace_v2/native_hybrid.py": {
+      "bytes": 2187,
+      "sha256": "b21cbd06f858dbc8505ce20b64204b76b1d7e1feac28301c65a0030639a4e1eb"
+    },
+    "src/scip_cut_trace_v2/online_imitation.py": {
+      "bytes": 20709,
+      "sha256": "efeba3d4f3350c22e2465fe4f0cc9a2357277f6892aab4da6b61fb5954d24151"
+    },
+    "src/scip_cut_trace_v2/paper_statistics.py": {
+      "bytes": 27967,
+      "sha256": "0c0536339ca51b15a6c156aa4ca50d6ffc6d100dd231a31082a73f79a0689545"
+    },
+    "src/scip_cut_trace_v2/publication_protocol.py": {
+      "bytes": 23646,
+      "sha256": "36b2f815478e18aa493f951db0bb4f2b5a1389e7ce6390a68ac161c7b7285813"
+    },
+    "src/scip_cut_trace_v2/release_bundle.py": {
+      "bytes": 10084,
+      "sha256": "5b6d44f133010f51c141a4190487c3c876c642773e065cd87afee58110ae93d2"
+    },
+    "tests/test_artifact_index.py": {
+      "bytes": 1827,
+      "sha256": "48e47ed04c068c22a772953ddb94bdd4fb09819fafc6df9b237a31e8ed152c6b"
+    },
+    "tests/test_causal_harness.py": {
+      "bytes": 13777,
+      "sha256": "c06bf2d169e796eb9b97ed345909aa6e4b8bdbe0adc4649f5254a9ed1560f58e"
+    },
+    "tests/test_cut_selection_baselines.py": {
+      "bytes": 4758,
+      "sha256": "d9c3038ccf5a77ff90a3d30354d0fc603c07bf2806861e56c03da1a9958ab96b"
+    },
+    "tests/test_fixed_baseline_pilot.py": {
+      "bytes": 4296,
+      "sha256": "620f0247b6030414b3ef2850410e684a8575149479cc9f6c0d06e6ec6b023f03"
+    },
+    "tests/test_learned_policy_diagnostics.py": {
+      "bytes": 6521,
+      "sha256": "58e0f2f8fe25cf556fdec707eec6e786508b431f1154f72d0857e68aa3e42025"
+    },
+    "tests/test_learned_policy_pilot.py": {
+      "bytes": 13461,
+      "sha256": "c88c842ebf434048a266dd723cf76dbf9ef3c8a8fbfa33ba10776b4a9a706721"
+    },
+    "tests/test_online_imitation.py": {
+      "bytes": 5072,
+      "sha256": "26b13850f99b7b741125c2a3f69597fc613b67d071f22ed8dc32e97c639dabc8"
+    },
+    "tests/test_paper_statistics.py": {
+      "bytes": 9624,
+      "sha256": "40c5030b2b4a5fc4d6d46ae30275a802b86bc13ed27042484dac28aaea00b938"
+    },
+    "tests/test_publication_protocol.py": {
+      "bytes": 2659,
+      "sha256": "de07702d8d8302d384bc7c07e7dd2a06d47e9c6be2b28165b71d4bdc2feade87"
+    },
+    "tests/test_release_bundle.py": {
+      "bytes": 4275,
+      "sha256": "7fead684cc5df278aaf68a47a6bb55915d422a94384443deff4afb4d2294c91a"
+    },
+    "vendor/tracer_snapshot/prepare_split.py": {
+      "bytes": 8308,
+      "sha256": "5a82240f0934769c6e2acc9820f0dd55ebb912aff380588ea86b7a9f64b3aefe"
+    },
+    "vendor/tracer_snapshot/run_benchmark.py": {
+      "bytes": 6100,
+      "sha256": "0211cbf1909f184d50a78aefe05edab57e1e35a8636a96a3307bb92c76c31354"
+    },
+    "vendor/tracer_snapshot/scip_cut_logger/__init__.py": {
+      "bytes": 63,
+      "sha256": "2bf305351417bcf3e8958e19d9fe7f87985d7cf60a2d65f587ef34178b8be713"
+    },
+    "vendor/tracer_snapshot/scip_cut_logger/callbacks.py": {
+      "bytes": 18351,
+      "sha256": "08a801f8b2775444663685bdb593e22e72fcdae459711ac6917577cb360e21e3"
+    },
+    "vendor/tracer_snapshot/scip_cut_logger/csv_writer.py": {
+      "bytes": 5319,
+      "sha256": "6a8bd026c6418ef616763e20e71ccb1ee8ec3cfd41f125d8ee3ffb73508e524a"
+    },
+    "vendor/tracer_snapshot/scip_cut_logger/row_features.py": {
+      "bytes": 7422,
+      "sha256": "3b063a126a58c74d4d83dc6b14a1c6049a5d35a475daab64c5e16f3be602ca0c"
+    },
+    "vendor/tracer_snapshot/scip_cut_logger/solver.py": {
+      "bytes": 16132,
+      "sha256": "667d8875a781f69ae8670e8761bdfdcf3d65d9675d517f8f95ea650dcc019053"
+    },
+    "vendor/tracer_snapshot/scip_cut_logger/state_tracker.py": {
+      "bytes": 3338,
+      "sha256": "c18a58d4076f5a18594d2b3ab374811c50ad184c6d5ad742ff4c1f0885388840"
+    },
+    "vendor/tracer_snapshot/split/benchmark_tags.csv": {
+      "bytes": 35458,
+      "sha256": "31f0b51a0682917146c79d2c007a81b551e8e578c9f3d802de3523b450e36bb4"
+    },
+    "vendor/tracer_snapshot/split/instance_metadata.csv": {
+      "bytes": 34331,
+      "sha256": "6b021ad70603281a950d5b0eca655dc52bf2d4428cba20892d0920b356ac9d0a"
+    },
+    "vendor/tracer_snapshot/split/test.test": {
+      "bytes": 666,
+      "sha256": "f55ac8f0900ee1e6b9f28dedfe6c08785c52f3e33ad01f652c97a4decda81024"
+    },
+    "vendor/tracer_snapshot/split/train.test": {
+      "bytes": 3224,
+      "sha256": "a9998abb7d1ccf6c4147d72f4059b868358af0ef8b2b377c265f5d8622c5c4fc"
+    },
+    "vendor/tracer_snapshot/split/val.test": {
+      "bytes": 665,
+      "sha256": "288375d98dcb2e8a52bc7620406489244337add064af0f98957eebe2cbfe9c59"
+    }
+  },
+  "claims": [
+    {
+      "claim_id": "self-generated-trace-corpus",
+      "evidence": [
+        "vendor/tracer_snapshot/prepare_split.py",
+        "vendor/tracer_snapshot/run_benchmark.py",
+        "vendor/tracer_snapshot/scip_cut_logger/__init__.py",
+        "vendor/tracer_snapshot/scip_cut_logger/callbacks.py",
+        "vendor/tracer_snapshot/scip_cut_logger/csv_writer.py",
+        "vendor/tracer_snapshot/scip_cut_logger/row_features.py",
+        "vendor/tracer_snapshot/scip_cut_logger/solver.py",
+        "vendor/tracer_snapshot/scip_cut_logger/state_tracker.py",
+        "vendor/tracer_snapshot/split/benchmark_tags.csv",
+        "vendor/tracer_snapshot/split/instance_metadata.csv",
+        "vendor/tracer_snapshot/split/test.test",
+        "vendor/tracer_snapshot/split/train.test",
+        "vendor/tracer_snapshot/split/val.test"
+      ],
+      "statement": "The tracer, batch runner, 233-instance easy subset, and fixed 163/35/35 split were generated and versioned by this study."
+    },
+    {
+      "claim_id": "group-aware-evaluation",
+      "evidence": [
+        "data/manifests/evaluation_protocols/instance_assignments.csv",
+        "data/manifests/evaluation_protocols/protocol_summary.json",
+        "docs/EVALUATION_PROTOCOLS.md"
+      ],
+      "statement": "Official MIPLIB Group-disjoint evaluation is separated from seen-family interpolation."
+    },
+    {
+      "claim_id": "leakage-safe-observational-view",
+      "evidence": [
+        "data/manifests/ranking_imitation_v1.json",
+        "data/manifests/root_observational_v1.json",
+        "docs/RANKING_IMITATION_DATA.md",
+        "docs/ROOT_OBSERVATIONAL_DATA.md"
+      ],
+      "statement": "The root observational and ranking matrices exclude post-outcome fields and use instance-balanced queries."
+    },
+    {
+      "claim_id": "imitation-not-online-authorized",
+      "evidence": [
+        "data/manifests/ranking_imitation_xgb_group_cv_v1.json",
+        "data/manifests/ranking_imitation_xgb_v1.json",
+        "docs/IMITATION_BASELINE.md",
+        "docs/IMITATION_ONLINE_AUDIT.md"
+      ],
+      "statement": "The XGBoost imitation model fails its external gate and is not an online treatment policy."
+    },
+    {
+      "claim_id": "causal-instrumentation-parity",
+      "evidence": [
+        "data/manifests/causal_direct_hybrid_parity_v1.json",
+        "data/manifests/causal_noop_parity_v1.json",
+        "docs/CAUSAL_HARNESS.md",
+        "src/scip_cut_trace_v2/causal_harness.py",
+        "src/scip_cut_trace_v2/native_hybrid.py",
+        "tests/test_causal_harness.py"
+      ],
+      "statement": "The strict 36/36 parity gate failed, while all 34 complete callback-exercised pairs per neutral arm matched structurally."
+    },
+    {
+      "claim_id": "causal-risk-no-policy",
+      "evidence": [
+        "data/manifests/causal_first_run_efficacy_cohort_c_confirmation_v1.json",
+        "data/manifests/causal_risk_grouped_oof_v1.json",
+        "data/manifests/paper_statistics_cohort_c_development_v1.json",
+        "docs/CAUSAL_RISK_DIAGNOSTIC.md"
+      ],
+      "statement": "The action library, grouped risk model, and independent cohort C do not establish a safe generalized policy."
+    },
+    {
+      "claim_id": "frozen-learned-policy-pilot-no-go",
+      "evidence": [
+        "data/manifests/causal_learned_policy_pilot_v1.json",
+        "data/manifests/learned_policy_pilot_diagnostics_v1.json",
+        "data/manifests/learned_policy_pilot_plan_v1.json",
+        "data/manifests/learned_policy_pilot_statistics_v1.json",
+        "docs/LEARNED_POLICY_PILOT.md",
+        "models/ranking_imitation_xgb_v1/model.ubj",
+        "src/scip_cut_trace_v2/learned_policy_diagnostics.py",
+        "src/scip_cut_trace_v2/learned_policy_pilot.py",
+        "tests/test_learned_policy_diagnostics.py",
+        "tests/test_learned_policy_pilot.py"
+      ],
+      "statement": "A pre-registered one-shot complete-solve pilot on 18 new Group-disjoint instances rejects the frozen XGBoost imitation ranker and deployment path."
+    },
+    {
+      "claim_id": "fixed-baseline-pilot-rejection",
+      "evidence": [
+        "data/manifests/causal_fixed_baseline_disjoint_train_pilot_decision_v2.json",
+        "data/manifests/causal_fixed_baseline_disjoint_train_pilot_plan_v2.json",
+        "data/manifests/causal_fixed_baseline_disjoint_train_pilot_v2.json",
+        "data/manifests/causal_fixed_baseline_train_pilot_decision_v1.json",
+        "data/manifests/causal_fixed_baseline_train_pilot_plan_v1.json",
+        "data/manifests/causal_fixed_baseline_train_pilot_v1.json",
+        "data/manifests/paper_statistics_fixed_baseline_disjoint_train_pilot_v2.json",
+        "data/manifests/paper_statistics_fixed_baseline_train_pilot_v1.json",
+        "docs/FIXED_BASELINE_PILOT_AUDIT.md",
+        "src/scip_cut_trace_v2/cut_selection_baselines.py",
+        "src/scip_cut_trace_v2/fixed_baseline_pilot.py",
+        "src/scip_cut_trace_v2/paper_statistics.py",
+        "tests/test_cut_selection_baselines.py",
+        "tests/test_fixed_baseline_pilot.py",
+        "tests/test_paper_statistics.py"
+      ],
+      "statement": "Random, efficacy, and Adaptive-score fixed baselines fail the advancement gate in both the original pilot and its pre-registered disjoint correction."
+    },
+    {
+      "claim_id": "publication-strengthening-negative-result",
+      "evidence": [
+        "data/manifests/causal_publication_fixed_baselines_v1.json",
+        "data/manifests/paper_statistics_publication_fixed_baselines_v1.json",
+        "data/manifests/publication_active_plan_v1.json",
+        "data/manifests/publication_strengthening_plan_v1.json",
+        "docs/PUBLICATION_STRENGTHENING_V1.md",
+        "src/scip_cut_trace_v2/publication_protocol.py",
+        "tests/test_publication_protocol.py"
+      ],
+      "statement": "A frozen 40-instance, three-seed experiment finds no fixed root-ranking action that passes the solve-level performance and safety gate."
+    },
+    {
+      "claim_id": "online-compatible-imitation-baseline",
+      "evidence": [
+        "data/manifests/causal_online_imitation_smoke_v1.json",
+        "data/manifests/ranking_imitation_online_v1.json",
+        "data/manifests/ranking_imitation_online_xgb_v1.json",
+        "docs/IMITATION_ONLINE_AUDIT.md",
+        "src/scip_cut_trace_v2/online_imitation.py",
+        "tests/test_online_imitation.py"
+      ],
+      "statement": "The 37-feature XGBoost arm is online-compatible but remains smoke-only because its official-Group-OOD authorization gate fails."
+    },
+    {
+      "claim_id": "release-ready-artifact",
+      "evidence": [
+        ".dockerignore",
+        ".zenodo.json",
+        "CITATION.cff",
+        "Dockerfile",
+        "LICENSE",
+        "NOTICE",
+        "docs/ARTIFACT_RELEASE.md",
+        "src/scip_cut_trace_v2/release_bundle.py",
+        "tests/test_release_bundle.py"
+      ],
+      "statement": "Publication evidence is packaged by content-addressed tiers with a pinned SCIP container and explicit author-controlled release blockers."
+    },
+    {
+      "claim_id": "consolidated-stop-decision",
+      "evidence": [
+        "docs/PAPER_PROTOCOL.md",
+        "docs/PROJECT_STATUS.md",
+        "docs/REPRODUCIBILITY.md",
+        "pyproject.toml",
+        "src/scip_cut_trace_v2/artifact_index.py",
+        "tests/test_artifact_index.py"
+      ],
+      "statement": "Native SCIP remains the only authorized online policy under the frozen stopping rules."
+    }
+  ],
+  "created_at_utc": "2026-07-23T02:57:07.914978+00:00",
+  "project_root_name": "SCIP_cut_trace_v2",
+  "schema_version": 2,
+  "summary": {
+    "artifacts": 86,
+    "bytes": 10610022,
+    "claims": 12
+  }
+}

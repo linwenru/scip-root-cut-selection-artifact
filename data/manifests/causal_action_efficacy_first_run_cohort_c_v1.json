@@ -1,0 +1,4926 @@
+{
+  "action_summary": {
+    "efficacy-promote": {
+      "eligible_instances": 6,
+      "eligible_pairs": 18,
+      "instance_equal_mean_primary_delta": -23879.277777777777,
+      "instance_equal_mean_relative_saving": 0.028915130011365576,
+      "instance_losses": 3,
+      "instance_ties": 0,
+      "instance_wins": 3,
+      "safe": false,
+      "unsafe_eligible_pairs": 3,
+      "valid_pairs": 15
+    }
+  },
+  "actions": [
+    "efficacy-promote"
+  ],
+  "all_actions_safe": false,
+  "all_observed_contexts_match": true,
+  "created_at_utc": "2026-07-16T18:16:30.497379+00:00",
+  "experiment": "predeclared-root-action-library-oracle-v1",
+  "initial_context_match_pairs": 24,
+  "initial_context_missing_pairs": 0,
+  "initial_context_observed_pairs": 24,
+  "initial_context_partial_pairs": 0,
+  "initial_context_total_pairs": 24,
+  "instances": 8,
+  "intervention_scope": "first-run-only",
+  "leave_one_seed_out_summary": {
+    "instance_equal_mean_relative_saving": 0.01748616648636183,
+    "instance_losses": 0,
+    "instance_ties": 7,
+    "instance_wins": 1,
+    "safe": false,
+    "seed_losses": 1,
+    "seed_ties": 19,
+    "seed_wins": 2,
+    "selected_action_counts": {
+      "efficacy-promote": 5,
+      "native": 19
+    },
+    "selection_rule": "choose the action with the largest positive mean relative LP-iteration saving on all other seeds; exclude actions with any unsafe training seed; native wins ties",
+    "unsafe_held_out_seeds": 2
+  },
+  "node_limit": null,
+  "oracle_summary": {
+    "eligible_instances": 8,
+    "instance_equal_mean_delta_selected_minus_native": -28516.375,
+    "instance_equal_mean_relative_saving": 0.07431497228123342,
+    "instance_losses": 0,
+    "instance_ties": 3,
+    "instance_wins": 5,
+    "primary_metric": "lp_iterations",
+    "selected_action_counts": {
+      "efficacy-promote": 7,
+      "native": 17
+    }
+  },
+  "per_instance": [
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/binkar10_1.mps.gz",
+      "instance_id": "binkar10_1",
+      "instance_sha256": "94282c38edd6c83bb6c2d788d823fd82f218218e8e07c98d1d1ab42c1e91039e",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 3,
+        "evaluations": [
+          {
+            "effective_action": "efficacy-promote",
+            "held_out_delta_selected_minus_native": 2423.0,
+            "held_out_eligible": true,
+            "held_out_relative_saving": -0.02493260068737009,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "efficacy-promote",
+            "selected_training_mean_relative_saving": 0.222300298180027,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.222300298180027
+            },
+            "training_seeds": [
+              1,
+              2
+            ]
+          },
+          {
+            "effective_action": "efficacy-promote",
+            "held_out_delta_selected_minus_native": -26944.0,
+            "held_out_eligible": true,
+            "held_out_relative_saving": 0.28759286141234736,
+            "held_out_safe": true,
+            "held_out_seed": 1,
+            "selected_action": "efficacy-promote",
+            "selected_training_mean_relative_saving": 0.06603756713016828,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.06603756713016828
+            },
+            "training_seeds": [
+              0,
+              2
+            ]
+          },
+          {
+            "effective_action": "efficacy-promote",
+            "held_out_delta_selected_minus_native": -14757.0,
+            "held_out_eligible": true,
+            "held_out_relative_saving": 0.15700773494770665,
+            "held_out_safe": true,
+            "held_out_seed": 2,
+            "selected_action": "efficacy-promote",
+            "selected_training_mean_relative_saving": 0.13133013036248864,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.13133013036248864
+            },
+            "training_seeds": [
+              0,
+              1
+            ]
+          }
+        ],
+        "losses": 1,
+        "mean_relative_saving": 0.13988933189089464,
+        "safe": true,
+        "selected_action_counts": {
+          "efficacy-promote": 3,
+          "native": 0
+        },
+        "ties": 0,
+        "unsafe_seeds": 0,
+        "wins": 2
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": -13900.333333333334,
+        "mean_relative_saving": 0.14820019878668467,
+        "selected_action_counts": {
+          "efficacy-promote": 2,
+          "native": 1
+        },
+        "ties": 1,
+        "wins": 2
+      },
+      "pairs": [
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 1272.0,
+                    "native": 5071.0,
+                    "relative_saving": -0.2508380989942812,
+                    "treatment": 6343.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 229.0,
+                    "native": 3868.0,
+                    "relative_saving": -0.059203722854188214,
+                    "treatment": 4097.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 2423.0,
+                    "native": 97182.0,
+                    "relative_saving": -0.02493260068737009,
+                    "treatment": 99605.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 162.0,
+                    "native": 1859.0,
+                    "relative_saving": -0.08714362560516406,
+                    "treatment": 2021.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -0.7848439292205605,
+                    "native": 16.121878718637106,
+                    "relative_saving": 0.0486819149875672,
+                    "treatment": 15.337034789416546
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -0.40376299999999965,
+                    "native": 14.249519,
+                    "relative_saving": 0.0283352020513815,
+                    "treatment": 13.845756
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 162.0,
+                    "native": 1860.0,
+                    "relative_saving": -0.08709677419354839,
+                    "treatment": 2022.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "94358bf9c4005efb317f5e5df04aaf51a8198ed5f64a273b75cfc4676dfbf4c9",
+              "outcome": {
+                "cuts_applied": 6343,
+                "dual_bound": 6742.200023999438,
+                "gap": 0.0,
+                "lp_count": 4097,
+                "lp_iterations": 99605,
+                "nodes": 2021,
+                "objective_sense": "minimize",
+                "primal_bound": 6742.200023999438,
+                "primal_dual_integral": 15.337034789416546,
+                "solving_time": 13.845756,
+                "status": "optimal",
+                "total_nodes": 2022
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/binkar10_1/seed_0_efficacy-promote.json",
+              "selector": {
+                "calls": 1237,
+                "candidate_cuts": 162506,
+                "context_records": [
+                  {
+                    "context_sha256": "94358bf9c4005efb317f5e5df04aaf51a8198ed5f64a273b75cfc4676dfbf4c9",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "R0109_mcseq0",
+                    "added_efficacy": 0.12393898641876953,
+                    "added_native_index": 54,
+                    "candidate_cuts": 74,
+                    "context_sha256": "94358bf9c4005efb317f5e5df04aaf51a8198ed5f64a273b75cfc4676dfbf4c9",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "gom2_x163",
+                    "removed_efficacy": 0.012349591607066801,
+                    "removed_native_index": 11,
+                    "run": 1,
+                    "selected_cuts": 12,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 29,
+                "run_count": 2,
+                "selected_cuts": 12
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "94358bf9c4005efb317f5e5df04aaf51a8198ed5f64a273b75cfc4676dfbf4c9"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 5071,
+            "dual_bound": 6742.200023998389,
+            "gap": 0.0,
+            "lp_count": 3868,
+            "lp_iterations": 97182,
+            "nodes": 1859,
+            "objective_sense": "minimize",
+            "primal_bound": 6742.200023998389,
+            "primal_dual_integral": 16.121878718637106,
+            "solving_time": 14.249519,
+            "status": "optimal",
+            "total_nodes": 1860
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/binkar10_1/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 97182.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 97182.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 0
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -2126.0,
+                    "native": 6362.0,
+                    "relative_saving": 0.3341716441370638,
+                    "treatment": 4236.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": -1263.0,
+                    "native": 4324.0,
+                    "relative_saving": 0.29209065679925994,
+                    "treatment": 3061.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -26944.0,
+                    "native": 93688.0,
+                    "relative_saving": 0.28759286141234736,
+                    "treatment": 66744.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": -651.0,
+                    "native": 2338.0,
+                    "relative_saving": 0.27844311377245506,
+                    "treatment": 1687.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -1.8554277546013935,
+                    "native": 17.031040619724365,
+                    "relative_saving": 0.10894388640307419,
+                    "treatment": 15.175612865122972
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -3.1950730000000007,
+                    "native": 14.662112,
+                    "relative_saving": 0.21791355842869026,
+                    "treatment": 11.467039
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": -650.0,
+                    "native": 2339.0,
+                    "relative_saving": 0.2778965369816161,
+                    "treatment": 1689.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "0429bc214d5c664bea1c6816b2e4e3b97c8ec335b542114313cc7a813150ced1",
+              "outcome": {
+                "cuts_applied": 4236,
+                "dual_bound": 6742.200023999902,
+                "gap": 0.0,
+                "lp_count": 3061,
+                "lp_iterations": 66744,
+                "nodes": 1687,
+                "objective_sense": "minimize",
+                "primal_bound": 6742.200023999902,
+                "primal_dual_integral": 15.175612865122972,
+                "solving_time": 11.467039,
+                "status": "optimal",
+                "total_nodes": 1689
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/binkar10_1/seed_1_efficacy-promote.json",
+              "selector": {
+                "calls": 871,
+                "candidate_cuts": 100749,
+                "context_records": [
+                  {
+                    "context_sha256": "0429bc214d5c664bea1c6816b2e4e3b97c8ec335b542114313cc7a813150ced1",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "R0109_mcseq0",
+                    "added_efficacy": 0.1239389864187693,
+                    "added_native_index": 54,
+                    "candidate_cuts": 74,
+                    "context_sha256": "0429bc214d5c664bea1c6816b2e4e3b97c8ec335b542114313cc7a813150ced1",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "gom2_x163",
+                    "removed_efficacy": 0.012294715427609166,
+                    "removed_native_index": 11,
+                    "run": 1,
+                    "selected_cuts": 12,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 54,
+                "run_count": 3,
+                "selected_cuts": 12
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "0429bc214d5c664bea1c6816b2e4e3b97c8ec335b542114313cc7a813150ced1"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 6362,
+            "dual_bound": 6742.200023999934,
+            "gap": 0.0,
+            "lp_count": 4324,
+            "lp_iterations": 93688,
+            "nodes": 2338,
+            "objective_sense": "minimize",
+            "primal_bound": 6742.200023999934,
+            "primal_dual_integral": 17.031040619724365,
+            "solving_time": 14.662112,
+            "status": "optimal",
+            "total_nodes": 2339
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/binkar10_1/seed_1_native.json",
+          "oracle": {
+            "delta_selected_minus_native": -26944.0,
+            "native_value": 93688.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.28759286141234736,
+            "selected_action": "efficacy-promote",
+            "selected_value": 66744.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 1
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 741.0,
+                    "native": 4520.0,
+                    "relative_saving": -0.16393805309734513,
+                    "treatment": 5261.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": -289.0,
+                    "native": 3735.0,
+                    "relative_saving": 0.07737617135207496,
+                    "treatment": 3446.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -14757.0,
+                    "native": 93989.0,
+                    "relative_saving": 0.15700773494770665,
+                    "treatment": 79232.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": -439.0,
+                    "native": 2144.0,
+                    "relative_saving": 0.20475746268656717,
+                    "treatment": 1705.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -1.7998205360907242,
+                    "native": 15.946840353133204,
+                    "relative_saving": 0.11286377089346725,
+                    "treatment": 14.14701981704248
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -2.9687029999999996,
+                    "native": 13.116107,
+                    "relative_saving": 0.22634025477224298,
+                    "treatment": 10.147404
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": -440.0,
+                    "native": 2146.0,
+                    "relative_saving": 0.20503261882572227,
+                    "treatment": 1706.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "ecf6aeb9ffc120acc604ba0145b16e557dc69b66ddf38332196f69717f8efafd",
+              "outcome": {
+                "cuts_applied": 5261,
+                "dual_bound": 6742.200023998389,
+                "gap": 0.0,
+                "lp_count": 3446,
+                "lp_iterations": 79232,
+                "nodes": 1705,
+                "objective_sense": "minimize",
+                "primal_bound": 6742.200023998389,
+                "primal_dual_integral": 14.14701981704248,
+                "solving_time": 10.147404,
+                "status": "optimal",
+                "total_nodes": 1706
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/binkar10_1/seed_2_efficacy-promote.json",
+              "selector": {
+                "calls": 979,
+                "candidate_cuts": 136462,
+                "context_records": [
+                  {
+                    "context_sha256": "ecf6aeb9ffc120acc604ba0145b16e557dc69b66ddf38332196f69717f8efafd",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "R0109_mcseq0",
+                    "added_efficacy": 0.12393898641876953,
+                    "added_native_index": 54,
+                    "candidate_cuts": 74,
+                    "context_sha256": "ecf6aeb9ffc120acc604ba0145b16e557dc69b66ddf38332196f69717f8efafd",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "gom2_x34",
+                    "removed_efficacy": 0.010340330827561707,
+                    "removed_native_index": 11,
+                    "run": 1,
+                    "selected_cuts": 12,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 31,
+                "run_count": 2,
+                "selected_cuts": 12
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "ecf6aeb9ffc120acc604ba0145b16e557dc69b66ddf38332196f69717f8efafd"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 4520,
+            "dual_bound": 6742.200023998389,
+            "gap": 0.0,
+            "lp_count": 3735,
+            "lp_iterations": 93989,
+            "nodes": 2144,
+            "objective_sense": "minimize",
+            "primal_bound": 6742.200023998389,
+            "primal_dual_integral": 15.946840353133204,
+            "solving_time": 13.116107,
+            "status": "optimal",
+            "total_nodes": 2146
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/binkar10_1/seed_2_native.json",
+          "oracle": {
+            "delta_selected_minus_native": -14757.0,
+            "native_value": 93989.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.15700773494770665,
+            "selected_action": "efficacy-promote",
+            "selected_value": 79232.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 2
+        }
+      ],
+      "per_action": {
+        "efficacy-promote": {
+          "aggregate": {
+            "cuts_applied": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": -37.666666666666664,
+              "mean_relative_saving": -0.02686816931818752,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 1
+            },
+            "lp_count": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -441.0,
+              "mean_relative_saving": 0.10342103509904889,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 2
+            },
+            "lp_iterations": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -13092.666666666666,
+              "mean_relative_saving": 0.13988933189089464,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 2
+            },
+            "nodes": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -309.3333333333333,
+              "mean_relative_saving": 0.13201898361795272,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 2
+            },
+            "primal_dual_integral": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -1.4800307399708927,
+              "mean_relative_saving": 0.09016319076136954,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 3
+            },
+            "solving_time": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -2.1891796666666665,
+              "mean_relative_saving": 0.15752967175077157,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 3
+            },
+            "total_nodes": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -309.3333333333333,
+              "mean_relative_saving": 0.13194412720459667,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 2
+            }
+          },
+          "eligible_pairs": 3,
+          "safe": true,
+          "safe_pairs": 3,
+          "unsafe_eligible_pairs": 0,
+          "valid_pairs": 3
+        }
+      }
+    },
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/n2seq36q.mps.gz",
+      "instance_id": "n2seq36q",
+      "instance_sha256": "7c2be13e461ecfbd03ceb20e3745ba4f24ad007fe1b34df8c2a5e02e89ead3d5",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 3,
+        "evaluations": [
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {},
+            "training_seeds": [
+              1,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 1,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": -0.18903767029490232
+            },
+            "training_seeds": [
+              0,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 2,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {},
+            "training_seeds": [
+              0,
+              1
+            ]
+          }
+        ],
+        "losses": 0,
+        "mean_relative_saving": 0.0,
+        "safe": true,
+        "selected_action_counts": {
+          "efficacy-promote": 0,
+          "native": 3
+        },
+        "ties": 3,
+        "unsafe_seeds": 0,
+        "wins": 0
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": 0.0,
+        "mean_relative_saving": 0.0,
+        "selected_action_counts": {
+          "efficacy-promote": 0,
+          "native": 3
+        },
+        "ties": 3,
+        "wins": 0
+      },
+      "pairs": [
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 955.0,
+                    "native": 1738.0,
+                    "relative_saving": -0.549482163406214,
+                    "treatment": 2693.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 351.0,
+                    "native": 1010.0,
+                    "relative_saving": -0.3475247524752475,
+                    "treatment": 1361.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 103886.0,
+                    "native": 288456.0,
+                    "relative_saving": -0.3601450481182572,
+                    "treatment": 392342.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 240.0,
+                    "native": 349.0,
+                    "relative_saving": -0.6876790830945558,
+                    "treatment": 589.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 368.68776180254235,
+                    "native": 1956.543687560259,
+                    "relative_saving": -0.1884382976708703,
+                    "treatment": 2325.2314493628014
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 28.00107299999999,
+                    "native": 68.61342,
+                    "relative_saving": -0.4080990715810404,
+                    "treatment": 96.614493
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 240.0,
+                    "native": 349.0,
+                    "relative_saving": -0.6876790830945558,
+                    "treatment": 589.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "37dc9d4fe3a82c148856fa3a29756d8586f93865e8f3635aebf92cbf6be57129",
+              "outcome": {
+                "cuts_applied": 2693,
+                "dual_bound": 52200.0,
+                "gap": 0.0,
+                "lp_count": 1361,
+                "lp_iterations": 392342,
+                "nodes": 589,
+                "objective_sense": "minimize",
+                "primal_bound": 52200.0,
+                "primal_dual_integral": 2325.2314493628014,
+                "solving_time": 96.614493,
+                "status": "optimal",
+                "total_nodes": 589
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/n2seq36q/seed_0_efficacy-promote.json",
+              "selector": {
+                "calls": 140,
+                "candidate_cuts": 23659,
+                "context_records": [
+                  {
+                    "context_sha256": "37dc9d4fe3a82c148856fa3a29756d8586f93865e8f3635aebf92cbf6be57129",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "flowcover2_17",
+                    "added_efficacy": 0.22283440581246228,
+                    "added_native_index": 512,
+                    "candidate_cuts": 519,
+                    "context_sha256": "37dc9d4fe3a82c148856fa3a29756d8586f93865e8f3635aebf92cbf6be57129",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "link#e21#f3_mcseq0",
+                    "removed_efficacy": 0.006049802646767356,
+                    "removed_native_index": 45,
+                    "run": 1,
+                    "selected_cuts": 46,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 13,
+                "run_count": 1,
+                "selected_cuts": 46
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "37dc9d4fe3a82c148856fa3a29756d8586f93865e8f3635aebf92cbf6be57129"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 1738,
+            "dual_bound": 52200.0,
+            "gap": 0.0,
+            "lp_count": 1010,
+            "lp_iterations": 288456,
+            "nodes": 349,
+            "objective_sense": "minimize",
+            "primal_bound": 52200.0,
+            "primal_dual_integral": 1956.543687560259,
+            "solving_time": 68.61342,
+            "status": "optimal",
+            "total_nodes": 349
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/n2seq36q/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 288456.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 288456.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 0
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -1179.0,
+                    "native": 2387.0,
+                    "relative_saving": 0.4939254294093004,
+                    "treatment": 1208.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": -636.0,
+                    "native": 1023.0,
+                    "relative_saving": 0.6217008797653959,
+                    "treatment": 387.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -110802.0,
+                    "native": 530000.0,
+                    "relative_saving": 0.20906037735849056,
+                    "treatment": 419198.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": -320.0,
+                    "native": 403.0,
+                    "relative_saving": 0.794044665012407,
+                    "treatment": 83.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 893.5681977334716,
+                    "native": 3005.0791023958955,
+                    "relative_saving": -0.297352637746223,
+                    "treatment": 3898.647300129367
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 6.620767999999998,
+                    "native": 113.381092,
+                    "relative_saving": -0.05839393397269448,
+                    "treatment": 120.00186
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": -320.0,
+                    "native": 403.0,
+                    "relative_saving": 0.794044665012407,
+                    "treatment": 83.0
+                  }
+                },
+                "safe": false,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": false,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": false,
+                  "treatment_complete": false
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "8514829f16ebc37b388492eb157b251e3f6ce52e990e7c28e5ca6f61b0f605c1",
+              "outcome": {
+                "cuts_applied": 1208,
+                "dual_bound": 52200.00000000028,
+                "gap": 0.23371647509577892,
+                "lp_count": 387,
+                "lp_iterations": 419198,
+                "nodes": 83,
+                "objective_sense": "minimize",
+                "primal_bound": 64400.0,
+                "primal_dual_integral": 3898.647300129367,
+                "solving_time": 120.00186,
+                "status": "timelimit",
+                "total_nodes": 83
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/n2seq36q/seed_1_efficacy-promote.json",
+              "selector": {
+                "calls": 28,
+                "candidate_cuts": 13417,
+                "context_records": [
+                  {
+                    "context_sha256": "8514829f16ebc37b388492eb157b251e3f6ce52e990e7c28e5ca6f61b0f605c1",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "cmir2_6",
+                    "added_efficacy": 0.22647261386794687,
+                    "added_native_index": 490,
+                    "candidate_cuts": 500,
+                    "context_sha256": "8514829f16ebc37b388492eb157b251e3f6ce52e990e7c28e5ca6f61b0f605c1",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "flowcover2_159",
+                    "removed_efficacy": 0.0015341286214786082,
+                    "removed_native_index": 56,
+                    "run": 1,
+                    "selected_cuts": 57,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 18,
+                "run_count": 1,
+                "selected_cuts": 57
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "8514829f16ebc37b388492eb157b251e3f6ce52e990e7c28e5ca6f61b0f605c1"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 2387,
+            "dual_bound": 52200.0,
+            "gap": 0.0,
+            "lp_count": 1023,
+            "lp_iterations": 530000,
+            "nodes": 403,
+            "objective_sense": "minimize",
+            "primal_bound": 52200.0,
+            "primal_dual_integral": 3005.0791023958955,
+            "solving_time": 113.381092,
+            "status": "optimal",
+            "total_nodes": 403
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/n2seq36q/seed_1_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 530000.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 530000.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 1
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 337.0,
+                    "native": 2598.0,
+                    "relative_saving": -0.12971516551193227,
+                    "treatment": 2935.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 307.0,
+                    "native": 953.0,
+                    "relative_saving": -0.32214060860440713,
+                    "treatment": 1260.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 7266.0,
+                    "native": 405236.0,
+                    "relative_saving": -0.017930292471547444,
+                    "treatment": 412502.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 277.0,
+                    "native": 358.0,
+                    "relative_saving": -0.7737430167597765,
+                    "treatment": 635.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -554.3282633743684,
+                    "native": 3159.9855298746893,
+                    "relative_saving": 0.17542113979121624,
+                    "treatment": 2605.657266500321
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -12.030496,
+                    "native": 117.881764,
+                    "relative_saving": 0.1020556156590938,
+                    "treatment": 105.851268
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 277.0,
+                    "native": 358.0,
+                    "relative_saving": -0.7737430167597765,
+                    "treatment": 635.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "a407e319f7c624546e3a6745d51254fbab504e94f52bba5722f4def40a26e4d3",
+              "outcome": {
+                "cuts_applied": 2935,
+                "dual_bound": 52200.0,
+                "gap": 0.0,
+                "lp_count": 1260,
+                "lp_iterations": 412502,
+                "nodes": 635,
+                "objective_sense": "minimize",
+                "primal_bound": 52200.0,
+                "primal_dual_integral": 2605.657266500321,
+                "solving_time": 105.851268,
+                "status": "optimal",
+                "total_nodes": 635
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/n2seq36q/seed_2_efficacy-promote.json",
+              "selector": {
+                "calls": 168,
+                "candidate_cuts": 30010,
+                "context_records": [
+                  {
+                    "context_sha256": "a407e319f7c624546e3a6745d51254fbab504e94f52bba5722f4def40a26e4d3",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "implbd3_0",
+                    "added_efficacy": 0.21213203435596423,
+                    "added_native_index": 491,
+                    "candidate_cuts": 507,
+                    "context_sha256": "a407e319f7c624546e3a6745d51254fbab504e94f52bba5722f4def40a26e4d3",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "flowcover3_163",
+                    "removed_efficacy": 0.0011672004107931067,
+                    "removed_native_index": 55,
+                    "run": 1,
+                    "selected_cuts": 57,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 18,
+                "run_count": 1,
+                "selected_cuts": 57
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "a407e319f7c624546e3a6745d51254fbab504e94f52bba5722f4def40a26e4d3"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 2598,
+            "dual_bound": 52200.0,
+            "gap": 0.0,
+            "lp_count": 953,
+            "lp_iterations": 405236,
+            "nodes": 358,
+            "objective_sense": "minimize",
+            "primal_bound": 52200.0,
+            "primal_dual_integral": 3159.9855298746893,
+            "solving_time": 117.881764,
+            "status": "optimal",
+            "total_nodes": 358
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/n2seq36q/seed_2_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 405236.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 405236.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 2
+        }
+      ],
+      "per_action": {
+        "efficacy-promote": {
+          "aggregate": {
+            "cuts_applied": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 646.0,
+              "mean_relative_saving": -0.33959866445907316,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 0
+            },
+            "lp_count": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 329.0,
+              "mean_relative_saving": -0.3348326805398273,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 0
+            },
+            "lp_iterations": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 55576.0,
+              "mean_relative_saving": -0.18903767029490232,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 0
+            },
+            "nodes": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 258.5,
+              "mean_relative_saving": -0.7307110499271662,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 0
+            },
+            "primal_dual_integral": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -92.820250785913,
+              "mean_relative_saving": -0.006508578939827037,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 1
+            },
+            "solving_time": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": 7.985288499999996,
+              "mean_relative_saving": -0.1530217279609733,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 1
+            },
+            "total_nodes": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 258.5,
+              "mean_relative_saving": -0.7307110499271662,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 0
+            }
+          },
+          "eligible_pairs": 3,
+          "safe": false,
+          "safe_pairs": 2,
+          "unsafe_eligible_pairs": 1,
+          "valid_pairs": 2
+        }
+      }
+    },
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/rmatr100-p10.mps.gz",
+      "instance_id": "rmatr100-p10",
+      "instance_sha256": "86e4b03e3db2298c29e3ce5863e76b319e95252da2a834d7441d9346dfa4a423",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 3,
+        "evaluations": [
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.0
+            },
+            "training_seeds": [
+              1,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 1,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.0
+            },
+            "training_seeds": [
+              0,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 2,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.0
+            },
+            "training_seeds": [
+              0,
+              1
+            ]
+          }
+        ],
+        "losses": 0,
+        "mean_relative_saving": 0.0,
+        "safe": true,
+        "selected_action_counts": {
+          "efficacy-promote": 0,
+          "native": 3
+        },
+        "ties": 3,
+        "unsafe_seeds": 0,
+        "wins": 0
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": 0.0,
+        "mean_relative_saving": 0.0,
+        "selected_action_counts": {
+          "efficacy-promote": 0,
+          "native": 3
+        },
+        "ties": 3,
+        "wins": 0
+      },
+      "pairs": [
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": false,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 289.0,
+                    "relative_saving": 0.0,
+                    "treatment": 289.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 1380.0,
+                    "relative_saving": 0.0,
+                    "treatment": 1380.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 449747.0,
+                    "relative_saving": 0.0,
+                    "treatment": 449747.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 704.0,
+                    "relative_saving": 0.0,
+                    "treatment": 704.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -73.8051326598279,
+                    "native": 1198.8427156320818,
+                    "relative_saving": 0.06156364942411536,
+                    "treatment": 1125.0375829722539
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -8.039550000000006,
+                    "native": 100.128438,
+                    "relative_saving": 0.08029237408057845,
+                    "treatment": 92.088888
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 704.0,
+                    "relative_saving": 0.0,
+                    "treatment": 704.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "1a9159920ce716593c800b58d01a66615bb8755c7663b0c3600db7bd3296ccdb",
+              "outcome": {
+                "cuts_applied": 289,
+                "dual_bound": 422.99999999999994,
+                "gap": 0.0,
+                "lp_count": 1380,
+                "lp_iterations": 449747,
+                "nodes": 704,
+                "objective_sense": "minimize",
+                "primal_bound": 422.99999999999994,
+                "primal_dual_integral": 1125.0375829722539,
+                "solving_time": 92.088888,
+                "status": "optimal",
+                "total_nodes": 704
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/rmatr100-p10/seed_0_efficacy-promote.json",
+              "selector": {
+                "calls": 284,
+                "candidate_cuts": 8495,
+                "context_records": [
+                  {
+                    "context_sha256": "1a9159920ce716593c800b58d01a66615bb8755c7663b0c3600db7bd3296ccdb",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 0,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 1,
+                "intervention_records": [],
+                "intervention_scope": "first-run-only",
+                "interventions": 0,
+                "mode": "efficacy-promote",
+                "root_calls": 22,
+                "run_count": 1,
+                "selected_cuts": 1
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "1a9159920ce716593c800b58d01a66615bb8755c7663b0c3600db7bd3296ccdb"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 289,
+            "dual_bound": 422.99999999999994,
+            "gap": 0.0,
+            "lp_count": 1380,
+            "lp_iterations": 449747,
+            "nodes": 704,
+            "objective_sense": "minimize",
+            "primal_bound": 422.99999999999994,
+            "primal_dual_integral": 1198.8427156320818,
+            "solving_time": 100.128438,
+            "status": "optimal",
+            "total_nodes": 704
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/rmatr100-p10/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 449747.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 449747.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 0
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": false,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 495.0,
+                    "relative_saving": 0.0,
+                    "treatment": 495.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 1678.0,
+                    "relative_saving": 0.0,
+                    "treatment": 1678.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 520215.0,
+                    "relative_saving": 0.0,
+                    "treatment": 520215.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 878.0,
+                    "relative_saving": 0.0,
+                    "treatment": 878.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -68.58734467924978,
+                    "native": 1061.7590206461366,
+                    "relative_saving": 0.06459784503409328,
+                    "treatment": 993.1716759668868
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -3.5783750000000083,
+                    "native": 93.89122,
+                    "relative_saving": 0.03811192356431206,
+                    "treatment": 90.312845
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 878.0,
+                    "relative_saving": 0.0,
+                    "treatment": 878.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "89fd36deaaec68ddd8ffaf51a380d13315c297bac181a6758f9048c715e18aeb",
+              "outcome": {
+                "cuts_applied": 495,
+                "dual_bound": 423.0,
+                "gap": 0.0,
+                "lp_count": 1678,
+                "lp_iterations": 520215,
+                "nodes": 878,
+                "objective_sense": "minimize",
+                "primal_bound": 423.0,
+                "primal_dual_integral": 993.1716759668868,
+                "solving_time": 90.312845,
+                "status": "optimal",
+                "total_nodes": 878
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/rmatr100-p10/seed_1_efficacy-promote.json",
+              "selector": {
+                "calls": 477,
+                "candidate_cuts": 13481,
+                "context_records": [
+                  {
+                    "context_sha256": "89fd36deaaec68ddd8ffaf51a380d13315c297bac181a6758f9048c715e18aeb",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 0,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 1,
+                "intervention_records": [],
+                "intervention_scope": "first-run-only",
+                "interventions": 0,
+                "mode": "efficacy-promote",
+                "root_calls": 19,
+                "run_count": 1,
+                "selected_cuts": 1
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "89fd36deaaec68ddd8ffaf51a380d13315c297bac181a6758f9048c715e18aeb"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 495,
+            "dual_bound": 423.0,
+            "gap": 0.0,
+            "lp_count": 1678,
+            "lp_iterations": 520215,
+            "nodes": 878,
+            "objective_sense": "minimize",
+            "primal_bound": 423.0,
+            "primal_dual_integral": 1061.7590206461366,
+            "solving_time": 93.89122,
+            "status": "optimal",
+            "total_nodes": 878
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/rmatr100-p10/seed_1_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 520215.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 520215.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 1
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": false,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 424.0,
+                    "relative_saving": 0.0,
+                    "treatment": 424.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 1575.0,
+                    "relative_saving": 0.0,
+                    "treatment": 1575.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 496282.0,
+                    "relative_saving": 0.0,
+                    "treatment": 496282.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 916.0,
+                    "relative_saving": 0.0,
+                    "treatment": 916.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 12.285016337211914,
+                    "native": 998.341889062429,
+                    "relative_saving": -0.012305420088852647,
+                    "treatment": 1010.6269053996409
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 0.8930139999999938,
+                    "native": 94.982331,
+                    "relative_saving": -0.009401896022113772,
+                    "treatment": 95.875345
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 916.0,
+                    "relative_saving": 0.0,
+                    "treatment": 916.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "6e57b4b24cd214c4bc7972491e4181059ef83076ee9bdd6a487366cb85a13e80",
+              "outcome": {
+                "cuts_applied": 424,
+                "dual_bound": 423.0,
+                "gap": 0.0,
+                "lp_count": 1575,
+                "lp_iterations": 496282,
+                "nodes": 916,
+                "objective_sense": "minimize",
+                "primal_bound": 423.0,
+                "primal_dual_integral": 1010.6269053996409,
+                "solving_time": 95.875345,
+                "status": "optimal",
+                "total_nodes": 916
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/rmatr100-p10/seed_2_efficacy-promote.json",
+              "selector": {
+                "calls": 413,
+                "candidate_cuts": 11458,
+                "context_records": [
+                  {
+                    "context_sha256": "6e57b4b24cd214c4bc7972491e4181059ef83076ee9bdd6a487366cb85a13e80",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 0,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 1,
+                "intervention_records": [],
+                "intervention_scope": "first-run-only",
+                "interventions": 0,
+                "mode": "efficacy-promote",
+                "root_calls": 19,
+                "run_count": 1,
+                "selected_cuts": 1
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "6e57b4b24cd214c4bc7972491e4181059ef83076ee9bdd6a487366cb85a13e80"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 424,
+            "dual_bound": 423.0,
+            "gap": 0.0,
+            "lp_count": 1575,
+            "lp_iterations": 496282,
+            "nodes": 916,
+            "objective_sense": "minimize",
+            "primal_bound": 423.0,
+            "primal_dual_integral": 998.341889062429,
+            "solving_time": 94.982331,
+            "status": "optimal",
+            "total_nodes": 916
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/rmatr100-p10/seed_2_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 496282.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 496282.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 2
+        }
+      ],
+      "per_action": {
+        "efficacy-promote": {
+          "aggregate": {},
+          "eligible_pairs": 0,
+          "safe": true,
+          "safe_pairs": 3,
+          "unsafe_eligible_pairs": 0,
+          "valid_pairs": 0
+        }
+      }
+    },
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/h80x6320d.mps.gz",
+      "instance_id": "h80x6320d",
+      "instance_sha256": "da72f2491ab4c7c058074b71a140e12af3c2e87e52e68161f88b2aca8a5f9a23",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 3,
+        "evaluations": [
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": -0.005301266772757829
+            },
+            "training_seeds": [
+              1,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 1,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": -0.30772037323495127
+            },
+            "training_seeds": [
+              0,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 2,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": -0.030928867623674583
+            },
+            "training_seeds": [
+              0,
+              1
+            ]
+          }
+        ],
+        "losses": 0,
+        "mean_relative_saving": 0.0,
+        "safe": true,
+        "selected_action_counts": {
+          "efficacy-promote": 0,
+          "native": 3
+        },
+        "ties": 3,
+        "unsafe_seeds": 0,
+        "wins": 0
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": -6058.666666666667,
+        "mean_relative_saving": 0.09049674627950628,
+        "selected_action_counts": {
+          "efficacy-promote": 1,
+          "native": 2
+        },
+        "ties": 2,
+        "wins": 1
+      },
+      "pairs": [
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -21.0,
+                    "native": 21.0,
+                    "relative_saving": 1.0,
+                    "treatment": 0.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 7.0,
+                    "native": 496.0,
+                    "relative_saving": -0.014112903225806451,
+                    "treatment": 503.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 15179.0,
+                    "native": 45535.0,
+                    "relative_saving": -0.333347974085868,
+                    "treatment": 60714.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": -6.0,
+                    "native": 9.0,
+                    "relative_saving": 0.6666666666666666,
+                    "treatment": 3.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 363.9133411950138,
+                    "native": 3288.6912317873857,
+                    "relative_saving": -0.1106559769666272,
+                    "treatment": 3652.6045729823995
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 10.83611599999999,
+                    "native": 65.270841,
+                    "relative_saving": -0.1660177168546057,
+                    "treatment": 76.106957
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": -3.0,
+                    "native": 11.0,
+                    "relative_saving": 0.2727272727272727,
+                    "treatment": 8.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "6a2d7492e2f230f66584f78030c538ff9bce0ba693feadaea19a5d3b2c5b1fd8",
+              "outcome": {
+                "cuts_applied": 0,
+                "dual_bound": 6382.099049999997,
+                "gap": 0.0,
+                "lp_count": 503,
+                "lp_iterations": 60714,
+                "nodes": 3,
+                "objective_sense": "minimize",
+                "primal_bound": 6382.099049999997,
+                "primal_dual_integral": 3652.6045729823995,
+                "solving_time": 76.106957,
+                "status": "optimal",
+                "total_nodes": 8
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/h80x6320d/seed_0_efficacy-promote.json",
+              "selector": {
+                "calls": 166,
+                "candidate_cuts": 67798,
+                "context_records": [
+                  {
+                    "context_sha256": "6a2d7492e2f230f66584f78030c538ff9bce0ba693feadaea19a5d3b2c5b1fd8",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "gom1_x4849",
+                    "added_efficacy": 0.6550562411722218,
+                    "added_native_index": 204,
+                    "candidate_cuts": 208,
+                    "context_sha256": "6a2d7492e2f230f66584f78030c538ff9bce0ba693feadaea19a5d3b2c5b1fd8",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "flowcover1_5",
+                    "removed_efficacy": 0.00028814118342537055,
+                    "removed_native_index": 61,
+                    "run": 1,
+                    "selected_cuts": 82,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 166,
+                "run_count": 6,
+                "selected_cuts": 82
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "6a2d7492e2f230f66584f78030c538ff9bce0ba693feadaea19a5d3b2c5b1fd8"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 21,
+            "dual_bound": 6382.0990499999925,
+            "gap": 0.0,
+            "lp_count": 496,
+            "lp_iterations": 45535,
+            "nodes": 9,
+            "objective_sense": "minimize",
+            "primal_bound": 6382.0990499999925,
+            "primal_dual_integral": 3288.6912317873857,
+            "solving_time": 65.270841,
+            "status": "optimal",
+            "total_nodes": 11
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/h80x6320d/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 45535.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 45535.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 0
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -17.0,
+                    "native": 30.0,
+                    "relative_saving": 0.5666666666666667,
+                    "treatment": 13.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": -37.0,
+                    "native": 545.0,
+                    "relative_saving": 0.06788990825688074,
+                    "treatment": 508.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -18176.0,
+                    "native": 66949.0,
+                    "relative_saving": 0.27149023883851886,
+                    "treatment": 48773.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 6.0,
+                    "native": 5.0,
+                    "relative_saving": -1.2,
+                    "treatment": 11.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 751.6185681242273,
+                    "native": 3482.4404329302756,
+                    "relative_saving": -0.2158309905366516,
+                    "treatment": 4234.059001054503
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 1.1074729999999988,
+                    "native": 75.813628,
+                    "relative_saving": -0.014607835414498286,
+                    "treatment": 76.921101
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 3.0,
+                    "native": 10.0,
+                    "relative_saving": -0.3,
+                    "treatment": 13.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "ac52115d75d2ae064f51815c7df69088a82474216156bc590cc56e0157a8ead1",
+              "outcome": {
+                "cuts_applied": 13,
+                "dual_bound": 6382.099050000001,
+                "gap": 0.0,
+                "lp_count": 508,
+                "lp_iterations": 48773,
+                "nodes": 11,
+                "objective_sense": "minimize",
+                "primal_bound": 6382.099050000001,
+                "primal_dual_integral": 4234.059001054503,
+                "solving_time": 76.921101,
+                "status": "optimal",
+                "total_nodes": 13
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/h80x6320d/seed_1_efficacy-promote.json",
+              "selector": {
+                "calls": 119,
+                "candidate_cuts": 47660,
+                "context_records": [
+                  {
+                    "context_sha256": "ac52115d75d2ae064f51815c7df69088a82474216156bc590cc56e0157a8ead1",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "gom1_x118",
+                    "added_efficacy": 0.5151078456406464,
+                    "added_native_index": 202,
+                    "candidate_cuts": 210,
+                    "context_sha256": "ac52115d75d2ae064f51815c7df69088a82474216156bc590cc56e0157a8ead1",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "flowcover1_5",
+                    "removed_efficacy": 0.00028814118342537055,
+                    "removed_native_index": 65,
+                    "run": 1,
+                    "selected_cuts": 93,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 119,
+                "run_count": 3,
+                "selected_cuts": 93
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "ac52115d75d2ae064f51815c7df69088a82474216156bc590cc56e0157a8ead1"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 30,
+            "dual_bound": 6382.099049999995,
+            "gap": 0.0,
+            "lp_count": 545,
+            "lp_iterations": 66949,
+            "nodes": 5,
+            "objective_sense": "minimize",
+            "primal_bound": 6382.099049999995,
+            "primal_dual_integral": 3482.4404329302756,
+            "solving_time": 75.813628,
+            "status": "optimal",
+            "total_nodes": 10
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/h80x6320d/seed_1_native.json",
+          "oracle": {
+            "delta_selected_minus_native": -18176.0,
+            "native_value": 66949.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.27149023883851886,
+            "selected_action": "efficacy-promote",
+            "selected_value": 48773.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 1
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -83.0,
+                    "native": 104.0,
+                    "relative_saving": 0.7980769230769231,
+                    "treatment": 21.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 43.0,
+                    "native": 517.0,
+                    "relative_saving": -0.08317214700193423,
+                    "treatment": 560.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 16736.0,
+                    "native": 59328.0,
+                    "relative_saving": -0.2820927723840345,
+                    "treatment": 76064.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 1.0,
+                    "relative_saving": 0.0,
+                    "treatment": 1.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 984.634158386194,
+                    "native": 3168.5623008441917,
+                    "relative_saving": -0.3107510804265583,
+                    "treatment": 4153.196459230386
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 22.763815,
+                    "native": 63.346118,
+                    "relative_saving": -0.3593561171341234,
+                    "treatment": 86.109933
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 1.0,
+                    "native": 6.0,
+                    "relative_saving": -0.16666666666666666,
+                    "treatment": 7.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "8f8e086a6558a267dcc4c1d19a3b69fb4e68b26e0c6db910da3745a3f10f71b7",
+              "outcome": {
+                "cuts_applied": 21,
+                "dual_bound": 6382.099049999996,
+                "gap": 0.0,
+                "lp_count": 560,
+                "lp_iterations": 76064,
+                "nodes": 1,
+                "objective_sense": "minimize",
+                "primal_bound": 6382.099049999996,
+                "primal_dual_integral": 4153.196459230386,
+                "solving_time": 86.109933,
+                "status": "optimal",
+                "total_nodes": 7
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/h80x6320d/seed_2_efficacy-promote.json",
+              "selector": {
+                "calls": 238,
+                "candidate_cuts": 60828,
+                "context_records": [
+                  {
+                    "context_sha256": "8f8e086a6558a267dcc4c1d19a3b69fb4e68b26e0c6db910da3745a3f10f71b7",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "gom1_x8",
+                    "added_efficacy": 0.6948363999393421,
+                    "added_native_index": 200,
+                    "candidate_cuts": 204,
+                    "context_sha256": "8f8e086a6558a267dcc4c1d19a3b69fb4e68b26e0c6db910da3745a3f10f71b7",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "flowcover1_5",
+                    "removed_efficacy": 0.00028814118342537055,
+                    "removed_native_index": 60,
+                    "run": 1,
+                    "selected_cuts": 81,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 238,
+                "run_count": 7,
+                "selected_cuts": 81
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "8f8e086a6558a267dcc4c1d19a3b69fb4e68b26e0c6db910da3745a3f10f71b7"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 104,
+            "dual_bound": 6382.099049999999,
+            "gap": 0.0,
+            "lp_count": 517,
+            "lp_iterations": 59328,
+            "nodes": 1,
+            "objective_sense": "minimize",
+            "primal_bound": 6382.099049999999,
+            "primal_dual_integral": 3168.5623008441917,
+            "solving_time": 63.346118,
+            "status": "optimal",
+            "total_nodes": 6
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/h80x6320d/seed_2_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 59328.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 59328.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 2
+        }
+      ],
+      "per_action": {
+        "efficacy-promote": {
+          "aggregate": {
+            "cuts_applied": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -40.333333333333336,
+              "mean_relative_saving": 0.7882478632478632,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 3
+            },
+            "lp_count": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 4.333333333333333,
+              "mean_relative_saving": -0.009798380656953315,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 1
+            },
+            "lp_iterations": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 4579.666666666667,
+              "mean_relative_saving": -0.11465016921046123,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 1
+            },
+            "nodes": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": 0.0,
+              "mean_relative_saving": -0.17777777777777778,
+              "ties": 1,
+              "valid_pairs": 3,
+              "wins": 1
+            },
+            "primal_dual_integral": {
+              "losses": 3,
+              "mean_delta_treatment_minus_native": 700.0553559018117,
+              "mean_relative_saving": -0.21241268264327903,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 0
+            },
+            "solving_time": {
+              "losses": 3,
+              "mean_delta_treatment_minus_native": 11.569134666666663,
+              "mean_relative_saving": -0.1799938898010758,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 0
+            },
+            "total_nodes": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 0.3333333333333333,
+              "mean_relative_saving": -0.06464646464646465,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 1
+            }
+          },
+          "eligible_pairs": 3,
+          "safe": true,
+          "safe_pairs": 3,
+          "unsafe_eligible_pairs": 0,
+          "valid_pairs": 3
+        }
+      }
+    },
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/physiciansched6-2.mps.gz",
+      "instance_id": "physiciansched6-2",
+      "instance_sha256": "6936650caa2cb6d19ea4d478a0ad70d6f8348923050c06587f28dbc3237eaa1f",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 2,
+        "evaluations": [
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {},
+            "training_seeds": [
+              1,
+              2
+            ]
+          },
+          {
+            "effective_action": "efficacy-promote",
+            "held_out_delta_selected_minus_native": null,
+            "held_out_eligible": true,
+            "held_out_relative_saving": null,
+            "held_out_safe": false,
+            "held_out_seed": 1,
+            "selected_action": "efficacy-promote",
+            "selected_training_mean_relative_saving": 0.2822819794076688,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.2822819794076688
+            },
+            "training_seeds": [
+              0,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 2,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {},
+            "training_seeds": [
+              0,
+              1
+            ]
+          }
+        ],
+        "losses": 0,
+        "mean_relative_saving": 0.0,
+        "safe": false,
+        "selected_action_counts": {
+          "efficacy-promote": 1,
+          "native": 2
+        },
+        "ties": 2,
+        "unsafe_seeds": 1,
+        "wins": 0
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": -86803.0,
+        "mean_relative_saving": 0.23866713958520644,
+        "selected_action_counts": {
+          "efficacy-promote": 1,
+          "native": 2
+        },
+        "ties": 2,
+        "wins": 1
+      },
+      "pairs": [
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -2965.0,
+                    "native": 3873.0,
+                    "relative_saving": 0.7655564162148205,
+                    "treatment": 908.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": -996.0,
+                    "native": 1159.0,
+                    "relative_saving": 0.8593615185504746,
+                    "treatment": 163.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -260409.0,
+                    "native": 363699.0,
+                    "relative_saving": 0.7160014187556193,
+                    "treatment": 103290.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": -466.0,
+                    "native": 467.0,
+                    "relative_saving": 0.9978586723768736,
+                    "treatment": 1.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -5967.897695702613,
+                    "native": 7957.723590613813,
+                    "relative_saving": 0.7499503630336932,
+                    "treatment": 1989.8258949111994
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -73.104952,
+                    "native": 93.040787,
+                    "relative_saving": 0.7857301550985376,
+                    "treatment": 19.935835
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": -466.0,
+                    "native": 467.0,
+                    "relative_saving": 0.9978586723768736,
+                    "treatment": 1.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "7235e28e1b7ce48b72804210622632e396bcde089484aad6507137dc95ca421d",
+              "outcome": {
+                "cuts_applied": 908,
+                "dual_bound": 49324.0,
+                "gap": 0.0,
+                "lp_count": 163,
+                "lp_iterations": 103290,
+                "nodes": 1,
+                "objective_sense": "minimize",
+                "primal_bound": 49324.0,
+                "primal_dual_integral": 1989.8258949111994,
+                "solving_time": 19.935835,
+                "status": "optimal",
+                "total_nodes": 1
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/physiciansched6-2/seed_0_efficacy-promote.json",
+              "selector": {
+                "calls": 49,
+                "candidate_cuts": 4064,
+                "context_records": [
+                  {
+                    "context_sha256": "7235e28e1b7ce48b72804210622632e396bcde089484aad6507137dc95ca421d",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "cmir16_25",
+                    "added_efficacy": 0.3517472606973792,
+                    "added_native_index": 194,
+                    "candidate_cuts": 197,
+                    "context_sha256": "7235e28e1b7ce48b72804210622632e396bcde089484aad6507137dc95ca421d",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "scg16_x3734",
+                    "removed_efficacy": 0.007212184459746188,
+                    "removed_native_index": 46,
+                    "run": 1,
+                    "selected_cuts": 47,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 49,
+                "run_count": 1,
+                "selected_cuts": 47
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "7235e28e1b7ce48b72804210622632e396bcde089484aad6507137dc95ca421d"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 3873,
+            "dual_bound": 49324.0,
+            "gap": 0.0,
+            "lp_count": 1159,
+            "lp_iterations": 363699,
+            "nodes": 467,
+            "objective_sense": "minimize",
+            "primal_bound": 49324.0,
+            "primal_dual_integral": 7957.723590613813,
+            "solving_time": 93.040787,
+            "status": "optimal",
+            "total_nodes": 467
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/physiciansched6-2/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": -260409.0,
+            "native_value": 363699.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.7160014187556193,
+            "selected_action": "efficacy-promote",
+            "selected_value": 103290.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 0
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -353.0,
+                    "native": 5958.0,
+                    "relative_saving": 0.05924806982208795,
+                    "treatment": 5605.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": -171.0,
+                    "native": 1523.0,
+                    "relative_saving": 0.11227839789888379,
+                    "treatment": 1352.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -120728.0,
+                    "native": 420912.0,
+                    "relative_saving": 0.2868247994830273,
+                    "treatment": 300184.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 67.0,
+                    "native": 829.0,
+                    "relative_saving": -0.08082026537997587,
+                    "treatment": 896.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -1282.3055999999997,
+                    "native": 12000.0174,
+                    "relative_saving": 0.10685864505496463,
+                    "treatment": 10717.711800000001
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -12.821044999999998,
+                    "native": 120.000174,
+                    "relative_saving": 0.10684188674593087,
+                    "treatment": 107.179129
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 67.0,
+                    "native": 829.0,
+                    "relative_saving": -0.08082026537997587,
+                    "treatment": 896.0
+                  }
+                },
+                "safe": false,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": false,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": false,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": false,
+                  "treatment_complete": true
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "5ddc535adc6e5984ebf3f99b06d9d4d2abeab9fa6bfd39084abf868771d1aa9d",
+              "outcome": {
+                "cuts_applied": 5605,
+                "dual_bound": 49324.0,
+                "gap": 0.0,
+                "lp_count": 1352,
+                "lp_iterations": 300184,
+                "nodes": 896,
+                "objective_sense": "minimize",
+                "primal_bound": 49324.0,
+                "primal_dual_integral": 10717.711800000001,
+                "solving_time": 107.179129,
+                "status": "optimal",
+                "total_nodes": 896
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/physiciansched6-2/seed_1_efficacy-promote.json",
+              "selector": {
+                "calls": 220,
+                "candidate_cuts": 19381,
+                "context_records": [
+                  {
+                    "context_sha256": "5ddc535adc6e5984ebf3f99b06d9d4d2abeab9fa6bfd39084abf868771d1aa9d",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "implbd7_13",
+                    "added_efficacy": 0.3053161232065186,
+                    "added_native_index": 131,
+                    "candidate_cuts": 173,
+                    "context_sha256": "5ddc535adc6e5984ebf3f99b06d9d4d2abeab9fa6bfd39084abf868771d1aa9d",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "scg7_s5473",
+                    "removed_efficacy": 0.0015477817860381085,
+                    "removed_native_index": 44,
+                    "run": 1,
+                    "selected_cuts": 45,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 37,
+                "run_count": 1,
+                "selected_cuts": 45
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "5ddc535adc6e5984ebf3f99b06d9d4d2abeab9fa6bfd39084abf868771d1aa9d"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 5958,
+            "dual_bound": 49324.0,
+            "gap": 1e+20,
+            "lp_count": 1523,
+            "lp_iterations": 420912,
+            "nodes": 829,
+            "objective_sense": "minimize",
+            "primal_bound": 1e+20,
+            "primal_dual_integral": 12000.0174,
+            "solving_time": 120.000174,
+            "status": "timelimit",
+            "total_nodes": 829
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/physiciansched6-2/seed_1_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 420912.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 420912.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 1
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -723.0,
+                    "native": 920.0,
+                    "relative_saving": 0.7858695652173913,
+                    "treatment": 197.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": -21.0,
+                    "native": 258.0,
+                    "relative_saving": 0.08139534883720931,
+                    "treatment": 237.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 19374.0,
+                    "native": 127934.0,
+                    "relative_saving": -0.1514374599402817,
+                    "treatment": 147308.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 1.0,
+                    "relative_saving": 0.0,
+                    "treatment": 1.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -181.66652152908273,
+                    "native": 2551.5078720085558,
+                    "relative_saving": 0.07119967119132352,
+                    "treatment": 2369.841350479473
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 3.2875130000000006,
+                    "native": 26.55578,
+                    "relative_saving": -0.12379651435582012,
+                    "treatment": 29.843293
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 1.0,
+                    "native": 1.0,
+                    "relative_saving": -1.0,
+                    "treatment": 2.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "4775b958936ea7732f872bc3055c8adc5726f19fdfbad136b7c1e9de21e2feec",
+              "outcome": {
+                "cuts_applied": 197,
+                "dual_bound": 49324.0,
+                "gap": 0.0,
+                "lp_count": 237,
+                "lp_iterations": 147308,
+                "nodes": 1,
+                "objective_sense": "minimize",
+                "primal_bound": 49324.0,
+                "primal_dual_integral": 2369.841350479473,
+                "solving_time": 29.843293,
+                "status": "optimal",
+                "total_nodes": 2
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/physiciansched6-2/seed_2_efficacy-promote.json",
+              "selector": {
+                "calls": 63,
+                "candidate_cuts": 5118,
+                "context_records": [
+                  {
+                    "context_sha256": "4775b958936ea7732f872bc3055c8adc5726f19fdfbad136b7c1e9de21e2feec",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "flowcover8_7",
+                    "added_efficacy": 0.314062897095359,
+                    "added_native_index": 174,
+                    "candidate_cuts": 239,
+                    "context_sha256": "4775b958936ea7732f872bc3055c8adc5726f19fdfbad136b7c1e9de21e2feec",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "scg8_s5817",
+                    "removed_efficacy": 0.00544302025284546,
+                    "removed_native_index": 45,
+                    "run": 1,
+                    "selected_cuts": 46,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 63,
+                "run_count": 2,
+                "selected_cuts": 46
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "4775b958936ea7732f872bc3055c8adc5726f19fdfbad136b7c1e9de21e2feec"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 920,
+            "dual_bound": 49324.0,
+            "gap": 0.0,
+            "lp_count": 258,
+            "lp_iterations": 127934,
+            "nodes": 1,
+            "objective_sense": "minimize",
+            "primal_bound": 49324.0,
+            "primal_dual_integral": 2551.5078720085558,
+            "solving_time": 26.55578,
+            "status": "optimal",
+            "total_nodes": 1
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/physiciansched6-2/seed_2_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 127934.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 127934.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 2
+        }
+      ],
+      "per_action": {
+        "efficacy-promote": {
+          "aggregate": {
+            "cuts_applied": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -1844.0,
+              "mean_relative_saving": 0.7757129907161059,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 2
+            },
+            "lp_count": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -508.5,
+              "mean_relative_saving": 0.47037843369384197,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 2
+            },
+            "lp_iterations": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -120517.5,
+              "mean_relative_saving": 0.2822819794076688,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 1
+            },
+            "nodes": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -233.0,
+              "mean_relative_saving": 0.4989293361884368,
+              "ties": 1,
+              "valid_pairs": 2,
+              "wins": 1
+            },
+            "primal_dual_integral": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -3074.7821086158483,
+              "mean_relative_saving": 0.4105750171125084,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 2
+            },
+            "solving_time": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -34.9087195,
+              "mean_relative_saving": 0.3309668203713587,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 1
+            },
+            "total_nodes": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -232.5,
+              "mean_relative_saving": -0.0010706638115631772,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 1
+            }
+          },
+          "eligible_pairs": 3,
+          "safe": false,
+          "safe_pairs": 2,
+          "unsafe_eligible_pairs": 1,
+          "valid_pairs": 2
+        }
+      }
+    },
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/mik-250-20-75-4.mps.gz",
+      "instance_id": "mik-250-20-75-4",
+      "instance_sha256": "1fa6126895fa59d1c613787ad19bb10e6080a39207224b018a43b95440dca4ef",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 3,
+        "evaluations": [
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.0
+            },
+            "training_seeds": [
+              1,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 1,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.0
+            },
+            "training_seeds": [
+              0,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 2,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.0
+            },
+            "training_seeds": [
+              0,
+              1
+            ]
+          }
+        ],
+        "losses": 0,
+        "mean_relative_saving": 0.0,
+        "safe": true,
+        "selected_action_counts": {
+          "efficacy-promote": 0,
+          "native": 3
+        },
+        "ties": 3,
+        "unsafe_seeds": 0,
+        "wins": 0
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": 0.0,
+        "mean_relative_saving": 0.0,
+        "selected_action_counts": {
+          "efficacy-promote": 0,
+          "native": 3
+        },
+        "ties": 3,
+        "wins": 0
+      },
+      "pairs": [
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": false,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 34832.0,
+                    "relative_saving": 0.0,
+                    "treatment": 34832.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 17162.0,
+                    "relative_saving": 0.0,
+                    "treatment": 17162.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 317652.0,
+                    "relative_saving": 0.0,
+                    "treatment": 317652.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 11461.0,
+                    "relative_saving": 0.0,
+                    "treatment": 11461.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 0.4666712720197239,
+                    "native": 27.341818356608858,
+                    "relative_saving": -0.017068040827903593,
+                    "treatment": 27.808489628628582
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 0.10719600000000007,
+                    "native": 15.879025,
+                    "relative_saving": -0.006750792318797915,
+                    "treatment": 15.986221
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 11462.0,
+                    "relative_saving": 0.0,
+                    "treatment": 11462.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "2716b7f681a9771a30dc90532d9a2cf59df594bac67850ae6e7549e8cb0d7c7f",
+              "outcome": {
+                "cuts_applied": 34832,
+                "dual_bound": -52300.9999999997,
+                "gap": 0.0,
+                "lp_count": 17162,
+                "lp_iterations": 317652,
+                "nodes": 11461,
+                "objective_sense": "minimize",
+                "primal_bound": -52300.9999999997,
+                "primal_dual_integral": 27.808489628628582,
+                "solving_time": 15.986221,
+                "status": "optimal",
+                "total_nodes": 11462
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/mik-250-20-75-4/seed_0_efficacy-promote.json",
+              "selector": {
+                "calls": 3402,
+                "candidate_cuts": 252281,
+                "context_records": [
+                  {
+                    "context_sha256": "2716b7f681a9771a30dc90532d9a2cf59df594bac67850ae6e7549e8cb0d7c7f",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 0,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 1,
+                "intervention_records": [],
+                "intervention_scope": "first-run-only",
+                "interventions": 0,
+                "mode": "efficacy-promote",
+                "root_calls": 42,
+                "run_count": 2,
+                "selected_cuts": 75
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "2716b7f681a9771a30dc90532d9a2cf59df594bac67850ae6e7549e8cb0d7c7f"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 34832,
+            "dual_bound": -52300.9999999997,
+            "gap": 0.0,
+            "lp_count": 17162,
+            "lp_iterations": 317652,
+            "nodes": 11461,
+            "objective_sense": "minimize",
+            "primal_bound": -52300.9999999997,
+            "primal_dual_integral": 27.341818356608858,
+            "solving_time": 15.879025,
+            "status": "optimal",
+            "total_nodes": 11462
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/mik-250-20-75-4/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 317652.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 317652.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 0
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": false,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 48398.0,
+                    "relative_saving": 0.0,
+                    "treatment": 48398.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 24148.0,
+                    "relative_saving": 0.0,
+                    "treatment": 24148.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 611322.0,
+                    "relative_saving": 0.0,
+                    "treatment": 611322.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 15580.0,
+                    "relative_saving": 0.0,
+                    "treatment": 15580.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 0.9599460999689526,
+                    "native": 39.936399525116784,
+                    "relative_saving": -0.0240368714101336,
+                    "treatment": 40.896345625085736
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 0.6779830000000011,
+                    "native": 22.040526,
+                    "relative_saving": -0.030760745002183756,
+                    "treatment": 22.718509
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 15581.0,
+                    "relative_saving": 0.0,
+                    "treatment": 15581.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "8aff49e23ba261d2a58032b689bbcae0c6708ef0fbceb39a3c8fe55e7d5760a9",
+              "outcome": {
+                "cuts_applied": 48398,
+                "dual_bound": -52301.0,
+                "gap": 0.0,
+                "lp_count": 24148,
+                "lp_iterations": 611322,
+                "nodes": 15580,
+                "objective_sense": "minimize",
+                "primal_bound": -52301.0,
+                "primal_dual_integral": 40.896345625085736,
+                "solving_time": 22.718509,
+                "status": "optimal",
+                "total_nodes": 15581
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/mik-250-20-75-4/seed_1_efficacy-promote.json",
+              "selector": {
+                "calls": 4924,
+                "candidate_cuts": 371765,
+                "context_records": [
+                  {
+                    "context_sha256": "8aff49e23ba261d2a58032b689bbcae0c6708ef0fbceb39a3c8fe55e7d5760a9",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 0,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 1,
+                "intervention_records": [],
+                "intervention_scope": "first-run-only",
+                "interventions": 0,
+                "mode": "efficacy-promote",
+                "root_calls": 49,
+                "run_count": 2,
+                "selected_cuts": 75
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "8aff49e23ba261d2a58032b689bbcae0c6708ef0fbceb39a3c8fe55e7d5760a9"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 48398,
+            "dual_bound": -52301.0,
+            "gap": 0.0,
+            "lp_count": 24148,
+            "lp_iterations": 611322,
+            "nodes": 15580,
+            "objective_sense": "minimize",
+            "primal_bound": -52301.0,
+            "primal_dual_integral": 39.936399525116784,
+            "solving_time": 22.040526,
+            "status": "optimal",
+            "total_nodes": 15581
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/mik-250-20-75-4/seed_1_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 611322.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 611322.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 1
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": false,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 16184.0,
+                    "relative_saving": 0.0,
+                    "treatment": 16184.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 10491.0,
+                    "relative_saving": 0.0,
+                    "treatment": 10491.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 211611.0,
+                    "relative_saving": 0.0,
+                    "treatment": 211611.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 6473.0,
+                    "relative_saving": 0.0,
+                    "treatment": 6473.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 0.03792489713578462,
+                    "native": 15.288955511670972,
+                    "relative_saving": -0.0024805420557888523,
+                    "treatment": 15.326880408806757
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -0.045876999999999946,
+                    "native": 7.457206,
+                    "relative_saving": 0.0061520360306527595,
+                    "treatment": 7.411329
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 0.0,
+                    "native": 6474.0,
+                    "relative_saving": 0.0,
+                    "treatment": 6474.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "2b73b4c8607cd49918330e64a3bed21b41467d25aab9594ca4e86a0a61fef459",
+              "outcome": {
+                "cuts_applied": 16184,
+                "dual_bound": -52301.00000000001,
+                "gap": 0.0,
+                "lp_count": 10491,
+                "lp_iterations": 211611,
+                "nodes": 6473,
+                "objective_sense": "minimize",
+                "primal_bound": -52301.00000000001,
+                "primal_dual_integral": 15.326880408806757,
+                "solving_time": 7.411329,
+                "status": "optimal",
+                "total_nodes": 6474
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/mik-250-20-75-4/seed_2_efficacy-promote.json",
+              "selector": {
+                "calls": 1869,
+                "candidate_cuts": 116182,
+                "context_records": [
+                  {
+                    "context_sha256": "2b73b4c8607cd49918330e64a3bed21b41467d25aab9594ca4e86a0a61fef459",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 0,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 1,
+                "intervention_records": [],
+                "intervention_scope": "first-run-only",
+                "interventions": 0,
+                "mode": "efficacy-promote",
+                "root_calls": 43,
+                "run_count": 2,
+                "selected_cuts": 75
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "2b73b4c8607cd49918330e64a3bed21b41467d25aab9594ca4e86a0a61fef459"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 16184,
+            "dual_bound": -52301.00000000001,
+            "gap": 0.0,
+            "lp_count": 10491,
+            "lp_iterations": 211611,
+            "nodes": 6473,
+            "objective_sense": "minimize",
+            "primal_bound": -52301.00000000001,
+            "primal_dual_integral": 15.288955511670972,
+            "solving_time": 7.457206,
+            "status": "optimal",
+            "total_nodes": 6474
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/mik-250-20-75-4/seed_2_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 211611.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 211611.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 2
+        }
+      ],
+      "per_action": {
+        "efficacy-promote": {
+          "aggregate": {},
+          "eligible_pairs": 0,
+          "safe": true,
+          "safe_pairs": 3,
+          "unsafe_eligible_pairs": 0,
+          "valid_pairs": 0
+        }
+      }
+    },
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/ns1830653.mps.gz",
+      "instance_id": "ns1830653",
+      "instance_sha256": "a4e3c130f7ff6ebab4d6781a7e95fadc6c4c043e3e65d95b90f3e2e5e46f1017",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 3,
+        "evaluations": [
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": -0.08928520894719005
+            },
+            "training_seeds": [
+              1,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 1,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": -0.08070161734480084
+            },
+            "training_seeds": [
+              0,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 2,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": -0.17886884380565193
+            },
+            "training_seeds": [
+              0,
+              1
+            ]
+          }
+        ],
+        "losses": 0,
+        "mean_relative_saving": 0.0,
+        "safe": true,
+        "selected_action_counts": {
+          "efficacy-promote": 0,
+          "native": 3
+        },
+        "ties": 3,
+        "unsafe_seeds": 0,
+        "wins": 0
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": -3784.0,
+        "mean_relative_saving": 0.002960672504553677,
+        "selected_action_counts": {
+          "efficacy-promote": 1,
+          "native": 2
+        },
+        "ties": 2,
+        "wins": 1
+      },
+      "pairs": [
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 4269.0,
+                    "native": 16210.0,
+                    "relative_saving": -0.26335595311536086,
+                    "treatment": 20479.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 1904.0,
+                    "native": 7383.0,
+                    "relative_saving": -0.25788974671542736,
+                    "treatment": 9287.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 145301.0,
+                    "native": 853280.0,
+                    "relative_saving": -0.1702852522032627,
+                    "treatment": 998581.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 1199.0,
+                    "native": 4264.0,
+                    "relative_saving": -0.28119136960600377,
+                    "treatment": 5463.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 775.8137636189117,
+                    "native": 3217.5966079194836,
+                    "relative_saving": -0.24111591916444658,
+                    "treatment": 3993.4103715383953
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 8.735405999999998,
+                    "native": 67.41437,
+                    "relative_saving": -0.1295778036641149,
+                    "treatment": 76.149776
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 1199.0,
+                    "native": 4264.0,
+                    "relative_saving": -0.28119136960600377,
+                    "treatment": 5463.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "0d7a289f46702e5258b02f83b8f82859977c4a357b3d89f2eddaa55f19c204ed",
+              "outcome": {
+                "cuts_applied": 20479,
+                "dual_bound": 20622.0,
+                "gap": 0.0,
+                "lp_count": 9287,
+                "lp_iterations": 998581,
+                "nodes": 5463,
+                "objective_sense": "minimize",
+                "primal_bound": 20622.0,
+                "primal_dual_integral": 3993.4103715383953,
+                "solving_time": 76.149776,
+                "status": "optimal",
+                "total_nodes": 5463
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/ns1830653/seed_0_efficacy-promote.json",
+              "selector": {
+                "calls": 2554,
+                "candidate_cuts": 158202,
+                "context_records": [
+                  {
+                    "context_sha256": "0d7a289f46702e5258b02f83b8f82859977c4a357b3d89f2eddaa55f19c204ed",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "zerohalf11_x30",
+                    "added_efficacy": 0.16666666666666666,
+                    "added_native_index": 68,
+                    "candidate_cuts": 215,
+                    "context_sha256": "0d7a289f46702e5258b02f83b8f82859977c4a357b3d89f2eddaa55f19c204ed",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "zerohalf11_x300",
+                    "removed_efficacy": 0.09576563487486861,
+                    "removed_native_index": 9,
+                    "run": 1,
+                    "selected_cuts": 10,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 21,
+                "run_count": 1,
+                "selected_cuts": 10
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "0d7a289f46702e5258b02f83b8f82859977c4a357b3d89f2eddaa55f19c204ed"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 16210,
+            "dual_bound": 20622.0,
+            "gap": 0.0,
+            "lp_count": 7383,
+            "lp_iterations": 853280,
+            "nodes": 4264,
+            "objective_sense": "minimize",
+            "primal_bound": 20622.0,
+            "primal_dual_integral": 3217.5966079194836,
+            "solving_time": 67.41437,
+            "status": "optimal",
+            "total_nodes": 4264
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/ns1830653/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 853280.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 853280.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 0
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 3813.0,
+                    "native": 16475.0,
+                    "relative_saving": -0.23144157814871016,
+                    "treatment": 20288.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 3010.0,
+                    "native": 7401.0,
+                    "relative_saving": -0.4067017970544521,
+                    "treatment": 10411.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 185720.0,
+                    "native": 990758.0,
+                    "relative_saving": -0.18745243540804113,
+                    "treatment": 1176478.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 2196.0,
+                    "native": 4204.0,
+                    "relative_saving": -0.5223596574690771,
+                    "treatment": 6400.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 1062.5297795763959,
+                    "native": 3448.2300930474753,
+                    "relative_saving": -0.30813772599419365,
+                    "treatment": 4510.759872623871
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 9.486870999999994,
+                    "native": 79.752696,
+                    "relative_saving": -0.11895360879085509,
+                    "treatment": 89.239567
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 2196.0,
+                    "native": 4204.0,
+                    "relative_saving": -0.5223596574690771,
+                    "treatment": 6400.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "9d2c12b0897a3e6551cc0806c96884645509c6c1eb2cb159f490d142e55c794d",
+              "outcome": {
+                "cuts_applied": 20288,
+                "dual_bound": 20622.0,
+                "gap": 0.0,
+                "lp_count": 10411,
+                "lp_iterations": 1176478,
+                "nodes": 6400,
+                "objective_sense": "minimize",
+                "primal_bound": 20622.0,
+                "primal_dual_integral": 4510.759872623871,
+                "solving_time": 89.239567,
+                "status": "optimal",
+                "total_nodes": 6400
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/ns1830653/seed_1_efficacy-promote.json",
+              "selector": {
+                "calls": 2734,
+                "candidate_cuts": 172427,
+                "context_records": [
+                  {
+                    "context_sha256": "9d2c12b0897a3e6551cc0806c96884645509c6c1eb2cb159f490d142e55c794d",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 2,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "clique0_0",
+                    "added_efficacy": 0.17284210653080698,
+                    "added_native_index": 40,
+                    "candidate_cuts": 214,
+                    "context_sha256": "9d2c12b0897a3e6551cc0806c96884645509c6c1eb2cb159f490d142e55c794d",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "clique0_5",
+                    "removed_efficacy": 0.04714011453669878,
+                    "removed_native_index": 14,
+                    "run": 1,
+                    "selected_cuts": 15,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 22,
+                "run_count": 1,
+                "selected_cuts": 15
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "9d2c12b0897a3e6551cc0806c96884645509c6c1eb2cb159f490d142e55c794d"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 16475,
+            "dual_bound": 20622.0,
+            "gap": 0.0,
+            "lp_count": 7401,
+            "lp_iterations": 990758,
+            "nodes": 4204,
+            "objective_sense": "minimize",
+            "primal_bound": 20622.0,
+            "primal_dual_integral": 3448.2300930474753,
+            "solving_time": 79.752696,
+            "status": "optimal",
+            "total_nodes": 4204
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/ns1830653/seed_1_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 990758.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 990758.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 1
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 1932.0,
+                    "native": 21347.0,
+                    "relative_saving": -0.09050452054152808,
+                    "treatment": 23279.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": -583.0,
+                    "native": 10381.0,
+                    "relative_saving": 0.05616029284269338,
+                    "treatment": 9798.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -11352.0,
+                    "native": 1278088.0,
+                    "relative_saving": 0.008882017513661031,
+                    "treatment": 1266736.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": -884.0,
+                    "native": 6651.0,
+                    "relative_saving": 0.13291234400841978,
+                    "treatment": 5767.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": 456.32772611907785,
+                    "native": 4738.08213755527,
+                    "relative_saving": -0.09631064064974851,
+                    "treatment": 5194.409863674347
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": 4.006024999999994,
+                    "native": 98.751749,
+                    "relative_saving": -0.04056662328076836,
+                    "treatment": 102.757774
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": -884.0,
+                    "native": 6651.0,
+                    "relative_saving": 0.13291234400841978,
+                    "treatment": 5767.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "7aa5a5c8245739a6eb5a04806e3083e51193292e753ca34055cb37a1f5e2025d",
+              "outcome": {
+                "cuts_applied": 23279,
+                "dual_bound": 20622.0,
+                "gap": 0.0,
+                "lp_count": 9798,
+                "lp_iterations": 1266736,
+                "nodes": 5767,
+                "objective_sense": "minimize",
+                "primal_bound": 20622.0,
+                "primal_dual_integral": 5194.409863674347,
+                "solving_time": 102.757774,
+                "status": "optimal",
+                "total_nodes": 5767
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/ns1830653/seed_2_efficacy-promote.json",
+              "selector": {
+                "calls": 2878,
+                "candidate_cuts": 201872,
+                "context_records": [
+                  {
+                    "context_sha256": "7aa5a5c8245739a6eb5a04806e3083e51193292e753ca34055cb37a1f5e2025d",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "zerohalf12_x87",
+                    "added_efficacy": 0.15811388300841875,
+                    "added_native_index": 215,
+                    "candidate_cuts": 217,
+                    "context_sha256": "7aa5a5c8245739a6eb5a04806e3083e51193292e753ca34055cb37a1f5e2025d",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "cf1_138",
+                    "removed_efficacy": 0.02116779030074189,
+                    "removed_native_index": 12,
+                    "run": 1,
+                    "selected_cuts": 13,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 20,
+                "run_count": 1,
+                "selected_cuts": 13
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "7aa5a5c8245739a6eb5a04806e3083e51193292e753ca34055cb37a1f5e2025d"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 21347,
+            "dual_bound": 20622.0,
+            "gap": 0.0,
+            "lp_count": 10381,
+            "lp_iterations": 1278088,
+            "nodes": 6651,
+            "objective_sense": "minimize",
+            "primal_bound": 20622.0,
+            "primal_dual_integral": 4738.08213755527,
+            "solving_time": 98.751749,
+            "status": "optimal",
+            "total_nodes": 6651
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/ns1830653/seed_2_native.json",
+          "oracle": {
+            "delta_selected_minus_native": -11352.0,
+            "native_value": 1278088.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.008882017513661031,
+            "selected_action": "efficacy-promote",
+            "selected_value": 1266736.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 2
+        }
+      ],
+      "per_action": {
+        "efficacy-promote": {
+          "aggregate": {
+            "cuts_applied": {
+              "losses": 3,
+              "mean_delta_treatment_minus_native": 3338.0,
+              "mean_relative_saving": -0.19510068393519972,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 0
+            },
+            "lp_count": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 1443.6666666666667,
+              "mean_relative_saving": -0.20281041697572869,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 1
+            },
+            "lp_iterations": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 106556.33333333333,
+              "mean_relative_saving": -0.11628522336588093,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 1
+            },
+            "nodes": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 837.0,
+              "mean_relative_saving": -0.22354622768888702,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 1
+            },
+            "primal_dual_integral": {
+              "losses": 3,
+              "mean_delta_treatment_minus_native": 764.8904231047951,
+              "mean_relative_saving": -0.21518809526946292,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 0
+            },
+            "solving_time": {
+              "losses": 3,
+              "mean_delta_treatment_minus_native": 7.409433999999995,
+              "mean_relative_saving": -0.09636601191191278,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 0
+            },
+            "total_nodes": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 837.0,
+              "mean_relative_saving": -0.22354622768888702,
+              "ties": 0,
+              "valid_pairs": 3,
+              "wins": 1
+            }
+          },
+          "eligible_pairs": 3,
+          "safe": true,
+          "safe_pairs": 3,
+          "unsafe_eligible_pairs": 0,
+          "valid_pairs": 3
+        }
+      }
+    },
+    {
+      "instance": "${MIPLIB_INSTANCES_DIR}/30n20b8.mps.gz",
+      "instance_id": "30n20b8",
+      "instance_sha256": "61681c962ef830c2f958cb39bc03d6a1799f44158e5efeb97a1e6c3592f2ac40",
+      "leave_one_seed_out": {
+        "evaluable_seeds": 2,
+        "evaluations": [
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 0,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {},
+            "training_seeds": [
+              1,
+              2
+            ]
+          },
+          {
+            "effective_action": "native",
+            "held_out_delta_selected_minus_native": 0.0,
+            "held_out_eligible": false,
+            "held_out_relative_saving": 0.0,
+            "held_out_safe": true,
+            "held_out_seed": 1,
+            "selected_action": "native",
+            "selected_training_mean_relative_saving": 0.0,
+            "training_action_mean_relative_saving": {},
+            "training_seeds": [
+              0,
+              2
+            ]
+          },
+          {
+            "effective_action": "efficacy-promote",
+            "held_out_delta_selected_minus_native": null,
+            "held_out_eligible": true,
+            "held_out_relative_saving": null,
+            "held_out_safe": false,
+            "held_out_seed": 2,
+            "selected_action": "efficacy-promote",
+            "selected_training_mean_relative_saving": 0.1712925316408745,
+            "training_action_mean_relative_saving": {
+              "efficacy-promote": 0.1712925316408745
+            },
+            "training_seeds": [
+              0,
+              1
+            ]
+          }
+        ],
+        "losses": 0,
+        "mean_relative_saving": 0.0,
+        "safe": false,
+        "selected_action_counts": {
+          "efficacy-promote": 1,
+          "native": 2
+        },
+        "ties": 2,
+        "unsafe_seeds": 1,
+        "wins": 0
+      },
+      "oracle": {
+        "mean_delta_selected_minus_native": -117585.0,
+        "mean_relative_saving": 0.11419502109391633,
+        "selected_action_counts": {
+          "efficacy-promote": 2,
+          "native": 1
+        },
+        "ties": 1,
+        "wins": 2
+      },
+      "pairs": [
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": 603.0,
+                    "native": 1472.0,
+                    "relative_saving": -0.40964673913043476,
+                    "treatment": 2075.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 14.0,
+                    "native": 3635.0,
+                    "relative_saving": -0.0038514442916093533,
+                    "treatment": 3649.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -34105.0,
+                    "native": 943418.0,
+                    "relative_saving": 0.03615046564725286,
+                    "treatment": 909313.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": 286.0,
+                    "native": 559.0,
+                    "relative_saving": -0.5116279069767442,
+                    "treatment": 845.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -1102.8857840431683,
+                    "native": 8737.788395159767,
+                    "relative_saving": 0.1262202440899237,
+                    "treatment": 7634.902611116599
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -3.150001000000003,
+                    "native": 108.782578,
+                    "relative_saving": 0.028956851895898285,
+                    "treatment": 105.632577
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 322.0,
+                    "native": 1569.0,
+                    "relative_saving": -0.20522625876354367,
+                    "treatment": 1891.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "6f5a877141808d4118cb6fda660a6a7e4d84dcfa76e9e71a6262e62cf63351b8",
+              "outcome": {
+                "cuts_applied": 2075,
+                "dual_bound": 302.0,
+                "gap": 0.0,
+                "lp_count": 3649,
+                "lp_iterations": 909313,
+                "nodes": 845,
+                "objective_sense": "minimize",
+                "primal_bound": 302.0,
+                "primal_dual_integral": 7634.902611116599,
+                "solving_time": 105.632577,
+                "status": "optimal",
+                "total_nodes": 1891
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/30n20b8/seed_0_efficacy-promote.json",
+              "selector": {
+                "calls": 641,
+                "candidate_cuts": 44971,
+                "context_records": [
+                  {
+                    "context_sha256": "6f5a877141808d4118cb6fda660a6a7e4d84dcfa76e9e71a6262e62cf63351b8",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 5,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "implbd23_15",
+                    "added_efficacy": 0.2793141961152285,
+                    "added_native_index": 119,
+                    "candidate_cuts": 122,
+                    "context_sha256": "6f5a877141808d4118cb6fda660a6a7e4d84dcfa76e9e71a6262e62cf63351b8",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "start_13_ewseq0",
+                    "removed_efficacy": 0.01627313791432217,
+                    "removed_native_index": 27,
+                    "run": 1,
+                    "selected_cuts": 28,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 76,
+                "run_count": 2,
+                "selected_cuts": 28
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "6f5a877141808d4118cb6fda660a6a7e4d84dcfa76e9e71a6262e62cf63351b8"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 1472,
+            "dual_bound": 302.0,
+            "gap": 0.0,
+            "lp_count": 3635,
+            "lp_iterations": 943418,
+            "nodes": 559,
+            "objective_sense": "minimize",
+            "primal_bound": 302.0,
+            "primal_dual_integral": 8737.788395159767,
+            "solving_time": 108.782578,
+            "status": "optimal",
+            "total_nodes": 1569
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/30n20b8/seed_0_native.json",
+          "oracle": {
+            "delta_selected_minus_native": -34105.0,
+            "native_value": 943418.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.03615046564725286,
+            "selected_action": "efficacy-promote",
+            "selected_value": 909313.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 0
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -604.0,
+                    "native": 1187.0,
+                    "relative_saving": 0.5088458298230834,
+                    "treatment": 583.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 804.0,
+                    "native": 2807.0,
+                    "relative_saving": -0.28642679016743855,
+                    "treatment": 3611.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": -318650.0,
+                    "native": 1039863.0,
+                    "relative_saving": 0.3064345976344961,
+                    "treatment": 721213.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": -390.0,
+                    "native": 673.0,
+                    "relative_saving": 0.5794947994056464,
+                    "treatment": 283.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -134.98011204015074,
+                    "native": 8245.417312862673,
+                    "relative_saving": 0.01637031904129154,
+                    "treatment": 8110.437200822523
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -11.887020000000007,
+                    "native": 113.791966,
+                    "relative_saving": 0.10446273509326666,
+                    "treatment": 101.904946
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": -430.0,
+                    "native": 1698.0,
+                    "relative_saving": 0.25323910482921086,
+                    "treatment": 1268.0
+                  }
+                },
+                "safe": true,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": true,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": true,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": true,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": true
+                },
+                "valid": true
+              },
+              "initial_context_sha256": "f832deb808c88c0afc1f0a8a2ba55bedd608a65a271fd308b1463604ad39738f",
+              "outcome": {
+                "cuts_applied": 583,
+                "dual_bound": 302.0,
+                "gap": 0.0,
+                "lp_count": 3611,
+                "lp_iterations": 721213,
+                "nodes": 283,
+                "objective_sense": "minimize",
+                "primal_bound": 302.0,
+                "primal_dual_integral": 8110.437200822523,
+                "solving_time": 101.904946,
+                "status": "optimal",
+                "total_nodes": 1268
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/30n20b8/seed_1_efficacy-promote.json",
+              "selector": {
+                "calls": 490,
+                "candidate_cuts": 53051,
+                "context_records": [
+                  {
+                    "context_sha256": "f832deb808c88c0afc1f0a8a2ba55bedd608a65a271fd308b1463604ad39738f",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 4,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "implbd14_18",
+                    "added_efficacy": 0.2634075429187834,
+                    "added_native_index": 106,
+                    "candidate_cuts": 113,
+                    "context_sha256": "f832deb808c88c0afc1f0a8a2ba55bedd608a65a271fd308b1463604ad39738f",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "cmir14_1",
+                    "removed_efficacy": 0.000982035774458853,
+                    "removed_native_index": 26,
+                    "run": 1,
+                    "selected_cuts": 27,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 185,
+                "run_count": 3,
+                "selected_cuts": 27
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "f832deb808c88c0afc1f0a8a2ba55bedd608a65a271fd308b1463604ad39738f"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 1187,
+            "dual_bound": 302.0,
+            "gap": 0.0,
+            "lp_count": 2807,
+            "lp_iterations": 1039863,
+            "nodes": 673,
+            "objective_sense": "minimize",
+            "primal_bound": 302.0,
+            "primal_dual_integral": 8245.417312862673,
+            "solving_time": 113.791966,
+            "status": "optimal",
+            "total_nodes": 1698
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/30n20b8/seed_1_native.json",
+          "oracle": {
+            "delta_selected_minus_native": -318650.0,
+            "native_value": 1039863.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.3064345976344961,
+            "selected_action": "efficacy-promote",
+            "selected_value": 721213.0,
+            "valid_treatment_actions": [
+              "efficacy-promote"
+            ]
+          },
+          "seed": 1
+        },
+        {
+          "actions": {
+            "efficacy-promote": {
+              "comparison": {
+                "eligible": true,
+                "metrics": {
+                  "cuts_applied": {
+                    "delta_treatment_minus_native": -4119.0,
+                    "native": 5099.0,
+                    "relative_saving": 0.8078054520494214,
+                    "treatment": 980.0
+                  },
+                  "lp_count": {
+                    "delta_treatment_minus_native": 721.0,
+                    "native": 2481.0,
+                    "relative_saving": -0.290608625554212,
+                    "treatment": 3202.0
+                  },
+                  "lp_iterations": {
+                    "delta_treatment_minus_native": 157692.0,
+                    "native": 972833.0,
+                    "relative_saving": -0.16209565259402178,
+                    "treatment": 1130525.0
+                  },
+                  "nodes": {
+                    "delta_treatment_minus_native": -840.0,
+                    "native": 898.0,
+                    "relative_saving": 0.9354120267260579,
+                    "treatment": 58.0
+                  },
+                  "primal_dual_integral": {
+                    "delta_treatment_minus_native": -443.333075327595,
+                    "native": 9335.58399659812,
+                    "relative_saving": 0.047488520856236234,
+                    "treatment": 8892.250921270524
+                  },
+                  "solving_time": {
+                    "delta_treatment_minus_native": -1.100000000064938e-05,
+                    "native": 120.000085,
+                    "relative_saving": 9.166660174156859e-08,
+                    "treatment": 120.000074
+                  },
+                  "total_nodes": {
+                    "delta_treatment_minus_native": 231.0,
+                    "native": 898.0,
+                    "relative_saving": -0.2572383073496659,
+                    "treatment": 1129.0
+                  }
+                },
+                "safe": false,
+                "safety_checks": {
+                  "arm_order": true,
+                  "context_budget_respected": true,
+                  "interventions_have_context": true,
+                  "known_intervention_scope": true,
+                  "native_complete": false,
+                  "one_record_per_intervention": true,
+                  "run_budget_respected": true,
+                  "same_dual_bound": false,
+                  "same_instance_sha256": true,
+                  "same_objective_sense": true,
+                  "same_parameters": true,
+                  "same_primal_bound": false,
+                  "same_runtime_versions": true,
+                  "same_seed": true,
+                  "same_status": true,
+                  "treatment_complete": false
+                },
+                "valid": false
+              },
+              "initial_context_sha256": "fd1b93c5323868f8ed98746695a3a4065d2895257f66989d147db36bdda18182",
+              "outcome": {
+                "cuts_applied": 980,
+                "dual_bound": 202.0,
+                "gap": 1.2425742574257426,
+                "lp_count": 3202,
+                "lp_iterations": 1130525,
+                "nodes": 58,
+                "objective_sense": "minimize",
+                "primal_bound": 453.0,
+                "primal_dual_integral": 8892.250921270524,
+                "solving_time": 120.000074,
+                "status": "timelimit",
+                "total_nodes": 1129
+              },
+              "result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/30n20b8/seed_2_efficacy-promote.json",
+              "selector": {
+                "calls": 464,
+                "candidate_cuts": 37737,
+                "context_records": [
+                  {
+                    "context_sha256": "fd1b93c5323868f8ed98746695a3a4065d2895257f66989d147db36bdda18182",
+                    "run": 1,
+                    "selector_call": 1
+                  }
+                ],
+                "eligible_root_calls": 1,
+                "forced_cuts": 0,
+                "ineligible_root_calls": 0,
+                "intervention_records": [
+                  {
+                    "action": "efficacy-promote",
+                    "added_cut_name": "implbd15_30",
+                    "added_efficacy": 0.27694475015506276,
+                    "added_native_index": 129,
+                    "candidate_cuts": 132,
+                    "context_sha256": "fd1b93c5323868f8ed98746695a3a4065d2895257f66989d147db36bdda18182",
+                    "forced_cuts": 0,
+                    "removed_cut_name": "start_29_ewseq0",
+                    "removed_efficacy": 0.00748951112476031,
+                    "removed_native_index": 29,
+                    "run": 1,
+                    "selected_cuts": 30,
+                    "selector_call": 1
+                  }
+                ],
+                "intervention_scope": "first-run-only",
+                "interventions": 1,
+                "mode": "efficacy-promote",
+                "root_calls": 91,
+                "run_count": 2,
+                "selected_cuts": 30
+              }
+            }
+          },
+          "initial_context": {
+            "all_actions_observed": true,
+            "matching_across_actions": true,
+            "no_action_observed": false,
+            "partial_actions_observed": false,
+            "sha256_by_action": {
+              "efficacy-promote": "fd1b93c5323868f8ed98746695a3a4065d2895257f66989d147db36bdda18182"
+            }
+          },
+          "native_outcome": {
+            "cuts_applied": 5099,
+            "dual_bound": 173.0066041162408,
+            "gap": 1.0403845379383556,
+            "lp_count": 2481,
+            "lp_iterations": 972833,
+            "nodes": 898,
+            "objective_sense": "minimize",
+            "primal_bound": 353.0,
+            "primal_dual_integral": 9335.58399659812,
+            "solving_time": 120.000085,
+            "status": "timelimit",
+            "total_nodes": 898
+          },
+          "native_result_path": "${PROJECT_ROOT}/experiments/causal_first_run_efficacy_cohort_c_v1/30n20b8/seed_2_native.json",
+          "oracle": {
+            "delta_selected_minus_native": 0.0,
+            "native_value": 972833.0,
+            "primary_metric": "lp_iterations",
+            "relative_saving": 0.0,
+            "selected_action": "native",
+            "selected_value": 972833.0,
+            "valid_treatment_actions": []
+          },
+          "seed": 2
+        }
+      ],
+      "per_action": {
+        "efficacy-promote": {
+          "aggregate": {
+            "cuts_applied": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -0.5,
+              "mean_relative_saving": 0.0495995453463243,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 1
+            },
+            "lp_count": {
+              "losses": 2,
+              "mean_delta_treatment_minus_native": 409.0,
+              "mean_relative_saving": -0.14513911722952394,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 0
+            },
+            "lp_iterations": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -176377.5,
+              "mean_relative_saving": 0.1712925316408745,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 2
+            },
+            "nodes": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -52.0,
+              "mean_relative_saving": 0.0339334462144511,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 1
+            },
+            "primal_dual_integral": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -618.9329480416595,
+              "mean_relative_saving": 0.07129528156560762,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 2
+            },
+            "solving_time": {
+              "losses": 0,
+              "mean_delta_treatment_minus_native": -7.518510500000005,
+              "mean_relative_saving": 0.06670979349458248,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 2
+            },
+            "total_nodes": {
+              "losses": 1,
+              "mean_delta_treatment_minus_native": -54.0,
+              "mean_relative_saving": 0.024006423032833596,
+              "ties": 0,
+              "valid_pairs": 2,
+              "wins": 1
+            }
+          },
+          "eligible_pairs": 3,
+          "safe": false,
+          "safe_pairs": 2,
+          "unsafe_eligible_pairs": 1,
+          "valid_pairs": 2
+        }
+      }
+    }
+  ],
+  "pre_registered_contract": {
+    "intervention_budget": "at most one action in the first SCIP run of the complete solve",
+    "oracle_scope": "post-hoc per instance and seed; an upper bound only, never a deployable policy",
+    "primary_metric": "lp_iterations",
+    "safety": "both arms complete with matching status, objective sense, final primal and dual bounds, runtime, parameters, and run budget",
+    "selected_cut_budget": "preserve native hybrid selected-cut count",
+    "tie_rule": "native wins every primary-metric tie"
+  },
+  "process_isolation": "one fresh Python/SCIP process per arm and seed",
+  "schema_version": 2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit": 120.0
+}

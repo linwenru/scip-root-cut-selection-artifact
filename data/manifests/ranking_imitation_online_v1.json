@@ -1,0 +1,255 @@
+{
+  "checks": {
+    "all_matrix_feature_counts_match": true,
+    "online_feature_order_frozen": true,
+    "source_dataset_checks_passed": true,
+    "source_feature_contract_accounted_for": true,
+    "test_labels_remain_unscored": true
+  },
+  "feature_contract": {
+    "encoded_feature_names": [
+      "score_rank_pre",
+      "score_rank_fraction_pre",
+      "score",
+      "nnz",
+      "rhs",
+      "lhs",
+      "constant",
+      "coeff_norm_l2",
+      "coeff_norm_l1",
+      "coeff_max_abs",
+      "coeff_min_abs",
+      "coeff_mean_abs",
+      "coeff_std_abs",
+      "efficacy",
+      "obj_parallelism",
+      "cutoff_distance",
+      "cutoff_distance_available",
+      "n_int_cols",
+      "is_removable",
+      "is_integral",
+      "in_global_cutpool",
+      "run_number",
+      "n_candidate_occurrences",
+      "n_logical_candidates",
+      "n_lp_rows_pre",
+      "n_lp_cols_pre",
+      "lp_obj_val_pre",
+      "lp_iterations_total_pre",
+      "lp_iterations_node_pre",
+      "dual_bound_pre",
+      "primal_bound_pre",
+      "gap_pre",
+      "n_cuts_applied_pre",
+      "origin_type==CONS",
+      "origin_type==CONSHDLR",
+      "origin_type==SEPA",
+      "origin_type==<UNK>"
+    ],
+    "excluded_non_equivalent_features": [
+      "sep_round_node",
+      "sep_round_run",
+      "sep_round_global",
+      "lp_round_node",
+      "lp_round_run",
+      "lp_round_global",
+      "n_cuts_generated_node_pre"
+    ],
+    "label_semantics": "observed logical cut applied by native SCIP",
+    "live_semantics": "all fields are recomputed before the intervention from the callback's candidate rows and current SCIP state",
+    "origin_type_vocabulary": [
+      "CONS",
+      "CONSHDLR",
+      "SEPA",
+      "<UNK>"
+    ]
+  },
+  "matrices": {
+    "official_group_ood_test": {
+      "bytes": 328009,
+      "effective_group_weights_instance_balanced": true,
+      "effective_target_total_weight_per_instance": 1.5714285714285714,
+      "features": 37,
+      "group_weights_instance_balanced": true,
+      "groups": 22,
+      "instances": 14,
+      "label_statistics": "sealed",
+      "path": "data/datasets/ranking_imitation_online_v1/official_group_ood_test.npz",
+      "rows": 3647,
+      "sha256": "5500de6e3076b5fb1f70975b45af41e596e21743f08d869ece69da5de795bdc5",
+      "target_total_weight_per_instance": 1.5714285714285714
+    },
+    "official_group_ood_val": {
+      "baseline_score_top_k_positive_capture": {
+        "top_1": {
+          "captured_positives": 26,
+          "positive_recall": 0.012987012987012988
+        },
+        "top_10": {
+          "captured_positives": 149,
+          "positive_recall": 0.07442557442557443
+        },
+        "top_20": {
+          "captured_positives": 242,
+          "positive_recall": 0.12087912087912088
+        },
+        "top_5": {
+          "captured_positives": 88,
+          "positive_recall": 0.04395604395604396
+        }
+      },
+      "bytes": 761102,
+      "effective_group_weights_instance_balanced": true,
+      "effective_pair_groups": 27,
+      "effective_target_total_weight_per_instance": 1.35,
+      "features": 37,
+      "group_weights_instance_balanced": true,
+      "groups": 27,
+      "instances": 20,
+      "path": "data/datasets/ranking_imitation_online_v1/official_group_ood_val.npz",
+      "positive_rate": 0.20860685630926332,
+      "positives": 2002,
+      "rows": 9597,
+      "sha256": "91bae9b644ad7795a4426d54276d4ede2b121d2d5eff9c83c8f8edfa35d3d7f9",
+      "target_total_weight_per_instance": 1.35
+    },
+    "officially_ungrouped_test": {
+      "bytes": 195440,
+      "effective_group_weights_instance_balanced": true,
+      "effective_target_total_weight_per_instance": 2.5714285714285716,
+      "features": 37,
+      "group_weights_instance_balanced": true,
+      "groups": 18,
+      "instances": 7,
+      "label_statistics": "sealed",
+      "path": "data/datasets/ranking_imitation_online_v1/officially_ungrouped_test.npz",
+      "rows": 2240,
+      "sha256": "d2a12b9b3a10fd5dc3f8f6d0bd4a0261c90e8536852f9e6ec6725a8762ed08b1",
+      "target_total_weight_per_instance": 2.5714285714285716
+    },
+    "officially_ungrouped_val": {
+      "baseline_score_top_k_positive_capture": {
+        "top_1": {
+          "captured_positives": 12,
+          "positive_recall": 0.0038910505836575876
+        },
+        "top_10": {
+          "captured_positives": 75,
+          "positive_recall": 0.024319066147859923
+        },
+        "top_20": {
+          "captured_positives": 135,
+          "positive_recall": 0.04377431906614786
+        },
+        "top_5": {
+          "captured_positives": 41,
+          "positive_recall": 0.013294422827496757
+        }
+      },
+      "bytes": 1227120,
+      "effective_group_weights_instance_balanced": true,
+      "effective_pair_groups": 13,
+      "effective_target_total_weight_per_instance": 1.8571428571428572,
+      "features": 37,
+      "group_weights_instance_balanced": true,
+      "groups": 13,
+      "instances": 7,
+      "path": "data/datasets/ranking_imitation_online_v1/officially_ungrouped_val.npz",
+      "positive_rate": 0.17617823479005998,
+      "positives": 3084,
+      "rows": 17505,
+      "sha256": "82a6f56396141fdc2e66b977eedbffb78bb10629aec3539920caac72012ffbb2",
+      "target_total_weight_per_instance": 1.8571428571428572
+    },
+    "seen_family_test": {
+      "bytes": 1458959,
+      "effective_group_weights_instance_balanced": true,
+      "effective_target_total_weight_per_instance": 1.2,
+      "features": 37,
+      "group_weights_instance_balanced": true,
+      "groups": 12,
+      "instances": 10,
+      "label_statistics": "sealed",
+      "path": "data/datasets/ranking_imitation_online_v1/seen_family_test.npz",
+      "rows": 21720,
+      "sha256": "07117fd9f40505e8e660018856700c7060672a9ee51ddffa2cdec1d24561cee2",
+      "target_total_weight_per_instance": 1.2
+    },
+    "seen_family_val": {
+      "baseline_score_top_k_positive_capture": {
+        "top_1": {
+          "captured_positives": 11,
+          "positive_recall": 0.021484375
+        },
+        "top_10": {
+          "captured_positives": 52,
+          "positive_recall": 0.1015625
+        },
+        "top_20": {
+          "captured_positives": 88,
+          "positive_recall": 0.171875
+        },
+        "top_5": {
+          "captured_positives": 32,
+          "positive_recall": 0.0625
+        }
+      },
+      "bytes": 211009,
+      "effective_group_weights_instance_balanced": true,
+      "effective_pair_groups": 11,
+      "effective_target_total_weight_per_instance": 2.2,
+      "features": 37,
+      "group_weights_instance_balanced": true,
+      "groups": 11,
+      "instances": 5,
+      "path": "data/datasets/ranking_imitation_online_v1/seen_family_val.npz",
+      "positive_rate": 0.21271292064810968,
+      "positives": 512,
+      "rows": 2407,
+      "sha256": "77b379ad8f931a95514f4eed05f8cd9a933a886f3ffbc18647bfcd6361d3ceec",
+      "target_total_weight_per_instance": 2.2
+    },
+    "train": {
+      "baseline_score_top_k_positive_capture": {
+        "top_1": {
+          "captured_positives": 207,
+          "positive_recall": 0.011333150834930195
+        },
+        "top_10": {
+          "captured_positives": 1014,
+          "positive_recall": 0.05551601423487545
+        },
+        "top_20": {
+          "captured_positives": 1685,
+          "positive_recall": 0.09225294278675061
+        },
+        "top_5": {
+          "captured_positives": 634,
+          "positive_recall": 0.03471119627703258
+        }
+      },
+      "bytes": 11535930,
+      "effective_group_weights_instance_balanced": true,
+      "effective_pair_groups": 204,
+      "effective_target_total_weight_per_instance": 1.511111111111111,
+      "features": 37,
+      "group_weights_instance_balanced": true,
+      "groups": 215,
+      "instances": 142,
+      "path": "data/datasets/ranking_imitation_online_v1/train.npz",
+      "positive_rate": 0.11220941662161497,
+      "positives": 18265,
+      "rows": 162776,
+      "sha256": "4223e40252d39136f3b5916911b9272125bd23fd0d11e87c4298beb4d908d271",
+      "target_total_weight_per_instance": 1.5140845070422535
+    }
+  },
+  "numpy_version": "2.5.1",
+  "output_dir": "data/datasets/ranking_imitation_online_v1",
+  "purpose": "online-compatible observational imitation matrices; labels record native SCIP cut application, not solve-level causal benefit",
+  "schema_version": 1,
+  "source_dataset_dir": "data/datasets/ranking_imitation_v1",
+  "source_manifest": "data/manifests/ranking_imitation_v1.json",
+  "source_manifest_sha256": "c56b07c44c83bf732fbbf29b161cb42556dfa4a34d1006e601d2746019a666a8",
+  "test_policy": "test matrices are transformed mechanically but never loaded or scored"
+}

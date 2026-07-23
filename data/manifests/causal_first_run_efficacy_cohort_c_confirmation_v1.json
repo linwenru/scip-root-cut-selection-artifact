@@ -1,0 +1,123 @@
+{
+  "action": "efficacy-promote",
+  "attributable_unsafe": [
+    {
+      "instance_id": "n2seq36q",
+      "native_lp_iterations": 530000,
+      "native_status": "optimal",
+      "seed": 1,
+      "treatment_lp_iterations": 419198,
+      "treatment_status": "timelimit"
+    }
+  ],
+  "attribution_contract": "only pairs with a completed native arm can attribute treatment safety; benefit uses completed eligible pairs and ineligible instances tie at native",
+  "confirmation_gate": {
+    "checks": {
+      "instance_equal_mean_relative_lp_iteration_saving_positive": true,
+      "minimum_attributable_pairs_met": true,
+      "more_instance_wins_than_losses": false,
+      "no_instance_below_minus_0_25": true,
+      "zero_attributable_unsafe_treatment_pairs": false
+    },
+    "consequence": "reject efficacy-promote as a generally safe fixed action and do not train an ML gate unless independent unsafe-instance support becomes materially larger",
+    "passed": false
+  },
+  "created_at_utc": "2026-07-16T18:20:15.864891+00:00",
+  "data": {
+    "attributable_pairs": 22,
+    "attributable_unsafe_pairs": 1,
+    "contexts": 24,
+    "eligible_attributable_pairs": 16,
+    "instances": 8,
+    "interventions": 18,
+    "native_incomplete_pairs": 2,
+    "planned_pairs": 24,
+    "valid_eligible_pairs": 15
+  },
+  "experiment": "${PROJECT_ROOT}/data/manifests/causal_action_efficacy_first_run_cohort_c_v1.json",
+  "experiment_sha256": "e35e68b7fec021bdd9879aac5287bc28130a1d04eaee1043625fd5efe767bae8",
+  "fixed_action_summary": {
+    "instance_equal_mean_relative_lp_iteration_saving": 0.021686347508524183,
+    "instance_losses": 3,
+    "instance_ties": 2,
+    "instance_wins": 3,
+    "worst_instance_mean_relative_lp_iteration_saving": -0.18903767029490232
+  },
+  "per_instance": [
+    {
+      "attributable_unsafe_pairs": 0,
+      "eligible_pairs": 3,
+      "fixed_action_outcome": "win",
+      "ineligible_attributable_pairs": 0,
+      "instance_id": "binkar10_1",
+      "mean_relative_lp_iteration_saving_valid_eligible": 0.13988933189089464,
+      "valid_eligible_pairs": 3
+    },
+    {
+      "attributable_unsafe_pairs": 1,
+      "eligible_pairs": 3,
+      "fixed_action_outcome": "loss",
+      "ineligible_attributable_pairs": 0,
+      "instance_id": "n2seq36q",
+      "mean_relative_lp_iteration_saving_valid_eligible": -0.18903767029490232,
+      "valid_eligible_pairs": 2
+    },
+    {
+      "attributable_unsafe_pairs": 0,
+      "eligible_pairs": 0,
+      "fixed_action_outcome": "tie",
+      "ineligible_attributable_pairs": 3,
+      "instance_id": "rmatr100-p10",
+      "mean_relative_lp_iteration_saving_valid_eligible": 0.0,
+      "valid_eligible_pairs": 0
+    },
+    {
+      "attributable_unsafe_pairs": 0,
+      "eligible_pairs": 3,
+      "fixed_action_outcome": "loss",
+      "ineligible_attributable_pairs": 0,
+      "instance_id": "h80x6320d",
+      "mean_relative_lp_iteration_saving_valid_eligible": -0.11465016921046123,
+      "valid_eligible_pairs": 3
+    },
+    {
+      "attributable_unsafe_pairs": 0,
+      "eligible_pairs": 3,
+      "fixed_action_outcome": "win",
+      "ineligible_attributable_pairs": 0,
+      "instance_id": "physiciansched6-2",
+      "mean_relative_lp_iteration_saving_valid_eligible": 0.2822819794076688,
+      "valid_eligible_pairs": 2
+    },
+    {
+      "attributable_unsafe_pairs": 0,
+      "eligible_pairs": 0,
+      "fixed_action_outcome": "tie",
+      "ineligible_attributable_pairs": 3,
+      "instance_id": "mik-250-20-75-4",
+      "mean_relative_lp_iteration_saving_valid_eligible": 0.0,
+      "valid_eligible_pairs": 0
+    },
+    {
+      "attributable_unsafe_pairs": 0,
+      "eligible_pairs": 3,
+      "fixed_action_outcome": "loss",
+      "ineligible_attributable_pairs": 0,
+      "instance_id": "ns1830653",
+      "mean_relative_lp_iteration_saving_valid_eligible": -0.11628522336588093,
+      "valid_eligible_pairs": 3
+    },
+    {
+      "attributable_unsafe_pairs": 0,
+      "eligible_pairs": 3,
+      "fixed_action_outcome": "win",
+      "ineligible_attributable_pairs": 0,
+      "instance_id": "30n20b8",
+      "mean_relative_lp_iteration_saving_valid_eligible": 0.1712925316408745,
+      "valid_eligible_pairs": 2
+    }
+  ],
+  "plan": "${PROJECT_ROOT}/data/manifests/causal_first_run_efficacy_cohort_c_plan_v1.json",
+  "plan_sha256": "330ea5a4ffcbce6584e6aa5b76bf9ae815179d4e9833d6ddb487058387ffdc6c",
+  "schema_version": 1
+}

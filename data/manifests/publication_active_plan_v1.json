@@ -1,0 +1,1908 @@
+{
+  "active_fixed_baselines": {
+    "actions": [
+      "random-rank",
+      "efficacy-rank",
+      "adaptive-score"
+    ],
+    "estimand": "instance-equal paired PAR-2 solving-time ratio; seeds aggregate within instance before instances receive equal weight",
+    "execution_order": "assign SHA-256-randomized instance-seed blocks to four balanced Williams/Latin sequence rows",
+    "execution_order_key": "publication-active-v1-20260718",
+    "execution_schedule": [
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "hypothyroid-k1",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "blp-ic98",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "hypothyroid-k1",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "mc11",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "rmatr100-p10",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "mc11",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "swath1",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "neos-3004026-krka",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos-1171448",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "30n20b8",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "fhnw-binpack4-4",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "nu25-pr12",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "physiciansched6-2",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "neos859080",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-848589",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "rmatr100-p10",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "hypothyroid-k1",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "neos-3004026-krka",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "rail507",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "30n20b8",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos-1582420",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "pg5_34",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "neos859080",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "swath1",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos859080",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "neos-662469",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-1171448",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "fhnw-binpack4-4",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "physiciansched6-2",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "istanbul-no-cutoff",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "cod105",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "istanbul-no-cutoff",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "blp-ic98",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "eil33-2",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "roll3000",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "n2seq36q",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "fast0507",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "neos-911970",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "exp-1-500-5-5",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "neos-1582420",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "mik-250-20-75-4",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "binkar10_1",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "physiciansched6-2",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "pg5_34",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "swath1",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "lectsched-5-obj",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "binkar10_1",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "lectsched-5-obj",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "supportcase6",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "dano3_3",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "mik-250-20-75-4",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "neos-1582420",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos8",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "ns1830653",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "nu25-pr12",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "eil33-2",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "dano3_3",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "co-100",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-5104907-jarama",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "pg5_34",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "n2seq36q",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "neos-848589",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "n2seq36q",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "cbs-cta",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos-5104907-jarama",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "roll3000",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "co-100",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "cod105",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos-911970",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "piperout-27",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "nursesched-sprint02",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "neos-848589",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos-3004026-krka",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "cbs-cta",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-3046615-murg",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "cbs-cta",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos-5104907-jarama",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "neos-3046615-murg",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "fast0507",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "neos8",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "eil33-2",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "istanbul-no-cutoff",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "binkar10_1",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "ns1830653",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "piperout-27",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "exp-1-500-5-5",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "nursesched-sprint02",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "air05",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "nursesched-sprint02",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "dano3_3",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "h80x6320d",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "neos-3046615-murg",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "nu25-pr12",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "exp-1-500-5-5",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "cod105",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "ns1830653",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "lectsched-5-obj",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "supportcase6",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-1171448",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "30n20b8",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "mik-250-20-75-4",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "air05",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "neos8",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "rmatr100-p10",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "h80x6320d",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "supportcase6",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "air05",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "h80x6320d",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "co-100",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "fast0507",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "fhnw-binpack4-4",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "neos-911970",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "rail507",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "rail507",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "neos-662469",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "blp-ic98",
+        "seed": 2
+      },
+      {
+        "arm_order": [
+          "native",
+          "random-rank",
+          "adaptive-score",
+          "efficacy-rank"
+        ],
+        "design_row": 0,
+        "instance_id": "neos-662469",
+        "seed": 1
+      },
+      {
+        "arm_order": [
+          "random-rank",
+          "efficacy-rank",
+          "native",
+          "adaptive-score"
+        ],
+        "design_row": 1,
+        "instance_id": "roll3000",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "efficacy-rank",
+          "adaptive-score",
+          "random-rank",
+          "native"
+        ],
+        "design_row": 2,
+        "instance_id": "piperout-27",
+        "seed": 0
+      },
+      {
+        "arm_order": [
+          "adaptive-score",
+          "native",
+          "efficacy-rank",
+          "random-rank"
+        ],
+        "design_row": 3,
+        "instance_id": "mc11",
+        "seed": 0
+      }
+    ],
+    "instances": [
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-96",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos859080.mps.gz",
+        "instance_id": "neos859080",
+        "instance_name": "neos859080.mps.gz",
+        "instance_sha256": "bace2c785ab613cdd997b74197a44eca35b7b7871b18e4d958a9e83fa5ee205b",
+        "official_group": "neos-pseudoapplication-96",
+        "policy_eligible_applied_labels": 2,
+        "policy_eligible_candidates": 7,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 1.0810229778289795
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-15",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos8.mps.gz",
+        "instance_id": "neos8",
+        "instance_name": "neos8.mps.gz",
+        "instance_sha256": "3634f20854022d788ba8e796273cbe029e0d089a2c6c67493179f8b94204e7d3",
+        "official_group": "neos-pseudoapplication-15",
+        "policy_eligible_applied_labels": 1,
+        "policy_eligible_candidates": 17,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 1.3562321662902832
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "exp_and_fc",
+        "instance": "${MIPLIB_INSTANCES_DIR}/exp-1-500-5-5.mps.gz",
+        "instance_id": "exp-1-500-5-5",
+        "instance_name": "exp-1-500-5-5.mps.gz",
+        "instance_sha256": "6e00da7741d808d331ff37bfcaf498bcc4c57ac24f32622f01047b6bbc7d870f",
+        "official_group": "exp_and_fc",
+        "policy_eligible_applied_labels": 134,
+        "policy_eligible_candidates": 403,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 3.3219680786132812
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "nus-prxy",
+        "instance": "${MIPLIB_INSTANCES_DIR}/nu25-pr12.mps.gz",
+        "instance_id": "nu25-pr12",
+        "instance_name": "nu25-pr12.mps.gz",
+        "instance_sha256": "161c4c89b351d8671ae4e4d7af0fc222e1910e14564419053f22600460ef3236",
+        "official_group": "nus-prxy",
+        "policy_eligible_applied_labels": 36,
+        "policy_eligible_candidates": 255,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 3.945017099380493
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "hypothyroid",
+        "instance": "${MIPLIB_INSTANCES_DIR}/hypothyroid-k1.mps.gz",
+        "instance_id": "hypothyroid-k1",
+        "instance_name": "hypothyroid-k1.mps.gz",
+        "instance_sha256": "489ffe662de76b8dbb93855fc971d383ca27e613ea5805437652efe3a9e9230e",
+        "official_group": "hypothyroid",
+        "policy_eligible_applied_labels": 9,
+        "policy_eligible_candidates": 2752,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 4.882781028747559
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-8",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-1171448.mps.gz",
+        "instance_id": "neos-1171448",
+        "instance_name": "neos-1171448.mps.gz",
+        "instance_sha256": "07c1847ca86e1f1d01895ba2bc207c4592f5db69dd4dda9abc6514ab038133e7",
+        "official_group": "neos-pseudoapplication-8",
+        "policy_eligible_applied_labels": 21,
+        "policy_eligible_candidates": 97,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 6.886309862136841
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "piperout",
+        "instance": "${MIPLIB_INSTANCES_DIR}/piperout-27.mps.gz",
+        "instance_id": "piperout-27",
+        "instance_name": "piperout-27.mps.gz",
+        "instance_sha256": "0dde1d272f3d2ea0a2aafc38a82dd3e72dd1794927530175ad74f46e925482d0",
+        "official_group": "piperout",
+        "policy_eligible_applied_labels": 141,
+        "policy_eligible_candidates": 769,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 7.614707946777344
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "swath",
+        "instance": "${MIPLIB_INSTANCES_DIR}/swath1.mps.gz",
+        "instance_id": "swath1",
+        "instance_name": "swath1.mps.gz",
+        "instance_sha256": "05b713125dfdea88f22c1d028a4a4ab081e1d03c31401b302b41025f8b0f844d",
+        "official_group": "swath",
+        "policy_eligible_applied_labels": 12,
+        "policy_eligible_candidates": 45,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 8.72131609916687
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "cta",
+        "instance": "${MIPLIB_INSTANCES_DIR}/cbs-cta.mps.gz",
+        "instance_id": "cbs-cta",
+        "instance_name": "cbs-cta.mps.gz",
+        "instance_sha256": "4f688482bbf0702ff0176fc027ee13967c1a8dbf8f243f8b2cebbb35bef534fa",
+        "official_group": "cta",
+        "policy_eligible_applied_labels": 69,
+        "policy_eligible_candidates": 188,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 13.917890071868896
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "mc",
+        "instance": "${MIPLIB_INSTANCES_DIR}/mc11.mps.gz",
+        "instance_id": "mc11",
+        "instance_name": "mc11.mps.gz",
+        "instance_sha256": "55f4d9c9d2022cffeb3e07cd7398753f5aab720f16fa49ab17223375bab83874",
+        "official_group": "mc",
+        "policy_eligible_applied_labels": 290,
+        "policy_eligible_candidates": 678,
+        "policy_eligible_decisions": 2,
+        "source_trace_elapsed_seconds": 14.821326732635498
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-10",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-1582420.mps.gz",
+        "instance_id": "neos-1582420",
+        "instance_name": "neos-1582420.mps.gz",
+        "instance_sha256": "39f3bdab0bf6f68d8ff403f30d071e29bbf52bbf3decabf6711069d9ae49d458",
+        "official_group": "neos-pseudoapplication-10",
+        "policy_eligible_applied_labels": 13,
+        "policy_eligible_candidates": 18,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 17.167590856552124
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-70",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-911970.mps.gz",
+        "instance_id": "neos-911970",
+        "instance_name": "neos-911970.mps.gz",
+        "instance_sha256": "cf9ad35ade0015d140f33ce83a593d76672c09fd8cc30c0539213be7e4a65ebb",
+        "official_group": "neos-pseudoapplication-70",
+        "policy_eligible_applied_labels": 62,
+        "policy_eligible_candidates": 511,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 17.62437868118286
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "air",
+        "instance": "${MIPLIB_INSTANCES_DIR}/air05.mps.gz",
+        "instance_id": "air05",
+        "instance_name": "air05.mps.gz",
+        "instance_sha256": "8e03d2b90834dc1fe15c908247fdd8baf76e208aa310508caa0734e5245692cc",
+        "official_group": "air",
+        "policy_eligible_applied_labels": 6,
+        "policy_eligible_candidates": 7,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 21.62914204597473
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:cod105",
+        "instance": "${MIPLIB_INSTANCES_DIR}/cod105.mps.gz",
+        "instance_id": "cod105",
+        "instance_name": "cod105.mps.gz",
+        "instance_sha256": "f0007f47d356d70d1843e371ac75c7dbfdef4a2947785d47059e61821097e15a",
+        "official_group": null,
+        "policy_eligible_applied_labels": 5,
+        "policy_eligible_candidates": 231,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 32.63897085189819
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-38",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-3004026-krka.mps.gz",
+        "instance_id": "neos-3004026-krka",
+        "instance_name": "neos-3004026-krka.mps.gz",
+        "instance_sha256": "98e00480fca9f452b1185089c154e14e3af9e79113e1bc0237a2fd444a271516",
+        "official_group": "neos-pseudoapplication-38",
+        "policy_eligible_applied_labels": 208,
+        "policy_eligible_candidates": 440,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 36.13664269447327
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "nursescheduling",
+        "instance": "${MIPLIB_INSTANCES_DIR}/nursesched-sprint02.mps.gz",
+        "instance_id": "nursesched-sprint02",
+        "instance_name": "nursesched-sprint02.mps.gz",
+        "instance_sha256": "fadbbaaea74c7070e553a55e4312755c5fcf3e049ebafe7bdfd2c9769fecc8ba",
+        "official_group": "nursescheduling",
+        "policy_eligible_applied_labels": 81,
+        "policy_eligible_candidates": 334,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 39.63824009895325
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:roll3000",
+        "instance": "${MIPLIB_INSTANCES_DIR}/roll3000.mps.gz",
+        "instance_id": "roll3000",
+        "instance_name": "roll3000.mps.gz",
+        "instance_sha256": "47a0a827ac2d697b717fb55401afa5de9e042f026d6a462fb97d968a869d282d",
+        "official_group": null,
+        "policy_eligible_applied_labels": 46,
+        "policy_eligible_candidates": 667,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 46.91232991218567
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "binpack",
+        "instance": "${MIPLIB_INSTANCES_DIR}/fhnw-binpack4-4.mps.gz",
+        "instance_id": "fhnw-binpack4-4",
+        "instance_name": "fhnw-binpack4-4.mps.gz",
+        "instance_sha256": "cc1774a71077208f5c26d2340e813519730999c0f2733610a3b0aa0c5e2871fb",
+        "official_group": "binpack",
+        "policy_eligible_applied_labels": 440,
+        "policy_eligible_candidates": 3762,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 47.31965088844299
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "eil",
+        "instance": "${MIPLIB_INSTANCES_DIR}/eil33-2.mps.gz",
+        "instance_id": "eil33-2",
+        "instance_name": "eil33-2.mps.gz",
+        "instance_sha256": "2d349f8ba12aaf170c9f8bf85327d6592cc0f4d89d300dfb77197acd34a7ffb1",
+        "official_group": "eil",
+        "policy_eligible_applied_labels": 2,
+        "policy_eligible_candidates": 8,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 47.4889018535614
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:istanbul-no-cutoff",
+        "instance": "${MIPLIB_INSTANCES_DIR}/istanbul-no-cutoff.mps.gz",
+        "instance_id": "istanbul-no-cutoff",
+        "instance_name": "istanbul-no-cutoff.mps.gz",
+        "instance_sha256": "2b9171a1b1e4236c33ea444b24a98892fb0228ac9309495b4fac280e2ad5653a",
+        "official_group": null,
+        "policy_eligible_applied_labels": 567,
+        "policy_eligible_candidates": 1143,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 53.841403007507324
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "dano",
+        "instance": "${MIPLIB_INSTANCES_DIR}/dano3_3.mps.gz",
+        "instance_id": "dano3_3",
+        "instance_name": "dano3_3.mps.gz",
+        "instance_sha256": "dfae83681f99a910db2f05018df647c21e8df6e09fd1d160b0a6dc29c76d15e7",
+        "official_group": "dano",
+        "policy_eligible_applied_labels": 5,
+        "policy_eligible_candidates": 33,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 56.64434003829956
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:binkar10_1",
+        "instance": "${MIPLIB_INSTANCES_DIR}/binkar10_1.mps.gz",
+        "instance_id": "binkar10_1",
+        "instance_name": "binkar10_1.mps.gz",
+        "instance_sha256": "94282c38edd6c83bb6c2d788d823fd82f218218e8e07c98d1d1ab42c1e91039e",
+        "official_group": null,
+        "policy_eligible_applied_labels": 13,
+        "policy_eligible_candidates": 173,
+        "policy_eligible_decisions": 2,
+        "source_trace_elapsed_seconds": 65.03782486915588
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "nseq",
+        "instance": "${MIPLIB_INSTANCES_DIR}/n2seq36q.mps.gz",
+        "instance_id": "n2seq36q",
+        "instance_name": "n2seq36q.mps.gz",
+        "instance_sha256": "7c2be13e461ecfbd03ceb20e3745ba4f24ad007fe1b34df8c2a5e02e89ead3d5",
+        "official_group": "nseq",
+        "policy_eligible_applied_labels": 46,
+        "policy_eligible_candidates": 425,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 79.88986611366272
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "rmatr",
+        "instance": "${MIPLIB_INSTANCES_DIR}/rmatr100-p10.mps.gz",
+        "instance_id": "rmatr100-p10",
+        "instance_name": "rmatr100-p10.mps.gz",
+        "instance_sha256": "86e4b03e3db2298c29e3ce5863e76b319e95252da2a834d7441d9346dfa4a423",
+        "official_group": "rmatr",
+        "policy_eligible_applied_labels": 1,
+        "policy_eligible_candidates": 51,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 85.76090788841248
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "fixed-cost-network-flow",
+        "instance": "${MIPLIB_INSTANCES_DIR}/h80x6320d.mps.gz",
+        "instance_id": "h80x6320d",
+        "instance_name": "h80x6320d.mps.gz",
+        "instance_sha256": "da72f2491ab4c7c058074b71a140e12af3c2e87e52e68161f88b2aca8a5f9a23",
+        "official_group": "fixed-cost-network-flow",
+        "policy_eligible_applied_labels": 94,
+        "policy_eligible_candidates": 335,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 91.71338605880737
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "physiciansched",
+        "instance": "${MIPLIB_INSTANCES_DIR}/physiciansched6-2.mps.gz",
+        "instance_id": "physiciansched6-2",
+        "instance_name": "physiciansched6-2.mps.gz",
+        "instance_sha256": "6936650caa2cb6d19ea4d478a0ad70d6f8348923050c06587f28dbc3237eaa1f",
+        "official_group": "physiciansched",
+        "policy_eligible_applied_labels": 47,
+        "policy_eligible_candidates": 197,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 95.49144124984741
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "mik_250",
+        "instance": "${MIPLIB_INSTANCES_DIR}/mik-250-20-75-4.mps.gz",
+        "instance_id": "mik-250-20-75-4",
+        "instance_name": "mik-250-20-75-4.mps.gz",
+        "instance_sha256": "1fa6126895fa59d1c613787ad19bb10e6080a39207224b018a43b95440dca4ef",
+        "official_group": "mik_250",
+        "policy_eligible_applied_labels": 80,
+        "policy_eligible_candidates": 309,
+        "policy_eligible_decisions": 2,
+        "source_trace_elapsed_seconds": 105.16181230545044
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-110",
+        "instance": "${MIPLIB_INSTANCES_DIR}/ns1830653.mps.gz",
+        "instance_id": "ns1830653",
+        "instance_name": "ns1830653.mps.gz",
+        "instance_sha256": "a4e3c130f7ff6ebab4d6781a7e95fadc6c4c043e3e65d95b90f3e2e5e46f1017",
+        "official_group": "neos-pseudoapplication-110",
+        "policy_eligible_applied_labels": 10,
+        "policy_eligible_candidates": 215,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 109.14981412887573
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:30n20b8",
+        "instance": "${MIPLIB_INSTANCES_DIR}/30n20b8.mps.gz",
+        "instance_id": "30n20b8",
+        "instance_name": "30n20b8.mps.gz",
+        "instance_sha256": "61681c962ef830c2f958cb39bc03d6a1799f44158e5efeb97a1e6c3592f2ac40",
+        "official_group": null,
+        "policy_eligible_applied_labels": 66,
+        "policy_eligible_candidates": 577,
+        "policy_eligible_decisions": 2,
+        "source_trace_elapsed_seconds": 117.28701400756836
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:rail507",
+        "instance": "${MIPLIB_INSTANCES_DIR}/rail507.mps.gz",
+        "instance_id": "rail507",
+        "instance_name": "rail507.mps.gz",
+        "instance_sha256": "ecd62d6f0a76a9db236758a0d4ab9d4c0fa5b00ba59220c6b6073feff41ff39d",
+        "official_group": null,
+        "policy_eligible_applied_labels": 2,
+        "policy_eligible_candidates": 2,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 126.81349182128906
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:fast0507",
+        "instance": "${MIPLIB_INSTANCES_DIR}/fast0507.mps.gz",
+        "instance_id": "fast0507",
+        "instance_name": "fast0507.mps.gz",
+        "instance_sha256": "91c7390d814a24bc0c6b5edbc0b1b748d89f4ea75e655bc37b0406a86b8aee11",
+        "official_group": null,
+        "policy_eligible_applied_labels": 4,
+        "policy_eligible_candidates": 4,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 134.54517102241516
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-73",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-662469.mps.gz",
+        "instance_id": "neos-662469",
+        "instance_name": "neos-662469.mps.gz",
+        "instance_sha256": "65cf8ea6d45f54cfcd8413dc7949c65f11890a2bad768ec559ca29f2270b4530",
+        "official_group": "neos-pseudoapplication-73",
+        "policy_eligible_applied_labels": 68,
+        "policy_eligible_candidates": 226,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 300.68986988067627
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:supportcase6",
+        "instance": "${MIPLIB_INSTANCES_DIR}/supportcase6.mps.gz",
+        "instance_id": "supportcase6",
+        "instance_name": "supportcase6.mps.gz",
+        "instance_sha256": "72f46990a2cc24eb46090a5b2cc9ab7858df704e3a8fa92a976f277fc9065975",
+        "official_group": null,
+        "policy_eligible_applied_labels": 11,
+        "policy_eligible_candidates": 14,
+        "policy_eligible_decisions": 3,
+        "source_trace_elapsed_seconds": 300.96586298942566
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "blp",
+        "instance": "${MIPLIB_INSTANCES_DIR}/blp-ic98.mps.gz",
+        "instance_id": "blp-ic98",
+        "instance_name": "blp-ic98.mps.gz",
+        "instance_sha256": "ef71974c56ca7590a46832d01914c62d317b19ce89ac6a0f887a86ca56fc9fd3",
+        "official_group": "blp",
+        "policy_eligible_applied_labels": 11,
+        "policy_eligible_candidates": 140,
+        "policy_eligible_decisions": 2,
+        "source_trace_elapsed_seconds": 301.32292103767395
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:co-100",
+        "instance": "${MIPLIB_INSTANCES_DIR}/co-100.mps.gz",
+        "instance_id": "co-100",
+        "instance_name": "co-100.mps.gz",
+        "instance_sha256": "9a0c08c189afb9c2d66ac43bf20f911f60830053b353e25f5635dbcaf392e594",
+        "official_group": null,
+        "policy_eligible_applied_labels": 121,
+        "policy_eligible_candidates": 754,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 301.9086899757385
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-77",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-848589.mps.gz",
+        "instance_id": "neos-848589",
+        "instance_name": "neos-848589.mps.gz",
+        "instance_sha256": "335f80120e9c0fcc32dc7ba5cbbf8d8dce68946e4c50efb13c3a2d37028c7487",
+        "official_group": "neos-pseudoapplication-77",
+        "policy_eligible_applied_labels": 620,
+        "policy_eligible_candidates": 674,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 302.7856228351593
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-24",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-5104907-jarama.mps.gz",
+        "instance_id": "neos-5104907-jarama",
+        "instance_name": "neos-5104907-jarama.mps.gz",
+        "instance_sha256": "0a4a888837afdae3c11cbdcf1be7bc76a15ac796b448cef693a7e9a3e5b768cb",
+        "official_group": "neos-pseudoapplication-24",
+        "policy_eligible_applied_labels": 72,
+        "policy_eligible_candidates": 217,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 304.5345301628113
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "lectsched",
+        "instance": "${MIPLIB_INSTANCES_DIR}/lectsched-5-obj.mps.gz",
+        "instance_id": "lectsched-5-obj",
+        "instance_name": "lectsched-5-obj.mps.gz",
+        "instance_sha256": "06c6c7494c888d94af105b257ca0f3c4f981becf0fd0f9b8ff8742814f9e7718",
+        "official_group": "lectsched",
+        "policy_eligible_applied_labels": 540,
+        "policy_eligible_candidates": 6394,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 307.47722721099854
+      },
+      {
+        "evaluation_stratum": "training_ungrouped",
+        "group_key": "officially-ungrouped:pg5_34",
+        "instance": "${MIPLIB_INSTANCES_DIR}/pg5_34.mps.gz",
+        "instance_id": "pg5_34",
+        "instance_name": "pg5_34.mps.gz",
+        "instance_sha256": "d169bbd600ddc0be5625d95d52092f63e86d8bdfc78f86662c05429d26519567",
+        "official_group": null,
+        "policy_eligible_applied_labels": 91,
+        "policy_eligible_candidates": 1114,
+        "policy_eligible_decisions": 2,
+        "source_trace_elapsed_seconds": 313.3930308818817
+      },
+      {
+        "evaluation_stratum": "training_grouped",
+        "group_key": "neos-pseudoapplication-90",
+        "instance": "${MIPLIB_INSTANCES_DIR}/neos-3046615-murg.mps.gz",
+        "instance_id": "neos-3046615-murg",
+        "instance_name": "neos-3046615-murg.mps.gz",
+        "instance_sha256": "07d98d3032b201c023a7628a75974093c945987119a19803bcc69f0476956e19",
+        "official_group": "neos-pseudoapplication-90",
+        "policy_eligible_applied_labels": 47,
+        "policy_eligible_candidates": 297,
+        "policy_eligible_decisions": 1,
+        "source_trace_elapsed_seconds": 329.28654384613037
+      }
+    ],
+    "intervention_scope": "first-run-only",
+    "manifest": "${PROJECT_ROOT}/data/manifests/causal_publication_fixed_baselines_v1.json",
+    "max_workers": 1,
+    "node_limit": null,
+    "output_dir": "${PROJECT_ROOT}/experiments/publication_fixed_baselines_v1",
+    "resource_isolation": "one SCIP process at a time; each SCIP arm uses one solver and LP thread",
+    "role": "precision-strengthening negative-result estimate on train instances; it does not authorize validation/test advancement",
+    "sampling_strata": [
+      {
+        "maximum_source_trace_seconds": 126.81349182128906,
+        "minimum_source_trace_seconds": 1.0810229778289795,
+        "name": "completion_enriched",
+        "sampling": "first 30 distinct group keys by source trace runtime and instance ID",
+        "selected_instances": 30
+      },
+      {
+        "maximum_source_trace_seconds": 329.28654384613037,
+        "minimum_source_trace_seconds": 134.54517102241516,
+        "name": "hardness_coverage",
+        "sampling": "partition the remaining runtime-ordered pool into ten equal-rank bins and take the first unused group key from each bin",
+        "selected_instances": 10
+      }
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "time_limit_seconds": 300.0
+  },
+  "checks": {
+    "active_result_absent": true,
+    "arm_order_key_frozen": true,
+    "arm_positions_exactly_balanced": true,
+    "forty_instances": true,
+    "parent_plan_pre_registered": true,
+    "single_process_execution": true,
+    "three_paired_seeds": true,
+    "validation_and_test_sealed": true
+  },
+  "created_at_utc": "2026-07-18T05:56:19.747386+00:00",
+  "data_boundary": {
+    "independent_unit": "MPS instance",
+    "paired_repeated_measurements": "SCIP seeds nested within instance",
+    "selection_split": "train",
+    "test_split": "sealed",
+    "validation_split": "sealed"
+  },
+  "parent_plan": "${PROJECT_ROOT}/data/manifests/publication_strengthening_plan_v1.json",
+  "parent_plan_sha256": "dba5bbdcc8c11e3896e5331b7ed6e929bab1acc512943047823191c498900307",
+  "reason_for_separate_execution_plan": "wall-clock is the primary outcome, so concurrent SCIP arms and a fixed native-first order are prohibited",
+  "schema_version": 1,
+  "status": "pre_registered_before_active_fixed_baseline_outcomes"
+}
