@@ -235,8 +235,8 @@ The expanded publication experiment is now complete: all 480 planned arms for
 40 training instances and three seeds were collected. Random rank and efficacy
 rank are slower on average and have attributable safety failures. Adaptive
 score has no observed attributable failure and more wins than losses, but its
-PAR-2 treatment/native time ratio is 1.0019 with a 95% instance-clustered
-interval of [0.8481, 1.1486]. No fixed action passes the frozen advancement
+PAR-2 treatment/native time ratio is 0.9784 with a 95% instance-clustered
+interval of [0.8640, 1.0842]. No fixed action passes the frozen advancement
 gate, so validation and test remain sealed.
 
 `docs/ARTIFACT_RELEASE.md` describes deterministic core and observational-data
